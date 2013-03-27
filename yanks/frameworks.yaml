@@ -68,13 +68,13 @@ yanks:
       ember.prod-stable.js: "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
       ember.debug-stable.js: "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
 
-      git: "git://github.com/emberjs/ember.js.git"
-    Build:
-      type: "rake"
-      dir: "ember.js"
-      production:
-        ember.debug-trunk.js: "dist/ember.js"
-        ember.prod-trunk.js: "dist/ember.prod.js"
+    #   git: "git://github.com/emberjs/ember.js.git"
+    # Build:
+    #   type: "rake"
+    #   dir: "ember.js"
+    #   production:
+    #     ember.debug-trunk.js: "dist/ember.js"
+    #     ember.prod-trunk.js: "dist/ember.prod.js"
 
 
   normalize:
