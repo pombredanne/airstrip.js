@@ -10,10 +10,10 @@ yanks:
     Source:
       # handlebars.runtime-1.b6.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.0.beta.6"
       # handlebars.main-1.b6.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"
-      handlebars.runtime-1.0.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.rc.1.js"
-      handlebars.main-1.0.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.1.js"
-      handlebars.runtime-stable.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.rc.1.js"
-      handlebars.main-stable.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.1.js"
+      handlebars.runtime-1.0.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.rc.3.js"
+      handlebars.main-1.0.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.3.js"
+      handlebars.runtime-stable.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.rc.3.js"
+      handlebars.main-stable.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.3.js"
       git: "git://github.com/wycats/handlebars.js.git"
     Build:
       type: "rake"
@@ -57,10 +57,17 @@ yanks:
     Source:
       # ember.prod-0.9.6.js: "https://github.com/downloads/emberjs/ember.js/ember-0.9.6.min.js"
       # ember.debug-0.9.6.js: "https://github.com/downloads/emberjs/ember.js/ember-0.9.6.js"
-      ember.prod-1.0.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.min.js"
-      ember.debug-1.0.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.js"
-      ember.prod-stable.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.min.js"
-      ember.debug-stable.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.js"
+
+      # ember.prod-1.0.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.min.js"
+      # ember.debug-1.0.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.js"
+      # ember.prod-stable.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.min.js"
+      # ember.debug-stable.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.0-pre.2.js"
+
+      ember.prod-1.0.js: "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
+      ember.debug-1.0.js: "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
+      ember.prod-stable.js: "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
+      ember.debug-stable.js: "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
+
       git: "git://github.com/emberjs/ember.js.git"
     Build:
       type: "rake"
@@ -97,8 +104,8 @@ yanks:
     Destination: "frameworks"
     Source:
       # backbone-stable.js: "http://backbonejs.org/backbone.js"
-      backbone-0.9.js: "https://raw.github.com/documentcloud/backbone/0.9.9/backbone.js"
-      backbone-stable.js: "https://raw.github.com/documentcloud/backbone/0.9.9/backbone.js"
+      backbone-0.9.js: "https://raw.github.com/documentcloud/backbone/0.9.10/backbone.js"
+      backbone-stable.js: "https://raw.github.com/documentcloud/backbone/0.9.10/backbone.js"
       backbone-trunk.js: "https://raw.github.com/documentcloud/backbone/master/backbone.js"
 
   # XXX - no proper version
