@@ -10,17 +10,17 @@ yanks:
     Source:
       # handlebars.runtime-1.b6.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.0.beta.6"
       # handlebars.main-1.b6.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"
-      handlebars.runtime-1.0.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.rc.3.js"
-      handlebars.main-1.0.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.3.js"
-      handlebars.runtime-stable.js: "https://github.com/downloads/wycats/handlebars.js/handlebars.runtime-1.0.rc.3.js"
-      handlebars.main-stable.js: "https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.3.js"
-      git: "git://github.com/wycats/handlebars.js.git"
-    Build:
-      type: "rake"
-      dir: "handlebars.js"
-      production:
-        handlebars.runtime-trunk.js: "dist/handlebars.runtime.js"
-        handlebars.main-trunk.js: "dist/handlebars.js"
+      handlebars.runtime-1.0.js: "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.runtime.js"
+      handlebars.main-1.0.js: "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.js"
+      handlebars.runtime-stable.js: "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.runtime.js"
+      handlebars.main-stable.js: "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.js"
+      # git: "git://github.com/wycats/handlebars.js.git"
+    # Build:
+    #   type: "rake"
+    #   dir: "handlebars.js"
+    #   production:
+    #     handlebars.runtime-trunk.js: "dist/handlebars.runtime.js"
+    #     handlebars.main-trunk.js: "dist/handlebars.js"
 
   # Jquery
   # XXX - https please!

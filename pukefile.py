@@ -7,8 +7,9 @@ import re
 
 @task("Default task")
 def default():
-  executeTask("build")
-  executeTask("deploy")
+  pass
+  # executeTask("build")
+  # executeTask("deploy")
 
 @task("All")
 def all():
