@@ -111,7 +111,7 @@ def build(name = False):
 
 
 global buildone0
-def buildone(category, name, version, resources, build, productions):
+def buildone(category, name, version, resources, build):
   config = airc.AirConfig()
   tmp = FileSystem.join(config.get('temporary'), category, name, version)
 
@@ -128,7 +128,7 @@ def buildone(category, name, version, resources, build, productions):
   destination = FileSystem.join(config.get('output'), category)
 
   # if productions:
-    
+
   # else:
 
 
