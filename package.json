@@ -1,8 +1,8 @@
 {
   "name": "Airstrip.js",
-  "version": "1.0.0-rc1",
+  "version": "2.0.0-rc1",
 
-  "description": "A third-party manager and build tool for javascript projects.",
+  "description": "A third-party javascript libraries manager and build tool for browser javascript projects.",
   "keywords": ["third-party", "build", "manager", "dependencies"],
   "maintainers": [
     {
@@ -42,6 +42,6 @@
   "homepage": "http://airstrip.jsboot.com",
 
   "directories": {
-    "src": "src"
+    "src": "airstrip"
   }
 }

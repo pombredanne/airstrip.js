@@ -1,0 +1,68 @@
+{
+    "category": "framework", 
+    "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.", 
+    "tags": ["traversal", "events", "animation"],
+    "licences": ["MIT", "GPL"], 
+    "versions": {
+
+        "1.7.2": {
+            "resources": {
+              "jquery.js": "http://code.jquery.com/jquery-1.7.2.js"
+            }
+        },
+
+        "1.8.3": {
+            "resources": {
+              "jquery.js": "http://code.jquery.com/jquery-1.8.3.js"
+            }
+        },
+
+        "1.9.1": {
+            "resources": {
+              "jquery.js": "http://code.jquery.com/jquery-1.9.1.js"
+            }
+        },
+
+        "git": {
+            "resources": {
+              "jquery.js": "http://code.jquery.com/jquery-git.js"
+            }
+        },
+
+        "1.7": {
+          "branch": "1.7.2"
+        },
+
+
+        "1.8": {
+          "branch": "1.8.3"
+        },
+
+
+        "1.9": {
+          "branch": "1.9.1"
+        },
+
+        "stable": {
+          "branch": "1.9"
+        },
+
+        "trunk": {
+            "resources": {
+              "git": "git://github.com/jquery/jquery.git"
+            }, 
+            "tools": ["npm", "grunt"],
+            "build": ["npm install", "grunt"], 
+            "productions": {
+              "jquery.js": "dist/jquery.js"
+            }, 
+            "package": "https://raw.github.com/jquery/jquery/master/package.json"
+        }
+    }, 
+    "depends": {}, 
+    "fancyName": "jQuery", 
+    "home": "http://www.jquery.com", 
+    "tools": []
+}
+
+

@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'airstrip'
-__version__ = '0.1'
+__version__ = '2.0.0.rc1'
 __build__ = 0x001400
-__author__ = 'Education Numerique'
-__license__ = 'AGPL'
-__copyright__ = 'Copyright 2011 Education Numerique'
+__author__ = 'WebItUp'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2013 WebItUp'
 
-
-# -*- coding: utf8 -*-
 import sys, logging, os, traceback
 import pkg_resources
 from optparse import OptionParser
@@ -29,6 +27,7 @@ def run():
 
     parser = OptionParser()
     parser.add_option("-v", "--version", action="store_true", dest="version", help="get version")
+    # parser.add_option("-h", "--help", action="store_true", dest="help", help="get help")
 
     (options, args) = parser.parse_args()
     consoleCfg = logging.StreamHandler()
@@ -43,6 +42,11 @@ def run():
     if options.version:
         print('AirStrip %s' % __version__)
         sys.exit(0)
+
+
+    # if options.help:
+    #     puke.printTasks()
+    #     sys.exit(0)
 
    
     if os.path.isfile('.pukeignore'):

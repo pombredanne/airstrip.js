@@ -3,8 +3,7 @@
 from puke.Task import task
 global console
 from puke import console, FileSystem
-global PH
-import helpers as PH
+
 # import airfile
 import re
 
@@ -21,21 +20,22 @@ global airb
 import airbuild as airb
 
 
-@task("Show current configuration details")
+@task("Show current configuration details (airstrip use), or set a configuration flag (airstrip use key value)")
 def use(key = False, value = False):
   a = airc.AirConfig()
   if key == False:
     a.list()
   else:
-    if value.lower() == "true":
-      value = True
-    # Doesn't f**** work like it should
-    elif not value or value.lower() == "false":
-      value = False
+    if not value == False:
+      if value.lower() == "true":
+        value = True
+      # Doesn't f**** work like it should
+      elif value.lower() == "false":
+        value = False
     a.override(key, value)
 
 
-@task("Add a library to the list of project dependencies")
+@task("Show project required libraries (airstrip require), or add a new library to the list of project dependencies (airstrip require somelibrary), possibly in a specific version (airstrip require somelibrary somversion)")
 def require(key = False, version = False):
   a = airf.AirFile()
   if key == False:
@@ -52,23 +52,24 @@ def require(key = False, version = False):
     # Otherwise ok!
     a.require(key, version)
 
-@task("Remove a library to the list of project dependencies")
+@task("Remove a previously required library from the list of project dependencies (airstrip remove somelibrary), possibly a specific version of it (airstrip remove somelibrary someversion)")
 def remove(key, version = False):
   a = airf.AirFile()
   a.remove(key, version)
 
-@task("Edit a library descriptor the list of project dependencies")
+@task("Edit a library description file (airstrip edit somelibrary). Passing true as second argument edits the descriptor globally.")
 def edit(name, globally = False):
-  if globally.lower() == "true":
-    globally = True
-  elif not globally or globally.lower() == "false":
-    globally = False
+  if not globally == False:
+    if globally.lower() == "true":
+      globally = True
+    elif globally.lower() == "false":
+      globally = False
 
   a = yawn.Air(name)
   # Doesn't f**** work like it should
   a.edit(globally)
 
-@task("Show detailed informations about a library")
+@task("Show all available libraries (airstrip show), or detailed informations about a specific library (airstrip show somelibrary)")
 def show(name = False):
   if not name:
     console.info('Show the full list of available libraries')
@@ -143,10 +144,10 @@ def buildone(category, name, version, resources, build):
 
 
 
-@task("Default task")
-def default():
-  print('Victory')
-  pass
+# @task("Default task")
+# def default():
+#   print('Victory')
+#   pass
   # executeTask("build")
   # executeTask("deploy")
 

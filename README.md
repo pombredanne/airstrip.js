@@ -4,7 +4,7 @@ AirStrip.js
 About
 -------------
 
-This project is meant to ease dealing with third-party javascript dependencies in large projects.
+This project is meant to ease dealing with third-party javascript dependencies in ambitious browsers projects.
 
 Problem
 -------------
@@ -12,188 +12,167 @@ Problem
 Modern javascript projects usually depend on numerous third-party libraries and frameworks 
 (say: requirejs, handlebars, i18n, emberjs, jasmine).
 
-Picking these, building, minifying, then tracking versions, possibly patching or forking them, maintaining dependencies, then integrating into a project can quickly become borringly repetitive and tedious.
+Picking these, building, minifying, tracking versions, possibly patching or forking them, maintaining dependencies, then integrating into a project can quickly become borringly repetitive and tedious.
 
 Solution
 -------------
 
-The idea here is to help do that, by providing numerous, widely used libraries for each problem, build them uniformly, list various versions, then "dispatching" the results in a build directory to be then used by said projects - and obviously an "environment" to help you doing that for the (other) libraries you might want on top of that.
+The idea here is to help do that, by providing tools to quickly assemble dependencies from numerous, widely used libraries, build them uniformly, list various versions, then "dispatching" the results in a build directory to be then used by said projects - and obviously tools that help you do that for your own libraries.
 
-What it is not
+
+Installation
 -------------
 
-Airstrip doesn't provide a way to "combine" multiple javascript libraries into a monolithic one (though you can easily do that with puke), and it doesn't manage dependencies between said libraries (yet).
 
-The jsboot.js/airstrip.js projects will focus on that.
 
-Technology
+
+API
 -------------
 
-We use puke (https://github.com/webitup/puke), a (inhouse) versatile python build system.
-
-Dependencies are listed in YAML.
-
-And ah, all this is likely not working on windows (though we know it does on OSX and reasonable Linuxes).
-
-How to use
--------------
-
-- clone: `git clone https://github.com/jsBoot/airstrip.js`
-- install puke: `pip install puke` (if you don't have pip, read http://www.pip-installer.org/en/latest/installing.html)
-- build it as-is: `cd aistrip.js; puke all`
-
-Serve the "build" directory from your "static" webserver. Check the airstrip.json file for a list of builded stuff (replace .js / .css by -min.js / -min.css for minified versions).
-
-Doesn't work?
--------------
-
-You probably miss a build dependency required by one or the other third-party projects.
-Puke usually give you a hint about what's going wrong.
-
-Do you have ruby installed, along with rvm and bundle? If not, grab rvm and gem install bundle.
-Do you have nodejs and npm? If not, install them (aptitude install node, or brew install node, or
-whichever method suits you).
-
-Not interested in the provided dependencies and their build requirements? Just wipe-out the 
-node (see down below) and specify what you're interested in.
+Once the airstrip binary has been installed, you should cd to you project root source folder and may use the following commands.
 
 
-Configuration
--------------
+Command:
+```airstrip search emberjs```
 
-Edit config.yaml:
-- create a new node "config-USER-BOX:", where USER is your unix nickname, and BOX the result of the `uname` command, or create a file named "config-USER-BOX.yaml", and add a "userYank" top node into it.
-This node will be used to "specialize" your configuration (the generic configuration being stored in the baseYank and defaultYank nodes)
-- add a node for example for "root": this is the root under which the other directories will live (eg: tmp, build, deploy...)
-- when done editing, puke again (`puke all`)
-
-Build result
--------------
-
-In your path: deploy directory you will find:
-- a number of "static" resources, copied from the src directory - these are mondane, edit or remove them at will
-- a lib directory, with category subdirectories, containing said built dependencies: frameworks (emberjs, jquery), loaders (requirejs, labjs), plugins, tooling, shims, etc
-- an airstrip.json file, containing a list of everything that has been built - this is the manifest to be used in other projects or build systems using this
-
-Every dependency has been built or fetched, in versions specified in the yaml file, renamed, and minified (we use google closure to minify both css and js files, ECMA5, strict when possible).
-
-How you organize your versions management is up-to-you, but we do try to provide for each library in:
-- a "trunk" version
-- simplify versions names to match only major.minor
-- never remove a version once added
-- have a "stable" version that points to the currently recommended version
-
-Listing and managing simple dependencies
--------------
-
-Edit (or create a new) yaml file in yanks folder.
-
-A typical entry looks like ("stacktrace.js" here):
-
-```
-stacktrace:
-    "License": "PublicDomain"
-    "Destination": "shims-plus"
-    "Source":
-        stacktrace-0.3.js: "https://github.com/downloads/eriwen/javascript-stacktrace/stacktrace-0.3.js"
-        stacktrace-stable.js: "https://raw.github.com/webitup/javascript-stacktrace/master/stacktrace.js"
-        stacktrace-trunk.js: "https://raw.github.com/eriwen/javascript-stacktrace/master/stacktrace.js"
+Result:
+```emberjs
 ```
 
-The root node ("stacktrace") is purely casual.
 
-You should always specify the license of the project, obviously. This is provisional only for now, but should be either a string (like "MIT"), an array of strings (like ["MIT", "GPL"]), or an url if this is a custom licence.
+Command:
+```airstrip show emberjs```
 
-The "Destination" node is a category directory (will live under the lib/ output folder).
-
-The "Source" node list "versions" that you want to track for this library. Each version is a key
-value pair, where the key is the final name you desire, and the value the url where to find the source.
-
-In the case of stacktrace, we track three versions (a stable release, a forked release, and the upstream trunk).
-
-
-Zipped dependencies
--------------
-
-Some libraries come released in zip files.
-
-Using these just requires:
-- to have a "WHATEVER.zip: http://sourceurl" entry in your "Source" node
-- to specify what to get from the zip in a "Build" node.
-
-For example, LABJS:
-
+Result:
+```emberjs
 ```
-lab:
-    "License": "MIT"
-    "Destination": "loaders"
-    "Source":
-        lab-2.0.3.zip: "http://labjs.com/releases/LABjs-2.0.3.zip"
-        lab-stable.js: "https://raw.github.com/getify/LABjs/master/LAB.src.js"
-        lab-trunk.js: "https://raw.github.com/getify/LABjs/master/LAB.src.js"
-    "Build":
-        type: 'zip'
-        dir: 'LABjs-2.0.3'
-        production:
-            lab-2.0.3.js: 'LAB.src.js'
-```
-
-Here we track three versions: two direct "source form factor", and one zip (the lab-2.0.3.zip entry 
-in the "Source" node).
-In order to extract a specific file from the zip, we define a "Build" section, type "zip", we name
-the "dir" resulting from the zip extraction, and a "production" node that specifies (using the same
-key value syntax as the "Source" node) which files (from the extracted dir) to get and rename.
+-> all details and available versions
 
 
-Git repositories and actual builds
--------------
+Command:
+```airstrip require emberjs```
 
-In order to clone a git repository, just add a "git: sourceurl" entry in your "Source" node.
-
-If there is a build step in order to produce the actual result, you specify that using the "Build" node.
-
-For example, Emberjs is built that way:
-
-```
-ember:
-    "License": "MIT"
-    "Destination": "frameworks"
-    "Source":
-        ember.prod-0.9.6.js: "https://github.com/downloads/emberjs/ember.js/ember-0.9.6.min.js"
-        ember.debug-0.9.6.js: "https://github.com/downloads/emberjs/ember.js/ember-0.9.6.js"
-        ember.prod-1.0.pre.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.pre.min.js"
-        ember.debug-1.0.pre.js: "https://github.com/downloads/emberjs/ember.js/ember-1.0.pre.js"
-        git: "git://github.com/emberjs/ember.js.git"
-    "Build":
-        type: "rake"
-        dir: "ember.js"
-        production:
-            ember.debug-trunk.js: "dist/ember.js"
-            ember.prod-trunk.js: "dist/ember.prod.js"
-```
-
-... specifies a git entry in the Source list. Then requires build type "rake". Then copy two files
-from the dir.
-
-Understanding build and build types
--------------
-
-For now, the following build types are "supported":
-- rake
-- thor
-- make
-
-You can pass random additional arguments to the command if you want, adding an "extra" node in the "Build" node.
-
-Specifying any other build type (like "zip") will actually trigger no build operation, but is a way to let you specify a "working" directory and copy files operations (using the "production" node) from a random dir ("dir").
-
-There also exist the experimental "sh" build type. By specifying "extra" you can perform *any* build operations that way that will get executed in a shell.
+Result:
+Create or update the project "airfile", in order to add emberjs in stable version to the build dependency list.
 
 
-License
--------------
+Command:
+```airstrip require emberjs/stable```
+```airstrip require emberjs/trunk```
+```airstrip require emberjs/1.0```
+
+Result:
+Same as above, but explicitely require a specific version. "Stable" and "trunk" versions keywords always exist for any library, and are mapped to specific versions by the airfile descriptor maintainer.
+Two different versions of the same library can be required.
+Note that requiring a project that depends on other projects will require them as well, in the recommended version.
+It's your responsability to keep that tidy.
 
 
-MIT license.
-Note, though, that the result of the build contains numerous softwares with various licenses,
-and that by using them means you should agree with their individual licenses, not with the MIT license of this system itself. But you knew that, right?
+Command:
+```airstrip remove emberjs```
+```airstrip remove emberjs/version```
+
+Result:
+Will remove the library from the project dependencies list, if present (possibly in the specified /version).
+
+
+Command:
+```airstrip edit newlibrary```
+
+Result:
+Will create and open in your chosen editor a new airfile descriptor for a library named "newlibrary" (that airfile descriptor being avalaible only in the current project/directory).
+The placeholders for versions "stable" and "trunk" will be added (and will need to be documented), and any other version may be added as well.
+If the keyword "system" is added (`airstrip system edit newlibrary`), the airfile descriptor will be created system-wide instead, hence made available globally for the airstrip command.
+
+
+
+
+
+```airstrip list```
+-> list all requested dependencies
+
+```airstrip build```
+-> build or rebuild all requested dependencies
+
+```airstrip build somelibrary```
+-> build or rebuild a specific library that has been requested
+
+
+```airstrip install emberjs```
+-> alias for `airstrip require emberjs && airstrip build emberjs`
+
+
+<!-- airstrip build emberjs
+-> build just emberjs, if it was requested
+airstrip build emberjs -v 1.7
+-> build just emberjs version 1.7 if it was requested
+ -->
+<!-- airstrip rebuild
+-> force rebuild of requested dependencies
+ -->
+
+
+
+Command:
+```airstrip use```
+
+Output:
+- flag1: currentValue1
+    flag1 explanation
+    long explanation
+    long long explanation
+- flag2: currentValue2 (default: differentValue2)
+    flag2 explanation
+- flag3: currentValue3 (default: differentValue3)
+    flag3 explanation
+    long explanation
+
+
+
+
+-> list current configuration, default, and possibly overriden values
+
+```airstrip use flag=value```
+-> set a config flag to value
+
+
+Current configuration flags:
+- directory: destination path
+- minify: true/false wether to minify files or not
+- minifier: closure
+- pattern: default to $type/$name/$version - can also use $longversion
+- jshint: true/false run jshint on every dependency - will FAIL the build if jshint doesnt pass
+
+
+<!-- airstrip system
+-> list system dependencies needed to build the required formulas
+
+airstrip system install
+-> try to install system dependencies needed to build the required formulas
+ -->
+
+
+
+
+
+
+
+Dependencies are managed inside the project airfile:
+require:
+  $name:
+    $version
+    $version
+    $version
+config:
+  directory: $directory
+  minify: true
+  minifier: 
+
+
+
+airstrip install emberjs (= require + build)
+
+
+
+
+

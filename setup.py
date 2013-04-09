@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 import airstrip
 
 if sys.argv[-1] == 'publish':
-    os.system('python3 setup.py sdist upload')
+    os.system('python setup.py sdist upload')
     sys.exit()
 
 os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
@@ -22,9 +22,9 @@ setup(
     version=airstrip.__version__,
     description='',
     long_description=open('README.md').read(),
-    author='Education Numerique',
+    author='WebItUp',
     author_email='tech@webitup.fr',
-    url='http://education-numerique.github.com/api/',
+    url='http://airstrip.jsboot.com/',
     packages=find_packages(),
     scripts=[
         'airstrip/bin/airstrip'
@@ -32,10 +32,10 @@ setup(
     package_dir={'airstrip': 'airstrip'},
     package_data = {
         # If any package contains *.txt files, include them:
-        '': ['*.json', '*.yaml']
+        '': ['*.json']
     },
     include_package_data = True,
 
     install_requires=requires,
-    license=open('LICENSE').read()
+    license=open('LICENSE.md').read()
 )

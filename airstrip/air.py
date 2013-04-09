@@ -2,102 +2,13 @@ from puke import *
 import json
 import os
 
-working_dir = os.path.dirname(os.path.realpath(__file__))
+AIRSTRIP_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 # System-wide yawns path
-AIRSTRIP_YAWN_PATH = os.path.join(working_dir, 'global-airs')
-print(AIRSTRIP_YAWN_PATH)
+AIRSTRIP_YAWN_PATH = os.path.join(AIRSTRIP_ROOT, 'airs')
 
 # Project user-defined yawns path
 PROJECT_YAWN_PATH = './airs'
-
-
-# EMPTY_GLOBAL = """
-#       "description": "", // String
-#       "tags": [], // Array of strings
-#       "licences": [], // Array of strings
-#       "category": "library", // String
-#       "tools": [], // Array of strings
-#       "depends": {}, // "otherlibray": {"min": "X.Y", "reco": "T.S", max": "Z.W"}
-#       "versions": {
-#       // The "stable" version must exists, and is mandatory
-#         "stable": {
-#           // "tools", "depends" and "licence" from the main entry can be overriden here
-
-#           // If that version should inherit (eg: override) another version, use the following
-#           // "branch": "other-version-key"
-
-#           // Optional, the url of package.json file
-#           "package": "", 
-
-#           // Mandatory, the list of resources to fetch from the network (remoteUrl)
-#           // and name to store them locally into
-#           // localNames or remoteUrl ending in .git will be git cloned
-#           // localNames or remoteUrl ending in .zip, .tar, .tar.gz will be automatically extracted
-#           // At least one such resource is required
-#           // These resources are stored in a "src" directory
-#           "ressources": {
-#             "localName": "remoteUrl"
-#           }
-
-#           // Optional: build steps to do on the network resources
-#           // Cwd is the "src" directory from above if no resource is a git / zip, the last git / zip folder instead
-#           // "build": [], // an array of successive sh commands to execute
-
-#           // Optional: in case some new resources have been produced by the result of
-#           // the build, or you just want to remap some other resources from "src" into the final
-#           // output directory
-#           // If not specified, everything in the "src" directory is copied over to the final destination
-#           // Paths are relative to the "src" directory
-#           // "productions": {
-#           //   "finalName": "buildedResourceName"
-#           // }
-#         }
-#       }
-# }"""
-# EMPTY_LOCAL_VERSION = """{
-#   // This is a local version definition for an existing yawn
-#   "versions": {
-#   // You may define one specific "version" for this library
-#   // The keyword "stable" is reserved as a version name
-#     "version.name": {
-#       // You may override the following from the global definition:
-#       // "tools", "depends" and "licence"
-
-#       // If that version should inherit (eg: override) another version, use the following
-#       // "branch": "other-version-key"
-
-#       // Optional, the url of package.json file
-#       "package": "", 
-
-#       // Mandatory, the list of resources to fetch from the network (remoteUrl)
-#       // and name to store them locally into
-#       // localNames or remoteUrl ending in .git will be git cloned
-#       // localNames or remoteUrl ending in .zip, .tar, .tar.gz will be automatically extracted
-#       // At least one such resource is required
-#       // These resources are stored in a "src" directory
-#       "resources": {
-#         "localName": "remoteUrl"
-#       }
-
-#       // Optional: build steps to do on the network resources
-#       // Cwd is the "src" directory from above if no resource is a git / zip, the last git / zip folder instead
-#       // "build": {
-#       //  "commands": [], // an array of successive sh commands to execute
-#       // }
-
-#       // Optional: in case some new resources have been produced by the result of
-#       // the build, or you just want to remap some other resources from "src" into the final
-#       // output directory
-#       // If not specified, everything in the "src" directory is copied over to the final destination
-#       // Paths are relative to the "src" directory
-#       // "productions": {
-#       //   "finalName": "buildedResourceName"
-#       // }
-#     }
-#   }
-# }"""
-
 
 EMPTY_GLOBAL = """
       "description": "",

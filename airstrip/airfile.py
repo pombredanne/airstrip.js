@@ -8,13 +8,30 @@ PROJECT_AIRFILE_PATH = './airfile.json'
 
 class AirFile():
   def __init__(self):
-    self.project = json.loads('{}')
+    self.project = self._load_()
+
+  def _load_(self):
+    ret = json.loads('{}')
     if FileSystem.exists(PROJECT_AIRFILE_PATH):
       try:
-        self.project = json.loads(FileSystem.readfile(PROJECT_AIRFILE_PATH))
+        d = json.loads(FileSystem.readfile(PROJECT_AIRFILE_PATH))
+        if 'libraries' in d:
+          ret = d['libraries']
       except:
         console.error('Your project airfile is horked and has been ignored!')
-    # XXX should also check that the requested dependencies exist?
+    return ret
+
+  def _save_(self, data):
+    original = json.loads('{}')
+    if FileSystem.exists(PROJECT_AIRFILE_PATH):
+      try:
+        original = json.loads(FileSystem.readfile(PROJECT_AIRFILE_PATH))
+      except:
+        pass
+    original['libraries'] = data
+
+    FileSystem.writefile(PROJECT_AIRFILE_PATH, json.dumps(original, indent=4))
+
 
   def require(self, name, version):
     if name in self.project:
@@ -26,7 +43,8 @@ class AirFile():
     else:
       self.project[name] = [version]
 
-    FileSystem.writefile(PROJECT_AIRFILE_PATH, json.dumps(self.project, indent=4))
+    self._save_(self.project)
+
 
   def remove(self, name, version = False):
     if not name in self.project:
@@ -45,13 +63,16 @@ class AirFile():
       self.project.pop(name, None)
       console.info('Library %s is no longer a dependency of your project' % name)
 
-    FileSystem.writefile(PROJECT_AIRFILE_PATH, json.dumps(self.project, indent=4))
+    self._save_(self.project)
 
   def list(self):
     for i in self.project:
       print "%s: " % i
       for j in self.project[i]:
         print "    - version: %s" % j
+
+
+
 
   def isRequired(self, name):
     return name in self.project

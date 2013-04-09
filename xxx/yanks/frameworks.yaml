@@ -30,20 +30,21 @@ yanks:
     Source:
       jquery-1.7.js: "http://code.jquery.com/jquery-1.7.js"
       jquery-1.8.js: "http://code.jquery.com/jquery-1.8.3.js"
-      jquery-stable.js: "http://code.jquery.com/jquery-1.8.3.js"
+      jquery-1.9.js: "http://code.jquery.com/jquery-1.9.1.js"
+      jquery-stable.js: "http://code.jquery.com/jquery-1.9.1.js"
       jquery-trunk.js: "http://code.jquery.com/jquery-git.js"
 
   zepto:
     License: ["MIT"]
     Destination: "frameworks"
     Source:
-      zepto-1.0.zip: "https://github.com/madrobby/zepto/archive/v1.0rc1.zip"
+      zepto-1.0.zip: "https://github.com/madrobby/zepto/archive/v1.0.zip"
       zepto-stable.js: "https://github.com/jsBoot/zepto.git"
       # zepto-trunk.js: "git@github.com:madrobby/zepto.git"
     Build:
       args: "rake; cd ../../zepto; rake"
       type: "sh"
-      dir: "v1.0rc1/zepto-1.0rc1"
+      dir: "v1.0/zepto-1.0"
       production:
         zepto-1.0.js: "dist/zepto.js"
         zepto-stable.js: "../../zepto/dist/zepto.js"
@@ -81,18 +82,18 @@ yanks:
     License: "Public domain"
     Destination: "frameworks"
     Source:
-      normalize-2.0.css: "http://necolas.github.com/normalize.css/2.0.1/normalize.css"
-      normalize-stable.css: "http://necolas.github.com/normalize.css/2.0.1/normalize.css"
+      normalize-2.0.css: "http://necolas.github.com/normalize.css/2.1.0/normalize.css"
+      normalize-stable.css: "http://necolas.github.com/normalize.css/2.1.0/normalize.css"
       normalize-trunk.css: "https://raw.github.com/necolas/normalize.css/master/normalize.css"
 
   h5bp:
     Destination: "frameworks"
     License: "MIT"
     Source:
-      h5bp.zip: "https://github.com/h5bp/html5-boilerplate/zipball/v4.0.1"
+      h5bp.zip: "https://github.com/h5bp/html5-boilerplate/zipball/v4.1.0"
     Build:
       type: "zip"
-      dir: "v4.0/h5bp-html5-boilerplate-3bc5ed9"
+      dir: "v4.1/h5bp-html5-boilerplate"
       production:
         html5-css-4.0.css: "css/main.css"
         html5-css-stable.css: "css/main.css"

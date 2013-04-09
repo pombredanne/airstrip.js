@@ -1,0 +1,37 @@
+# yanks:
+#   PackageFancyName:
+#     Description: "long description"
+#     Tags: "tags"
+#   # License(s)
+#     License: "Apache"
+#   # Type (might impact destination)
+#     Type: "tooling"
+#   # Required tools to build
+#     Tools: ['rake', 'sh']
+#   # Dependency list
+#     Depends:
+#       FancyName: "min-version"
+#       OtherFancyName:
+#         min: "version"
+#         max: "version"
+#         recommended: "version"
+#   # Per-version descriptors
+#     Versions:
+#       whatever:
+#         Package: "package.json url"
+#         # Can override default
+#         Tools: 
+#         Depends: 
+#         License:
+#         Type:
+
+#         Resources:
+#           localname: "remote_url"
+#           otherlocalname: "remote_url"
+
+#         Build:
+#           command: ''
+
+#         Productions:
+#           destinationName: "buildedname"
+

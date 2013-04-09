@@ -4,5 +4,8 @@
 *.sublime-workspace
 *.pyc
 /build/
+/dist/
 /tmp/
+/AirStrip.egg-info/
 /lib/tests/
+/xxx/

@@ -1,0 +1,117 @@
+yanks:
+  # -----------------------------
+  # Tooling
+  # -----------------------------
+
+  # -----------------------------
+  # Enhancements shims
+  # -----------------------------
+
+  # Useful in debug mode only
+  console:
+    License: "MIT"
+    Destination: "shims-plus"
+    Source:
+      console-stable.js: "https://raw.github.com/jsBoot/console-shim/jsboot/console-shim.js"
+      console-trunk.js: "https://raw.github.com/kayahr/console-shim/master/console-shim.js"
+
+  # XXX pull request to get for callee
+  stacktrace:
+    License: "PublicDomain"
+    Destination: "shims-plus"
+    Source:
+      stacktrace-stable.js: "https://raw.github.com/jsBoot/javascript-stacktrace/jsboot/stacktrace.js"
+      stacktrace-trunk.js: "https://raw.github.com/eriwen/javascript-stacktrace/master/stacktrace.js"
+
+
+  # -----------------------------
+  # Pure shims, then copied to Spitfire - DONT use from here
+  # -----------------------------
+  # Forks that are not used per-se
+  es5:
+    License: "MIT"
+    Destination: "shims"
+    Source:
+      es5-shim-trunk.js: "https://raw.github.com/kriskowal/es5-shim/master/es5-shim.js"
+      es5-sham-trunk.js: "https://raw.github.com/kriskowal/es5-shim/master/es5-sham.js"
+      es5-shim-stable.js: "https://raw.github.com/jsBoot/es5-shim/jsboot/es5-shim.js"
+      es5-sham-stable.js: "https://raw.github.com/jsBoot/es5-shim/jsboot/es5-sham.js"
+      es5-2.0.5.zip: "https://github.com/kriskowal/es5-shim/zipball/v2.0.5"
+    Build:
+      type: "zip"
+      dir: "v2.0/kriskowal-es5-shim-ff224e9"
+      production:
+        es5-shim-2.0.js: "es5-shim.js"
+        es5-sham-2.0.js: "es5-sham.js"
+        # es5-shim-stable.js: "es5-shim.js"
+        # es5-sham-stable.js: "es5-sham.js"
+
+  json3:
+    License: "MIT"
+    Destination: "shims"
+    Source:
+      # json3-trunk.js: "http://bestiejs.github.com/json3/lib/json3.js"
+      # json3-3.2.3.js: "https://raw.github.com/webitup/json3/gh-pages/lib/json3.js"
+      json3-trunk.js: "https://raw.github.com/bestiejs/json3/gh-pages/lib/json3.js"
+      json3-3.2.4.zip: "https://github.com/bestiejs/json3/zipball/v3.2.4"
+    Build:
+      type: "zip"
+      dir: "v3.2/bestiejs-json3-a9559aa"
+      production:
+        json3-3.2.js: "lib/json3.js"
+        json3-stable.js: "lib/json3.js"
+
+  # XHR is a terribly buggy thing - this may / should be aggregated unconditionally
+  # XXX upstream doesn't version
+  xmlhttprequest:
+    License: "LGPL"
+    Destination: "shims"
+    Source:
+      xhr-stable.js: "https://raw.github.com/jsBoot/xmlhttprequest/master/XMLHttpRequest.js"
+      xhr-trunk.js: "https://raw.github.com/ilinsky/xmlhttprequest/master/XMLHttpRequest.js"
+
+
+  ie7:
+    License: "MIT"
+    Destination: "shims"
+    Source:
+      ie7.zip: "http://ie7-js.googlecode.com/files/ie7-2.1%28beta4%29.zip"
+    Build:
+      type: "zip"
+      dir: "ie7-2.1%28beta4%29/ie7"
+      production:
+        ie9-2.1.js: "IE9.js"
+        ie9-stable.js: "IE9.js"
+
+  pie:
+    License: ["Apache", "GPL"]
+    Destination: "shims"
+    Source:
+      pie.zip: "https://github.com/downloads/lojjic/PIE/PIE-1.0.0.zip"
+    Build:
+      type: "zip"
+      dir: "PIE-1.0.0"
+      production:
+      # XXX remember to send - also, need to be copied over the same domain
+      # Content-type: text/x-component
+        pie-1.0.htc: "PIE.htc"
+      # The js approach needs detaching and attaching to be done manually
+        pie-1.0.js: "PIE.js"
+
+        pie-stable.htc: "PIE.htc"
+        pie-stable.js: "PIE.js"
+
+
+  # Forked and used in a merged form only in js.core (strict mode working)
+  # You should NOT use any of these - they are already provided if you use js.core
+  # XXX no "stable" version notion
+  # XXX to be replaced by a proper shim
+  postmessage:
+    License: ["MIT", "GPL"]
+    Destination: "shims-plus"
+    Source:
+      # Has some changes to fit in jsboot
+      postmessage-stable.js: "https://raw.github.com/jsBoot/jquery-postmessage/master/jquery.ba-postmessage.js"
+      postmessage-trunk.js: "https://raw.github.com/cowboy/jquery-postmessage/master/jquery.ba-postmessage.js"
+
+
