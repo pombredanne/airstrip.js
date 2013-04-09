@@ -1,0 +1,14 @@
+{
+  "temporary": {
+    "default": "./airtmp",
+    "info": "Specifies where temporary resources are stored"
+  },
+  "output": {
+    "default": "./libraries",
+    "info": "Specifies where the result of dependencies build should go"
+  },
+  "minify": {
+    "default": true,
+    "info": "Whether to minify dependencies (true, closure being the minifier used), or not (false)"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "fancyName": "handlebars", 
+    "category": "framework", 
+    "description": "Handlebars provides the power necessary to let you build semantic templates effectively with no frustration.",
+    "home": "http://handlebarsjs.com/",
+    "tags": ["templates", "mustache"], 
+    "licences": ["MIT"], 
+    "versions": {
+        "stable": {
+            "branch": "1.0.0.rc.3"
+        },
+        "1.0": {
+            "branch": "1.0.0.rc.3"
+        },
+        "1.0.0.rc.3": {
+          "resources": {
+            "handlebars.runtime.js": "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.runtime.js",
+            "handlebars.main.js": "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.js"
+           }, 
+          "package": "https://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/package.json"
+        },
+        "trunk": {
+          "tools": ["rake"],
+          "resources": {
+            "git": "git://github.com/wycats/handlebars.js.git"
+          },
+          "build": ["rake"],
+          "productions": {
+             "handlebars.runtime.js": "dist/handlebars.runtime.js",
+             "handlebars.main-trunk.js": "dist/handlebars.js"
+          }
+        }
+    }, 
+    "depends": {}, 
+    "tools": []
+}
+
+
