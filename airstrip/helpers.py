@@ -1,7 +1,7 @@
 from puke import *
 import re
 import json
-
+import os
 # ==================================================================
 # Global helpers for puke
 # ==================================================================
@@ -17,7 +17,9 @@ def __enforceunix():
 
 def __yankconfiguration():
   # Yank the base config file
-  r = Require('config.yaml')
+  working_dir = os.path.dirname(os.path.realpath(__file__))
+
+  r = Require(os.path.join(working_dir, 'config.yaml'))
   # Try to get separate user specific file, either as json or yaml
   usercpath = 'config-%s-%s' % (Env.get("PUKE_LOGIN", System.LOGIN), Env.get("PUKE_OS", System.OS).lower())
   try:

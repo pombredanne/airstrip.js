@@ -1,6 +1,8 @@
 #!/usr/bin/env puke
 # -*- coding: utf8 -*-
-
+from puke.Task import task
+global console
+from puke import console, FileSystem
 global PH
 import helpers as PH
 # import airfile
@@ -110,7 +112,7 @@ def build(name = False):
         buildone(y.get(i, 'category'), name, i, y.get(i, 'resources'), y.get(i, 'build'))
 
 
-global buildone0
+global buildone
 def buildone(category, name, version, resources, build):
   config = airc.AirConfig()
   tmp = FileSystem.join(config.get('temporary'), category, name, version)
@@ -143,6 +145,7 @@ def buildone(category, name, version, resources, build):
 
 @task("Default task")
 def default():
+  print('Victory')
   pass
   # executeTask("build")
   # executeTask("deploy")

@@ -1,12 +1,13 @@
 from puke import *
 import json
+import os
 
 # That file is meant to manipulate the airstrip configuration in the scope of the current project
 # That project configuration by-default use the airstrip global configuration
 # Possibly overriden by specific elements in the airconfig file in cwd.
-
+working_dir = os.path.dirname(os.path.realpath(__file__))
 # Should point to the globally installed airstrip configuration file
-AIRSTRIP_CONFIG_PATH = 'global.json'
+AIRSTRIP_CONFIG_PATH = os.path.join(working_dir, 'global.json')
 # The project in the current directory airconfig file, if any
 PROJECT_CONFIG_PATH = './airconfig.json'
 

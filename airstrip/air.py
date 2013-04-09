@@ -1,8 +1,12 @@
 from puke import *
 import json
+import os
+
+working_dir = os.path.dirname(os.path.realpath(__file__))
 
 # System-wide yawns path
-AIRSTRIP_YAWN_PATH = './global-airs'
+AIRSTRIP_YAWN_PATH = os.path.join(working_dir, 'global-airs')
+print(AIRSTRIP_YAWN_PATH)
 
 # Project user-defined yawns path
 PROJECT_YAWN_PATH = './airs'
