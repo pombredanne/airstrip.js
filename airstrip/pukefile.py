@@ -1,7 +1,7 @@
 #!/usr/bin/env puke
 # -*- coding: utf8 -*-
 from puke.Task import task
-global console
+global console, FileSystem
 from puke import console, FileSystem
 
 # import airfile
@@ -60,10 +60,7 @@ def remove(key, version = False):
 @task("Edit a library description file (airstrip edit somelibrary). Passing true as second argument edits the descriptor globally.")
 def edit(name, globally = False):
   if not globally == False:
-    if globally.lower() == "true":
-      globally = True
-    elif globally.lower() == "false":
-      globally = False
+    globally = True
 
   a = yawn.Air(name)
   # Doesn't f**** work like it should
@@ -97,6 +94,9 @@ def search():
 def build(name = False):
   a = airf.AirFile()
   libs = a.requiredLibraries()
+
+  config = airc.AirConfig()
+
   if name:
     # Check the library exists and is required
     if not yawn.Air.exists(name):
@@ -104,31 +104,22 @@ def build(name = False):
     if not a.isRequired(name):
       console.fail('You have not required that library (%s)!' % name) 
     y = yawn.Air(name)
-    for i in libs[name]:
-      buildone(y.get(i, 'category'), name, i, y.get(i, 'resources'), y.get(i, 'build'))
+    for version in libs[name]:
+      category = y.get(version, 'category')
+      tmp = FileSystem.join(config.get('temporary'), category, name, version)
+      destination = FileSystem.join(config.get('output'), category, name, version)
+      airb.buildone(tmp, category, name, version, y.get(version, 'resources'), y.get(version, 'build'),
+          y.get(version, 'productions'), destination, y.get(version, 'strict'))
   else:
     for name in libs:
       y = yawn.Air(name)
-      for i in libs[name]:
-        buildone(y.get(i, 'category'), name, i, y.get(i, 'resources'), y.get(i, 'build'))
+      for version in libs[name]:
+        category = y.get(version, 'category')
+        tmp = FileSystem.join(config.get('temporary'), category, name, version)
+        destination = FileSystem.join(config.get('output'), category, name, version)
+        airb.buildone(tmp, category, name, version, y.get(version, 'resources'), y.get(version, 'build'),
+            y.get(version, 'productions'), destination, y.get(version, 'strict'))
 
-
-global buildone
-def buildone(category, name, version, resources, build):
-  config = airc.AirConfig()
-  tmp = FileSystem.join(config.get('temporary'), category, name, version)
-
-  lastdir = False
-  for(localname, url) in resources.items():
-    # Do the fetch
-    lastdir = airb.fetchone(url, tmp, localname)
-
-  if build:
-    if not lastdir:
-      console.fail('Build failure not having a directory!')
-    for com in build:
-      airb.make(lastdir, com)
-  destination = FileSystem.join(config.get('output'), category)
 
   # if productions:
 

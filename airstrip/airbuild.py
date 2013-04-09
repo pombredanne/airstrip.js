@@ -1,5 +1,8 @@
+global Tools
 from puke import *
+from puke import Tools
 import json
+import re
 
 def fetchgit(url, dest):
   # Require git on the system to have it
@@ -82,6 +85,7 @@ def fetchone(url, dest, rename):
       except Exception as e:
         sh('cd "%s"; 7z x "%s"' % (dd,  FileSystem.abspath(packpath)));
       FileSystem.remove(packpath)
+      return FileSystem.join(dest, rename)
     else:
       if remotefilename != rename:
         if not FileSystem.exists(FileSystem.dirname(FileSystem.join(dest, rename))):
@@ -98,3 +102,49 @@ def make(path, command):
   # elif type == 'make':
   #   domake(path, extra)
   # elif type == 'sh':
+
+
+def buildone(tmp, category, name, version, resources, build, productions, destination, strict):
+  # Dead dirty
+  Tools.JS_COMPRESSOR = "%s.js.compress" % sh("which puke", output = False).strip()
+
+  lastdir = False
+  for(localname, url) in resources.items():
+    # Do the fetch
+    lastdir = fetchone(url, tmp, localname)
+
+  if build:
+    if not lastdir:
+      console.fail('Build failure not having a directory!')
+    for com in build:
+      make(lastdir, com)
+
+  if productions:
+    if lastdir:
+      tmp = lastdir
+    for item in productions:
+      local = FileSystem.realpath(FileSystem.join(tmp, productions[item]))
+      if FileSystem.isfile(local):
+        FileSystem.copyfile(local, FileSystem.join(destination, item))
+      else:
+        FileSystem.deepcopy(FileList(local), FileSystem.join(destination, item))
+      if local.split('.').pop().lower() == 'js':
+        strict = True
+        minify(str(local), re.sub(r"(.*).js$", r"\1-min.js", local), strict = strict)
+        FileSystem.copyfile(re.sub(r"(.*).js$", r"\1-min.js", local), FileSystem.join(destination, re.sub(r"(.*).js$", r"\1-min.js", item)))
+  else:
+    for item in resources:
+      local = FileSystem.realpath(FileSystem.join(tmp, item))
+      if FileSystem.isfile(local):
+        FileSystem.copyfile(local, FileSystem.join(destination, item))
+      else:
+        FileSystem.deepcopy(FileList(local), FileSystem.join(destination, item))
+      if local.split('.').pop().lower() == 'js':
+        minify(str(local), re.sub(r"(.*).js$", r"\1-min.js", local), strict = strict)
+        FileSystem.copyfile(re.sub(r"(.*).js$", r"\1-min.js", local), FileSystem.join(destination, re.sub(r"(.*).js$", r"\1-min.js", item)))
+
+
+#         if FileSystem.isfile(f):
+#           FileSystem.copyfile(f, d)
+#         elif FileSystem.isdir(f):
+#           deepcopy(FileList(f), d)

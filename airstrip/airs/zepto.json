@@ -1,0 +1,49 @@
+{
+    "fancyName": "zepto.js", 
+    "category": "framework", 
+    "description": "Zepto is a minimalist JavaScript library for modern browsers with a largely jQuery-compatible API. If you use jQuery, you already know how to use Zepto.",
+    "home": "http://zeptojs.com",
+    "tags": ["jquery"], 
+    "licences": ["MIT"],
+    "strict": true,
+    "depends": {}, 
+    "tools": [],
+    "versions": {
+      "1.0": {
+        "tools": ["npm"],
+        "resources": {
+          "v1.0/zepto-1.0": "https://github.com/madrobby/zepto/archive/v1.0.zip"
+         }, 
+        "package": "https://raw.github.com/madrobby/zepto/v1.0/package.json",
+        "build": ["npm install", "npm run-script dist"],
+        "productions": {
+          "zepto.js": "dist/zepto.js"
+        }
+      },
+
+      "1.0-jsboot": {
+        "tools": ["bundle", "rake"],
+        "resources": {
+          "git": "https://github.com/jsBoot/zepto.git"
+         },
+        "build": ["bundle", "rake"],
+        "productions": {
+          "zepto.js": "dist/zepto.js"
+        }
+      },
+
+      "stable": {
+          "branch": "1.0"
+      },
+
+      "trunk": {
+        "resources": {
+          "git": "git://github.com/madrobby/zepto.git"
+        },
+        "build": ["npm install", "npm run-script dist"],
+        "productions": {
+          "zepto.js": "dist/zepto.js"
+        }
+      }
+    }
+}

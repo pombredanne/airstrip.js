@@ -1,0 +1,32 @@
+{
+    "fancyName": "EmberJS", 
+    "category": "framework", 
+    "description": "A framework for creating ambitious web applications",
+    "home": "http://emberjs.com",
+    "tags": ["mvc"], 
+    "licences": ["MIT"],
+    "strict": false,
+    "versions": {
+      "1.0.0-rc.1": {
+        "resources": {
+          "ember.js": "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.1.js"
+         }
+      },
+
+      "1.0.0-rc.2": {
+        "resources": {
+          "ember.js": "https://raw.github.com/emberjs/ember.js/release-builds/ember-1.0.0-rc.2.js"
+        }
+      },
+
+      "1.0": {
+          "branch": "1.0.0-rc.2"
+      },
+
+      "stable": {
+          "branch": "1.0"
+      }
+    }, 
+    "depends": {}, 
+    "tools": []
+}

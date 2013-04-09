@@ -3,6 +3,7 @@
     "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.", 
     "tags": ["traversal", "events", "animation"],
     "licences": ["MIT", "GPL"], 
+    "strict": true,
     "versions": {
 
         "1.7.2": {
@@ -51,8 +52,8 @@
             "resources": {
               "git": "git://github.com/jquery/jquery.git"
             }, 
-            "tools": ["npm", "grunt"],
-            "build": ["npm install", "grunt"], 
+            "tools": ["npm"],
+            "build": ["npm install -g grunt-cli", "npm install", "grunt"], 
             "productions": {
               "jquery.js": "dist/jquery.js"
             }, 

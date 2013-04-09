@@ -4,7 +4,7 @@
     "info": "Specifies where temporary resources are stored"
   },
   "output": {
-    "default": "./libraries",
+    "default": "./airlib",
     "info": "Specifies where the result of dependencies build should go"
   },
   "minify": {

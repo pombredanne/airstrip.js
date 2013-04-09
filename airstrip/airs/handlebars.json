@@ -5,6 +5,7 @@
     "home": "http://handlebarsjs.com/",
     "tags": ["templates", "mustache"], 
     "licences": ["MIT"], 
+    "strict": true,
     "versions": {
         "1.0.0.rc.3": {
           "resources": {

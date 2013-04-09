@@ -18,6 +18,7 @@ EMPTY_GLOBAL = """
       "home": "http://",
       "tools": [],
       "depends": {},
+      "strict": true,
       "versions": {
         "stable": {
           "package": "", 
@@ -108,7 +109,7 @@ class Air():
   def get(self, version, key):
     if key == "name":
       return self.name
-    keys = ['fancyName', 'description', 'tags', 'licences', 'category', 'tools', 'depends', 'package', 'resources', 'build', 'productions']
+    keys = ['fancyName', 'description', 'tags', 'strict', 'licences', 'category', 'tools', 'depends', 'package', 'resources', 'build', 'productions']
     #, 'versions']
     if not key in keys:
       console.error('There is no such thing as %s' % key)
