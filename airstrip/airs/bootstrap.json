@@ -1,0 +1,53 @@
+{
+    "fancyName": "Bootstrap", 
+    "category": "framework", 
+    "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+    "home": "http://twitter.github.io/bootstrap/",
+    "tags": ["UI"], 
+    "licences": ["Apache"],
+    "strict": true,
+    "depends": {}, 
+    "tools": [],
+
+    "versions": {
+      "2.3.1": {
+        "tools": ["npm", "make"],
+        "resources": {
+          "v2.3.1/bootstrap-2.3.1": "https://github.com/twitter/bootstrap/archive/v2.3.1.zip"
+         }, 
+        "package": "https://raw.github.com/twitter/bootstrap/v2.3.1/package.json",
+        "build": ["npm install", "make bootstrap"],
+        "productions": {
+          "bootstrap.js": "bootstrap/js/bootstrap.js",
+          "css/bootstrap-responsive.css": "bootstrap/css/bootstrap-responsive.css",
+          "css/bootstrap.css": "bootstrap/css/bootstrap.css",
+          "img/glyphicons-halflings-white.png": "bootstrap/img/glyphicons-halflings-white.png",
+          "img/glyphicons-halflings.png": "bootstrap/img/glyphicons-halflings.png"
+        }
+      },
+
+      "trunk": {
+        "tools": ["npm", "make"],
+        "resources": {
+          "git": "https://github.com/twitter/bootstrap.git"
+         },
+        "build": ["npm install", "make bootstrap"],
+        "productions": {
+          "bootstrap.js": "bootstrap/js/bootstrap.js",
+          "css/bootstrap-responsive.css": "bootstrap/css/bootstrap-responsive.css",
+          "css/bootstrap.css": "bootstrap/css/bootstrap.css",
+          "img/glyphicons-halflings-white.png": "bootstrap/img/glyphicons-halflings-white.png",
+          "img/glyphicons-halflings.png": "bootstrap/img/glyphicons-halflings.png"
+        }
+      },
+
+      "2.3": {
+          "branch": "2.3.1"
+      },
+
+      "stable": {
+          "branch": "2.3"
+      }
+
+    }
+}

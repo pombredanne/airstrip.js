@@ -4,7 +4,9 @@ AirStrip.js
 About
 -------------
 
-This project is meant to ease dealing with third-party javascript dependencies in ambitious browsers projects.
+This project is meant to ease dealing with third-party javascript dependencies in ambitious client-side web projects.
+
+Conceptually, Airstrip has similarities with Twitter's Bower.
 
 Problem
 -------------

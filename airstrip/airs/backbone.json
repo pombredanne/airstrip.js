@@ -1,0 +1,34 @@
+{
+    "fancyName": "backbone.js", 
+    "category": "framework", 
+    "description": "Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.",
+    "home": "http://backbonejs.org/",
+    "tags": ["MVC"],
+    "licences": ["MIT"],
+    "strict": true,
+    "depends": {}, 
+    "tools": [],
+
+    "versions": {
+      "1.0.0": {
+        "resources": {
+          "backbone.js": "https://raw.github.com/documentcloud/backbone/1.0.0/backbone.js"
+         }
+      },
+
+      "trunk": {
+        "resources": {
+          "backbone.js": "https://raw.github.com/documentcloud/backbone/master/backbone.js"
+         }
+      },
+
+      "1.0": {
+          "branch": "1.0.0"
+      },
+
+      "stable": {
+          "branch": "1.0"
+      }
+
+    }
+}

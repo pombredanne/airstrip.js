@@ -1,0 +1,35 @@
+{
+    "fancyName": "html5 ★ boilerplate", 
+    "category": "framework", 
+    "description": "The web’s most popular front-end template",
+    "home": "http://html5boilerplate.com/",
+    "tags": ["boilerplate"], 
+    "licences": ["MIT"],
+    "strict": true,
+    "depends": {}, 
+    "tools": [],
+
+    "versions": {
+      "4.2.0": {
+        "tools": [],
+        "resources": {
+          "main.css": "https://raw.github.com/h5bp/html5-boilerplate/v4.2.0/css/main.css"
+         }
+      },
+
+      "trunk": {
+        "resources": {
+          "main.css": "https://raw.github.com/h5bp/html5-boilerplate/master/css/main.css"
+         }
+      },
+
+      "4.2": {
+          "branch": "4.2.0"
+      },
+
+      "stable": {
+          "branch": "4.2"
+      }
+
+    }
+}

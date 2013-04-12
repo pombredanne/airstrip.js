@@ -1,10 +1,10 @@
 {
   "temporary": {
-    "default": "./airtmp",
+    "default": "./.airstrip-tmp",
     "info": "Specifies where temporary resources are stored"
   },
   "output": {
-    "default": "./airlib",
+    "default": "./dependencies",
     "info": "Specifies where the result of dependencies build should go"
   },
   "minify": {

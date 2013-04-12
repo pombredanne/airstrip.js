@@ -1,0 +1,41 @@
+{
+    "fancyName": "normalize.css", 
+    "category": "framework", 
+    "description": "A modern, HTML5-ready alternative to CSS resets",
+    "home": "http://necolas.github.io/normalize.css/",
+    "tags": ["UI", "cross-browser", "resetter"], 
+    "licences": ["Public docmain"],
+    "strict": true,
+    "depends": {}, 
+    "tools": [],
+
+    "versions": {
+      "2.1.1": {
+        "tools": [],
+        "resources": {
+          "normalize.css": "http://necolas.github.com/normalize.css/2.1.0/normalize.css"
+         }
+      },
+
+      "trunk": {
+        "tools": ["npm", "make"],
+        "resources": {
+          "git": "https://github.com/necolas/normalize.css.git"
+         },
+        "build": [],
+        "productions": {
+          "normalize.css": "normalize.css"
+        }
+      },
+
+      "2.1": {
+          "branch": "2.1.1"
+      },
+
+      "stable": {
+          "branch": "2.1"
+      }
+
+    }
+}
+
