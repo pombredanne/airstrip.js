@@ -2,9 +2,10 @@
 # -*- coding: utf8 -*-
 from puke.Task import task
 global console, FileSystem
-from puke import console, FileSystem
+from puke import console, FileSystem, sh
 
 # import airfile
+global re
 import re
 
 global yawn
@@ -18,6 +19,15 @@ import airfile as airf
 
 global airb
 import airbuild as airb
+
+global gh
+import githelper as gh
+
+global ge
+import github as ge
+
+global se
+import seeder as se
 
 
 @task("Show current configuration details (airstrip use), or set a configuration flag (airstrip use key value)")
@@ -42,15 +52,21 @@ def require(key = False, version = False):
     a.list()
   else:
     if not version:
-      version = "stable"
+      version = "master"
     # Get a yawn
     if not yawn.Air.exists(key):
       console.fail('No library by that name (%s)!' % key) 
     aero = yawn.Air(key)
-    # Will fail if there is no such version
-    aero.get(version, 'resources')
-    # Otherwise ok!
-    a.require(key, version)
+
+    if not version == 'all':
+      # Will fail if there is no such version
+      aero.get(version, 'name')
+      # Otherwise ok!
+      a.require(key, version)
+    else:
+      for i in aero.versions():
+        a.require(key, i)
+
 
 @task("Remove a previously required library from the list of project dependencies (airstrip remove somelibrary), possibly a specific version of it (airstrip remove somelibrary someversion)")
 def remove(key, version = False):
@@ -71,31 +87,72 @@ def show(name = False):
   if not name:
     console.info('Show the full list of available libraries')
     return
+  # XXXX dirty hack
+  # name = name.split('/').pop().replace('.json', '')
   if not yawn.Air.exists(name):
     console.fail('No library by that name (%s)!' % name) 
   a = yawn.Air(name)
   console.info('*********************')
-  console.info(a.get('stable', 'fancyName'))
+  console.info(a.get('master', 'name'))
   console.info('*********************')
-  console.info(a.get('stable', 'description'))
+  console.info(a.get('master', 'description'))
   console.info('*********************')
-  console.info(' - Category: %s' % a.get('stable', 'category'))
-  console.info(' - Tags: %s' % a.get('stable', 'tags'))
-  console.info(' - Licences: %s' % a.get('stable', 'licences'))
-  console.info(' - Required tools to build: %s' % a.get('stable', 'tools'))
+  # console.info(' - Category: %s' % a.get('master', 'category'))
+  console.info(' - Keywords: %s' % a.get('master', 'keywords'))
+  console.info(' - Homepage: %s' % a.get('master', 'homepage'))
+  console.info(' - Author: %s' % a.get('master', 'author'))
+  console.info(' - Licenses: %s' % a.get('master', 'licenses'))
+  # console.info(' - Required tools to build: %s' % a.get('master', 'tools'))
   console.info('*********************')
-  console.info('Available versions: %s' % a.versions())
+  console.info('Available versions:')
+  for i in a.versions():
+    console.info(' - %s' % i)
 
 @task("Search packages for a given search string")
 def search():
   pass
 
+@task("Initialize new project")
+def seed(app = False, mobile = False):
+  s = se.Seeder()
+  s.project()
+  require('jasmine', 'master')
+  require('jasmine', 'v2.0.0.rc1')
+  require('jquery', 'master')
+  require('jquery', '1.9.1')
+  require('bootstrap', 'master')
+  require('bootstrap', 'v2.3.1')
+  build()
+
+
+
+@task("Init an air from github")
+def init(owner, repo, name = False):
+  g = ge.GitHubInit()
+  if not name:
+    name = repo
+  g.retrieve(owner, repo, "airstrip/airs", name)
+  # # g.retrieve("documentcloud", "backbone", "airstrip/airs", "backbone")
+  # # g.retrieve("twitter", "bootstrap", "airstrip/airs", "bootstrap")
+  # g.retrieve("emberjs", "ember.js", "airstrip/airs", "ember")
+  # g.retrieve("h5bp", "html5-boilerplate", "airstrip/airs", "h5bp")
+  # g.retrieve("wycats", "handlebars.js", "airstrip/airs", "handlebars")
+  # # g.retrieve("jquery", "jquery", "airstrip/airs", "jquery")
+  # g.retrieve("necolas", "normalize.css", "airstrip/airs", "normalize")
+  # # g.retrieve("madrobby", "zepto", "airstrip/airs", "zepto")
+
+
+
 @task("Build the list of required libraries, or a specifically required library")
 def build(name = False):
   a = airf.AirFile()
-  libs = a.requiredLibraries()
+
+  requested = a.requiredLibraries()
 
   config = airc.AirConfig()
+  conftmp = config.get('temporary')
+  confdestination = config.get('output')
+
 
   if name:
     # Check the library exists and is required
@@ -103,22 +160,232 @@ def build(name = False):
       console.fail('No library by that name (%s)!' % name) 
     if not a.isRequired(name):
       console.fail('You have not required that library (%s)!' % name) 
-    y = yawn.Air(name)
-    for version in libs[name]:
-      category = y.get(version, 'category')
-      tmp = FileSystem.join(config.get('temporary'), category, name, version)
-      destination = FileSystem.join(config.get('output'), category, name, version)
-      airb.buildone(tmp, category, name, version, y.get(version, 'resources'), y.get(version, 'build'),
-          y.get(version, 'productions'), destination, y.get(version, 'strict'))
+
+    # Build temporary and destination paths for the library
+
+    yawnie = yawn.Air(name)
+
+    tmp = FileSystem.join(conftmp, yawnie.get("master", "safename"))
+    destination = FileSystem.join(confdestination, yawnie.get("master", "safename"))
+    # giti = yawnie.get('master', 'git')
+    # Get each version informations json
+    # vinfos = {}
+    # for version in requested[name]:
+    #   vinfos[version] = yawnie.get(version)
+
+    buildit(yawnie, requested[name], tmp, destination)
+
+
+
+    return
+    # airb.build(owner, name, libs[name], tmp, destination)
+    # return
+
+    # for version in requested[name]:
+    #   # category = y.get(version, 'category')
+    #   destination = FileSystem.join(config.get('output'), name, version)#category, 
+
+    #   data = y.get(version)
+    #   if ".travis.yml" in data:
+    #     airb.buildtravis(name, version, data[".travis.yml"], tmp, destination)
+    #     print data
+    #     return
+        # print "version %s is OK travis: %s" % (version, data[".travis.yml"])
+      # else:
+      #   # Try as smart as possible?
+      #   if data["tree"]
+      #   print "version %s is KO travis" % (version)
+                # "node_js": [
+                #     0.6
+                # ], 
+                # "language": "node_js", 
+                # "script": "script/test"
+
+
+      # airb.buildone(tmp, name, version, y.get(version, 'resources'), y.get(version, 'build'), #category, 
+      #     y.get(version, 'productions'), destination, y.get(version, 'strict'))
   else:
-    for name in libs:
-      y = yawn.Air(name)
-      for version in libs[name]:
-        category = y.get(version, 'category')
-        tmp = FileSystem.join(config.get('temporary'), category, name, version)
-        destination = FileSystem.join(config.get('output'), category, name, version)
-        airb.buildone(tmp, category, name, version, y.get(version, 'resources'), y.get(version, 'build'),
-            y.get(version, 'productions'), destination, y.get(version, 'strict'))
+    for name in requested:
+
+      yawnie = yawn.Air(name)
+
+      tmp = FileSystem.join(conftmp, yawnie.get("master", "safename"))
+      destination = FileSystem.join(confdestination, yawnie.get("master", "safename"))
+      # giti = yawnie.get('master', 'git')
+      # Get each version informations json
+      # vinfos = {}
+      # for version in requested[name]:
+      #   vinfos[version] = yawnie.get(version)
+
+      buildit(yawnie, requested[name], tmp, destination)
+
+      # yawnie = yawn.Air(name)
+      # tmp = FileSystem.join(config.get('temporary'), yawnie.get("master", "safename"))
+      # destination = FileSystem.join(config.get('output'), yawnie.get("master", "safename"))
+      # giti = yawnie.get('master', 'git')
+      # # Get each version informations json
+      # vinfos = {}
+      # for version in requested[name]:
+      #   vinfos[version] = yawnie.get(version)
+
+      # build(giti, vinfos, tmp, destination)
+
+
+      # y = yawn.Air(name)
+
+      # for version in requested[name]:
+      #   # category = y.get(version, 'category')
+      #   tmp = FileSystem.join(config.get('temporary'), name, version)
+      #   destination = FileSystem.join(config.get('output'), name, version)
+
+      #   data = y.get(version)
+      #   if ".travis.yml" in data:
+      #     print "version %s is OK travis: %s" % (version, data[".travis.yml"])
+
+        # print tmp, name, version, y.get(version, 'resources'), y.get(version, 'build'), y.get(version, 'productions'), destination, y.get(version, 'strict')
+        # airb.buildone(tmp, name, version, y.get(version, 'resources'), y.get(version, 'build'),
+        #     y.get(version, 'productions'), destination, y.get(version, 'strict'))
+
+
+
+global buildit
+def buildit(yawnie, versions, tmp, dest):
+
+  # XXX horked if a specific version has a specific (different) git url
+
+  repomanager = gh.GitHelper(yawnie.get('master', 'git'), tmp)
+  repomanager.ensure()
+  p = repomanager.getPath()
+  white = ["build", "dist", "test", "tests"]
+
+  for version in versions:
+    print "Building version %s" % version
+
+    tree = yawnie.get(version, "tree")
+
+    repomanager.checkout(yawnie.get(version, "sha"))
+
+
+    identified = False
+    usenode = False
+
+    trav = yawnie.get(version, ".travis.yml")
+    if trav:
+      if ("language" in trav) and (trav["language"] == "node_js"):
+        usenode = identified = True
+      else:
+        print "DOESNT KNOW HOW TO BUILD CUSTOM TRAVIS SHIT"
+
+    if yawnie.get(version, "devDependencies"):
+      usenode = identified = True
+
+
+    usebundle = False
+    if "Gemfile" in tree:
+      usebundle = identified = True
+
+    userake = False
+    if "Rakefile" in tree:
+      userake = identified = True
+
+    usegrunt = False
+    if "Gruntfile.js" in tree:
+      usegrunt = identified = True
+
+    useant = False
+    if "build.xml" in tree:
+      useant = identified = True
+
+    usemake = False
+    if "Makefile" in tree:
+      usemake = identified = True
+
+    if usenode:
+      puke.sh('cd "%s"; npm install' % p)
+
+    if usebundle:
+      puke.sh('cd "%s"; bundle' % p, output = True)
+
+    if userake:
+      puke.sh('cd "%s"; rake' % p, output = True)
+
+    elif usegrunt:
+      puke.sh('cd "%s"; grunt' % p, output = True)
+
+    elif useant:
+      puke.sh('cd "%s"; ant' % p, output = True)
+
+    elif usemake:
+      puke.sh('cd "%s"; make' % p, output = True)
+
+    elif "build.sh" in tree:
+      identified = True
+      puke.sh('cd "%s"; ./build.sh' % p, output = True)
+
+    # Yepnope...
+    elif "compress" in tree:
+      identified = True
+      puke.sh('cd "%s"; ./compress' % p, output = True)
+
+
+    if usenode:
+      scripties = yawnie.get(version, "scripts")
+      if scripties:
+        for i in scripties:
+          if i in white:
+            puke.sh('cd "%s"; npm run-script %s' % (p, i))
+
+
+    nob = yawnie.get(version, "nobuild")
+    if not nob and not identified:
+      raise "DONT KNOW WHAT TO DO"
+
+    productions = yawnie.get(version, "productions")
+
+    v = version.lstrip("v")
+    destination = FileSystem.join(dest, v)
+    if productions:
+      for item in productions:
+        local = FileSystem.realpath(FileSystem.join(p, productions[item]))
+        if not FileSystem.exists(local):
+          console.error("Missing production! %s" % productions[item])
+        else:
+          if FileSystem.isfile(local):
+            FileSystem.copyfile(local, FileSystem.join(destination, item))
+          else:
+            FileSystem.deepcopy(FileList(local), FileSystem.join(destination, item))
+
+
+
+  stuff = puke.FileList(dest, filter = "*.js", exclude = "*-min.js")
+  puke.Tools.JS_COMPRESSOR = "%s.js.compress" % puke.sh("which puke", output = False).strip()
+  for i in stuff.get():
+    mined = re.sub(r"(.*).js$", r"\1-min.js", i)
+    if not FileSystem.exists(mined):
+      print "Missing minified version %s %s" % (i, mined)
+      # XXX strict will blow here
+      puke.minify(str(i), mined, strict = True)
+
+
+  puke.Tools.CSS_COMPRESSOR = "%s.css.compress" % puke.sh("which puke", output = False).strip()
+  stuff = puke.FileList(dest, filter = "*.css", exclude = "*-min.css")
+  for i in stuff.get():
+    mined = re.sub(r"(.*).css$", r"\1-min.css", i)
+    if not FileSystem.exists(mined):
+      print "Missing minified version %s %s" % (i, mined)
+      # XXX strict will blow here
+      try:
+        puke.minify(str(i), mined, strict = True)
+      except:
+        # Bootstrap fail on older versions
+        print "FAILED COMPRESSION %s" % i
+
+
+      # if local.split('.').pop().lower() == 'js':
+      #   strict = True
+      #   minify(str(local), re.sub(r"(.*).js$", r"\1-min.js", local), strict = strict)
+      #   FileSystem.copyfile(re.sub(r"(.*).js$", r"\1-min.js", local), FileSystem.join(destination, re.sub(r"(.*).js$", r"\1-min.js", item)))
+
 
 
   # if productions:

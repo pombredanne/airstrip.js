@@ -1,1 +1,2 @@
 recursive-include airstrip airs *
+recursive-include airstrip boilerplates *

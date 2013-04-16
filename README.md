@@ -6,7 +6,13 @@ About
 
 This project is meant to ease dealing with third-party javascript dependencies in ambitious client-side web projects.
 
-Conceptually, Airstrip has similarities with Twitter's Bower.
+Conceptually, Airstrip has similarities with Twitter's Bower, and npm component (https://npmjs.org/package/component).
+
+For the impatients
+-------------
+
+Read.
+
 
 Problem
 -------------
@@ -174,7 +180,10 @@ config:
 
 airstrip install emberjs (= require + build)
 
+License
+-------------
 
+MIT.
 
 
 

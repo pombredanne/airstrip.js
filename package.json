@@ -4,6 +4,7 @@
 
   "description": "A third-party javascript libraries manager and build tool for browser javascript projects.",
   "keywords": ["third-party", "build", "manager", "dependencies"],
+  "author": "WebItUp",
   "maintainers": [
     {
       "name": "Mangled Deutz",

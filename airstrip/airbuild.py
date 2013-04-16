@@ -4,31 +4,6 @@ from puke import Tools
 import json
 import re
 
-def fetchgit(url, dest):
-  # Require git on the system to have it
-  System.check_package('git')
-  # If directory exist, then update the tree
-  if FileSystem.exists(dest):
-    console.info('Updating')
-    that = 'cd "%s"; git stash; git stash drop' % dest
-    sh(that, output=True)
-    that = 'cd "%s"; git pull --rebase; ' % dest
-  else:
-    if not FileSystem.exists(FileSystem.dirname(dest)):
-      FileSystem.makedir(FileSystem.dirname(dest))
-    console.info('Cloning')
-    that = 'cd "%s"; git clone %s' % (FileSystem.dirname(dest), url)
-
-  # Do the deed
-  try:
-    std = Std()
-    sh(that, std=std, output=False)
-    if std.err and (std.err.find('No stash found.') == -1):
-      raise std.err
-  except:
-    # if puke.FileSystem.exists(dest):
-    #   puke.FileSystem.remove(dest)
-    console.error('Git operation failed! %s You need to manually fix or remove the directory.' % std.err)
 
 def fetchsvn(url, dest):
   System.check_package('svn')
@@ -104,7 +79,21 @@ def make(path, command):
   # elif type == 'sh':
 
 
-def buildone(tmp, category, name, version, resources, build, productions, destination, strict):
+# def build(owner, name, versions, tmp, destination):
+#   repo = gh.GitHelper(owner, name, tmp)
+#   repo.ensure()
+
+  # def __init__(self, owner, name, path):
+  # def checkout(self, ref):
+  # def getPath(self):
+
+
+
+def buildtravis(name, version, ref, travisd, tmp, destination):
+  # Dead dirty
+  Tools.JS_COMPRESSOR = "%s.js.compress" % sh("which puke", output = False).strip()
+
+def buildone(tmp, name, version, resources, build, productions, destination, strict):
   # Dead dirty
   Tools.JS_COMPRESSOR = "%s.js.compress" % sh("which puke", output = False).strip()
 

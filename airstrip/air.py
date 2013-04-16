@@ -1,6 +1,9 @@
 from puke import *
 import json
 import os
+import re
+from distutils import version
+from verlib import NormalizedVersion
 
 AIRSTRIP_ROOT = os.path.dirname(os.path.realpath(__file__))
 
@@ -12,15 +15,17 @@ PROJECT_YAWN_PATH = './airs'
 
 EMPTY_GLOBAL = """
       "description": "",
-      "tags": [],
-      "licences": [],
+      "keywords": [],
+      "author": [],
+      "licenses": [],
       "category": "library",
-      "home": "http://",
+      "homepage": "http://",
       "tools": [],
       "depends": {},
       "strict": true,
+      "git": "",
       "versions": {
-        "stable": {
+        "master": {
           "package": "", 
           "resources": {
           },
@@ -50,7 +55,7 @@ class Air():
     self.name = name
     self.hasGlobal = False
     self.yawn = json.loads("""{
-      "fancyName": "%s",
+      "name": "%s",
       %s""" % (name, EMPTY_GLOBAL))
 
     systemPath = FileSystem.join(AIRSTRIP_YAWN_PATH, '%s.json' % name)
@@ -94,7 +99,7 @@ class Air():
         # if no global data either, populate with yawn
         if not self.hasGlobal:
           self.local = json.loads("""{
-            "fancyName": "%s",
+            "name": "%s",
             %s""" % (self.name, EMPTY_GLOBAL))
         # if has global data, should start empty instead, as a version specialization
         else:
@@ -106,30 +111,42 @@ class Air():
     sh('open "%s"' % p)
     self.__init__(self.name)
 
-  def get(self, version, key):
-    if key == "name":
+  def get(self, version, key = False):
+    if key == "safename":
       return self.name
-    keys = ['fancyName', 'description', 'tags', 'strict', 'licences', 'category', 'tools', 'depends', 'package', 'resources', 'build', 'productions']
+    keys = ['name', 'homepage', 'git', 'description', 'author', 'keywords', 'strict', 'licenses', 'category', 'tools', 'depends', 'package', 'resources', 'build', 'productions']
+
     #, 'versions']
-    if not key in keys:
-      console.error('There is no such thing as %s' % key)
+    # if key and not key in keys:
+    #   console.error('There is no such thing as %s' % key)
 
     if self.hasGlobal and (version in self.yawn["versions"]):
       ref = self.yawn['versions'][version]
+      if "package.json" in ref and "component.json" in ref:
+        for i in ref["component.json"]:
+          ref["package.json"][i] = ref["component.json"][i]
       parent = self.yawn
     elif self.hasLocal and (version in self.local["versions"]):
       ref = self.local['versions'][version]
+      if "package.json" in ref and "component.json" in ref:
+        for i in ref["component.json"]:
+          ref["package.json"][i] = ref["component.json"][i]
       parent = self.local
     else:
       console.fail('The requested version (%s) does not exist' % version)
 
+    if not key:
+      return ref
     if key in ref:
       return ref[key]
+    if "package.json" in ref and key in ref["package.json"]:
+      return ref["package.json"][key]
+
     if not key in parent:
       if "branch" in ref:
         return self.get(ref["branch"], key)
       else:
-        console.error('No such key (%s)' % key)
+        console.warn('No such key (%s)' % key)
         return False
     return parent[key]
 
@@ -143,6 +160,22 @@ class Air():
         l1.append(v)
     return l1
 
+  # def latest(self):
+  #   v = self.versions()
+  #   for i in v:
+  #     v = i.lstrip("v")
+  #     better = re.sub(r"([0-9]+)[.]([0-9]+)[.]([0-9]+)(.*)$", r"\1 \2 \3 \4", v).split(" ")
+  #     print better
+      # try:
+      #   print NormalizedVersion(v)
+      # except:
+      #   print v.split('.')
+      #   print "WRONG version"
+# http://www.python.org/dev/peps/pep-0386/#normalizedversion
+      # version.StrictVersion('1.0.5') < version.StrictVersion('1.0.8')
+      # print version.StrictVersion(i)
+
+      # print better
     # if self.hasGlobal:
     #   if key in self.yawn:
     #     ref = self.yawn[key]
@@ -157,40 +190,4 @@ class Air():
     # return types[idx]
 
 
-  # yanks:
-#   PackageFancyName:
-#     Description: "long description"
-#     Tags: "tags"
-#   # License(s)
-#     License: "Apache"
-#   # Type (might impact destination)
-#     Type: "tooling"
-#   # Required tools to build
-#     Tools: ['rake', 'sh']
-#   # Dependency list
-#     Depends:
-#       FancyName: "min-version"
-#       OtherFancyName:
-#         min: "version"
-#         max: "version"
-#         recommended: "version"
-#   # Per-version descriptors
-#     Versions:
-#       whatever:
-#         Package: "package.json url"
-#         # Can override default
-#         Tools: 
-#         Depends: 
-#         License:
-#         Type:
-
-#         Resources:
-#           localname: "remote_url"
-#           otherlocalname: "remote_url"
-
-#         Build:
-#           command: ''
-
-#         Productions:
-#           destinationName: "buildedname"
 

@@ -14,7 +14,8 @@ if sys.argv[-1] == 'publish':
 os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 requires = [
-    'puke'
+    'puke',
+    'verlib'
 ]
 
 setup(
