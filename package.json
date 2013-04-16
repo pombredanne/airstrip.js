@@ -9,19 +9,19 @@
     {
       "name": "Mangled Deutz",
       "email": "dev@webitup.fr",
-      "web": "http://www.webitup.fr"
+      "url": "http://www.webitup.fr"
     }
   ],
   "contributors":[
     {
       "name": "Mangled Deutz",
       "email": "dev@webitup.fr",
-      "web": "http://www.webitup.fr"
+      "url": "http://www.webitup.fr"
     },
     {
       "name": "Raildecom",
       "email": "dev@webitup.fr",
-      "web": "http://www.webitup.fr"
+      "url": "http://www.webitup.fr"
     }
   ],
   "bugs": "https://github.com/jsBoot/airstrip.js/issues",

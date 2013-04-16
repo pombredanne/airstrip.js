@@ -1,4 +1,5 @@
 {
+    "nostrict": true,
     "productions": {
         "jasmine.js": "lib/jasmine-core/jasmine.js",
         "jasmine.css": "lib/jasmine-core/jasmine.css",

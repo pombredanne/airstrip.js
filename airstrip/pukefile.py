@@ -92,16 +92,24 @@ def show(name = False):
   if not yawn.Air.exists(name):
     console.fail('No library by that name (%s)!' % name) 
   a = yawn.Air(name)
+
+  nomasterhack = "master"
+  try:
+    a.get('master', 'name')
+  except:
+    nomasterhack = a.versions().pop()
+
+
   console.info('*********************')
-  console.info(a.get('master', 'name'))
+  console.info(a.get(nomasterhack, 'name'))
   console.info('*********************')
-  console.info(a.get('master', 'description'))
+  console.info(a.get(nomasterhack, 'description'))
   console.info('*********************')
   # console.info(' - Category: %s' % a.get('master', 'category'))
-  console.info(' - Keywords: %s' % a.get('master', 'keywords'))
-  console.info(' - Homepage: %s' % a.get('master', 'homepage'))
-  console.info(' - Author: %s' % a.get('master', 'author'))
-  console.info(' - Licenses: %s' % a.get('master', 'licenses'))
+  console.info(' - Keywords: %s' % a.get(nomasterhack, 'keywords'))
+  console.info(' - Homepage: %s' % a.get(nomasterhack, 'homepage'))
+  console.info(' - Author: %s' % a.get(nomasterhack, 'author'))
+  console.info(' - Licenses: %s' % a.get(nomasterhack, 'licenses'))
   # console.info(' - Required tools to build: %s' % a.get('master', 'tools'))
   console.info('*********************')
   console.info('Available versions:')
@@ -279,65 +287,72 @@ def buildit(yawnie, versions, tmp, dest):
     if yawnie.get(version, "devDependencies"):
       usenode = identified = True
 
-
-    usebundle = False
-    if "Gemfile" in tree:
-      usebundle = identified = True
-
-    userake = False
-    if "Rakefile" in tree:
-      userake = identified = True
-
-    usegrunt = False
-    if "Gruntfile.js" in tree:
-      usegrunt = identified = True
-
-    useant = False
-    if "build.xml" in tree:
-      useant = identified = True
-
-    usemake = False
-    if "Makefile" in tree:
-      usemake = identified = True
-
-    if usenode:
-      puke.sh('cd "%s"; npm install' % p)
-
-    if usebundle:
-      puke.sh('cd "%s"; bundle' % p, output = True)
-
-    if userake:
-      puke.sh('cd "%s"; rake' % p, output = True)
-
-    elif usegrunt:
-      puke.sh('cd "%s"; grunt' % p, output = True)
-
-    elif useant:
-      puke.sh('cd "%s"; ant' % p, output = True)
-
-    elif usemake:
-      puke.sh('cd "%s"; make' % p, output = True)
-
-    elif "build.sh" in tree:
-      identified = True
-      puke.sh('cd "%s"; ./build.sh' % p, output = True)
-
-    # Yepnope...
-    elif "compress" in tree:
-      identified = True
-      puke.sh('cd "%s"; ./compress' % p, output = True)
-
-
-    if usenode:
-      scripties = yawnie.get(version, "scripts")
-      if scripties:
-        for i in scripties:
-          if i in white:
-            puke.sh('cd "%s"; npm run-script %s' % (p, i))
-
-
     nob = yawnie.get(version, "nobuild")
-    if not nob and not identified:
+    if nob:
+      identified = True
+
+    if not nob:
+      usebundle = False
+      if "Gemfile" in tree:
+        usebundle = identified = True
+
+      userake = False
+      if "Rakefile" in tree:
+        userake = identified = True
+
+      usegrunt = False
+      if "Gruntfile.js" in tree:
+        usegrunt = identified = True
+
+      useant = False
+      if "build.xml" in tree:
+        useant = identified = True
+
+      usemake = False
+      if "Makefile" in tree:
+        usemake = identified = True
+
+      if usenode:
+        puke.sh('cd "%s"; npm install' % p)
+
+      if usebundle:
+        puke.sh('cd "%s"; bundle' % p, output = True)
+
+      if usegrunt:
+        puke.sh('cd "%s"; grunt' % p, output = True)
+
+      elif userake:
+        puke.sh('cd "%s"; rake' % p, output = True)
+
+      elif useant:
+        puke.sh('cd "%s"; ant' % p, output = True)
+
+      elif usemake:
+        puke.sh('cd "%s"; make' % p, output = True)
+
+      elif "build.sh" in tree:
+        identified = True
+        puke.sh('cd "%s"; ./build.sh' % p, output = True)
+
+      # Yepnope...
+      elif "compress" in tree:
+        identified = True
+        puke.sh('cd "%s"; ./compress' % p, output = True)
+
+      # ES5...
+      elif "minify" in tree:
+        identified = True
+        puke.sh('cd "%s"; ./minify' % p, output = True)
+
+      if usenode:
+        scripties = yawnie.get(version, "scripts")
+        if scripties:
+          for i in scripties:
+            if i in white:
+              puke.sh('cd "%s"; npm run-script %s' % (p, i))
+
+
+    if not identified:
       raise "DONT KNOW WHAT TO DO"
 
     productions = yawnie.get(version, "productions")
@@ -348,7 +363,7 @@ def buildit(yawnie, versions, tmp, dest):
       for item in productions:
         local = FileSystem.realpath(FileSystem.join(p, productions[item]))
         if not FileSystem.exists(local):
-          console.error("Missing production! %s" % productions[item])
+          console.error("Missing production! %s (%s)" % (productions[item], local))
         else:
           if FileSystem.isfile(local):
             FileSystem.copyfile(local, FileSystem.join(destination, item))
@@ -357,6 +372,7 @@ def buildit(yawnie, versions, tmp, dest):
 
 
 
+  nos = not yawnie.get(version, "nostrict")
   stuff = puke.FileList(dest, filter = "*.js", exclude = "*-min.js")
   puke.Tools.JS_COMPRESSOR = "%s.js.compress" % puke.sh("which puke", output = False).strip()
   for i in stuff.get():
@@ -364,21 +380,26 @@ def buildit(yawnie, versions, tmp, dest):
     if not FileSystem.exists(mined):
       print "Missing minified version %s %s" % (i, mined)
       # XXX strict will blow here
-      puke.minify(str(i), mined, strict = True)
+      puke.minify(str(i), mined, strict = nos)
 
 
-  puke.Tools.CSS_COMPRESSOR = "%s.css.compress" % puke.sh("which puke", output = False).strip()
-  stuff = puke.FileList(dest, filter = "*.css", exclude = "*-min.css")
-  for i in stuff.get():
-    mined = re.sub(r"(.*).css$", r"\1-min.css", i)
-    if not FileSystem.exists(mined):
-      print "Missing minified version %s %s" % (i, mined)
-      # XXX strict will blow here
-      try:
-        puke.minify(str(i), mined, strict = True)
-      except:
-        # Bootstrap fail on older versions
-        print "FAILED COMPRESSION %s" % i
+  # XXX too damn dangerous for the benefit - wontfix
+  # puke.Tools.CSS_COMPRESSOR = "%s.css.compress" % puke.sh("which puke", output = False).strip()
+  # stuff = puke.FileList(dest, filter = "*.css", exclude = "*-min.css")
+  # for i in stuff.get():
+  #   mined = re.sub(r"(.*).css$", r"\1-min.css", i)
+  #   if not FileSystem.exists(mined):
+  #     print "Missing minified version %s %s" % (i, mined)
+  #     # XXX strict will blow here
+  #     try:
+  #       puke.minify(str(i), mined, strict = True)
+  #     except:
+  #       # Bootstrap fail on older versions
+  #       print "FAILED COMPRESSION %s" % i
+
+
+
+
 
 
       # if local.split('.').pop().lower() == 'js':

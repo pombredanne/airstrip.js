@@ -2,8 +2,8 @@
 
     "nobuild": true,
     "productions": {
-        "head-min.js": "head.load.min.js",
-        "head.js": "head.load.js"
+        "head-min.js": "dist/head.load.min.js",
+        "head.js": "dist/head.load.js"
     }, 
 
     "git": "https://github.com/headjs/headjs", 
