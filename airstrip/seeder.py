@@ -2,6 +2,7 @@ from puke import *
 import json
 import os
 import datetime
+import re
 
 AIRSTRIP_ROOT = os.path.dirname(os.path.realpath(__file__))
 
@@ -36,7 +37,9 @@ class Seeder():
       gitdata.pop()
       gitdata = gitdata.pop().split('\t')
       gitdata = gitdata.pop().split('/')
-      gitdata = {'repo': gitdata.pop().rstrip('.git'), 'owner': gitdata.pop().split(':').pop()}
+
+      clean = re.sub('[.]git$', '', gitdata.pop())
+      gitdata = {'repo': clean, 'owner': gitdata.pop().split(':').pop()}
     else:
       gitdata = False
 

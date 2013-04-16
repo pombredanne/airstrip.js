@@ -46,6 +46,8 @@ class Helpers:
         pass
 
     # Map to older format for lazyness reasons :)
+    clean = re.sub('[.]git$', '', r['repositories'][0]["url"])
+
     r['yak'] = {
       "package": {
         "name": r["name"],
@@ -56,9 +58,10 @@ class Helpers:
         "copyright": 'All rights reserved <a href="http://www.webitup.fr">copyright %s</a>' % r["author"]
       },
       "git": {
-        "root": '%s/blob/master/src' % r['repositories'][0]["url"].rstrip('.git')
+        "root": '%s/blob/master/src' % clean)
       },
-      "paths": r["directories"]
+      "paths": r["directories"],
+      "config": r["config"]
     }
 
     r.yak('yak')
@@ -199,6 +202,8 @@ class Helpers:
       s.add('{PUKE-GIT-%s}' % key.replace('_', '-').upper(), value)
     for (key, value) in Yak.paths.items():
       s.add('{PUKE-%s-ROOT}' % key.replace('_', '-').upper(), value)
+    for (key, value) in Yak.config.items():
+      s.add('{PUKE-CONFIG-%s}' % key.replace('_', '-').upper(), value)
     return s
 
 
