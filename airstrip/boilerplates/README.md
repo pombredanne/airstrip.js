@@ -21,11 +21,6 @@ Solution
 
 Loren ipsum.
 
-How to use
--------------
-
-Loren ipsum.
-
 API
 -------------
 

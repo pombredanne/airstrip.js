@@ -11,6 +11,8 @@ class GitHelper():
     self.debug = False
 
   def __wrap__(self, path, command):
+    if FileSystem.realpath('.') == FileSystem.realpath(path):
+      console.fail('SOMETHING TERRIBLE WAS ABOUT TO HAPPEN %s' % path)
     std = Std()
     sh('cd "%s";' % path, std = std)
     if std.err:

@@ -1,7 +1,7 @@
 {
     "productions": {
-        "console-shim.js": "console-shim.js",
-        "console-shim-min.js": "console-shim-min.js"
+        "console.js": "console-shim.js",
+        "console-min.js": "console-shim-min.js"
     },
        
     "git": "https://github.com/kayahr/console-shim", 

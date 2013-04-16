@@ -133,7 +133,8 @@ class Air():
           ref["package.json"][i] = ref["component.json"][i]
       parent = self.local
     else:
-      console.fail('The requested version (%s) does not exist' % version)
+      console.error('The requested version (%s) does not exist' % version)
+      raise Exception("FAIL")
 
     if not key:
       return ref

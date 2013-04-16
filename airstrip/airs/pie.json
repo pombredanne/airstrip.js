@@ -1,7 +1,9 @@
 {
     "productions": {
-      "pie.htc": "PIE.htc",
-      "pie.js": "PIE.js"
+      "pie-min.htc": "build/PIE.htc",
+      "pie-min.js": "build/PIE.js",
+      "pie.htc": "build/PIE_uncompressed.htc",
+      "pie.js": "build/PIE_uncompressed.js"
     },
 
     "git": "https://github.com/lojjic/PIE", 

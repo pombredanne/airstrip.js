@@ -1,5 +1,5 @@
 {
-
+    "nobuild": true,
     "productions": {
         "json3.js": "lib/json3.js",
         "json3-min.js": "lib/json3.min.js"

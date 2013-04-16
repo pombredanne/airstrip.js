@@ -55,10 +55,11 @@ class Helpers:
       },
       "rights": {
         "license": '<a href="%s">%s</a>' % (r["licenses"][0]["url"], r["licenses"][0]["type"]),
-        "copyright": 'All rights reserved <a href="http://www.webitup.fr">copyright %s</a>' % r["author"]
+        "copyright": 'All rights reserved <a href="http://www.webitup.fr">copyright %s</a>' % r["author"],
+        "author": r["author"]
       },
       "git": {
-        "root": '%s/blob/master/src' % clean)
+        "root": '%s/blob/master/src' % clean
       },
       "paths": r["directories"],
       "config": r["config"]
@@ -183,7 +184,7 @@ class Helpers:
   @staticmethod
   def cleaner():
     for (key, path) in Yak.paths.items():
-      if not path == "src":
+      if not key == "src" and not key == "tests":
         resp = prompt('Delete %s? y/[N]' % path, 'N')
         if resp == 'y':
           try:
@@ -195,15 +196,15 @@ class Helpers:
   @staticmethod
   def replacer(s):
     for (key, value) in Yak.package.items():
-      s.add('{PUKE-PACKAGE-%s}' % key.replace('_', '-').upper(), value)
+      s.add('{PUKE-PACKAGE-%s}' % key.replace('_', '-').upper(), str(value))
     for (key, value) in Yak.rights.items():
-      s.add('{PUKE-RIGHTS-%s}' % key.replace('_', '-').upper(), value)
+      s.add('{PUKE-RIGHTS-%s}' % key.replace('_', '-').upper(), str(value))
     for (key, value) in Yak.git.items():
-      s.add('{PUKE-GIT-%s}' % key.replace('_', '-').upper(), value)
+      s.add('{PUKE-GIT-%s}' % key.replace('_', '-').upper(), str(value))
     for (key, value) in Yak.paths.items():
-      s.add('{PUKE-%s-ROOT}' % key.replace('_', '-').upper(), value)
+      s.add('{PUKE-%s-ROOT}' % key.replace('_', '-').upper(), str(value))
     for (key, value) in Yak.config.items():
-      s.add('{PUKE-CONFIG-%s}' % key.replace('_', '-').upper(), value)
+      s.add('{PUKE-CONFIG-%s}' % key.replace('_', '-').upper(), str(value))
     return s
 
 
@@ -341,6 +342,7 @@ Helpers.loadyanks()
       # else:
       #   console.info('Processing archive file')
       #   self.__dounpack(localtmp, puke.FileSystem.dirname(pwd))
+
 
 
 

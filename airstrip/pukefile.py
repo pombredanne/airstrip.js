@@ -124,13 +124,9 @@ def search():
 def seed(app = False, mobile = False):
   s = se.Seeder()
   s.project()
-  require('jasmine', 'master')
-  require('jasmine', 'v2.0.0.rc1')
-  require('jquery', 'master')
-  require('jquery', '1.9.1')
-  require('bootstrap', 'master')
-  require('bootstrap', 'v2.3.1')
-  build()
+  # XXX to be completed
+  executeTask('require', 'jasmine', 'master')
+  executeTask('build')
 
 
 
@@ -173,8 +169,15 @@ def build(name = False):
 
     yawnie = yawn.Air(name)
 
-    tmp = FileSystem.join(conftmp, yawnie.get("master", "safename"))
-    destination = FileSystem.join(confdestination, yawnie.get("master", "safename"))
+    nomasterhack = "master"
+    try:
+      yawnie.get('master', 'name')
+    except:
+      nomasterhack = yawnie.versions().pop()
+
+
+    tmp = FileSystem.join(conftmp, yawnie.get(nomasterhack, "safename"))
+    destination = FileSystem.join(confdestination, yawnie.get(nomasterhack, "safename"))
     # giti = yawnie.get('master', 'git')
     # Get each version informations json
     # vinfos = {}
@@ -217,8 +220,14 @@ def build(name = False):
 
       yawnie = yawn.Air(name)
 
-      tmp = FileSystem.join(conftmp, yawnie.get("master", "safename"))
-      destination = FileSystem.join(confdestination, yawnie.get("master", "safename"))
+      nomasterhack = "master"
+      try:
+        yawnie.get('master', 'name')
+      except:
+        nomasterhack = yawnie.versions().pop()
+
+      tmp = FileSystem.join(conftmp, yawnie.get(nomasterhack, "safename"))
+      destination = FileSystem.join(confdestination, yawnie.get(nomasterhack, "safename"))
       # giti = yawnie.get('master', 'git')
       # Get each version informations json
       # vinfos = {}
@@ -261,7 +270,13 @@ def buildit(yawnie, versions, tmp, dest):
 
   # XXX horked if a specific version has a specific (different) git url
 
-  repomanager = gh.GitHelper(yawnie.get('master', 'git'), tmp)
+  nomasterhack = "master"
+  try:
+    yawnie.get('master', 'name')
+  except:
+    nomasterhack = yawnie.versions().pop()
+
+  repomanager = gh.GitHelper(yawnie.get(nomasterhack, 'git'), tmp)
   repomanager.ensure()
   p = repomanager.getPath()
   white = ["build", "dist", "test", "tests"]
