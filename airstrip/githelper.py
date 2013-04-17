@@ -1,3 +1,5 @@
+# -*- coding: utf8 -*-
+
 from puke import *
 import re
 

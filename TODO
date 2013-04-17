@@ -1,0 +1,7 @@
+- "seed" should use a .airstriprc profile file to store defaults for commonly used stuff
+
+- "allow" latest version tag
+- integrate more licenses from the actual airs
+- implement "check" to verify if there is a more recent version / commit for the given repo
+- "unparsable version", "sorted versions" (use dates?) 
+- have a smarter search

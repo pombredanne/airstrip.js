@@ -1,8 +1,15 @@
+# -*- coding: utf8 -*-
+
 from puke import *
 import json
 import os
 import datetime
 import re
+
+import airrc
+import airlicenses
+
+# import airrc
 
 AIRSTRIP_ROOT = os.path.dirname(os.path.realpath(__file__))
 
@@ -11,21 +18,11 @@ class Seeder():
     pass
 
   def project(self):
-    defaultname = FileSystem.basename(FileSystem.realpath('.'))
-    defaultusername = Env.get("PUKE_LOGIN", System.LOGIN)
-    os = Env.get("PUKE_OS", System.OS).lower()
+    self.rc = airrc.AirRC()
 
-    # Licenses
-    lic = FileList(FileSystem.join(AIRSTRIP_ROOT, 'boilerplates'), filter="*license-plate*")
-    licenses = {}
-    keys = []
-    for i in lic.get():
-      licensekey = i.split('.').pop().upper()
-      u = FileSystem.readfile(i).split('\n\n')
-      licenseurl = u.pop(0)
-      licensecontent = ('\n\n').join(u)
-      licenses[licensekey] = {"url": licenseurl, "content": licensecontent}
-      keys.append(licensekey)
+
+    console.info("""This will seed a project in the current working directory.
+You can leave any of the following informations blank, or later edit the generated files to fit your mileage.""")
 
     # Existing git repo
     std = Std()
@@ -41,63 +38,89 @@ class Seeder():
       clean = re.sub('[.]git$', '', gitdata.pop())
       gitdata = {'repo': clean, 'owner': gitdata.pop().split(':').pop()}
     else:
+      console.error('Current directory is not a git repository. Git data will be missing.')
       gitdata = False
 
-    prompt("""This will create a new project in the current working directory.
-You can leave any of the following informations blank, or later edit the generated files to fit your mileage.
-Hit enter to confirm.""")
-
-
     # User-provided informations
+    defaultname = FileSystem.basename(FileSystem.realpath('.'))
     name = prompt("Pick a fancy project name (default %s)" % defaultname, defaultname).strip()
     description = prompt("Short description for your project").strip()
-    keywords = prompt("Keywords for your project (coma separated)").strip()
+    k = prompt("Keywords for your project (comma separated)").strip().split(',')
+    keywords = []
+    for i in k:
+      i = i.lower().strip()
+      if i:
+        keywords.append(i)
+    keywords = json.dumps(keywords)
 
 
-    if gitdata:
-      prompt("Automatically detected github location %s. If this is not correct, break now and change that!" % gitdata)
+    # Default suggestions?
+    yes = prompt("""Other informations can be automatically populated from your defaults (.airstriprc).
+Would you like that (default, "y"), or would you prefer to review them one by one ("N")?""", "y")
+
+    if not self.rc.get('you')['name']:
+      self.rc.get('you')['name'] = Env.get("PUKE_LOGIN", System.LOGIN)
+
+    you = self.rc.get('you').copy()
+    company = self.rc.get('company').copy()
+    homepage = company['url']
+    license = self.rc.get('license')
+    ln = self.rc.get('ln')
+    git = self.rc.get('git')
+
+    airl = airlicenses.AirLicenses()
+    if yes.lower() == 'y':
+      if not gitdata:
+        gitdata = {'repo': git, 'owner': defaultname}
     else:
-      gitdata = prompt("Github owner/repositoryname (eg: toto/superproject):").strip()
-      if gitdata:
-        gitdata = gitdata.split('/')
-        gitdata = {'repo': gitdata.pop(), 'owner': gitdata.pop()}
-      else:
-        gitdata = False
+      company["name"] = prompt("The author name of the project and copyright owner (default: %s)" % company["name"], company["name"]).strip()
+      company["mail"] = prompt("Author email (default: %s)" % company["mail"], company["mail"]).strip()
+      company["url"] = prompt("Author url (default: %s)" % company["url"], company["url"]).strip()
 
-    ln = prompt("Project favorite language (default: en-us)", "en-us").strip()
-    license = prompt("License for your project (choose from: %s, default: MIT)" % keys, 'MIT').strip()
-    license = license.upper()
-    homepage = prompt("Homepage for your project").strip()
+      you["name"] = prompt("The principal package maintainer name of the project (default: %s)" % you["name"], you["name"]).strip()
+      you["mail"] = prompt("Maintainer email (default: %s)" % you["mail"], you["mail"]).strip()
+      you["url"] = prompt("Maintainer url (default: %s)" % you["url"], you["url"]).strip()
 
-    company = prompt("Your company name (or your name) as a copyright holder").strip()
-    yourname = prompt("Your developer name (default %s)" % defaultusername, defaultusername).strip()
-    yourmail = prompt("Your email").strip()
-    yourwebsite = prompt("Your website / twitter / whatever").strip()
+      keys = airl.list()
+      seg = prompt("License for your project (choose from: %s, default: %s)" % (keys, license or 'MIT'), license or 'MIT').strip().upper()
+      if not seg in keys:
+        seg = license or 'MIT'
+        console.error('Unknown license, fallbacking to %s' % seg)
+      license = seg
 
+
+      seg = prompt("License for your project (choose from: %s, default: %s)" % (keys, license or 'MIT'), license or 'MIT').strip().upper()
+      ln = prompt("Language for your project (default: %s)" % ln, ln).strip()
+
+      homepage = prompt("Homepage for your project? (default: %s)" % homepage, homepage).strip()
+
+      if not gitdata:
+        gitdata = prompt("Github owner/repositoryname (default: %s/%s)" % (git, defaultname), "%s/%s" % (git, defaultname)).strip()
+        if gitdata:
+          gitdata = gitdata.split('/')
+          gitdata = {'repo': gitdata.pop(), 'owner': gitdata.pop()}
+        else:
+          gitdata = False
+
+    # Preparing replacement patterns from provided information
     s = Sed()
     s.add('{{miniboot.name}}', name)
     s.add('{{miniboot.ln}}', ln)
     s.add('{{miniboot.description}}', description)
-    s.add('{{miniboot.keywords}}', json.dumps(keywords.split(',')))
-    s.add('{{miniboot.companyname}}', company)
+    s.add('{{miniboot.keywords}}', keywords)
+    s.add('{{miniboot.homepage}}', homepage)
+
+    s.add('{{miniboot.you.name}}', you['name'])
+    s.add('{{miniboot.you.mail}}', you['mail'])
+    s.add('{{miniboot.you.web}}', you['url'])
+    s.add('{{miniboot.company.name}}', company['name'])
+    s.add('{{miniboot.company.mail}}', company['mail'])
+    s.add('{{miniboot.company.web}}', company['url'])
+
     now = datetime.datetime.now()
     s.add('{{miniboot.year}}', str(now.year))
 
-    s.add('{{miniboot.you.name}}', yourname)
-    s.add('{{miniboot.you.mail}}', yourmail)
-    s.add('{{miniboot.you.web}}', yourwebsite)
-
     s.add('{{miniboot.path}}', FileSystem.realpath('.'))
-
-    # print name
-    # print ln
-    # print description
-    # print str(keywords.split(','))
-    # print company
-    # print now.year
-    # print yourname
-    # print yourmail
-    # print yourwebsite
 
     track = ''
     rep = ''
@@ -108,34 +131,19 @@ Hit enter to confirm.""")
     s.add('{{miniboot.tracker}}', track)
     s.add('{{miniboot.repository}}', rep)
 
-    s.add('{{miniboot.homepage}}', homepage)
-
-    lurl = ''
-    lname = ''
-    if not license in keys:
-      console.warn('Ignoring unknown license %s' % license)
-    else:
-      lurl = licenses[license]["url"]
-      lname = license
+    lurl = airl.get(license)['url']
+    lname = license
 
     s.add('{{miniboot.license.name}}', lname)
     s.add('{{miniboot.license.url}}', lurl)
 
+    items = FileList(FileSystem.join(AIRSTRIP_ROOT, 'boilerplates'))
+    deepcopy(items, '.', replace = s)
 
-    for item in ['.gitignore', '.pukeignore', '.jshintrc', 'README.md', 'LICENSE.md', 'package.json',
-        'project.sublime-project', 'pukefile.py', 'helpers.py', 'icon.png']:
-      combine(FileSystem.join(AIRSTRIP_ROOT, 'boilerplates', item), item, replace=s)
+    d = FileSystem.readfile('LICENSE.md')
+    FileSystem.writefile('LICENSE.md', '%s\n\n%s' % (d, airl.get(license)['content']))
 
-
-    if license in keys:
-      d = FileSystem.readfile('LICENSE.md')
-      FileSystem.writefile('LICENSE.md', '%s\n\n%s' % (d, licenses[license]["content"]))
-
-    FileSystem.writefile('package-%s-%s.json' % (Env.get("PUKE_LOGIN", System.LOGIN), Env.get("PUKE_OS", System.OS).lower()), '{}')
+    FileSystem.writefile('package-%s-%s.json' % (System.LOGIN, System.OS.lower()), '{}')
     deepcopy(FileList(FileSystem.join(AIRSTRIP_ROOT, 'boilerplates', 'src')), './src', replace = s)
-    # combine(FileSystem.join(AIRSTRIP_ROOT, 'boilerplates', 'src', 'index.html'), './src/index.html', replace = s)
-    # FileSystem.makedir('src')
 
-  # puke.sh("touch pukefile.py")
-  # puke.sh("touch %s.sublime-project")
 

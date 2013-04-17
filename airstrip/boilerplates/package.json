@@ -4,7 +4,11 @@
 
   "description": "{{miniboot.description}}",
   "keywords": {{miniboot.keywords}},
-  "author": "{{miniboot.companyname}}",
+  "author": {
+    "name": "{{miniboot.company.name}}",
+    "email": "{{miniboot.company.mail}}",
+    "url": "{{miniboot.company.web}}"
+  },
   "maintainers": [
     {
       "name": "{{miniboot.you.name}}",

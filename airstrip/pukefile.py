@@ -35,6 +35,24 @@ import github as ge
 global se
 import seeder as se
 
+global lic
+import airlicenses as lic
+
+
+@task("Manage available airstrip licenses for projects")
+def license(command = False, key = False):
+  airlic = lic.AirLicenses()
+  if not command or command == 'list':
+    print airlic.list()
+  elif command == 'edit':
+    airlic.edit(key)
+  else:
+    d = airlic.get(command)
+    print "License name: %s" % command.upper()
+    print "License url: %s" % d["url"]
+    print "License text: %s" % d["content"]
+
+
 
 @task("Show current configuration details (airstrip use), or set a configuration flag (airstrip use key value)")
 def use(key = False, value = False):
@@ -152,6 +170,10 @@ def list():
   for i in l.get():
     print i.split('/').pop().split('.').pop(0)
 
+  l = puke.FileList('airs', filter = "*.json")
+  for i in l.get():
+    print i.split('/').pop().split('.').pop(0)
+
 
 @task("Search for a given library")
 # XXX this is dumb for now
@@ -185,6 +207,27 @@ def init(owner, repo, name = False):
   # g.retrieve("necolas", "normalize.css", "airstrip/airs", "normalize")
   # # g.retrieve("madrobby", "zepto", "airstrip/airs", "zepto")
 
+@task("Refresh all airs")
+def reinit():
+  g = ge.GitHubInit()
+
+  p = os.path.dirname(os.path.realpath(__file__))
+  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+  for i in l.get():
+    name = i.split('/').pop().split('.').pop(0)
+    v = json.loads(puke.FileSystem.readfile(i))['git'].split('/')
+    repo = v.pop()
+    owner = v.pop()
+    # print owner, repo, name
+    g.retrieve(owner, repo, "airs", name)
+
+  l = puke.FileList('airs', filter = "*.json")
+  for i in l.get():
+    name = i.split('/').pop().split('.').pop(0)
+    v = json.loads(puke.FileSystem.readfile(i))['git'].split('/')
+    repo = v.pop()
+    owner = v.pop()
+    g.retrieve(owner, repo, "airs", name)
 
 
 @task("Build the list of required libraries, or a specifically required library")
