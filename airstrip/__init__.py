@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'airstrip'
-__version__ = '2.0.0.rc1'
+__version__ = '2.0.0-rc.1'
 __build__ = 0x001400
 __author__ = 'WebItUp'
 __license__ = 'MIT'
