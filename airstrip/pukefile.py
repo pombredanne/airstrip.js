@@ -2,7 +2,7 @@
 # -*- coding: utf8 -*-
 from puke.Task import task
 global console, FileSystem
-from puke import console, FileSystem, sh
+from puke import console, FileSystem, sh, deepcopy
 
 # import airfile
 global re
@@ -307,6 +307,10 @@ def buildit(yawnie, versions, tmp, dest):
       identified = True
 
     if not nob:
+      usepuke = False
+      if "pukefile.py" in tree:
+        usepuke = identified = True
+
       usebundle = False
       if "Gemfile" in tree:
         usebundle = identified = True
@@ -333,7 +337,9 @@ def buildit(yawnie, versions, tmp, dest):
       if usebundle:
         puke.sh('cd "%s"; bundle' % p, output = True)
 
-      if usegrunt:
+      if usepuke:
+        puke.sh('cd "%s"; puke all' % p, output = True)
+      elif usegrunt:
         puke.sh('cd "%s"; grunt' % p, output = True)
 
       elif userake:
@@ -383,7 +389,7 @@ def buildit(yawnie, versions, tmp, dest):
           if FileSystem.isfile(local):
             FileSystem.copyfile(local, FileSystem.join(destination, item))
           else:
-            FileSystem.deepcopy(FileList(local), FileSystem.join(destination, item))
+            puke.deepcopy(puke.FileList(local), FileSystem.join(destination, item))
 
 
 

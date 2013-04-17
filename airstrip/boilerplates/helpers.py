@@ -51,7 +51,8 @@ class Helpers:
     r['yak'] = {
       "package": {
         "name": r["name"],
-        "version": r["version"]
+        "version": r["version"],
+        "homepage": r["homepage"]
       },
       "rights": {
         "license": '<a href="%s">%s</a>' % (r["licenses"][0]["url"], r["licenses"][0]["type"]),

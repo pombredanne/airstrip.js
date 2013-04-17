@@ -67,7 +67,7 @@ def tests():
   sed = Sed()
   help.replacer(sed)
 
-  list = FileList(Yak.paths['tests'], filter="*.js,*.html", exclude="*xxx*")
+  list = FileList(Yak.paths['tests'], filter="*.js,*.html,*.css")
   deepcopy(list, Yak.paths['build'] + '/tests', replace=sed)
 
 
@@ -89,4 +89,4 @@ def deploy():
   # Sites or apps dont
   help.deployer(Yak.paths['build'], False)
   # In case you wanna deploy dependencies as well
-  help.deployer('dependencies', False)
+  help.deployer('dependencies', False, 'dependencies')

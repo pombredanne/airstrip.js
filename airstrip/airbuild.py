@@ -116,7 +116,7 @@ def buildone(tmp, name, version, resources, build, productions, destination, str
       if FileSystem.isfile(local):
         FileSystem.copyfile(local, FileSystem.join(destination, item))
       else:
-        FileSystem.deepcopy(FileList(local), FileSystem.join(destination, item))
+        deepcopy(FileList(local), FileSystem.join(destination, item))
       if local.split('.').pop().lower() == 'js':
         strict = True
         minify(str(local), re.sub(r"(.*).js$", r"\1-min.js", local), strict = strict)
@@ -127,7 +127,7 @@ def buildone(tmp, name, version, resources, build, productions, destination, str
       if FileSystem.isfile(local):
         FileSystem.copyfile(local, FileSystem.join(destination, item))
       else:
-        FileSystem.deepcopy(FileList(local), FileSystem.join(destination, item))
+        deepcopy(FileList(local), FileSystem.join(destination, item))
       if local.split('.').pop().lower() == 'js':
         minify(str(local), re.sub(r"(.*).js$", r"\1-min.js", local), strict = strict)
         FileSystem.copyfile(re.sub(r"(.*).js$", r"\1-min.js", local), FileSystem.join(destination, re.sub(r"(.*).js$", r"\1-min.js", item)))
