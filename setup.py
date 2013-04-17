@@ -21,7 +21,7 @@ requires = [
 setup(
     name='AirStrip',
     version=airstrip.__version__,
-    description='',
+    description='Third-party js dependencies manager',
     long_description=open('README.md').read(),
     author='WebItUp',
     author_email='tech@webitup.fr',
