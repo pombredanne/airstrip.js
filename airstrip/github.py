@@ -149,7 +149,10 @@ class GitHubInit():
           try:
             tags[tag][item["path"].lower()] = json.loads(d)
           except:
-            tags[tag][item["path"].lower()] = yaml.load(d)
+            try:
+              tags[tag][item["path"].lower()] = yaml.load(d)
+            except:
+              pass
         elif "url" in item:
           tags[tag]["tree"][item["path"]] = item["url"]
 
