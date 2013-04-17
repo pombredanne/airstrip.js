@@ -1,10 +1,9 @@
 {
+    "git": "https://github.com/wycats/handlebars.js", 
     "productions": {
-        "handlebars.runtime.js": "dist/handlebars.runtime.js",
+        "handlebars.runtime.js": "dist/handlebars.runtime.js", 
         "handlebars.js": "dist/handlebars.js"
     }, 
-
-    "git": "https://github.com/wycats/handlebars.js", 
     "versions": {
         "v1.0.6": {
             "package.json": {
@@ -54,6 +53,10 @@
                 ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/859ee0306d51a34435efd576918838a605aadb8e", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/e85a525a5b8c4c069cd724bcf6e5bb61d9d91607"
+            }, 
+            "date": {
+                "commited": "2012-07-23T20:40:07Z", 
+                "authored": "2012-07-23T20:40:07Z"
             }
         }, 
         "1.0.0.beta.1": {
@@ -74,6 +77,10 @@
                 "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/269aba251aaa10caeac20c81e457f5e45da31139", 
                 "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6b9ac11e3435ead41048fe0e406b2231821f79a6", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/76bf716698f5aa4d60ff1bba6f4669be99e566ea"
+            }, 
+            "date": {
+                "commited": "2011-05-04T03:39:24Z", 
+                "authored": "2011-05-04T03:39:24Z"
             }
         }, 
         "1.0.rc.1": {
@@ -124,6 +131,10 @@
                 ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/86d283e97b73b19e4e4d00807d2624fc5d162c4f", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/5e32fc19649169135cf03b06c44bf295bd74021d"
+            }, 
+            "date": {
+                "commited": "2012-09-16T04:11:36Z", 
+                "authored": "2012-09-16T03:53:11Z"
             }
         }, 
         "1.0.rc.2": {
@@ -179,6 +190,10 @@
                 "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/e7af845850345fde2ab4110295915d062c0f942e", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/83b00108398321c52f8208b8eaa7ae645d74071d", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/37ec1cbb5d3d45ab59be85b9952f720a285032f1"
+            }, 
+            "date": {
+                "commited": "2013-01-19T01:13:40Z", 
+                "authored": "2013-01-19T01:13:40Z"
             }
         }, 
         "v1.0.9": {
@@ -234,6 +249,10 @@
                 "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/bfdf3a86bafdb0f57a2c098f6da21d1c531cc861", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/83b00108398321c52f8208b8eaa7ae645d74071d", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/72cb62374c50d20ddab15ec7767b66827451eae2"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.8": {
@@ -289,6 +308,10 @@
                 "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/e7af845850345fde2ab4110295915d062c0f942e", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/83b00108398321c52f8208b8eaa7ae645d74071d", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/37ec1cbb5d3d45ab59be85b9952f720a285032f1"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.6beta": {
@@ -334,6 +357,10 @@
                 ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/859ee0306d51a34435efd576918838a605aadb8e", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/f1846e45146221d5f4de7ae2c8fa83bde14782ce"
+            }, 
+            "date": {
+                "commited": "2012-07-23T15:36:13Z", 
+                "authored": "2012-07-23T15:36:13Z"
             }
         }, 
         "v1.0.10": {
@@ -390,6 +417,10 @@
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/3de7884799dff2c82565ec221f31dcb3ee0cd8af", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/7dc17c4761456857a4bacc461fb32efbac4ee877", 
                 "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.0-rc.3": {
@@ -445,6 +476,10 @@
                 "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/ae3c472447a2c5f29694b9fffc603b760d4e3f30", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/83b00108398321c52f8208b8eaa7ae645d74071d", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/72cb62374c50d20ddab15ec7767b66827451eae2"
+            }, 
+            "date": {
+                "commited": "2013-02-15T05:58:20Z", 
+                "authored": "2013-02-15T05:58:20Z"
             }
         }, 
         "master": {
@@ -501,6 +536,10 @@
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/649705476d8338675fba024d5b813848079e821e", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/2b15f7da17450dfc4a4b7dfc5d4212fa0a18e297", 
                 "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
+            }, 
+            "date": {
+                "commited": "2013-04-08T17:41:08Z", 
+                "authored": "2013-04-08T17:41:08Z"
             }
         }, 
         "0.9.0.pre.4": {
@@ -520,6 +559,10 @@
                 "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/269aba251aaa10caeac20c81e457f5e45da31139", 
                 "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/d78f1acb7deff783165f2e068a71d7fd193bf0fe", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/1fd7cdef49c9b945900884b4998b7de8478de192"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.6-2": {
@@ -570,6 +613,10 @@
                 ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
                 "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/859ee0306d51a34435efd576918838a605aadb8e", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/46eec71cebd59a025e4700e63bfff225a819e357"
+            }, 
+            "date": {
+                "commited": "2012-07-31T16:50:55Z", 
+                "authored": "2012-07-31T16:50:55Z"
             }
         }, 
         "v1.0.5beta": {
@@ -612,6 +659,10 @@
                 "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/7d64fc9ae053b9435661147a801ec0962a181ff2", 
                 ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/5c49ba1b203d3e578d555857dda925d3bd9c4169", 
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/b41019b4a9214c30586b1f4f51046229a30208a1"
+            }, 
+            "date": {
+                "commited": "2012-02-09T17:06:11Z", 
+                "authored": "2012-02-09T17:06:11Z"
             }
         }
     }

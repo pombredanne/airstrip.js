@@ -1,9 +1,9 @@
 {
-    "productions": {
-        "jquery-min.js": "dist/jquery.min.js", 
-        "jquery.js": "dist/jquery.js"
-    }, 
     "git": "https://github.com/jquery/jquery", 
+    "productions": {
+        "jquery.js": "dist/jquery.js", 
+        "jquery-min.js": "dist/jquery.min.js"
+    }, 
     "versions": {
         "1.0.4": {
             "package.json": {
@@ -22,6 +22,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/59dcbbae71421da96d9bf5b8412e6ca003950a79", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2006-12-13T01:23:23Z", 
+                "authored": "2006-12-13T01:23:23Z"
             }
         }, 
         "1.0.1": {
@@ -39,6 +43,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/f4030bdf2c95a56a169c88b03785d5ff0514c89e", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2006-08-31T17:26:31Z", 
+                "authored": "2006-08-31T17:26:31Z"
             }
         }, 
         "1.0.2": {
@@ -57,6 +65,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/9f4e7db0994947ae5028c1ad828d0ee4799b9622", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2006-10-10T01:59:20Z", 
+                "authored": "2006-10-10T01:59:20Z"
             }
         }, 
         "1.0.3": {
@@ -75,6 +87,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/272b8760313cb81a29bd98fb467dbfc0892d79f6", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2006-10-28T03:02:47Z", 
+                "authored": "2006-10-28T03:02:47Z"
             }
         }, 
         "1.6b1": {
@@ -97,6 +113,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/5d147a5557cde76c841a762e125339d5b4bdc3ae", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/7b3984b090374a2c0ffb16060223b45e5d659810"
+            }, 
+            "date": {
+                "commited": "2011-04-14T20:29:14Z", 
+                "authored": "2011-04-14T20:29:14Z"
             }
         }, 
         "1.4a1": {
@@ -120,6 +140,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/ffd7ddfce884440f87f3ec7eda4adc6ab83eab90", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/02741776f31e0c381e0ef78c8e43c2ac83d8918a"
+            }, 
+            "date": {
+                "commited": "2009-12-04T17:51:47Z", 
+                "authored": "2009-12-04T17:51:47Z"
             }
         }, 
         "1.1.3.1": {
@@ -139,6 +163,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/93255a1aa3a62ce12e41d60a38f0bc0d1946a91c", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-07-05T04:43:24Z", 
+                "authored": "2007-07-05T04:43:24Z"
             }
         }, 
         "1.0a": {
@@ -160,6 +188,10 @@
                 "form": "https://api.github.com/repos/jquery/jquery/git/trees/9b845175114bf4ee934aa559706a25a54aaa7b38", 
                 "build.sh": "https://api.github.com/repos/jquery/jquery/git/blobs/c396887935cd6735936bc413e7c6735182235fa6", 
                 "event": "https://api.github.com/repos/jquery/jquery/git/trees/3cff8b259360010c869ec239e4f8e0e9bd7099c6"
+            }, 
+            "date": {
+                "commited": "2006-07-01T14:05:50Z", 
+                "authored": "2006-07-01T14:05:50Z"
             }
         }, 
         "1.6.3": {
@@ -182,6 +214,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/8c4b91cb605ffea7059284a3cb75a1dad60c3897"
+            }, 
+            "date": {
+                "commited": "2011-09-01T15:40:27Z", 
+                "authored": "2011-09-01T15:40:27Z"
             }
         }, 
         "1.1.3a": {
@@ -201,6 +237,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/3ee3f3e15a862b230a1fcbd217f995c06c8499bd", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-05-21T00:48:44Z", 
+                "authored": "2007-05-21T00:48:44Z"
             }
         }, 
         "1.6.1": {
@@ -223,6 +263,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/00df265cea90dc7ef83b7a8119f569df1a564ef0"
+            }, 
+            "date": {
+                "commited": "2011-05-12T19:04:36Z", 
+                "authored": "2011-05-12T19:04:36Z"
             }
         }, 
         "1.9.0b1": {
@@ -275,6 +319,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6eba3ba5228826f448684116cb219e335963ac4d", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/c81a36b48fb9f86ae606e0c00ac6801dd75abcf5"
+            }, 
+            "date": {
+                "commited": "2012-12-17T00:54:45Z", 
+                "authored": "2012-12-17T00:54:45Z"
             }
         }, 
         "1.6.4": {
@@ -297,6 +345,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/8c4b91cb605ffea7059284a3cb75a1dad60c3897"
+            }, 
+            "date": {
+                "commited": "2011-09-12T22:54:48Z", 
+                "authored": "2011-09-12T22:54:48Z"
             }
         }, 
         "1.7.2rc1": {
@@ -319,6 +371,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/ad38c228b34da724f41089f5295b19ed1c114ace", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/522b7b5053fa38d6f478b112e960312aed0c44fa"
+            }, 
+            "date": {
+                "commited": "2012-03-09T18:42:24Z", 
+                "authored": "2012-03-09T18:42:24Z"
             }
         }, 
         "1.6.1rc1": {
@@ -341,6 +397,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/c52e4a4cb26d6332ff553017580107c6e284e85c"
+            }, 
+            "date": {
+                "commited": "2011-05-10T17:50:35Z", 
+                "authored": "2011-05-10T17:50:35Z"
             }
         }, 
         "2.0.0-beta3": {
@@ -398,6 +458,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/d58596b2eb30e936b8b21abc5f16c4cdbbc0e904", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/89a57e6d10ed6d51702b2519fb303cf457d49911", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/94d96efb49b9c79a4cd3749f0c0539d1fa04b7b2"
+            }, 
+            "date": {
+                "commited": "2013-04-09T12:10:08Z", 
+                "authored": "2013-04-09T12:10:08Z"
             }
         }, 
         "1.6.2": {
@@ -420,6 +484,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/3c930e8d558556f978ec7effb3ea6062dadce4f2"
+            }, 
+            "date": {
+                "commited": "2011-06-30T18:16:56Z", 
+                "authored": "2011-06-30T18:16:56Z"
             }
         }, 
         "1.6.3rc1": {
@@ -442,6 +510,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/8c4b91cb605ffea7059284a3cb75a1dad60c3897"
+            }, 
+            "date": {
+                "commited": "2011-08-29T17:38:26Z", 
+                "authored": "2011-08-29T17:38:26Z"
             }
         }, 
         "1.7.2b1": {
@@ -464,6 +536,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/ad38c228b34da724f41089f5295b19ed1c114ace", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/522b7b5053fa38d6f478b112e960312aed0c44fa"
+            }, 
+            "date": {
+                "commited": "2012-02-01T01:11:27Z", 
+                "authored": "2012-02-01T01:11:27Z"
             }
         }, 
         "1.3rc1": {
@@ -485,6 +561,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2009-01-12T02:05:50Z", 
+                "authored": "2009-01-12T02:05:50Z"
             }
         }, 
         "1.7.2": {
@@ -507,6 +587,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/ad38c228b34da724f41089f5295b19ed1c114ace", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/ca82b653e2b0e7fd13b692d84dc1a7041b02fe18"
+            }, 
+            "date": {
+                "commited": "2012-03-21T19:46:34Z", 
+                "authored": "2012-03-21T19:46:34Z"
             }
         }, 
         "1.1b": {
@@ -526,6 +610,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/33dd6cc8dec0e5cac4ea52d2f898b71ff4188674", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2007-01-11T07:41:56Z", 
+                "authored": "2007-01-11T07:41:56Z"
             }
         }, 
         "1.8.2": {
@@ -578,6 +666,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/76d5c3406d74a395d0644e67692038c5d691d45c", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/e9f7363f99e1c5241349bbc9fe61155bec8d8f68"
+            }, 
+            "date": {
+                "commited": "2012-09-21T01:12:38Z", 
+                "authored": "2012-09-21T01:12:38Z"
             }
         }, 
         "1.1a": {
@@ -597,6 +689,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/30ce1e17e7c021de8703b6652111dc86ff9b872f", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2007-01-08T04:51:39Z", 
+                "authored": "2007-01-08T04:51:39Z"
             }
         }, 
         "1.9.0rc1": {
@@ -656,6 +752,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6eba3ba5228826f448684116cb219e335963ac4d", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/a589cb0429ae2b1898d7939906a8ceb1e160953b"
+            }, 
+            "date": {
+                "commited": "2013-01-09T02:06:04Z", 
+                "authored": "2013-01-09T02:06:04Z"
             }
         }, 
         "1.4rc1": {
@@ -679,6 +779,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/ffd7ddfce884440f87f3ec7eda4adc6ab83eab90", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6e32fdfe00b091f99b2588c4e3207c7e2cbeea96"
+            }, 
+            "date": {
+                "commited": "2010-01-12T16:06:32Z", 
+                "authored": "2010-01-12T16:06:32Z"
             }
         }, 
         "2.0.0b2": {
@@ -734,6 +838,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/bce5dad5e7984c5cee14c0a118882f8693e7cc8a", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/573c68502205fdccf490c683b5bd108ec7af154e", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/dd4ad74f5cf0ef979c3c5ef353cc4f5485edf74a"
+            }, 
+            "date": {
+                "commited": "2013-03-01T18:50:10Z", 
+                "authored": "2013-03-01T18:50:10Z"
             }
         }, 
         "2.0.0b1": {
@@ -793,6 +901,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/cae6f40f15d4b6c51d89ba7deb1724cdb2899b8e", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/dd4ad74f5cf0ef979c3c5ef353cc4f5485edf74a"
+            }, 
+            "date": {
+                "commited": "2013-01-15T04:19:18Z", 
+                "authored": "2013-01-15T04:19:18Z"
             }
         }, 
         "1.6rc1": {
@@ -815,6 +927,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/5d147a5557cde76c841a762e125339d5b4bdc3ae", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/9736f1559cfe21a5068f7e8b842b00c35fb232c2"
+            }, 
+            "date": {
+                "commited": "2011-04-26T20:21:45Z", 
+                "authored": "2011-04-26T20:21:45Z"
             }
         }, 
         "1.8rc1": {
@@ -871,6 +987,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/fd249681ebfcbf31ba8990164115a0bc76c37f2d", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/d032f3c56a332e813533f0d58222c82643e9278e"
+            }, 
+            "date": {
+                "commited": "2012-07-27T02:26:25Z", 
+                "authored": "2012-07-27T02:26:25Z"
             }
         }, 
         "1.6.4rc1": {
@@ -893,6 +1013,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/8c4b91cb605ffea7059284a3cb75a1dad60c3897"
+            }, 
+            "date": {
+                "commited": "2011-09-09T14:54:43Z", 
+                "authored": "2011-09-09T14:54:43Z"
             }
         }, 
         "1.7rc1": {
@@ -915,6 +1039,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/cd0be57dd60144c76ce4b845a0c8ca326051c9a9"
+            }, 
+            "date": {
+                "commited": "2011-10-24T22:18:17Z", 
+                "authored": "2011-10-24T22:18:17Z"
             }
         }, 
         "1.7rc2": {
@@ -937,6 +1065,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/cd0be57dd60144c76ce4b845a0c8ca326051c9a9"
+            }, 
+            "date": {
+                "commited": "2011-10-28T19:31:58Z", 
+                "authored": "2011-10-28T19:31:58Z"
             }
         }, 
         "1.4": {
@@ -960,6 +1092,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/ffd7ddfce884440f87f3ec7eda4adc6ab83eab90", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6e32fdfe00b091f99b2588c4e3207c7e2cbeea96"
+            }, 
+            "date": {
+                "commited": "2010-01-13T20:23:05Z", 
+                "authored": "2010-01-13T20:23:05Z"
             }
         }, 
         "1.2.2b": {
@@ -980,6 +1116,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/abb19602529785bd0e031f685df2008c7188a8e1", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-12-17T02:28:37Z", 
+                "authored": "2007-12-17T02:28:37Z"
             }
         }, 
         "1.6": {
@@ -1002,6 +1142,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/deb3732f7064f9e0c92ed5ee10056ac4db9c1ff7"
+            }, 
+            "date": {
+                "commited": "2011-05-02T17:50:00Z", 
+                "authored": "2011-05-02T17:50:00Z"
             }
         }, 
         "1.7b2": {
@@ -1024,6 +1168,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/1ac87c7520d1f6b0139c8f006df96b3af098ccd8"
+            }, 
+            "date": {
+                "commited": "2011-10-14T01:12:55Z", 
+                "authored": "2011-10-14T01:12:55Z"
             }
         }, 
         "1.7b1": {
@@ -1046,6 +1194,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/bd7ec7cf27bed0d741928ac4dd05fd1cdcd27341"
+            }, 
+            "date": {
+                "commited": "2011-09-28T19:50:22Z", 
+                "authored": "2011-09-28T19:50:22Z"
             }
         }, 
         "1.7": {
@@ -1068,6 +1220,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80a0801203b011e85e116caf7ad507da2545f726"
+            }, 
+            "date": {
+                "commited": "2011-11-03T20:18:21Z", 
+                "authored": "2011-11-03T20:18:21Z"
             }
         }, 
         "1.2.3b": {
@@ -1088,6 +1244,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-02-03T21:46:47Z", 
+                "authored": "2008-02-03T21:46:47Z"
             }
         }, 
         "1.2.3a": {
@@ -1108,6 +1268,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2008-01-28T19:37:46Z", 
+                "authored": "2008-01-28T19:37:46Z"
             }
         }, 
         "1.5b1": {
@@ -1131,6 +1295,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2011-01-14T19:56:21Z", 
+                "authored": "2011-01-14T19:56:21Z"
             }
         }, 
         "1.1": {
@@ -1150,6 +1318,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/fd48bdf8786adbc13531fbb1090547f6869abc5d", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2007-01-15T02:25:29Z", 
+                "authored": "2007-01-15T02:25:29Z"
             }
         }, 
         "1.2.4b": {
@@ -1170,6 +1342,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-05-14T04:53:25Z", 
+                "authored": "2008-05-14T04:53:25Z"
             }
         }, 
         "1.2.4a": {
@@ -1190,6 +1366,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-04-10T01:17:07Z", 
+                "authored": "2008-04-10T01:17:07Z"
             }
         }, 
         "1.2": {
@@ -1210,6 +1390,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/ec667d8fbdb84e25e94855f2c573ad60f1573cb1", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-09-10T18:51:39Z", 
+                "authored": "2007-09-10T18:51:39Z"
             }
         }, 
         "1.3.1rc1": {
@@ -1231,6 +1415,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/8ec2b0bc5a2362587c47a44faac2428be96f6d48", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2009-01-22T00:30:13Z", 
+                "authored": "2009-01-22T00:30:13Z"
             }
         }, 
         "master": {
@@ -1271,23 +1459,27 @@
                 "homepage": "http://jquery.com", 
                 "name": "jquery"
             }, 
-            "sha": "c0088f2d26bba38dc04e9076a73579800e04347f", 
+            "sha": "5179fa00b839ebc70ec38fb0cf6cb8f8c412f37e", 
             "tree": {
                 ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
-                "src": "https://api.github.com/repos/jquery/jquery/git/trees/721bee6b24125b88e6b551d2950145d91b928cca", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/fa6adaec1ec95826a1eac17732408c28daf82bf6", 
                 "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/e6ede8e109cc8dc34ea94ca67660dc8bfc2a3a44", 
                 ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
-                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/fea67a6c36e96115a6e44acb18c43491f85dff9b", 
-                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/e753a35cbdeca5142ab6ecbcafeb43f0eb18aaa9", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/9ce13edf2978aaf3d5cab4d08a4440b0ff2119b7", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/1b13c277d9a250e418fe807dd140acb494b064e5", 
                 ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
                 ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/eeafcc6fad31334844eabfe5c7c115ec1346f85d", 
                 ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
-                "test": "https://api.github.com/repos/jquery/jquery/git/trees/53cde4985d48ec51b0015ea8fabc1299fec04da5", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/ddf80e10f2e8d7924fcf2891db3756a3ffa94f30", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/d58596b2eb30e936b8b21abc5f16c4cdbbc0e904", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/89a57e6d10ed6d51702b2519fb303cf457d49911", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/94d96efb49b9c79a4cd3749f0c0539d1fa04b7b2"
+            }, 
+            "date": {
+                "commited": "2013-04-17T16:37:23Z", 
+                "authored": "2013-04-17T07:06:12Z"
             }
         }, 
         "1.9.1": {
@@ -1346,6 +1538,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/97b6c220fa0fc1eac80e38597e3210412cd28941", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/cc1a9fa07a37a130047df8264a3ccee16e666c34"
+            }, 
+            "date": {
+                "commited": "2013-02-05T00:56:06Z", 
+                "authored": "2013-02-05T00:56:06Z"
             }
         }, 
         "1.9.0": {
@@ -1405,6 +1601,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6eba3ba5228826f448684116cb219e335963ac4d", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/cc1a9fa07a37a130047df8264a3ccee16e666c34"
+            }, 
+            "date": {
+                "commited": "2013-01-15T03:54:13Z", 
+                "authored": "2013-01-15T03:54:13Z"
             }
         }, 
         "1.5rc1": {
@@ -1426,6 +1626,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/d56576c81aa45cb3ba8a70ccb1d3a5e2f67739f1"
+            }, 
+            "date": {
+                "commited": "2011-01-24T22:14:04Z", 
+                "authored": "2011-01-24T22:14:04Z"
             }
         }, 
         "1.5.2rc1": {
@@ -1448,6 +1652,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/d56576c81aa45cb3ba8a70ccb1d3a5e2f67739f1", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/7b3984b090374a2c0ffb16060223b45e5d659810"
+            }, 
+            "date": {
+                "commited": "2011-03-25T00:12:31Z", 
+                "authored": "2011-03-25T00:12:31Z"
             }
         }, 
         "1.4a2": {
@@ -1471,6 +1679,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/ffd7ddfce884440f87f3ec7eda4adc6ab83eab90", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/02741776f31e0c381e0ef78c8e43c2ac83d8918a"
+            }, 
+            "date": {
+                "commited": "2009-12-19T00:58:11Z", 
+                "authored": "2009-12-19T00:58:11Z"
             }
         }, 
         "1.3.2": {
@@ -1492,6 +1704,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/8ec2b0bc5a2362587c47a44faac2428be96f6d48", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2009-02-19T22:34:21Z", 
+                "authored": "2009-02-19T22:34:21Z"
             }
         }, 
         "1.3.1": {
@@ -1513,6 +1729,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/8ec2b0bc5a2362587c47a44faac2428be96f6d48", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2009-01-22T01:42:16Z", 
+                "authored": "2009-01-22T01:42:16Z"
             }
         }, 
         "1.6.2rc1": {
@@ -1535,6 +1755,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/9eabf8ba4e4c3d98460d8e1c4cd7bf7b23ef5491"
+            }, 
+            "date": {
+                "commited": "2011-06-14T21:54:23Z", 
+                "authored": "2011-06-14T21:54:23Z"
             }
         }, 
         "1.4.4rc1": {
@@ -1558,6 +1782,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-10-25T20:25:10Z", 
+                "authored": "2010-10-25T20:25:10Z"
             }
         }, 
         "1.4.4rc2": {
@@ -1581,6 +1809,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-11-03T19:46:31Z", 
+                "authored": "2010-11-03T19:46:31Z"
             }
         }, 
         "1.4.4rc3": {
@@ -1604,6 +1836,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-11-10T16:14:53Z", 
+                "authored": "2010-11-10T16:14:53Z"
             }
         }, 
         "1.4.3rc1": {
@@ -1627,6 +1863,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-10-11T03:09:04Z", 
+                "authored": "2010-10-11T03:09:04Z"
             }
         }, 
         "1.5.1rc1": {
@@ -1648,6 +1888,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/d56576c81aa45cb3ba8a70ccb1d3a5e2f67739f1"
+            }, 
+            "date": {
+                "commited": "2011-02-18T18:57:25Z", 
+                "authored": "2011-02-18T18:57:25Z"
             }
         }, 
         "1.4.3rc2": {
@@ -1671,6 +1915,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-10-12T19:44:36Z", 
+                "authored": "2010-10-12T19:44:36Z"
             }
         }, 
         "1.3b2": {
@@ -1692,6 +1940,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2009-01-05T23:33:56Z", 
+                "authored": "2009-01-05T23:33:56Z"
             }
         }, 
         "1.3b1": {
@@ -1713,6 +1965,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2008-12-22T17:31:22Z", 
+                "authored": "2008-12-22T17:31:22Z"
             }
         }, 
         "1.1.1": {
@@ -1732,6 +1988,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/fd48bdf8786adbc13531fbb1090547f6869abc5d", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2007-01-22T05:40:01Z", 
+                "authored": "2007-01-22T05:40:01Z"
             }
         }, 
         "1.5": {
@@ -1753,6 +2013,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/d56576c81aa45cb3ba8a70ccb1d3a5e2f67739f1"
+            }, 
+            "date": {
+                "commited": "2011-01-31T13:31:29Z", 
+                "authored": "2011-01-31T13:31:29Z"
             }
         }, 
         "1.1.3": {
@@ -1772,6 +2036,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/93255a1aa3a62ce12e41d60a38f0bc0d1946a91c", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-07-01T12:54:38Z", 
+                "authored": "2007-07-01T12:54:38Z"
             }
         }, 
         "1.1.2": {
@@ -1791,6 +2059,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/5670de0317ef08a7fabeb9af2b545dbf61af46a5", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-02-27T22:00:31Z", 
+                "authored": "2007-02-27T22:00:31Z"
             }
         }, 
         "1.0": {
@@ -1808,6 +2080,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/f4030bdf2c95a56a169c88b03785d5ff0514c89e", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/37199d78a67acff35eb6a461e461fb1887a94c6a"
+            }, 
+            "date": {
+                "commited": "2006-08-31T17:26:31Z", 
+                "authored": "2006-08-31T17:26:31Z"
             }
         }, 
         "1.1.4": {
@@ -1827,6 +2103,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/17a12c1764c72f32e655f82ad3de5ce85e5c39b1", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-08-24T01:49:27Z", 
+                "authored": "2007-08-24T01:49:27Z"
             }
         }, 
         "1.2.2b2": {
@@ -1847,6 +2127,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/9a0497d88898262caea3162c788a394683bd165d", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-12-20T15:07:37Z", 
+                "authored": "2007-12-20T15:07:37Z"
             }
         }, 
         "1.3": {
@@ -1868,6 +2152,10 @@
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174", 
                 "reminder.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/ba33f0f7717b09facb0d61070e0e4f9938387285"
+            }, 
+            "date": {
+                "commited": "2009-01-13T17:50:31Z", 
+                "authored": "2009-01-13T17:50:31Z"
             }
         }, 
         "1.8.0": {
@@ -1919,6 +2207,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/fd249681ebfcbf31ba8990164115a0bc76c37f2d", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/6a03aa1bf128a4296b6dac6a5ffcb240c08aa178"
+            }, 
+            "date": {
+                "commited": "2012-08-09T20:24:36Z", 
+                "authored": "2012-08-09T20:24:36Z"
             }
         }, 
         "1.8.1": {
@@ -1970,6 +2262,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6012f087a26e80f71dd528621372c2f99d399e1b", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/1e14536718dc826c454c3829df5a9df7addee214"
+            }, 
+            "date": {
+                "commited": "2012-08-30T21:17:08Z", 
+                "authored": "2012-08-30T21:17:08Z"
             }
         }, 
         "1.7.1": {
@@ -1992,6 +2288,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/2ddc333bec5ac58a2ff9c06ab48c68ed0e86878d", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/c13249b2de108c694ba5dcf192bf3c081ac8dff9"
+            }, 
+            "date": {
+                "commited": "2011-11-22T02:11:03Z", 
+                "authored": "2011-11-22T02:11:03Z"
             }
         }, 
         "1.8.3": {
@@ -2043,6 +2343,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/76d5c3406d74a395d0644e67692038c5d691d45c", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/f1fb91bc2e4c0b990a7a6ebae9c5084e47bca624"
+            }, 
+            "date": {
+                "commited": "2012-11-13T13:20:31Z", 
+                "authored": "2012-11-13T13:20:31Z"
             }
         }, 
         "1.4.1": {
@@ -2066,6 +2370,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/ffd7ddfce884440f87f3ec7eda4adc6ab83eab90", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6e32fdfe00b091f99b2588c4e3207c7e2cbeea96"
+            }, 
+            "date": {
+                "commited": "2010-01-26T00:43:33Z", 
+                "authored": "2010-01-26T00:43:33Z"
             }
         }, 
         "1.4.2": {
@@ -2089,6 +2397,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/b773fac77b0bb99529d9df23e47e862e9efa1b2f", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6e32fdfe00b091f99b2588c4e3207c7e2cbeea96"
+            }, 
+            "date": {
+                "commited": "2010-02-14T03:33:48Z", 
+                "authored": "2010-02-14T03:33:48Z"
             }
         }, 
         "1.4.3": {
@@ -2112,6 +2424,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-10-15T03:10:06Z", 
+                "authored": "2010-10-15T03:10:06Z"
             }
         }, 
         "1.4.4": {
@@ -2135,6 +2451,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/bcb36db1a00101477ce1e8ddecf7d7ca02953dab", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/80869e5a0da73fb213da601edc681988fcc65398", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/384e2d19096da830189c9549161d8a9871e9257c"
+            }, 
+            "date": {
+                "commited": "2010-11-12T00:04:53Z", 
+                "authored": "2010-11-12T00:04:53Z"
             }
         }, 
         "1.7.1rc1": {
@@ -2157,6 +2477,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/a54a02df596f6d9fdd581028064fdd13c304c46f", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80a0801203b011e85e116caf7ad507da2545f726"
+            }, 
+            "date": {
+                "commited": "2011-11-18T00:06:35Z", 
+                "authored": "2011-11-18T00:06:35Z"
             }
         }, 
         "1.5.1": {
@@ -2178,6 +2502,10 @@
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/d56576c81aa45cb3ba8a70ccb1d3a5e2f67739f1"
+            }, 
+            "date": {
+                "commited": "2011-02-23T18:55:29Z", 
+                "authored": "2011-02-23T18:55:29Z"
             }
         }, 
         "1.2.6": {
@@ -2198,6 +2526,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-05-24T18:22:17Z", 
+                "authored": "2008-05-24T18:22:17Z"
             }
         }, 
         "1.2.4": {
@@ -2218,6 +2550,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-05-18T20:19:46Z", 
+                "authored": "2008-05-18T20:19:46Z"
             }
         }, 
         "1.2.5": {
@@ -2238,6 +2574,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-05-21T03:14:54Z", 
+                "authored": "2008-05-21T03:14:54Z"
             }
         }, 
         "1.2.2": {
@@ -2258,6 +2598,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/7267c5c7660f1d23b0f0db9f36e2440641b93ce4", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2008-01-14T22:56:07Z", 
+                "authored": "2008-01-14T22:56:07Z"
             }
         }, 
         "1.2.3": {
@@ -2278,6 +2622,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/80f29ab9de6348c63c3ab5f3baf21d74f74cd6e3", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/d4215f0e420bb90eb35f692d0bad4ed727c33174"
+            }, 
+            "date": {
+                "commited": "2008-02-06T01:03:40Z", 
+                "authored": "2008-02-06T01:03:40Z"
             }
         }, 
         "1.2.1": {
@@ -2298,6 +2646,10 @@
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/4cdb95caf291158c354bc8f86e14880f95e934e6", 
                 "README": "https://api.github.com/repos/jquery/jquery/git/blobs/cb9364832888a4db54059dfea35fc47c671fac67", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/965a8313027202d1c6e72bb67d6a988aed57ef25"
+            }, 
+            "date": {
+                "commited": "2007-09-17T03:42:06Z", 
+                "authored": "2007-09-17T03:42:06Z"
             }
         }, 
         "1.8b1": {
@@ -2352,6 +2704,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/a2e4f4f45841ee638f6d55c7e7e02266d1cfd33f", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/4f077c36031246ded454a084717b6bd888981102", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/d032f3c56a332e813533f0d58222c82643e9278e"
+            }, 
+            "date": {
+                "commited": "2012-06-22T17:28:03Z", 
+                "authored": "2012-06-22T17:28:03Z"
             }
         }, 
         "1.8b2": {
@@ -2406,6 +2762,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/a2e4f4f45841ee638f6d55c7e7e02266d1cfd33f", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/74ad758b93c54c49872d09308fcf882f721837b5", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/d032f3c56a332e813533f0d58222c82643e9278e"
+            }, 
+            "date": {
+                "commited": "2012-07-10T21:22:44Z", 
+                "authored": "2012-07-10T21:22:44Z"
             }
         }, 
         "1.5.2": {
@@ -2428,6 +2788,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4afc6fc588dc9039255019042fbc1c6f2b2fb812", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/d56576c81aa45cb3ba8a70ccb1d3a5e2f67739f1", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/7b3984b090374a2c0ffb16060223b45e5d659810"
+            }, 
+            "date": {
+                "commited": "2011-03-31T19:28:23Z", 
+                "authored": "2011-03-31T19:28:23Z"
             }
         }, 
         "1.8.3+1": {
@@ -2479,6 +2843,10 @@
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/9b8a355d41dce6d534250a9daf89a83bf96eaab4", 
                 "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/76d5c3406d74a395d0644e67692038c5d691d45c", 
                 "build": "https://api.github.com/repos/jquery/jquery/git/trees/f1fb91bc2e4c0b990a7a6ebae9c5084e47bca624"
+            }, 
+            "date": {
+                "commited": "2013-01-04T15:22:09Z", 
+                "authored": "2013-01-04T15:19:15Z"
             }
         }
     }

@@ -1,12 +1,11 @@
 {
-    "nostrict": true,
-    "productions": {
-        "jasmine.js": "lib/jasmine-core/jasmine.js",
-        "jasmine.css": "lib/jasmine-core/jasmine.css",
-        "jasmine-html.js": "lib/jasmine-core/jasmine-html.js"
-    }, 
-  
     "git": "https://github.com/pivotal/jasmine", 
+    "productions": {
+        "jasmine-html.js": "lib/jasmine-core/jasmine-html.js", 
+        "jasmine.css": "lib/jasmine-core/jasmine.css", 
+        "jasmine.js": "lib/jasmine-core/jasmine.js"
+    }, 
+    "nostrict": true, 
     "versions": {
         "v1.1.0.rc1": {
             "package.json": {
@@ -33,6 +32,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/f7e17ea308af8dac4b41f7439a6461cabc7cee79", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/8e9897139d42468b6f4a5b8b5a06673001a619c8"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.1.0.rc3": {
@@ -59,6 +62,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/f7e17ea308af8dac4b41f7439a6461cabc7cee79", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/5634ff541709334e7aa621900f09800f22dc95aa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.1.0.rc2": {
@@ -85,6 +92,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/f7e17ea308af8dac4b41f7439a6461cabc7cee79", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/5634ff541709334e7aa621900f09800f22dc95aa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.10.1-release": {
@@ -108,6 +119,10 @@
                 "geminstaller.yml": "https://api.github.com/repos/pivotal/jasmine/git/blobs/d343360cde84ff279af940984a1d0a27d414e40a", 
                 "contrib": "https://api.github.com/repos/pivotal/jasmine/git/trees/d87415bd03b087aa937f5f651ec1eb3101d37df8", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/fc00966e7b7ffdc76dafbe0193b7347a7760c5e4"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.1.0.rc4": {
@@ -134,6 +149,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/f7e17ea308af8dac4b41f7439a6461cabc7cee79", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/5634ff541709334e7aa621900f09800f22dc95aa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.3.0": {
@@ -163,6 +182,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "config.rb": "https://api.github.com/repos/pivotal/jasmine/git/blobs/fc529ba0d28b68906b0e4c91adb1dd46ee7be678", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/7f4711e346d8df8cbb87e1578df89406c6149912"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.3.1": {
@@ -202,6 +225,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "config.rb": "https://api.github.com/repos/pivotal/jasmine/git/blobs/fc529ba0d28b68906b0e4c91adb1dd46ee7be678", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/7f4711e346d8df8cbb87e1578df89406c6149912"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.2.0": {
@@ -231,6 +258,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "config.rb": "https://api.github.com/repos/pivotal/jasmine/git/blobs/fc529ba0d28b68906b0e4c91adb1dd46ee7be678", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/48195699693a786a079d47ef0d2edd6f039d61e6"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.0.rc1": {
@@ -256,6 +287,10 @@
                 "HowToRelease.markdown": "https://api.github.com/repos/pivotal/jasmine/git/blobs/ee6d841fffa95ebb054fa8280a7579c708ad7f80", 
                 "jsdoc-template": "https://api.github.com/repos/pivotal/jasmine/git/trees/d5661f984b4a5f2f922b99bddf3d19700e177d5d", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/cc587885631fbbe7aea691cfb9ea7f4f3e5824ae"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.1.0": {
@@ -282,6 +317,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/f7e17ea308af8dac4b41f7439a6461cabc7cee79", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/5634ff541709334e7aa621900f09800f22dc95aa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.0rc1": {
@@ -304,6 +343,10 @@
                 ".gitignore": "https://api.github.com/repos/pivotal/jasmine/git/blobs/4629bda7215c2c7a3c7c31355a06bd6d6892feb8", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "example": "https://api.github.com/repos/pivotal/jasmine/git/trees/a314c40e09f7273f63719670dc8d961ced31c418"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.2.0.rc3": {
@@ -333,6 +376,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "config.rb": "https://api.github.com/repos/pivotal/jasmine/git/blobs/fc529ba0d28b68906b0e4c91adb1dd46ee7be678", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/48195699693a786a079d47ef0d2edd6f039d61e6"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "master": {
@@ -379,6 +426,10 @@
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/07adcb3dc5d868a3a5d1a65e05bd2361bc25ea57", 
                 "GOALS_2.0.md": "https://api.github.com/repos/pivotal/jasmine/git/blobs/68eaa5d7ec26bba7a8fcb6943db0309542c08316", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/0f1f19acabe43d966ce78205b1cea1d74eb6b477"
+            }, 
+            "date": {
+                "commited": "2013-04-09T01:16:09Z", 
+                "authored": "2013-04-09T01:16:09Z"
             }
         }, 
         "0.11.0-release": {
@@ -400,6 +451,10 @@
                 "Rakefile": "https://api.github.com/repos/pivotal/jasmine/git/blobs/d55b53ee6e584a4cdd6e0149e8ebf84fcde0a6e0", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "example": "https://api.github.com/repos/pivotal/jasmine/git/trees/764738f24f7ef7df5898cd8e8dc5ca09257c4256"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.10.4-release": {
@@ -421,6 +476,10 @@
                 "Rakefile": "https://api.github.com/repos/pivotal/jasmine/git/blobs/b8bb48e4d4631944d6f1864a652d03121ceac75f", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "example": "https://api.github.com/repos/pivotal/jasmine/git/trees/015a43096a2113e146c036cf02a02b4804de13dd"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.10.2-release": {
@@ -444,6 +503,10 @@
                 "geminstaller.yml": "https://api.github.com/repos/pivotal/jasmine/git/blobs/d343360cde84ff279af940984a1d0a27d414e40a", 
                 "contrib": "https://api.github.com/repos/pivotal/jasmine/git/trees/d87415bd03b087aa937f5f651ec1eb3101d37df8", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/ee18207da85ec35e52237765b4bcdff7b6cf9aeb"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.2.0.rc2": {
@@ -473,6 +536,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "config.rb": "https://api.github.com/repos/pivotal/jasmine/git/blobs/fc529ba0d28b68906b0e4c91adb1dd46ee7be678", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/48195699693a786a079d47ef0d2edd6f039d61e6"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.4.6-release": {
@@ -496,6 +563,10 @@
                 "generators": "https://api.github.com/repos/pivotal/jasmine/git/trees/da82f884da97a5985f460cf87045365b503c84e6", 
                 ".gitignore": "https://api.github.com/repos/pivotal/jasmine/git/blobs/6a76f685a5d2d1ba9f6de90f78559ad05ba59ff4", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/ae86c20b5d70cec1b0f6549b6ec5fe830554871f"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.4.5-release": {
@@ -519,6 +590,10 @@
                 "generators": "https://api.github.com/repos/pivotal/jasmine/git/trees/da82f884da97a5985f460cf87045365b503c84e6", 
                 ".gitignore": "https://api.github.com/repos/pivotal/jasmine/git/blobs/6a76f685a5d2d1ba9f6de90f78559ad05ba59ff4", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/077f35b1eb67965658828324bb76a2d35e9a6438"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.11.1-release": {
@@ -540,6 +615,10 @@
                 ".gitignore": "https://api.github.com/repos/pivotal/jasmine/git/blobs/2b02a7081a4fae3237576922644c56fa187c2f35", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "example": "https://api.github.com/repos/pivotal/jasmine/git/trees/7b6fe62a6e68e45104a92db060e08cbdcb62b821"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.2.0.rc1": {
@@ -566,6 +645,10 @@
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/74c4be26f6ff8b1e718f58a831013c48945626ce", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/fcdf9d1b21a5e2d0fa31b941379b39da0ec9a82c", 
                 "jasmine-core.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/5634ff541709334e7aa621900f09800f22dc95aa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.8.0-release": {
@@ -587,6 +670,10 @@
                 "Rakefile": "https://api.github.com/repos/pivotal/jasmine/git/blobs/64d7cdbcd3a4945cc584eea1fabe079c99bf62f4", 
                 "contrib": "https://api.github.com/repos/pivotal/jasmine/git/trees/091f6be0c7df268a048ea2a8f87fd043942ac781", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/58e0b44ca08ff87b96934b3d1404cc2af805b786"
+            }, 
+            "date": {
+                "commited": "2009-08-13T05:19:51Z", 
+                "authored": "2009-08-13T05:19:51Z"
             }
         }, 
         "0.9.0-release": {
@@ -608,6 +695,10 @@
                 "examples": "https://api.github.com/repos/pivotal/jasmine/git/trees/1d20adca9868b4fc2b8ac1dfabbad88e4caa20cb", 
                 "contrib": "https://api.github.com/repos/pivotal/jasmine/git/trees/1227bc82bc05cc994829b65544bd60644ee6f83b", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/190b602266a4c77403253acecfe35c3486a00d22"
+            }, 
+            "date": {
+                "commited": "2009-10-16T03:00:41Z", 
+                "authored": "2009-10-16T03:00:41Z"
             }
         }, 
         "0.10.3-release": {
@@ -630,6 +721,10 @@
                 "geminstaller.yml": "https://api.github.com/repos/pivotal/jasmine/git/blobs/d343360cde84ff279af940984a1d0a27d414e40a", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/ceaa18c8f2c142cc99567a525a1f3aec79cb620d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.1.0-release": {
@@ -652,6 +747,10 @@
                 "Rakefile": "https://api.github.com/repos/pivotal/jasmine/git/blobs/13ae20cc5f66a4042c84d2d1630f70f7beda1caa", 
                 "spec": "https://api.github.com/repos/pivotal/jasmine/git/trees/0a65b7d8eabe2d4aa9ce2951fe772813a37ec26b", 
                 "jasmine-ruby.gemspec": "https://api.github.com/repos/pivotal/jasmine/git/blobs/264654eb724410e46421a273e1ae8a6284a9c741"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.0-release": {
@@ -674,6 +773,10 @@
                 ".gitignore": "https://api.github.com/repos/pivotal/jasmine/git/blobs/4629bda7215c2c7a3c7c31355a06bd6d6892feb8", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "example": "https://api.github.com/repos/pivotal/jasmine/git/trees/a314c40e09f7273f63719670dc8d961ced31c418"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.1-release": {
@@ -697,6 +800,10 @@
                 ".gitignore": "https://api.github.com/repos/pivotal/jasmine/git/blobs/4629bda7215c2c7a3c7c31355a06bd6d6892feb8", 
                 "images": "https://api.github.com/repos/pivotal/jasmine/git/trees/21c890b46e3b4cfa78616e7520f74267f1209ac7", 
                 "example": "https://api.github.com/repos/pivotal/jasmine/git/trees/a314c40e09f7273f63719670dc8d961ced31c418"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }
     }

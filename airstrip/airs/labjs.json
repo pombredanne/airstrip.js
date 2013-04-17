@@ -1,11 +1,10 @@
 {
-    "nobuild": true,
+    "nobuild": true, 
+    "git": "https://github.com/getify/LABjs", 
     "productions": {
-        "labjs-min.js": "LAB.min.js",
+        "labjs-min.js": "LAB.min.js", 
         "labjs.js": "LAB.src.js"
     }, 
-
-    "git": "https://github.com/getify/LABjs", 
     "versions": {
         "2.0": {
             "package.json": {
@@ -22,6 +21,10 @@
                 "fLAB.src.js": "https://api.github.com/repos/getify/LABjs/git/blobs/f48c1fe5177d8c9a7c00883e5f1a6e8ea3bc4f6f", 
                 "LAB.src.js": "https://api.github.com/repos/getify/LABjs/git/blobs/2a2fc1c23435fec3758a46604b0fa566483496e7", 
                 "README.TXT": "https://api.github.com/repos/getify/LABjs/git/blobs/fa2b5b9380eae2478d971d2d26f1d95dc1bc56ff"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "master": {
@@ -40,6 +43,10 @@
                 "fLAB.src.js": "https://api.github.com/repos/getify/LABjs/git/blobs/f48c1fe5177d8c9a7c00883e5f1a6e8ea3bc4f6f", 
                 "LAB.src.js": "https://api.github.com/repos/getify/LABjs/git/blobs/99807cd222ee190a7fa4b17332555c90bfd15ce6", 
                 "README.md": "https://api.github.com/repos/getify/LABjs/git/blobs/e4bfae9159f4bb45f444ed2899507b9681d93514"
+            }, 
+            "date": {
+                "commited": "2013-02-09T16:43:10Z", 
+                "authored": "2013-02-09T16:43:10Z"
             }
         }
     }

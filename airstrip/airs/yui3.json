@@ -1,11 +1,10 @@
 {
-    "nobuild": true,
+    "nobuild": true, 
+    "git": "https://github.com/yui/yui3", 
     "productions": {
-        "yui-base-min.js": "build/yui-base/yui-base-min.js",
+        "yui-base-min.js": "build/yui-base/yui-base-min.js", 
         "yui-base.js": "build/yui-base/yui-base.js"
     }, 
-
-    "git": "https://github.com/yui/yui3", 
     "versions": {
         "v3.7.0pr1": {
             "package.json": {
@@ -80,6 +79,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/2338dc03e8aecb9ff5631bdfab269bfb891d62bf", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/316709dd149b9f0df0adb2399e7d5ec93ab82c57", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-08-29T17:26:29Z", 
+                "authored": "2012-08-29T17:26:29Z"
             }
         }, 
         "v3.8.0pr1": {
@@ -158,6 +161,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/34eac6724daddf19fc8282562188142f150233bd", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/203abc0d1adf74cd0c688a65b81512facb4e07ce", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-11-06T19:06:59Z", 
+                "authored": "2012-11-06T19:06:59Z"
             }
         }, 
         "v3.4.1pr1": {
@@ -201,6 +208,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/cc6705ddfa3ab98ae21d313f3e9685340563aee1", 
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/8c14f837508b77fa996f6da3a32786c95f19a6fa"
+            }, 
+            "date": {
+                "commited": "2011-09-22T09:03:42Z", 
+                "authored": "2011-09-22T09:03:42Z"
             }
         }, 
         "v3.1.2": {
@@ -219,6 +230,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/24b27d6460ba870bf801021ca08ef2de68ab5721", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/2084cdc3f7ace6bced2fcb48a137b7d0cc5bd310", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-08-19T18:09:58Z", 
+                "authored": "2010-08-19T18:09:58Z"
             }
         }, 
         "v3.9.0pr2": {
@@ -295,6 +310,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/c05604885b419f085cb97dd4ac51b03cfd7546ea", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2013-01-25T14:56:49Z", 
+                "authored": "2013-01-25T14:56:49Z"
             }
         }, 
         "v3.1.0": {
@@ -313,6 +332,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/bbcc0f9df1ee42746ecb7f08a792a8b07c87a9cc", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/2084cdc3f7ace6bced2fcb48a137b7d0cc5bd310", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-03-31T19:07:00Z", 
+                "authored": "2010-03-31T19:07:00Z"
             }
         }, 
         "v3.1.1": {
@@ -331,6 +354,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/a13b44d10e6481949f3897b44785cbaecfb5b1bf", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/2084cdc3f7ace6bced2fcb48a137b7d0cc5bd310", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-05-05T01:27:48Z", 
+                "authored": "2010-05-05T01:27:48Z"
             }
         }, 
         "v3.0.0": {
@@ -349,6 +376,10 @@
                 "api": "https://api.github.com/repos/yui/yui3/git/trees/432adaa659a755378e35c880297bc144708161be", 
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/44fc4a8938856701f37a436a267ade4bb2ac60d6", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/2084cdc3f7ace6bced2fcb48a137b7d0cc5bd310"
+            }, 
+            "date": {
+                "commited": "2009-09-29T20:00:07Z", 
+                "authored": "2009-09-29T20:00:07Z"
             }
         }, 
         "v3.9.0pr3": {
@@ -425,6 +456,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/10dd1863fbcedae33a2723a1d4a69d97f29ba450", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2013-02-19T17:53:37Z", 
+                "authored": "2013-02-19T17:53:37Z"
             }
         }, 
         "master": {
@@ -500,6 +535,10 @@
                 "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/34bd13db8611af0b001e2d9b717d02cc8aa93e82", 
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/3352d11d809e1830d998e65c2fdf4e4d0962bef9", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+            }, 
+            "date": {
+                "commited": "2013-04-16T16:44:15Z", 
+                "authored": "2013-04-16T16:44:15Z"
             }
         }, 
         "v3.4.0pr1": {
@@ -546,6 +585,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/1f01faaa11b4944bcce3445deeb3ec585a926a8e"
+            }, 
+            "date": {
+                "commited": "2011-05-26T20:00:56Z", 
+                "authored": "2011-05-26T20:00:56Z"
             }
         }, 
         "v3.4.0pr2": {
@@ -592,6 +635,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/1f01faaa11b4944bcce3445deeb3ec585a926a8e"
+            }, 
+            "date": {
+                "commited": "2011-06-22T23:07:52Z", 
+                "authored": "2011-06-22T23:07:52Z"
             }
         }, 
         "v3.4.0pr3": {
@@ -636,6 +683,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/c58475c03c32d2ebbc9a181b60e9f3b7c66a4590", 
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/1f01faaa11b4944bcce3445deeb3ec585a926a8e"
+            }, 
+            "date": {
+                "commited": "2011-07-28T18:25:42Z", 
+                "authored": "2011-07-28T18:25:42Z"
             }
         }, 
         "v3.8.0": {
@@ -709,6 +760,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/57aa7b00ff560fb9e09d7b19f3e51e63091ada7e", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-12-11T20:54:38Z", 
+                "authored": "2012-12-11T20:54:38Z"
             }
         }, 
         "v3.5.0pr6": {
@@ -756,6 +811,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/b9b4ecd1a0408ff17bda81f072723697c6dfa6b0", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/b44530c49f57b005becd648dc4e8563eb3a91d0a", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-04-05T20:56:34Z", 
+                "authored": "2012-04-05T20:56:34Z"
             }
         }, 
         "v3.5.0pr4": {
@@ -802,6 +861,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/b94e84bd45968aa76fec93253c738a0e0e9f54b7", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/b44530c49f57b005becd648dc4e8563eb3a91d0a", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-03-19T14:27:56Z", 
+                "authored": "2012-03-19T14:27:56Z"
             }
         }, 
         "v3.5.0pr3": {
@@ -848,6 +911,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/4532874a7f410fc344bb9634c9981ff488b45106", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/b44530c49f57b005becd648dc4e8563eb3a91d0a", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-03-05T20:45:28Z", 
+                "authored": "2012-03-05T20:45:28Z"
             }
         }, 
         "v3.5.0pr2": {
@@ -891,6 +958,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/5f0deb3245864d2c4533cc80bcfd0320f53ec0c7", 
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/8c14f837508b77fa996f6da3a32786c95f19a6fa"
+            }, 
+            "date": {
+                "commited": "2012-01-30T08:53:55Z", 
+                "authored": "2012-01-30T08:53:55Z"
             }
         }, 
         "v3.5.0pr1": {
@@ -935,6 +1006,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/05aa73d1ebc4e24aeeae9d3cc910b000a5ddac5f", 
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/8c14f837508b77fa996f6da3a32786c95f19a6fa"
+            }, 
+            "date": {
+                "commited": "2011-12-12T18:18:13Z", 
+                "authored": "2011-12-12T18:18:13Z"
             }
         }, 
         "v3.9.0pr1": {
@@ -1011,6 +1086,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/fdc7aeb2423120cd1698b68ab0cd28716a8488a0", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2013-01-15T23:35:01Z", 
+                "authored": "2013-01-15T23:35:01Z"
             }
         }, 
         "v3.6.0": {
@@ -1086,6 +1165,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/ce85f4f6f7f0229fca376c27c0cb880526b1c2f7", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/81cfc859b16df81bc741d8521b66674f2bbad421", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-08-01T13:28:39Z", 
+                "authored": "2012-08-01T13:28:39Z"
             }
         }, 
         "v3.7.0pr2": {
@@ -1162,6 +1245,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/da0314581c8f9910e8bea800b051fb6f6da08628", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/a2398e8c65d2ac37ce6221bb15255686122dd895", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-09-11T20:14:48Z", 
+                "authored": "2012-09-11T20:14:48Z"
             }
         }, 
         "v3.9.0": {
@@ -1237,6 +1324,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/e1988cba19d4ab822e71621cfc1ae3368aab577a", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2013-03-13T18:02:23Z", 
+                "authored": "2013-03-13T18:02:23Z"
             }
         }, 
         "v3.9.1": {
@@ -1313,6 +1404,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/abe4ce7d1cca16ffb3177a5c4d73485ddb69935e", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2013-03-26T22:26:14Z", 
+                "authored": "2013-03-26T22:26:14Z"
             }
         }, 
         "v3.7.0": {
@@ -1389,6 +1484,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/801cc4c78a10557128a281a95f09203066203e09", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/203abc0d1adf74cd0c688a65b81512facb4e07ce", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-09-18T13:18:55Z", 
+                "authored": "2012-09-18T13:18:55Z"
             }
         }, 
         "v3.7.1": {
@@ -1465,6 +1564,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/3834ae05afebf903c45fd29d8b6db62e8d4e6ec3", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/203abc0d1adf74cd0c688a65b81512facb4e07ce", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-09-18T22:39:48Z", 
+                "authored": "2012-09-18T22:39:48Z"
             }
         }, 
         "v3.7.2": {
@@ -1541,6 +1644,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/f393940f52ef1c3a04a18d029dc18b299efd2dbb", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/203abc0d1adf74cd0c688a65b81512facb4e07ce", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-09-24T18:22:25Z", 
+                "authored": "2012-09-24T18:22:25Z"
             }
         }, 
         "v3.7.3": {
@@ -1619,6 +1726,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/1f8e186b13c29ed8a7ffb525eed8fd1fa487546e", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/203abc0d1adf74cd0c688a65b81512facb4e07ce", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-10-16T01:48:49Z", 
+                "authored": "2012-10-16T01:40:32Z"
             }
         }, 
         "v3.4.1": {
@@ -1662,6 +1773,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/ff4643381205541294575c43410f2b13b2e6b0e0", 
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/8c14f837508b77fa996f6da3a32786c95f19a6fa"
+            }, 
+            "date": {
+                "commited": "2011-09-27T18:38:39Z", 
+                "authored": "2011-09-27T18:38:39Z"
             }
         }, 
         "v3.4.0": {
@@ -1705,6 +1820,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/c63152f4a64c0b611bc9ca7a02f5b396f5a39ff2", 
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/1f01faaa11b4944bcce3445deeb3ec585a926a8e"
+            }, 
+            "date": {
+                "commited": "2011-08-15T20:46:29Z", 
+                "authored": "2011-08-15T20:46:29Z"
             }
         }, 
         "v3.10.0pr1": {
@@ -1780,6 +1899,10 @@
                 "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/34bd13db8611af0b001e2d9b717d02cc8aa93e82", 
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/c6ee45924514e54a4a0701a7e9e8c0726604850b", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+            }, 
+            "date": {
+                "commited": "2013-04-05T21:56:17Z", 
+                "authored": "2013-04-05T21:56:17Z"
             }
         }, 
         "v3.5.0": {
@@ -1827,6 +1950,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/04ae0239ae25ce1acf3ef9eacdaba6c50be60b06", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/b44530c49f57b005becd648dc4e8563eb3a91d0a", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-04-10T20:03:30Z", 
+                "authored": "2012-04-10T20:03:30Z"
             }
         }, 
         "v3.5.1": {
@@ -1881,6 +2008,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/10cea87fbb2dc0b5788681b9867698e3bbedf630", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/b44530c49f57b005becd648dc4e8563eb3a91d0a", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-05-05T05:45:01Z", 
+                "authored": "2012-05-05T05:45:01Z"
             }
         }, 
         "v3.3.0": {
@@ -1926,6 +2057,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/6323a72f7b44711748183ba5fc3d42e5f00452cb", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2011-01-12T20:55:44Z", 
+                "authored": "2011-01-12T20:55:44Z"
             }
         }, 
         "v3.3.0pr4": {
@@ -1971,6 +2106,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/6323a72f7b44711748183ba5fc3d42e5f00452cb", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2011-01-11T21:41:19Z", 
+                "authored": "2011-01-11T21:41:19Z"
             }
         }, 
         "v3.8.0pr2": {
@@ -2050,6 +2189,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/9cd747dcbef6b75e2de29c284fefe79b5ed00c91", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-11-19T16:04:27Z", 
+                "authored": "2012-11-19T16:04:27Z"
             }
         }, 
         "v3.3.0pr1": {
@@ -2095,6 +2238,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/6323a72f7b44711748183ba5fc3d42e5f00452cb", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-11-04T20:23:55Z", 
+                "authored": "2010-11-04T20:23:55Z"
             }
         }, 
         "v3.2.0": {
@@ -2113,6 +2260,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/b0b0b77713b1ce522a1871f4c68fa20ed4125ef4", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/2084cdc3f7ace6bced2fcb48a137b7d0cc5bd310", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-09-07T20:58:27Z", 
+                "authored": "2010-09-07T20:58:27Z"
             }
         }, 
         "v3.3.0pr3": {
@@ -2158,6 +2309,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/6323a72f7b44711748183ba5fc3d42e5f00452cb", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-12-14T20:54:02Z", 
+                "authored": "2010-12-14T20:54:02Z"
             }
         }, 
         "v3.3.0pr2": {
@@ -2203,6 +2358,10 @@
                 "package.js": "https://api.github.com/repos/yui/yui3/git/blobs/fb43b8c3376fae47a71ec71725ff93e5d6578517", 
                 "README": "https://api.github.com/repos/yui/yui3/git/blobs/6323a72f7b44711748183ba5fc3d42e5f00452cb", 
                 "as-api": "https://api.github.com/repos/yui/yui3/git/trees/7c7083921809cb8cbf652ff9da0a2ff445bee4dc"
+            }, 
+            "date": {
+                "commited": "2010-12-13T19:45:58Z", 
+                "authored": "2010-12-13T19:45:58Z"
             }
         }, 
         "v3.8.1": {
@@ -2279,6 +2438,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/c289560d90b0dda305fcf4dbf423086d29cc418b", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2013-01-22T22:43:16Z", 
+                "authored": "2013-01-22T22:43:16Z"
             }
         }, 
         "v3.6.0pr4": {
@@ -2354,6 +2517,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/8239285a942e123eeb3fa15e0d40ba30decb5882", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/81cfc859b16df81bc741d8521b66674f2bbad421", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-07-18T14:26:39Z", 
+                "authored": "2012-07-18T14:26:39Z"
             }
         }, 
         "v3.6.0pr2": {
@@ -2429,6 +2596,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/92e88f4c6903315123f996c0aec5391deb53a130", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/81cfc859b16df81bc741d8521b66674f2bbad421", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-06-11T18:06:18Z", 
+                "authored": "2012-06-11T18:06:18Z"
             }
         }, 
         "v3.6.0pr3": {
@@ -2504,6 +2675,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/891c3a4a07de47038dc7d8cb7c35ca819dd05d46", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/81cfc859b16df81bc741d8521b66674f2bbad421", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-06-20T20:31:28Z", 
+                "authored": "2012-06-20T20:31:28Z"
             }
         }, 
         "v3.6.0pr1": {
@@ -2583,6 +2758,10 @@
                 "build": "https://api.github.com/repos/yui/yui3/git/trees/1fdb0f93ac5a73fec739b9ef85e60f7fd9f49118", 
                 "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/81cfc859b16df81bc741d8521b66674f2bbad421", 
                 "index.js": "https://api.github.com/repos/yui/yui3/git/blobs/c9d9899b48fad1757960dfd56e0e7ac4460573aa"
+            }, 
+            "date": {
+                "commited": "2012-05-05T07:08:55Z", 
+                "authored": "2012-05-05T07:08:55Z"
             }
         }
     }

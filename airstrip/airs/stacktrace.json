@@ -1,9 +1,8 @@
 {
+    "git": "https://github.com/eriwen/javascript-stacktrace", 
     "productions": {
         "stacktrace.js": "stacktrace.js"
-    },
-
-    "git": "https://github.com/eriwen/javascript-stacktrace", 
+    }, 
     "versions": {
         "master": {
             "package.json": {
@@ -53,6 +52,10 @@
                 "version": "0.5", 
                 "name": "stacktrace.js", 
                 "dependencies": {}
+            }, 
+            "date": {
+                "commited": "2012-10-09T16:11:44Z", 
+                "authored": "2012-10-09T16:11:44Z"
             }
         }, 
         "v0.5.0": {
@@ -103,6 +106,10 @@
                 "version": "0.5", 
                 "name": "stacktrace.js", 
                 "dependencies": {}
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }
     }

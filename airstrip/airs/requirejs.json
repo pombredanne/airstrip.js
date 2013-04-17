@@ -1,10 +1,9 @@
 {
-    "nobuild": true,
+    "nobuild": true, 
+    "git": "https://github.com/jrburke/requirejs", 
     "productions": {
         "require.js": "require.js"
     }, 
-
-    "git": "https://github.com/jrburke/requirejs", 
     "versions": {
         "1.0.4": {
             "package.json": {
@@ -29,6 +28,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/6ef7422e65f766eca85dfe8dc5222f11a84c0ffa", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.14.5": {
@@ -50,6 +53,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/618259da9819321289b01b30302f419d47f7e508", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/7bdd33d20f2d402e06e6fa8b9efa220906ba46ba", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/a3f49703bbdcebb60c6d671a2a185bfdde1f65c7"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.6": {
@@ -75,6 +82,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/615a964f2e100243757d2339aa1a1e46ace79fa0", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.7": {
@@ -100,6 +111,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/cc9ff1a28fcb5b3de4b594d8bd056348f8d789dd", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.0": {
@@ -125,6 +140,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/86cc3a74bf6bd38342e1d3ee6e6547b717bfb920", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.1": {
@@ -150,6 +169,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/86cc3a74bf6bd38342e1d3ee6e6547b717bfb920", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.2": {
@@ -175,6 +198,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/6ef7422e65f766eca85dfe8dc5222f11a84c0ffa", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.3": {
@@ -200,6 +227,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/6ef7422e65f766eca85dfe8dc5222f11a84c0ffa", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.8": {
@@ -225,6 +256,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/38f6ca0a2aa0ce9f5b6fcf9c2d6fcdf17fe8af44", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.5": {
@@ -246,6 +281,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0e22f6f55f74bb3f7743de3d3e87e9782cac75d3", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.4": {
@@ -267,6 +306,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/80bfce8a09c4661bc0e79f61ffaa388290eb0aa4", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.2.1": {
@@ -290,6 +333,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/f0d910d4443a3361f90f0aca98cbafd31ad543d1", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/475fb9c4161625a3e218241beaf97981360cc33d", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4e5811e9eb8961cea838cda5db0f3f72da2b9665"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.2.0": {
@@ -313,6 +360,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/c6fa1c83bf2298c0065651e495f8928da742c948", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/f2c5d89b3a33fedf3e892032df9a9e730ef5eea1", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/03bc607b3e23dacefef4f252a70753e1f41a3981"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.1.2": {
@@ -334,6 +385,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.3": {
@@ -355,6 +410,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/80bfce8a09c4661bc0e79f61ffaa388290eb0aa4", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.1.0": {
@@ -376,6 +435,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.1.1": {
@@ -397,6 +460,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.1.4": {
@@ -418,6 +485,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.2": {
@@ -439,6 +510,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/46596a8dd01aafa96333cb9b4d3090279ac73cc0", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.1.3": {
@@ -460,6 +535,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": "2013-01-22T20:16:54Z", 
+                "authored": "2013-01-22T20:16:54Z"
             }
         }, 
         "0.10.0": {
@@ -480,6 +559,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/8a9221a2f0ffdd1ffbd305ba341d25129b2f464a", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/26abb4724157d1ab54b1977e7b66a25361901669", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/79797ed7175a1555ae7f6a98748c8fa9c735bee3"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.22.0": {
@@ -502,6 +585,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/1393ac349d2a26e827412788962d3f0d1ec2c803", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/ccbee7a75affe2a6a817889d80a7ade75ae5d426", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3b2da5103d28a80ebc507eb81bb3064c42817752"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.0": {
@@ -523,6 +610,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/698032889591445b7e33448194adfe740f8b67bc", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.11.0": {
@@ -543,6 +634,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/606383b54b6bac298ce8e11759528f9ef1c7c7e6", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/95d8ea51961f538ddd800c236e364a9fa6cb6368", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/a3b5ad35cc5556ea7098b5ddc428dce1fdeb837e"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.12.0": {
@@ -563,6 +658,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/8e192e3216c7d1cb44020552d72f88e6760c605c", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/57f74d437fe248d3a4c0e2ff823b69063c89b002", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/26d713b02f3a1259d3c2e0d4e8be5610e7476ce9"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "master": {
@@ -585,6 +684,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": "2013-04-09T06:57:13Z", 
+                "authored": "2013-04-09T06:57:13Z"
             }
         }, 
         "0.23.0": {
@@ -609,6 +712,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/522616d7a4ac7300cb5e667bfa22a6591fbd9401", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/ccbee7a75affe2a6a817889d80a7ade75ae5d426", 
                 "adapt": "https://api.github.com/repos/jrburke/requirejs/git/trees/7c62a6ce41bbcb35d4e40771f6e2df798ec854fe"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.13.0": {
@@ -630,6 +737,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/64a1a9d648ce694cecf60e9985970d5f7c2ed973", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/14a44b5ec3b5017b55050aa5ed60233f2a7fe189", 
                 "pkg": "https://api.github.com/repos/jrburke/requirejs/git/trees/1c606267d3847f91c510655a883e3cfaf7859e02"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.9.0": {
@@ -650,6 +761,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/8a9221a2f0ffdd1ffbd305ba341d25129b2f464a", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/fd61f4c4872665d82377751cefa335b203da913f", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/d3b1dafdbe73f780dcce3ff4ab8dfbe825d2831b"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.14.4": {
@@ -670,6 +785,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/618259da9819321289b01b30302f419d47f7e508", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/e1b2d508aaedf7dd2ceab3a1c1a7fc38a07e08a5", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/13e978d22c5f198a85d9bc55a77522fb72a1a7b7"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.1": {
@@ -691,6 +810,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/698032889591445b7e33448194adfe740f8b67bc", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.14.1": {
@@ -712,6 +835,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/8c03a17fc2d2fb9651e5228e6b1af4537756ec87", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/430dd32da5750c536533e4b60d3b7594ab6580d6", 
                 "pkg": "https://api.github.com/repos/jrburke/requirejs/git/trees/f7ac360ad5e29ad08f72620136feb1e18190e388"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.14.0": {
@@ -733,6 +860,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/8c03a17fc2d2fb9651e5228e6b1af4537756ec87", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0c588824c3a1d17869e61a17df6751d526b92b72", 
                 "pkg": "https://api.github.com/repos/jrburke/requirejs/git/trees/f7ac360ad5e29ad08f72620136feb1e18190e388"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.14.3": {
@@ -753,6 +884,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/618259da9819321289b01b30302f419d47f7e508", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/7f09c7d211989f84c4574e7f2ca57c8db085447e", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/ae3131740a4eb30a497a0fdcc486a80981e4b91b"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.14.2": {
@@ -774,6 +909,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/8c03a17fc2d2fb9651e5228e6b1af4537756ec87", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/a8f0a721177d2c5ab5f16c56c2c02e881ce0fc20", 
                 "pkg": "https://api.github.com/repos/jrburke/requirejs/git/trees/f7ac360ad5e29ad08f72620136feb1e18190e388"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.24.0": {
@@ -800,6 +939,10 @@
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/7b484dc1d12de3d1f61c1af7e6b9705c3bd9ae41", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/6cbaf5acfa41e510fa3b52ad6fe1207fdfe40ca6", 
                 "adapt": "https://api.github.com/repos/jrburke/requirejs/git/trees/6afa418243f1a017ca25ef1e184048b99acd79aa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.8.0": {
@@ -820,6 +963,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/bc9a77619f710e7c24d8207ceba127f15b8309e8", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/f5ac58fb843a876a4197efefa86551ed11678b11", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9c2f321746fa793fe38b13b0c6842593487eafdf"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.25.0": {
@@ -844,6 +991,10 @@
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/76a6617665af85cd96899f45b13b19b991fa4606", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/f5db94733f890cbd3f3cc4f1248395f41b1d4208", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/5046bc35a9428c0f9d82c2a4c7e445ab26e6369d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.1.5": {
@@ -866,6 +1017,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "2.0.6": {
@@ -887,6 +1042,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/bca94d4c5eb78f8d2a3f943355c9daaa2b5c6316", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.26.0": {
@@ -911,6 +1070,10 @@
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/60fb2d38194451e947b04615e734cc3448ce73c6", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/a48e81388b5972d173fdee5fa052f76758471835", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/5046bc35a9428c0f9d82c2a4c7e445ab26e6369d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.27.1": {
@@ -936,6 +1099,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/bde4af80a9213ec872a1c4cc24ff23ef6c719610", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/709344877277fc416cf9d08a20300c4344346c7b", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.27.0": {
@@ -961,6 +1128,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/2e3a24c7eddc50e2b64387d9cffa9096ed07cd63", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3690553f44b6eb18386021e29d7a5b9df3cfbcce", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0.5": {
@@ -986,6 +1157,10 @@
                 "text.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/6ef7422e65f766eca85dfe8dc5222f11a84c0ffa", 
                 "i18n.js": "https://api.github.com/repos/jrburke/requirejs/git/blobs/0a815cd9d5b4359d115d5d54d3466aca153ba317", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/3207a9233d0e4262d0a9af1b8f418defab210c51"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "0.15.0": {
@@ -1007,6 +1182,10 @@
                 "require": "https://api.github.com/repos/jrburke/requirejs/git/trees/87a9e9b2fd1d9dc681902276716ac9e6548cb58b", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/df7ce6379aea1aeb5c3b756fb0f4293168b36902", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/8ee1a2f0e1988779c20348f529a0a055fb2cdb04"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "latest": {
@@ -1029,6 +1208,10 @@
                 "updatesubs.sh": "https://api.github.com/repos/jrburke/requirejs/git/blobs/befe2d2d4cd842a9fd8e15c5bc4ee33aac36d915", 
                 "tasks.txt": "https://api.github.com/repos/jrburke/requirejs/git/blobs/9f12fedaacdf5acdc248a78071b6bfa31348b1f4", 
                 "README.md": "https://api.github.com/repos/jrburke/requirejs/git/blobs/4d3f25e37caba43a03d80213f5575270f9316c0d"
+            }, 
+            "date": {
+                "commited": "2013-03-04T07:10:32Z", 
+                "authored": "2013-03-04T07:10:32Z"
             }
         }
     }

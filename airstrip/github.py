@@ -91,10 +91,9 @@ class GitHubInit():
     logging.getLogger().addHandler(consoleCfg)
     logging.getLogger().setLevel(logging.DEBUG)
 
-    # self.uname = prompt("Github username")
-    # self.pwd = prompt("Github password")
-    self.uname = "dmp42"
-    self.pwd = "githubmaumau"
+    self.uname = prompt("Github username")
+    self.pwd = prompt("Github password")
+
     self.auth = requests.auth.HTTPBasicAuth(self.uname, self.pwd)
 
     token = self.__getToken__()
@@ -124,6 +123,8 @@ class GitHubInit():
           "author": owner,
           "version": tag
         }
+        print sha
+        print json.dumps(i, indent=4)
 
     print " [github-connector] found %s tags" % len(tags)
 
@@ -135,6 +136,20 @@ class GitHubInit():
         tree = self.apiGet("repos/%s/%s/git/trees/%s" % (owner, repo, sha))
       else:
         tree = self.apiCacheGet("repos/%s/%s/git/trees/%s" % (owner, repo, sha))
+
+      date = self.apiCacheGet("repos/%s/%s/git/commits/%s" % (owner, repo, sha))
+      try:
+        tags[tag]["date"] = {
+          "authored": date["author"]["date"],
+          "commited": date["committer"]["date"]
+        }
+      except:
+        tags[tag]["date"] = {
+          "authored": False,
+          "commited": False
+        }
+        print sha
+        console.error('Failed fetching a commit!!!')
 
       for item in tree["tree"]:
         if item["path"].lower() in ['package.json', 'component.json', '.travis.yml']:

@@ -1,11 +1,9 @@
 {
-    "nobuild": true,
+    "nobuild": true, 
+    "git": "https://github.com/h5bp/html5-boilerplate", 
     "productions": {
         "main.css": "css/main.css"
     }, 
-
-
-    "git": "https://github.com/h5bp/html5-boilerplate", 
     "versions": {
         "v0.9.1": {
             "package.json": {
@@ -27,6 +25,10 @@
                 "demo": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b75148341b5bcbbb71372786b1af368936ba4596", 
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/df53a38c23def4d285d2ee03d186aa1a335f4a01", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/928a2105d213ee8fdc9997891c7673fd7e561e37"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.9.5": {
@@ -54,6 +56,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/493b0351f3e77c618e24a7ceed876e6a91146cac", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2", 
                 "web.config": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/9ad087ff1e81e35e21af3440743a17b7b32a7cab"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v4.2.0": {
@@ -87,6 +93,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/9355759af4d2423aa0d309a4c8def7542c8aee7a", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0stripped": {
@@ -115,6 +125,10 @@
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/7708a33694a2ce522adf7ce3c446876b4a68e5f0", 
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/8c0b94cca9632a5c875175cdae69edee24479c7f", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/18d2d71dae835233f4b5b64a6223d92ef49fc76f"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v4.0.0": {
@@ -147,6 +161,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/c7c199081dbc440fd726bedfc87f10264b550f9b", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v4.0.1": {
@@ -180,6 +198,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b202b8a75bd475cffc079359dbd838ede7625418", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0rc": {
@@ -208,6 +230,10 @@
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/c9008fee4eb1434088994277ea2ebe20dcf12d08", 
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/427c11860206082a3f2c0decece27c95b18b60c3", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v4.0.3": {
@@ -241,6 +267,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/1e9c012673c8b6f12d5654e125963112ed57b087", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v3.0.2": {
@@ -269,6 +299,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/afcbc4c0d0fe09dd2bb8ba0d9abc5745c8b637c0", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v3.0.1": {
@@ -297,6 +331,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/0ddea839dad8a5e5daa4a4282858e4c3785f46be", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.9.1stripped": {
@@ -319,6 +357,10 @@
                 "demo": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b75148341b5bcbbb71372786b1af368936ba4596", 
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/df53a38c23def4d285d2ee03d186aa1a335f4a01", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/928a2105d213ee8fdc9997891c7673fd7e561e37"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v3.0stripped": {
@@ -347,6 +389,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/0b7d54691da2e0d5d39f3ef4689164c0657e5055", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/67df211d8b3a2800312584c3c0cd392be91ca9d9"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0": {
@@ -375,6 +421,10 @@
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/7708a33694a2ce522adf7ce3c446876b4a68e5f0", 
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/ac4830aa9d42ba58967cb299fd44fade8da5a552", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/18d2d71dae835233f4b5b64a6223d92ef49fc76f"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v3.0.1stripped": {
@@ -403,6 +453,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b9d7f71acb8615a713ee63162d1731427c56ffb0", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0": {
@@ -431,6 +485,10 @@
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b409605527ea5b66b0880751e5cd848d1a2d0e6b", 
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/427c11860206082a3f2c0decece27c95b18b60c3", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "master": {
@@ -464,6 +522,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/45f45c6555a21e96b01ee55ed4a98266e111e089", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": "2013-04-12T14:40:55Z", 
+                "authored": "2013-04-12T10:55:48Z"
             }
         }, 
         "v0.9": {
@@ -485,6 +547,10 @@
                 "demo": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/136f60651898c84b104ea7575eb27ea2c7fa4dbd", 
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/f94dc71deb07d9427b331aa882c6f70b3691b1ad", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/928a2105d213ee8fdc9997891c7673fd7e561e37"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v3.0.2stripped": {
@@ -513,6 +579,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/0838c322726603aad9e46733219e8e0a331a68af", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0rcstripped": {
@@ -541,6 +611,10 @@
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/c9008fee4eb1434088994277ea2ebe20dcf12d08", 
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/2f7d6cddbb17a958873c2c176eb0c88745e105ef", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v4.0.2": {
@@ -574,6 +648,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b28e9ebd2fd9d9e49b46b3216bd422d07e8ceb4a", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v3.0": {
@@ -602,6 +680,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b886277de5d675b9229a46ab2fcd1b62fffbaad1", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.9.5stripped": {
@@ -629,6 +711,10 @@
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/ebb4811270958a5b6067987da207f39f752f4aff", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2", 
                 "web.config": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/9ad087ff1e81e35e21af3440743a17b7b32a7cab"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0stripped": {
@@ -657,6 +743,10 @@
                 "test": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/b409605527ea5b66b0880751e5cd848d1a2d0e6b", 
                 "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/7a902a34d04ad4794e679eec8e56946323ee2e61", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v4.1.0": {
@@ -690,6 +780,10 @@
                 "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/1e9c012673c8b6f12d5654e125963112ed57b087", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }
     }

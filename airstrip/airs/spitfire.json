@@ -1,16 +1,16 @@
 {
-    "nobuild": true,
-    "productions": {
-        "spitfire-labjs.js": "dist/spitfire-labjs.js",
-        "spitfire-labjs-min.js": "dist/spitfire-labjs-min.js",
-        "gulliver.js": "dist/gulliver.js",
-        "gulliver-min.js": "dist/gulliver-min.js",
-        "burnscars.js": "dist/burnscars.js",
-        "burnscars-min.js": "dist/burnscars-min.js",
-        "burnscars.css": "dist/burnscars.css",
-        "burnscars": "dist/burnscars"
-    }, 
+    "nobuild": true, 
     "git": "https://github.com/jsBoot/spitfire.js", 
+    "productions": {
+        "spitfire-labjs-min.js": "dist/spitfire-labjs-min.js", 
+        "burnscars.css": "dist/burnscars.css", 
+        "gulliver.js": "dist/gulliver.js", 
+        "burnscars.js": "dist/burnscars.js", 
+        "spitfire-labjs.js": "dist/spitfire-labjs.js", 
+        "gulliver-min.js": "dist/gulliver-min.js", 
+        "burnscars": "dist/burnscars", 
+        "burnscars-min.js": "dist/burnscars-min.js"
+    }, 
     "versions": {
         "1.0.0-rc1": {
             "package.json": {
@@ -31,6 +31,10 @@
                 "README.md": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/753c0f2765843196654fb9ecc459be5d46af787f", 
                 "hinter.json": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/ee54a22d26d04c9f652ae1c30b3433772f6e0c96", 
                 "config.yaml": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/9d65b36a5a07a83be100d92d72c16229adb3cf29"
+            }, 
+            "date": {
+                "commited": "2012-10-29T12:10:05Z", 
+                "authored": "2012-10-29T12:10:05Z"
             }
         }, 
         "1.0.0-rc2": {
@@ -52,6 +56,10 @@
                 "config-USER-BOX.yaml": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/e3b914515f8081512316a831d1ee0216477e73a5", 
                 "README.md": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/753c0f2765843196654fb9ecc459be5d46af787f", 
                 "config.yaml": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/ea13c1d2570050e54c7a0e8e48f0fd787e18c6cf"
+            }, 
+            "date": {
+                "commited": "2013-03-07T19:52:45Z", 
+                "authored": "2013-03-07T19:52:45Z"
             }
         }, 
         "master": {
@@ -127,6 +135,10 @@
                 ".pukeignore": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/d042baf7a7fd021bcd4e87aadba1649a7a49bdef", 
                 "README.md": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/9ab7a669b4d94e1c46da05b8d47445dc5e2c7ab5", 
                 "package-dmp-darwin.json": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/4bd04e3bd7e7e099a1ba610bf2349195e7e19d77"
+            }, 
+            "date": {
+                "commited": "2013-04-17T03:08:30Z", 
+                "authored": "2013-04-17T03:08:30Z"
             }
         }, 
         "1.1.0": {
@@ -202,6 +214,10 @@
                 ".pukeignore": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/d042baf7a7fd021bcd4e87aadba1649a7a49bdef", 
                 "README.md": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/9ab7a669b4d94e1c46da05b8d47445dc5e2c7ab5", 
                 "package-dmp-darwin.json": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/4bd04e3bd7e7e099a1ba610bf2349195e7e19d77"
+            }, 
+            "date": {
+                "commited": "2013-04-17T03:05:44Z", 
+                "authored": "2013-04-17T03:05:44Z"
             }
         }
     }

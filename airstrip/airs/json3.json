@@ -1,11 +1,10 @@
 {
-    "nobuild": true,
-    "productions": {
-        "json3.js": "lib/json3.js",
-        "json3-min.js": "lib/json3.min.js"
-    },
-
+    "nobuild": true, 
     "git": "https://github.com/bestiejs/json3", 
+    "productions": {
+        "json3-min.js": "lib/json3.min.js", 
+        "json3.js": "lib/json3.js"
+    }, 
     "versions": {
         "v3.1.0": {
             "package.json": {
@@ -62,6 +61,10 @@
                 "page.css": "https://api.github.com/repos/bestiejs/json3/git/blobs/cea74e19fc8e3b85c5708e275f50b0e941092ab1", 
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/bfbd50860d0d851dd4a5921fd3b4167527531ec2", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/a4d74acaa957e8c17ef316c2327361a557e2f19a"
+            }, 
+            "date": {
+                "commited": "2012-03-23T07:27:30Z", 
+                "authored": "2012-03-23T05:19:10Z"
             }
         }, 
         "v3.2.3": {
@@ -120,6 +123,10 @@
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/f6647a8fae263194bf6622a246a3d710da1c53aa", 
                 "page": "https://api.github.com/repos/bestiejs/json3/git/trees/33c45df0f02b75b1bb29e0db787fa0868789fc3c", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/0fb0160e6e099ef5fe4968d186264a9996920abd"
+            }, 
+            "date": {
+                "commited": "2012-07-13T15:52:53Z", 
+                "authored": "2012-07-13T15:52:53Z"
             }
         }, 
         "v3.0.0": {
@@ -177,6 +184,10 @@
                 "page.css": "https://api.github.com/repos/bestiejs/json3/git/blobs/cea74e19fc8e3b85c5708e275f50b0e941092ab1", 
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/23ec695daf7fb4a46dc99026fa80f5aca803d1d8", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/7fdd209342f4f5d656a9e45bf9e8e15e0d2333bb"
+            }, 
+            "date": {
+                "commited": "2012-03-20T08:12:40Z", 
+                "authored": "2012-03-20T08:12:40Z"
             }
         }, 
         "v0.8.5": {
@@ -232,6 +243,10 @@
                 ".gitmodules": "https://api.github.com/repos/bestiejs/json3/git/blobs/877931102e35097a84807893cb4e291ebe54431f", 
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/66ab4905140b38ed29372bfa64e91400a7fbccc7", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/b38345db2a2ee75da181995e1db3f11249ae68c2"
+            }, 
+            "date": {
+                "commited": "2012-03-17T00:08:48Z", 
+                "authored": "2012-03-17T00:08:48Z"
             }
         }, 
         "v0.8.0": {
@@ -250,6 +265,10 @@
                 ".gitmodules": "https://api.github.com/repos/bestiejs/json3/git/blobs/877931102e35097a84807893cb4e291ebe54431f", 
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/10f674378f079d8396b627d7b05470f46108b48a", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/49897d40edc28eea3982e0456b84789389840fd2"
+            }, 
+            "date": {
+                "commited": "2012-03-16T04:13:01Z", 
+                "authored": "2012-03-16T04:13:01Z"
             }
         }, 
         "v3.2.4": {
@@ -308,6 +327,10 @@
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/7a4383c4f35f8cd53d4ae148aaedb8d9ac92233e", 
                 "page": "https://api.github.com/repos/bestiejs/json3/git/trees/33c45df0f02b75b1bb29e0db787fa0868789fc3c", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/4c292ceb864614da41422f6b6a47b8a239141289"
+            }, 
+            "date": {
+                "commited": "2012-10-11T20:54:17Z", 
+                "authored": "2012-10-11T20:54:17Z"
             }
         }, 
         "v3.2.1": {
@@ -366,6 +389,10 @@
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/b45d934f1eb63616971eac03472e27d3d153b839", 
                 "page": "https://api.github.com/repos/bestiejs/json3/git/trees/33c45df0f02b75b1bb29e0db787fa0868789fc3c", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/f7da8f2b2e1f2473ba2701376a6f4d46c1e74f65"
+            }, 
+            "date": {
+                "commited": "2012-04-27T02:39:47Z", 
+                "authored": "2012-04-27T02:38:17Z"
             }
         }, 
         "v3.2.0": {
@@ -424,6 +451,10 @@
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/b4d9f7fd19a455ecd8afaa8bc80cdfb7c5c32409", 
                 "page": "https://api.github.com/repos/bestiejs/json3/git/trees/33c45df0f02b75b1bb29e0db787fa0868789fc3c", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/b40d45f6514a573ad7d1a86ff48ce6a2dbbc7ff1"
+            }, 
+            "date": {
+                "commited": "2012-04-15T21:49:58Z", 
+                "authored": "2012-04-15T21:49:58Z"
             }
         }, 
         "v0.2.0": {
@@ -474,6 +505,10 @@
                 "benchmark": "https://api.github.com/repos/bestiejs/json3/git/trees/33f6a4d10107307fed1a4d61ba2a922a5f529844", 
                 "lib": "https://api.github.com/repos/bestiejs/json3/git/trees/851b3872a39b037a8c267ec284fb943af6c84f48", 
                 "LICENSE": "https://api.github.com/repos/bestiejs/json3/git/blobs/98294af89a957cd0dcdeabd9d9235b82736502ca"
+            }, 
+            "date": {
+                "commited": "2012-02-18T06:17:10Z", 
+                "authored": "2012-02-18T06:17:10Z"
             }
         }, 
         "v3.2.2": {
@@ -532,6 +567,10 @@
                 "test": "https://api.github.com/repos/bestiejs/json3/git/trees/ed928f46377278f0fc486db66bd9d57863a78167", 
                 "page": "https://api.github.com/repos/bestiejs/json3/git/trees/33c45df0f02b75b1bb29e0db787fa0868789fc3c", 
                 "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/bdaba0729733c1891e55dba9db98c82c2488b728"
+            }, 
+            "date": {
+                "commited": "2012-05-05T20:16:58Z", 
+                "authored": "2012-05-05T20:16:58Z"
             }
         }, 
         "v0.1.0": {
@@ -582,6 +621,10 @@
                 "benchmark": "https://api.github.com/repos/bestiejs/json3/git/trees/a3ff62794dd282a40e33ff72e877cc9b9ae81b47", 
                 "lib": "https://api.github.com/repos/bestiejs/json3/git/trees/332992cb3b00a0d22a99d47883865040c63cc163", 
                 "LICENSE": "https://api.github.com/repos/bestiejs/json3/git/blobs/98294af89a957cd0dcdeabd9d9235b82736502ca"
+            }, 
+            "date": {
+                "commited": "2012-02-17T02:56:32Z", 
+                "authored": "2012-02-17T02:56:32Z"
             }
         }, 
         "v0.5.0": {
@@ -632,6 +675,10 @@
                 "benchmark": "https://api.github.com/repos/bestiejs/json3/git/trees/33f6a4d10107307fed1a4d61ba2a922a5f529844", 
                 "lib": "https://api.github.com/repos/bestiejs/json3/git/trees/094aad0dc30264e7abd8cedf2feaa628191b9bc8", 
                 "LICENSE": "https://api.github.com/repos/bestiejs/json3/git/blobs/98294af89a957cd0dcdeabd9d9235b82736502ca"
+            }, 
+            "date": {
+                "commited": "2012-02-18T20:15:49Z", 
+                "authored": "2012-02-18T20:15:49Z"
             }
         }
     }

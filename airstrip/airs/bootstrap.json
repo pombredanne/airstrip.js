@@ -1,14 +1,13 @@
 {
-    "productions": {
-        "bootstrap.js": "docs/assets/js/bootstrap.js",
-        "bootstrap-min.js": "docs/assets/js/bootstrap.min.js",
-        "css/bootstrap-responsive.css": "docs/assets/css/bootstrap-responsive.css",
-        "css/bootstrap.css": "docs/assets/css/bootstrap.css",
-        "img/glyphicons-halflings-white.png": "docs/assets/img/glyphicons-halflings-white.png",
-        "img/glyphicons-halflings.png": "docs/assets/img/glyphicons-halflings.png"
-    },
-
     "git": "https://github.com/twitter/bootstrap", 
+    "productions": {
+        "img/glyphicons-halflings-white.png": "docs/assets/img/glyphicons-halflings-white.png", 
+        "bootstrap.js": "docs/assets/js/bootstrap.js", 
+        "bootstrap-min.js": "docs/assets/js/bootstrap.min.js", 
+        "img/glyphicons-halflings.png": "docs/assets/img/glyphicons-halflings.png", 
+        "css/bootstrap.css": "docs/assets/css/bootstrap.css", 
+        "css/bootstrap-responsive.css": "docs/assets/css/bootstrap-responsive.css"
+    }, 
     "versions": {
         "v1.1.0": {
             "package.json": {
@@ -27,6 +26,10 @@
                 "bootstrap-1.1.0.min.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/76178b180c3bcf6528e587340d767c235dedb937", 
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/d4d7c962522d01e3f118e7315f39e57fd52e4afe", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/81ba72042fb908a631b4a77672951f0fada40e15"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.1.1": {
@@ -46,6 +49,10 @@
                 "bootstrap-1.1.1.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/9ece1008d404554439ef14b9f9a8a4e2204b2bd9", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/8ac5f78ff53d04b19dc0eab99dd6e2ea87eeb866", 
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/e7482673c78366c04fa7cda3d6125595952fbd4a"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.4": {
@@ -95,6 +102,10 @@
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/2b1ffbfeb8a254fb39f53e6e4f27aa9d20c859fb", 
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/7721b2408a5885d8c1a68a24fbc311a56eb7bc5b", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/f69925ea6cf72e659174b16cf90dfa1eaebb9b05"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.2": {
@@ -113,6 +124,10 @@
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/5e8b7abb9e00d3284c08ba6169d01b6457c79a00", 
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/3032944b26081c909886222608dae746ae10856a", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/47a4aa718cf306fd5b88c4480a46cb987f0c52ab"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.0": {
@@ -131,6 +146,10 @@
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/496ee2ca6a2f08396a4076fe43dedf3dc0da8b6d", 
                 "bootstrap-1.0.0.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/375ed11882182fd203e8dc25a8bd9a87df41be55", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/216df9d36aa54b9282616473c05c429a643f3a38"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.0": {
@@ -149,6 +168,10 @@
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/19700fef06e669f7dbc3a9848c647373378f3c21", 
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/d1e72459db88e35761a2b2b18a3a98b8705d8856", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/7dc9038a8c64b80a437e9c2168da594d1adb5d16"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.4.0": {
@@ -169,6 +192,10 @@
                 "bootstrap.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/af650057566bf01f24ca8c7695a0b46a540bff6f", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/e05a25f736bfcb2705027ef62fe09abdd5293c6d", 
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/275a4daa18d89d2517e08a799ab67ddf0e2badce"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.3.1": {
@@ -203,12 +230,16 @@
                 "homepage": "http://twitter.github.com/bootstrap/", 
                 "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
             }, 
-            "sha": "85ba3221753b49fdd26d960f3ee505e3beca1537", 
-            ".travis.yml": {
-                "node_js": [
-                    0.6
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
                 ], 
-                "language": "node_js"
+                "version": "2.3.1", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
             }, 
             "tree": {
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/c97e8b81ee36834a445ec4fd704a9f62acb7119c", 
@@ -223,16 +254,16 @@
                 "composer.json": "https://api.github.com/repos/twitter/bootstrap/git/blobs/abde63128e6f09103539a591d4a6c4d625e75b3a", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/45b151e15fd4fd644aa9d829bb9c3fed7c807470"
             }, 
-            "component.json": {
-                "main": [
-                    "./docs/assets/js/bootstrap.js", 
-                    "./docs/assets/css/bootstrap.css"
+            "sha": "85ba3221753b49fdd26d960f3ee505e3beca1537", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
                 ], 
-                "version": "2.3.1", 
-                "name": "bootstrap", 
-                "dependencies": {
-                    "jquery": "~1.8.0"
-                }
+                "language": "node_js"
             }
         }, 
         "v2.3.0": {
@@ -267,12 +298,16 @@
                 "homepage": "http://twitter.github.com/bootstrap/", 
                 "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
             }, 
-            "sha": "af172e74e9e7215bd05087cfd89026afbf575e92", 
-            ".travis.yml": {
-                "node_js": [
-                    0.6
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
                 ], 
-                "language": "node_js"
+                "version": "2.3.0", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
             }, 
             "tree": {
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/c97e8b81ee36834a445ec4fd704a9f62acb7119c", 
@@ -287,16 +322,16 @@
                 "composer.json": "https://api.github.com/repos/twitter/bootstrap/git/blobs/abde63128e6f09103539a591d4a6c4d625e75b3a", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/4f74a15f2b330a80cc0664a24850b216279818aa"
             }, 
-            "component.json": {
-                "main": [
-                    "./docs/assets/js/bootstrap.js", 
-                    "./docs/assets/css/bootstrap.css"
+            "sha": "af172e74e9e7215bd05087cfd89026afbf575e92", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
                 ], 
-                "version": "2.3.0", 
-                "name": "bootstrap", 
-                "dependencies": {
-                    "jquery": "~1.8.0"
-                }
+                "language": "node_js"
             }
         }, 
         "v2.0.1": {
@@ -315,6 +350,10 @@
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/19700fef06e669f7dbc3a9848c647373378f3c21", 
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/45acd2ad4a268e200894dd2878e0948980043e12", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/0395568580569c09dc1931599a6cbda0fca4a7fc"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.3.0": {
@@ -335,6 +374,10 @@
                 "bootstrap.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/117f510f4ac9078d5ea1d35de0d8a3d54e72a71c", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/ad51b16fc163fc6ac491f0d98c74ba236785e41d", 
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/e6d2ef0f53f065e01594c4ec5e150dedfaac2afa"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "master": {
@@ -369,12 +412,16 @@
                 "homepage": "http://twitter.github.com/bootstrap/", 
                 "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
             }, 
-            "sha": "37d0a30589e8bd74299b2d857c348d91396563ed", 
-            ".travis.yml": {
-                "node_js": [
-                    0.6
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
                 ], 
-                "language": "node_js"
+                "version": "2.3.1", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
             }, 
             "tree": {
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/463bfca781f6615e308cff94973699ebf5a625ad", 
@@ -389,16 +436,16 @@
                 "composer.json": "https://api.github.com/repos/twitter/bootstrap/git/blobs/abde63128e6f09103539a591d4a6c4d625e75b3a", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/45b151e15fd4fd644aa9d829bb9c3fed7c807470"
             }, 
-            "component.json": {
-                "main": [
-                    "./docs/assets/js/bootstrap.js", 
-                    "./docs/assets/css/bootstrap.css"
+            "sha": "37d0a30589e8bd74299b2d857c348d91396563ed", 
+            "date": {
+                "commited": "2013-03-15T05:21:06Z", 
+                "authored": "2013-03-15T05:21:06Z"
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
                 ], 
-                "version": "2.3.1", 
-                "name": "bootstrap", 
-                "dependencies": {
-                    "jquery": "~1.8.0"
-                }
+                "language": "node_js"
             }
         }, 
         "v2.2.1": {
@@ -432,12 +479,16 @@
                 "homepage": "http://twitter.github.com/bootstrap/", 
                 "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
             }, 
-            "sha": "08a4e19fdcf5105312b9056e73e30d49ecc85913", 
-            ".travis.yml": {
-                "node_js": [
-                    0.6
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
                 ], 
-                "language": "node_js"
+                "version": "2.2.1", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
             }, 
             "tree": {
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/c97e8b81ee36834a445ec4fd704a9f62acb7119c", 
@@ -450,16 +501,16 @@
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/9df9a7a3c06e5d4bebe2decba3ad65e551d2d316", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/cefe24afb8f9527636f51b48ec7e0319ede67ca4"
             }, 
-            "component.json": {
-                "main": [
-                    "./docs/assets/js/bootstrap.js", 
-                    "./docs/assets/css/bootstrap.css"
+            "sha": "08a4e19fdcf5105312b9056e73e30d49ecc85913", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
                 ], 
-                "version": "2.2.1", 
-                "name": "bootstrap", 
-                "dependencies": {
-                    "jquery": "~1.8.0"
-                }
+                "language": "node_js"
             }
         }, 
         "v2.2.2": {
@@ -494,12 +545,16 @@
                 "homepage": "http://twitter.github.com/bootstrap/", 
                 "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
             }, 
-            "sha": "249ff5a0122ff3ac288b539a199aa2b42b5d4c21", 
-            ".travis.yml": {
-                "node_js": [
-                    0.6
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
                 ], 
-                "language": "node_js"
+                "version": "2.2.2", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
             }, 
             "tree": {
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/c97e8b81ee36834a445ec4fd704a9f62acb7119c", 
@@ -513,16 +568,16 @@
                 "composer.json": "https://api.github.com/repos/twitter/bootstrap/git/blobs/5ddf13636061bcce801aa2abe37860891c9b186a", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/39ccc6987d94f8d50f4e31a45e40eccf14858923"
             }, 
-            "component.json": {
-                "main": [
-                    "./docs/assets/js/bootstrap.js", 
-                    "./docs/assets/css/bootstrap.css"
+            "sha": "249ff5a0122ff3ac288b539a199aa2b42b5d4c21", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
                 ], 
-                "version": "2.2.2", 
-                "name": "bootstrap", 
-                "dependencies": {
-                    "jquery": "~1.8.0"
-                }
+                "language": "node_js"
             }
         }, 
         "v1.2.0": {
@@ -542,6 +597,10 @@
                 "bootstrap-1.2.0.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/b7fe65e783569199dc75966761c75720f286f642", 
                 "bootstrap-1.2.0.min.css": "https://api.github.com/repos/twitter/bootstrap/git/blobs/95b54405bbab7fdd93c31baea5b0ccf5d14c5cca", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/eaa6ca98334a0083df79061d203d0849a653f114"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.2.0": {
@@ -575,12 +634,16 @@
                 "homepage": "http://twitter.github.com/bootstrap/", 
                 "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
             }, 
-            "sha": "262a778771929ac8812fb000496febcb605c813d", 
-            ".travis.yml": {
-                "node_js": [
-                    0.6
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
                 ], 
-                "language": "node_js"
+                "version": "2.2.0", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
             }, 
             "tree": {
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/c97e8b81ee36834a445ec4fd704a9f62acb7119c", 
@@ -593,16 +656,16 @@
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/f2ab7a36d7e25aa2e1e6e463c824774d980bfec5", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/cefe24afb8f9527636f51b48ec7e0319ede67ca4"
             }, 
-            "component.json": {
-                "main": [
-                    "./docs/assets/js/bootstrap.js", 
-                    "./docs/assets/css/bootstrap.css"
+            "sha": "262a778771929ac8812fb000496febcb605c813d", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
                 ], 
-                "version": "2.2.0", 
-                "name": "bootstrap", 
-                "dependencies": {
-                    "jquery": "~1.8.0"
-                }
+                "language": "node_js"
             }
         }, 
         "v2.1.1": {
@@ -653,6 +716,10 @@
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/32d1bb065aa0c531b1cea3cbfc566b085a9a7d2b", 
                 ".issue-guidelines.js": "https://api.github.com/repos/twitter/bootstrap/git/blobs/9b20dc2638dee15e4c3ec3d2b52c52d2d0feb702", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/d9850fda0860ab3a0e628da29e04a06b858f80b0"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.1.0": {
@@ -703,6 +770,10 @@
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/e8804c17bb8ca7ba9c9ec50a4d0eb35fd1e16a24", 
                 ".issue-guidelines.js": "https://api.github.com/repos/twitter/bootstrap/git/blobs/9b20dc2638dee15e4c3ec3d2b52c52d2d0feb702", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/f6f1b54633a95fdce8dcd33a11240e6fc279329e"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.3": {
@@ -752,6 +823,10 @@
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/2b1ffbfeb8a254fb39f53e6e4f27aa9d20c859fb", 
                 "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/3403fef91b23e42338cf0dcb944f8ad455949e4f", 
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/54ea40577f64bfeb5a9f31639127111ad2a1b601"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }
     }

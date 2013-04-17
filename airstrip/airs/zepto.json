@@ -1,9 +1,9 @@
 {
+    "git": "https://github.com/madrobby/zepto", 
     "productions": {
         "zepto-min.js": "dist/zepto.min.js", 
         "zepto.js": "dist/zepto.js"
     }, 
-    "git": "https://github.com/madrobby/zepto", 
     "versions": {
         "v0.8": {
             "package.json": {
@@ -24,6 +24,10 @@
                 "vendor": "https://api.github.com/repos/madrobby/zepto/git/trees/c2857adb3fab57270ba78587060f6bc280ad28bd", 
                 "spec": "https://api.github.com/repos/madrobby/zepto/git/trees/73ac4b0c81a61742f85e82e7560883a6dc9d15e8", 
                 "README.md": "https://api.github.com/repos/madrobby/zepto/git/blobs/c78d3212976fd938b78720cbc9c7789ff26f1515"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0": {
@@ -72,6 +76,10 @@
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/c802a6e32f6fe071238f276c3d96ad474f557255", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/fa6f747609c72a63b11d068685607c6838282252", 
                 "README.md": "https://api.github.com/repos/madrobby/zepto/git/blobs/da57960591cd84f49eb148dc7463949d58350451"
+            }, 
+            "date": {
+                "commited": "2013-03-03T02:15:41Z", 
+                "authored": "2013-03-03T02:15:00Z"
             }
         }, 
         "v0.4": {
@@ -90,6 +98,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/19849d28b937f676c2e3ae925cb6fa395ff3d69c", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/e08c717b5ab3a1582bb0b4f595ad7ea181af0829", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/75017e61fe853a577aac6fd4b32679700d71ebd5"
+            }, 
+            "date": {
+                "commited": "2011-01-21T11:02:09Z", 
+                "authored": "2011-01-21T11:02:09Z"
             }
         }, 
         "master": {
@@ -138,6 +150,10 @@
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/c802a6e32f6fe071238f276c3d96ad474f557255", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/fa6f747609c72a63b11d068685607c6838282252", 
                 "README.md": "https://api.github.com/repos/madrobby/zepto/git/blobs/da57960591cd84f49eb148dc7463949d58350451"
+            }, 
+            "date": {
+                "commited": "2013-03-09T02:50:25Z", 
+                "authored": "2013-03-09T02:50:25Z"
             }
         }, 
         "v0.1.1": {
@@ -156,6 +172,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/19849d28b937f676c2e3ae925cb6fa395ff3d69c", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/bee4daf01ac0732a8ece400d3a95c0b911eb4ff1", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/89c729a00532e8f6a38ac21dbf14b8858639b659"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.5": {
@@ -174,6 +194,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/9f82b17df0af2a0fd12d1188910972b677b6437c", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/e08c717b5ab3a1582bb0b4f595ad7ea181af0829", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/04c1ca69d46b46cf93b5b78b925553bfa5cb206b"
+            }, 
+            "date": {
+                "commited": "2011-03-01T22:36:55Z", 
+                "authored": "2011-03-01T22:36:55Z"
             }
         }, 
         "v0.6": {
@@ -192,6 +216,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/22515179568cfcb00e42fb68f183ac6487c6fead", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/0a0d8b870300499332498c885ab354fb0463dcce", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/4307c8ef40a5da5a390c1883a4f4909da95d6319"
+            }, 
+            "date": {
+                "commited": "2011-05-14T16:23:03Z", 
+                "authored": "2011-05-14T16:23:03Z"
             }
         }, 
         "v0.7": {
@@ -210,6 +238,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/22515179568cfcb00e42fb68f183ac6487c6fead", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/0a0d8b870300499332498c885ab354fb0463dcce", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/51a3d5e5efbf1ed9ef96f90137af91a489f7ead4"
+            }, 
+            "date": {
+                "commited": "2011-08-01T18:38:26Z", 
+                "authored": "2011-08-01T18:37:26Z"
             }
         }, 
         "v1.0rc1": {
@@ -232,6 +264,10 @@
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/d2b3b8e2574420941fb1a10d0b4e754ccfba05dd", 
                 "vendor": "https://api.github.com/repos/madrobby/zepto/git/trees/f2628effecd6ed3f4691f80ddb39e3aa6cbc3f84", 
                 "README.md": "https://api.github.com/repos/madrobby/zepto/git/blobs/5e35566f450f329e1721e1bef84449804728bb73"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.1": {
@@ -250,6 +286,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/19849d28b937f676c2e3ae925cb6fa395ff3d69c", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/9a1aa8161ccc25069af6aa33f96160d418eb758a", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/d69a193d67234674aaba6803311f2c495900dbaf"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.2": {
@@ -268,6 +308,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/19849d28b937f676c2e3ae925cb6fa395ff3d69c", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/bee4daf01ac0732a8ece400d3a95c0b911eb4ff1", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/bf51466950e1d805b25410ac07d54835ce0ff3c0"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.3": {
@@ -286,6 +330,10 @@
                 "examples": "https://api.github.com/repos/madrobby/zepto/git/trees/19849d28b937f676c2e3ae925cb6fa395ff3d69c", 
                 "MIT-LICENSE": "https://api.github.com/repos/madrobby/zepto/git/blobs/e08c717b5ab3a1582bb0b4f595ad7ea181af0829", 
                 "test": "https://api.github.com/repos/madrobby/zepto/git/trees/68c9eecfd55f878bba45ced8bc816d1f7a637540"
+            }, 
+            "date": {
+                "commited": "2010-12-17T15:43:07Z", 
+                "authored": "2010-12-17T15:43:07Z"
             }
         }
     }

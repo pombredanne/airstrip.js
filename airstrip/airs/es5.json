@@ -1,12 +1,11 @@
 {
-    "productions": {
-        "es5.shim.js": "es5-shim.js",
-        "es5.shim-min.js": "es5-shim.min.js",
-        "es5.shim.unsafe.js": "es5-sham.js",
-        "es5.shim.unsafe-min.js": "es5-sham.min.js"
-    },
-
     "git": "https://github.com/kriskowal/es5-shim", 
+    "productions": {
+        "es5.shim.unsafe-min.js": "es5-sham.min.js", 
+        "es5.shim-min.js": "es5-shim.min.js", 
+        "es5.shim.js": "es5-shim.js", 
+        "es5.shim.unsafe.js": "es5-sham.js"
+    }, 
     "versions": {
         "v1.2.10": {
             "package.json": {
@@ -50,6 +49,10 @@
                 "test": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/9d000b3795bb1471d15a3cb064afe35d1ee0f230", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9fe010c128b2a4ae790534f23063e2b83efeca6b", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/c0019f4c502cfcf3b5c92c0be2f27ad750fc26ed"
+            }, 
+            "date": {
+                "commited": "2011-09-23T00:26:49Z", 
+                "authored": "2011-09-23T00:26:49Z"
             }
         }, 
         "v1.2.7": {
@@ -93,6 +96,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/b1e975ce416e94114de133ba81993125da9d2ee6", 
                 "test": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/a1072c45d1b2308d6a4c186f1e2eb9eeb3c1740f", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d50465cdbcb2ed04a83b640707ad030f6da913f7"
+            }, 
+            "date": {
+                "commited": "2011-08-12T23:10:03Z", 
+                "authored": "2011-08-12T23:10:03Z"
             }
         }, 
         "v1.2.4": {
@@ -134,6 +141,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/12aa57dd42af891fae8ddd0d379216590634b946", 
                 "README": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/4dc9e28a08aab0a9a03b5d23504de5239270bc05", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/6db16be0b322a47c1f150de8b7f24b4afd13ca7e"
+            }, 
+            "date": {
+                "commited": "2011-06-12T06:05:37Z", 
+                "authored": "2011-06-12T06:05:37Z"
             }
         }, 
         "v1.2.3": {
@@ -175,6 +186,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/3540dd79d39f543389dd04ca2298fa7e2ece1150", 
                 "README": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/4dc9e28a08aab0a9a03b5d23504de5239270bc05", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2a07013aa1d784f475046ec885f9e0f19ece9aac"
+            }, 
+            "date": {
+                "commited": "2011-06-07T17:43:45Z", 
+                "authored": "2011-06-07T17:43:45Z"
             }
         }, 
         "v1.2.2": {
@@ -222,6 +237,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/3540dd79d39f543389dd04ca2298fa7e2ece1150", 
                 "README": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/4dc9e28a08aab0a9a03b5d23504de5239270bc05", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2a07013aa1d784f475046ec885f9e0f19ece9aac"
+            }, 
+            "date": {
+                "commited": "2011-06-03T21:40:12Z", 
+                "authored": "2011-06-03T21:40:12Z"
             }
         }, 
         "v1.2.1": {
@@ -269,6 +288,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/3540dd79d39f543389dd04ca2298fa7e2ece1150", 
                 "README": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/4dc9e28a08aab0a9a03b5d23504de5239270bc05", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f41add77892b4c2df957a7ed075640911068a397"
+            }, 
+            "date": {
+                "commited": "2011-05-24T09:43:03Z", 
+                "authored": "2011-05-24T09:43:03Z"
             }
         }, 
         "v1.2.0": {
@@ -309,6 +332,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/bff16f9e6a1f869bac70f40c19af2a67c7a80b36", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/4a8472114af838614c298448e632761334dcf85c", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2011-03-26T12:26:34Z", 
+                "authored": "2011-03-26T12:26:34Z"
             }
         }, 
         "v1.2.8": {
@@ -352,6 +379,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/b1e975ce416e94114de133ba81993125da9d2ee6", 
                 "test": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/a1072c45d1b2308d6a4c186f1e2eb9eeb3c1740f", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/23aed53978712cf4a43ce87a61ef57e041c77131"
+            }, 
+            "date": {
+                "commited": "2011-08-12T23:48:28Z", 
+                "authored": "2011-08-12T23:48:28Z"
             }
         }, 
         "v0.0.4": {
@@ -390,6 +421,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/0762a9e980b77c5ab68c78ac00e96b379be3f0a4", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/a277b851edbf40e504cad2f02ba9f63dba6ae382", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2010-12-01T18:55:46Z", 
+                "authored": "2010-12-01T18:55:46Z"
             }
         }, 
         "v0.0.1": {
@@ -424,6 +459,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/20ec28188efad039b9e4108b63d1f038edb0637d", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/b55e5ee452b75ed19fe0a049b86a82039c3c58be", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2010-09-16T16:02:59Z", 
+                "authored": "2010-09-16T16:02:59Z"
             }
         }, 
         "v0.0.2": {
@@ -458,6 +497,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/6fe142e0825c5f44225d1c0857c7413e273aafef", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/28fb050ad7b69f1d993b5a57ffb3e6ff1d1d36cf", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2010-09-21T01:44:58Z", 
+                "authored": "2010-09-21T01:44:58Z"
             }
         }, 
         "v0.0.3": {
@@ -495,6 +538,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/1a60ad2bd38ff197acd3c1ff85a9e9646113067c", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/b8c384ca3a41d13b4b6293912d68075d03e92e25", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2010-11-30T07:27:51Z", 
+                "authored": "2010-11-30T07:27:51Z"
             }
         }, 
         "master": {
@@ -542,6 +589,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/026ad6608724610a4e875701957720ea8fa2d7c8", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": "2013-03-22T17:25:24Z", 
+                "authored": "2013-03-22T17:25:24Z"
             }
         }, 
         "v2.0.6": {
@@ -589,6 +640,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/a0e9d0338879ef0fafea4ea1ea6a154ff82449ca", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.1.0": {
@@ -629,6 +684,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9c8ab3be3ddbef6b3226e8886d45131084da38b6", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/16668a02d5eb810e2ed167fa50b3792e6d4f13da", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2011-03-25T11:29:01Z", 
+                "authored": "2011-03-25T11:24:48Z"
             }
         }, 
         "v2.0.4": {
@@ -677,7 +736,11 @@
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/a0e9d0338879ef0fafea4ea1ea6a154ff82449ca", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
-            "component.json": "package.json"
+            "component.json": "package.json", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }
         }, 
         "v2.0.5": {
             "package.json": {
@@ -725,7 +788,11 @@
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/a0e9d0338879ef0fafea4ea1ea6a154ff82449ca", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
-            "component.json": "package.json"
+            "component.json": "package.json", 
+            "date": {
+                "commited": false, 
+                "authored": false
+            }
         }, 
         "v2.0.2": {
             "package.json": {
@@ -772,6 +839,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2e4e2fd5302145b8b2bad9b30ad7ed30505d44f7", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.0": {
@@ -818,6 +889,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/a378503583955580e976142802cfbbb90ae4b141", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.1": {
@@ -864,6 +939,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2e4e2fd5302145b8b2bad9b30ad7ed30505d44f7", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v2.0.8": {
@@ -911,6 +990,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/026ad6608724610a4e875701957720ea8fa2d7c8", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.0": {
@@ -950,6 +1033,10 @@
                 "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/32774db1d43650259ce5f5d84053bdfb26cfdef7", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/1b3405e5f9733c3dfaa4a1a53c4c4bee00a3cec1", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69"
+            }, 
+            "date": {
+                "commited": "2011-01-27T22:54:25Z", 
+                "authored": "2011-01-27T22:54:25Z"
             }
         }, 
         "v2.0.7": {
@@ -997,6 +1084,10 @@
                 "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
                 "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/a0e9d0338879ef0fafea4ea1ea6a154ff82449ca", 
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v0.2.10": {
@@ -1041,6 +1132,10 @@
                 "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/b1e975ce416e94114de133ba81993125da9d2ee6", 
                 "test": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/9d000b3795bb1471d15a3cb064afe35d1ee0f230", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/490a3dee990a2feab312af75295b049fdb46322c"
+            }, 
+            "date": {
+                "commited": "2011-09-23T00:08:35Z", 
+                "authored": "2011-09-23T00:08:35Z"
             }
         }
     }

@@ -1,10 +1,9 @@
 {
+    "git": "https://github.com/SlexAxton/yepnope.js", 
     "productions": {
-        "yepnope-min.js": "yepnope-min.js",
+        "yepnope-min.js": "yepnope-min.js", 
         "yepnope.js": "yepnope.js"
     }, 
-
-    "git": "https://github.com/SlexAxton/yepnope.js", 
     "versions": {
         "v1.0.1": {
             "package.json": {
@@ -23,6 +22,10 @@
                 "build": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/91369b443531d57de18d7e41fb4e0d492145ce53", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/3a7207d6835ae2a807692e4085e5f1741ff21208", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/8040aef474f2c3fb43c7c2645b7aef98a130ab41"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.0": {
@@ -42,6 +45,10 @@
                 "build": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/91369b443531d57de18d7e41fb4e0d492145ce53", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/cca7619a2815c3833e9baf28da9ad80d85090617", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/757c186ed137e45d9de90f4eb869219b555330d4"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.0.2": {
@@ -61,6 +68,10 @@
                 "build": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/91369b443531d57de18d7e41fb4e0d492145ce53", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/32255a96a385840bc39e45a885b17591d0efa44d", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/da61add631cd37096c08fb616e482c7196bc5476"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.5.4": {
@@ -80,6 +91,10 @@
                 "plugins": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/f5cd54647ff3eb293cb17934117286aead59ebfd", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/8dfff18613953704b818f2ebab9a1054cc66ae98", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/fab1790107eb597477b9bdef5ea7c81b55ed22dc"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.5.0": {
@@ -99,6 +114,10 @@
                 "plugins": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/0acb8ef23ac2e7cfd1cf99e9b0068cf80cfabdd2", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/0eff5243d2dbb791d452aaa146911d4f437ed26c", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/aafc5ed8a5c444f6cf4c69c5e00dfff8cc04dec7"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.5.1": {
@@ -118,6 +137,10 @@
                 "plugins": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/0acb8ef23ac2e7cfd1cf99e9b0068cf80cfabdd2", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/e24fb3647089deaa1248e1090a1405edce6a5565", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/5e40be5e2e4a4915f2360e8e1ef0048099278f87"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.5.2": {
@@ -137,6 +160,10 @@
                 "plugins": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/0acb8ef23ac2e7cfd1cf99e9b0068cf80cfabdd2", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/e2239d4511e1fb996364982eeca18ae3918ca0a4", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/50d1267ee317ae5878c7cec5b58864b77e485d8e"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.5.3": {
@@ -156,6 +183,10 @@
                 "plugins": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/0acb8ef23ac2e7cfd1cf99e9b0068cf80cfabdd2", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/eec2e7c85c55fbd2554c11ac1a5510d8624e16bc", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/89cb9c43ddfe21a90ed2b290ad3127615b5a916d"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "master": {
@@ -181,6 +212,10 @@
                 "main": "./yepnope.1.5.4-min.js", 
                 "version": "1.5.4", 
                 "name": "yepnope"
+            }, 
+            "date": {
+                "commited": "2013-02-20T04:36:29Z", 
+                "authored": "2013-02-20T04:36:29Z"
             }
         }, 
         "v0.2.3": {
@@ -197,6 +232,10 @@
                 "yepnope.min.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/1fe3379f8014462c77109cd2261002f0db812b76", 
                 "filters": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/1efecda7612c47b82496eccce55805be9bbfc4a1", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/1abab8fb1c3a54b23b3ac953bb0c572e18b54744"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "v1.5.0b": {
@@ -216,6 +255,10 @@
                 "plugins": "https://api.github.com/repos/SlexAxton/yepnope.js/git/trees/0acb8ef23ac2e7cfd1cf99e9b0068cf80cfabdd2", 
                 "README.md": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/e3e4d49fae07a295e96afbf8eaef6bd90510039c", 
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/aa3afff0ffbb9374077e42bc6e90898d4ecd1539"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }
     }

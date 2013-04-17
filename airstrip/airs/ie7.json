@@ -1,11 +1,10 @@
 {
-    "nobuild": true,
-    "productions": {
-        "ie9-min.js": "IE9.js",
-        "ie9.js": "src/IE9.js"
-    },
-
+    "nobuild": true, 
     "git": "https://github.com/jsBoot/ie7", 
+    "productions": {
+        "ie9.js": "src/IE9.js", 
+        "ie9-min.js": "IE9.js"
+    }, 
     "versions": {
         "master": {
             "package.json": {
@@ -58,6 +57,10 @@
                 "ie7-squish.js": "https://api.github.com/repos/jsBoot/ie7/git/blobs/4b721df570ddafd6d977fc39bb0c0acff8179336", 
                 "IE8.js": "https://api.github.com/repos/jsBoot/ie7/git/blobs/e315c8ae57784159c41c0b9755a29e28a0c129d2", 
                 "README.md": "https://api.github.com/repos/jsBoot/ie7/git/blobs/53afaec3fb41cbba7b7982058848f08d26637572"
+            }, 
+            "date": {
+                "commited": "2013-04-16T19:17:04Z", 
+                "authored": "2013-04-16T19:17:04Z"
             }
         }, 
         "2.1(beta4)": {
@@ -111,6 +114,10 @@
                 "ie7-squish.js": "https://api.github.com/repos/jsBoot/ie7/git/blobs/4b721df570ddafd6d977fc39bb0c0acff8179336", 
                 "IE8.js": "https://api.github.com/repos/jsBoot/ie7/git/blobs/e315c8ae57784159c41c0b9755a29e28a0c129d2", 
                 "README.md": "https://api.github.com/repos/jsBoot/ie7/git/blobs/53afaec3fb41cbba7b7982058848f08d26637572"
+            }, 
+            "date": {
+                "commited": "2013-04-16T19:17:04Z", 
+                "authored": "2013-04-16T19:17:04Z"
             }
         }
     }

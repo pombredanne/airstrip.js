@@ -1,12 +1,11 @@
 {
-    "productions": {
-      "pie-min.htc": "build/PIE.htc",
-      "pie-min.js": "build/PIE.js",
-      "pie.htc": "build/PIE_uncompressed.htc",
-      "pie.js": "build/PIE_uncompressed.js"
-    },
-
     "git": "https://github.com/lojjic/PIE", 
+    "productions": {
+        "pie-min.js": "build/PIE.js", 
+        "pie-min.htc": "build/PIE.htc", 
+        "pie.htc": "build/PIE_uncompressed.htc", 
+        "pie.js": "build/PIE_uncompressed.js"
+    }, 
     "versions": {
         "1.0.0": {
             "package.json": {
@@ -28,6 +27,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/51080ae7f096a51ec366d7a6c1fd31f78dc4ad49", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": "2012-05-12T22:21:03Z", 
+                "authored": "2012-05-12T22:21:03Z"
             }
         }, 
         "1.0beta5": {
@@ -50,6 +53,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/51080ae7f096a51ec366d7a6c1fd31f78dc4ad49", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0beta4": {
@@ -72,6 +79,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/a4d0dc7ecebf17f25867b55beb5eda6df8b8a772", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0beta3": {
@@ -94,6 +105,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/a4d0dc7ecebf17f25867b55beb5eda6df8b8a772", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0beta2": {
@@ -116,6 +131,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/affd04b8c3f9ea1076d6dfeb0f93f917759d2671", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": false, 
+                "authored": false
             }
         }, 
         "1.0beta1": {
@@ -136,6 +155,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/affd04b8c3f9ea1076d6dfeb0f93f917759d2671", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": "2010-07-12T02:53:40Z", 
+                "authored": "2010-07-12T02:53:40Z"
             }
         }, 
         "2.0beta1": {
@@ -158,6 +181,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/e613df9e68faace9858f47fe6b8e0bf3408e860c", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": "2013-01-27T16:53:54Z", 
+                "authored": "2013-01-27T16:53:54Z"
             }
         }, 
         "master": {
@@ -180,6 +207,10 @@
                 "demos": "https://api.github.com/repos/lojjic/PIE/git/trees/e613df9e68faace9858f47fe6b8e0bf3408e860c", 
                 "README": "https://api.github.com/repos/lojjic/PIE/git/blobs/7a5e918fe70ccc6d71095237a7fa5c87b42c32ce", 
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
+            }, 
+            "date": {
+                "commited": "2013-02-19T01:53:25Z", 
+                "authored": "2013-02-19T01:53:25Z"
             }
         }
     }
