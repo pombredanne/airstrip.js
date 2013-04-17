@@ -21,3 +21,4 @@ tmp/*
 *xxx*
 dependencies/
 airfile.json
+/dist/
