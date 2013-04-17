@@ -7,8 +7,6 @@
 */.sass-cache/*
 
 # IDE
-*.sublime-project
-*.sublime-workspace
 
 # Build scories
 *.py[co]
