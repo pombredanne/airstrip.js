@@ -117,7 +117,7 @@ def show(name = False):
   console.info('*********************')
   console.info('Available versions:')
   for i in a.versions():
-    console.info(' - %s' % i)
+    console.info(' - %s' % str(i))
 
 @task("Search packages for a given search string")
 def search():

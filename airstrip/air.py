@@ -4,6 +4,7 @@ import os
 import re
 from distutils import version
 from verlib import NormalizedVersion
+from distutils.version import StrictVersion, LooseVersion
 
 AIRSTRIP_ROOT = os.path.dirname(os.path.realpath(__file__))
 
@@ -152,6 +153,10 @@ class Air():
     return parent[key]
 
   def versions(self):
+    r = re.compile(r'([^\d]*)')
+    versions = {}
+    result = []
+
     l1 = list()
     if self.hasGlobal:
       l1 = list(self.yawn["versions"])
@@ -159,7 +164,26 @@ class Air():
       l2 = list(self.local["versions"])
       for v in l2:
         l1.append(v)
-    return l1
+
+    hasMaster = False
+    if 'master' in l1:
+      hasMaster = True
+      l1.remove('master')
+
+    for version in l1:
+      normalized = r.sub('', version, 1)
+      versions[normalized] = version
+
+    sortedVersions = versions.keys()
+    sortedVersions.sort(key=LooseVersion)
+
+    for key in sortedVersions:
+      result.append(versions[key])
+
+    if hasMaster:
+      result.append('master')
+    
+    return result
 
   # def latest(self):
   #   v = self.versions()
