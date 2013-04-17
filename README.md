@@ -31,154 +31,109 @@ The idea here is to help do that, by providing tools to quickly assemble depende
 Installation
 -------------
 
-
+`pip install airstrip`
+`pip install airstrip --upgrade`
 
 
 API
 -------------
 
-Once the airstrip binary has been installed, you should cd to you project root source folder and may use the following commands.
+Once the airstrip binary has been installed, you should cd to your project root source folder and may use the following commands.
 
 
 Command:
-```airstrip search emberjs```
+```airstrip show ember```
 
 Result:
-```emberjs
-```
-
-
-Command:
-```airstrip show emberjs```
-
-Result:
-```emberjs
-```
--> all details and available versions
+  Details about EmberJS, and list of available versions
 
 
 Command:
 ```airstrip require emberjs```
 
 Result:
-Create or update the project "airfile", in order to add emberjs in stable version to the build dependency list.
-
+  Add emberjs (in version "master") to your project dependencies. This will create or update the project "airfile.json" listing said dependencies.
 
 Command:
-```airstrip require emberjs/stable```
-```airstrip require emberjs/trunk```
-```airstrip require emberjs/1.0```
+```airstrip require emberjs SOMEVERSION```
 
 Result:
-Same as above, but explicitely require a specific version. "Stable" and "trunk" versions keywords always exist for any library, and are mapped to specific versions by the airfile descriptor maintainer.
-Two different versions of the same library can be required.
-Note that requiring a project that depends on other projects will require them as well, in the recommended version.
-It's your responsability to keep that tidy.
-
+  Same as above, but explicitely require a specific version. The "master" version (eg: trunk) keywords should always exist for any library.
+  Multiple different versions of the same library can be required.
+  Note that requiring a project that depends on other projects will require them as well, in the recommended version (XXX, not done yet).
 
 Command:
 ```airstrip remove emberjs```
-```airstrip remove emberjs/version```
+```airstrip remove emberjs SOMEVERSION```
 
 Result:
-Will remove the library from the project dependencies list, if present (possibly in the specified /version).
+  Will remove the library from the project dependencies list, if present (possibly in the specified version).
 
 
 Command:
-```airstrip edit newlibrary```
+```airstrip require```
 
 Result:
-Will create and open in your chosen editor a new airfile descriptor for a library named "newlibrary" (that airfile descriptor being avalaible only in the current project/directory).
-The placeholders for versions "stable" and "trunk" will be added (and will need to be documented), and any other version may be added as well.
-If the keyword "system" is added (`airstrip system edit newlibrary`), the airfile descriptor will be created system-wide instead, hence made available globally for the airstrip command.
+  List currently required libraries for your project, along with versions.
 
-
-
-
-
-```airstrip list```
--> list all requested dependencies
-
+Command:
 ```airstrip build```
--> build or rebuild all requested dependencies
 
-```airstrip build somelibrary```
--> build or rebuild a specific library that has been requested
+Result:
+  Build all required libraries for your project, and output them into a "dependencies" folder.
 
+Command:
+```airstrip build ember```
 
-```airstrip install emberjs```
--> alias for `airstrip require emberjs && airstrip build emberjs`
-
-
-<!-- airstrip build emberjs
--> build just emberjs, if it was requested
-airstrip build emberjs -v 1.7
--> build just emberjs version 1.7 if it was requested
- -->
-<!-- airstrip rebuild
--> force rebuild of requested dependencies
- -->
-
+Result:
+  Build, or rebuild only the specified library (that you requested).
 
 
 Command:
 ```airstrip use```
 
-Output:
-- flag1: currentValue1
-    flag1 explanation
-    long explanation
-    long long explanation
-- flag2: currentValue2 (default: differentValue2)
-    flag2 explanation
-- flag3: currentValue3 (default: differentValue3)
-    flag3 explanation
-    long explanation
+Result:
+  List configuration flags, possibly with their default value if overriden.
+
+
+Command:
+```airstrip use key value```
+
+Result:
+  Locally (to your project) override a specific configuration key.
 
 
 
+API: risky, untested, undocumented, internal
+-------------
 
--> list current configuration, default, and possibly overriden values
+Command:
+```airstrip seed```
 
-```airstrip use flag=value```
--> set a config flag to value
-
-
-Current configuration flags:
-- directory: destination path
-- minify: true/false wether to minify files or not
-- minifier: closure
-- pattern: default to $type/$name/$version - can also use $longversion
-- jshint: true/false run jshint on every dependency - will FAIL the build if jshint doesnt pass
+Result:
+  Initialize a new project inside the current working directory, by adding a number of convenient boilerplates files.
 
 
-<!-- airstrip system
--> list system dependencies needed to build the required formulas
+Command:
+```airstrip init owner repository```
 
-airstrip system install
--> try to install system dependencies needed to build the required formulas
- -->
-
+Result:
+  Initialize (or update) a formula from a project on github ("repository") whose owner is "owner". Will fetch tags and stuff like that.
 
 
+Command:
+```airstrip edit somelibrary```
+
+Result:
+  Edit an existing or create a new empty "formula" for a given library, locally to your project so you can add new library (XXX untested).
+
+Command:
+```airstrip edit somelibrary true```
+
+Result:
+  Edit an existing or create a new empty "formula" for a given library, globally for airstrip (XXX untested and not recommended).
 
 
-
-
-Dependencies are managed inside the project airfile:
-require:
-  $name:
-    $version
-    $version
-    $version
-config:
-  directory: $directory
-  minify: true
-  minifier: 
-
-
-
-airstrip install emberjs (= require + build)
 
 License
 -------------
