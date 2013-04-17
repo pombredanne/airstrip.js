@@ -4,6 +4,9 @@ from puke.Task import task
 global console, FileSystem
 from puke import console, FileSystem, sh, deepcopy
 
+global json
+import json
+
 # import airfile
 global re
 import re
@@ -129,13 +132,37 @@ def seed(app = False, mobile = False):
   executeTask('build')
 
 
+@task("List all avalaible libraries")
+def list():
+  p = os.path.dirname(os.path.realpath(__file__))
+  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+  for i in l.get():
+    print i.split('/').pop().split('.').pop(0)
+
+
+@task("Search for a given library")
+# XXX this is dumb for now
+def search(key):
+  cachesearch = {}
+  result = []
+  p = os.path.dirname(os.path.realpath(__file__))
+  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+  for i in l.get():
+    d = puke.FileSystem.readfile(i)
+    if key in d:
+      result.append(i.split('/').pop().split('.').pop(0))
+
+  for i in result:
+    print i
+
+
 
 @task("Init an air from github")
 def init(owner, repo, name = False):
   g = ge.GitHubInit()
   if not name:
     name = repo
-  g.retrieve(owner, repo, "airstrip/airs", name)
+  g.retrieve(owner, repo, "airs", name)
   # # g.retrieve("documentcloud", "backbone", "airstrip/airs", "backbone")
   # # g.retrieve("twitter", "bootstrap", "airstrip/airs", "bootstrap")
   # g.retrieve("emberjs", "ember.js", "airstrip/airs", "ember")

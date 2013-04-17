@@ -123,7 +123,7 @@ Hit enter to confirm.""")
 
 
     for item in ['.gitignore', '.pukeignore', '.jshintrc', 'README.md', 'LICENSE.md', 'package.json',
-        'project.sublime-project', 'pukefile.py', 'helpers.py']:
+        'project.sublime-project', 'pukefile.py', 'helpers.py', 'icon.png']:
       combine(FileSystem.join(AIRSTRIP_ROOT, 'boilerplates', item), item, replace=s)
 
 
