@@ -123,7 +123,6 @@ class GitHubInit():
           "author": owner,
           "version": tag
         }
-        print sha
         print json.dumps(i, indent=4)
 
     print " [github-connector] found %s tags" % len(tags)

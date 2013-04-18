@@ -180,7 +180,11 @@ class Air():
 
   def _parseVersions(self, entries, result):
     for version in entries:
-      date = entries[version]['date']['commited']
+      date = False
+      content = entries[version]
+
+      if 'date' in content and 'commited' in content['date']:
+        date = content['date']['commited']
       
       if not date:
         date = None
