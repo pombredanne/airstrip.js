@@ -1,2 +1,2 @@
-Copyright (C) {{miniboot.year}} {{miniboot.companyname}}. All rights reserved.
+Copyright (C) {{miniboot.year}} {{miniboot.company.name}}. All rights reserved.
 

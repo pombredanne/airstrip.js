@@ -3,7 +3,7 @@
   [
     {
       "path": "{{miniboot.path}}",
-      "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".pukecache", ".airstrip-tmp", ".tmp", ".build"]
+      "folder_exclude_patterns": [".sass-cache", ".svn", ".git", ".hg", "CVS", ".pukecache", ".airstrip-tmp", ".tmp", ".build"]
     }
   ],
 

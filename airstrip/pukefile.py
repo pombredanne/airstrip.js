@@ -109,7 +109,15 @@ def edit(name, globally = False):
 @task("Show all available libraries (airstrip show), or detailed informations about a specific library (airstrip show somelibrary)")
 def show(name = False):
   if not name:
-    console.info('Show the full list of available libraries')
+    p = os.path.dirname(os.path.realpath(__file__))
+    l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+    for i in l.get():
+      print i.split('/').pop().split('.').pop(0)
+
+    l = puke.FileList('airs', filter = "*.json")
+    for i in l.get():
+      print i.split('/').pop().split('.').pop(0)
+
     return
   # XXXX dirty hack
   # name = name.split('/').pop().replace('.json', '')
@@ -159,20 +167,20 @@ def seed(app = False, mobile = False):
   s = se.Seeder()
   s.project()
   # XXX to be completed
-  executeTask('require', 'jasmine', 'master')
-  executeTask('build')
+  # executeTask('require', 'jasmine', 'master')
+  # executeTask('build')
 
 
-@task("List all avalaible libraries")
-def list():
-  p = os.path.dirname(os.path.realpath(__file__))
-  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
-  for i in l.get():
-    print i.split('/').pop().split('.').pop(0)
+# @task("List all avalaible libraries")
+# def list():
+#   p = os.path.dirname(os.path.realpath(__file__))
+#   l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+#   for i in l.get():
+#     print i.split('/').pop().split('.').pop(0)
 
-  l = puke.FileList('airs', filter = "*.json")
-  for i in l.get():
-    print i.split('/').pop().split('.').pop(0)
+#   l = puke.FileList('airs', filter = "*.json")
+#   for i in l.get():
+#     print i.split('/').pop().split('.').pop(0)
 
 
 @task("Search for a given library")
