@@ -377,7 +377,10 @@ def buildit(yawnie, versions, tmp, dest):
 
     tree = yawnie.get(version, "tree")
 
-    repomanager.checkout(yawnie.get(version, "sha"))
+    if version == 'master':
+      repomanager.checkout('master')
+    else:
+      repomanager.checkout(yawnie.get(version, "sha"))
 
 
     identified = False

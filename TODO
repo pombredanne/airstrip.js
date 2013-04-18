@@ -3,3 +3,7 @@
 - implement "check" to verify if there is a more recent version / commit for the given repo
 - "unparsable version", "sorted versions" (use dates?) 
 - have a smarter search
+
+- use '.' in directory pointer for sublime project file
+- name sublime file as "projectName.sublime"
+- extract sublime files from gitignore and commit shit
