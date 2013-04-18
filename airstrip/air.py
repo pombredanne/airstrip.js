@@ -7,6 +7,7 @@ from verlib import NormalizedVersion
 from distutils.version import StrictVersion, LooseVersion
 
 AIRSTRIP_ROOT = os.path.dirname(os.path.realpath(__file__))
+NORMALIZE_VERSION = re.compile(r'([^\d]*)')
 
 # System-wide yawns path
 AIRSTRIP_YAWN_PATH = os.path.join(AIRSTRIP_ROOT, 'airs')
@@ -156,24 +157,16 @@ class Air():
     r = re.compile(r'([^\d]*)')
     versions = {}
     result = []
+    dates = {}
 
-    l1 = list()
     if self.hasGlobal:
-      l1 = list(self.yawn["versions"])
+      self._parseVersions(self.yawn["versions"], versions)
+      # print(self.yawn["versions"])
     if self.hasLocal:
-      l2 = list(self.local["versions"])
-      for v in l2:
-        l1.append(v)
-
-    hasMaster = False
-    if 'master' in l1:
-      hasMaster = True
-      l1.remove('master')
-
-    for version in l1:
-      normalized = r.sub('', version, 1)
-      versions[normalized] = version
-
+      self._parseVersions(self.local["versions"], versions)
+      
+    hasMaster = versions.pop('master', False)
+    
     sortedVersions = versions.keys()
     sortedVersions.sort(key=LooseVersion)
 
@@ -181,9 +174,23 @@ class Air():
       result.append(versions[key])
 
     if hasMaster:
-      result.append('master')
-    
+      result.append(hasMaster)
+
     return result
+
+  def _parseVersions(self, entries, result):
+    for version in entries:
+      date = entries[version]['date']['commited']
+      
+      if not date:
+        date = None
+
+      if version == 'master':
+        normalized = 'master'
+      else:
+        normalized = NORMALIZE_VERSION.sub('', version, 1)
+        
+      result[normalized] = (version, date)
 
   # def latest(self):
   #   v = self.versions()

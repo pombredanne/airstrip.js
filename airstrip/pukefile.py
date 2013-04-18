@@ -3,6 +3,9 @@
 from puke.Task import task
 global console, FileSystem
 from puke import console, FileSystem, sh, deepcopy
+global dateutil, datetime
+import dateutil.parser
+import datetime
 
 global json
 import json
@@ -116,8 +119,18 @@ def show(name = False):
   # console.info(' - Required tools to build: %s' % a.get('master', 'tools'))
   console.info('*********************')
   console.info('Available versions:')
-  for i in a.versions():
-    console.info(' - %s' % str(i))
+  
+  versions = a.versions()
+  listOfVersions = tuple(x[0] for x in versions)
+  maxLength = len(max(listOfVersions, key=len))
+
+  for (i, date) in versions:
+    try:
+      date = dateutil.parser.parse(date)
+      date = datetime.datetime.strftime(date, '%d. %B %Y')
+    except:
+      date = 'Unkown date'
+    console.info(' * %s %s | %s' % ( str(i), " " * (maxLength - len(i)), date))
 
 @task("Search packages for a given search string")
 def search():
