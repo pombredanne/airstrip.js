@@ -158,10 +158,6 @@ def show(name = False):
       date = 'Unkown date'
     console.info(' * %s %s | %s' % ( str(i), " " * (maxLength - len(i)), date))
 
-@task("Search packages for a given search string")
-def search():
-  pass
-
 @task("Initialize new project")
 def seed(app = False, mobile = False):
   s = se.Seeder()
@@ -186,6 +182,7 @@ def seed(app = False, mobile = False):
 @task("Search for a given library")
 # XXX this is dumb for now
 def search(key):
+
   cachesearch = {}
   result = []
   p = os.path.dirname(os.path.realpath(__file__))
@@ -195,6 +192,24 @@ def search(key):
     if key in d:
       result.append(i.split('/').pop().split('.').pop(0))
 
+  result2 = []
+  g = ge.GitHubInit()
+  d = g.search(key)
+  if "repositories" in d:
+    p = d["repositories"][0:20]
+    for i in p:
+      short = "%s/%s" % (i["owner"], i["name"])
+      desc = ""
+      if i["description"]:
+        desc = " %s" % i["description"].replace('\n', ' ')
+      result2.append("%s%s" % (short.ljust(50), desc))
+
+
+  puke.console.warn('Avalaible on github:')
+  for i in result2:
+    print i
+
+  puke.console.warn('Already installed airs:')
   for i in result:
     print i
 
@@ -396,7 +411,8 @@ def buildit(yawnie, versions, tmp, dest):
     if yawnie.get(version, "devDependencies"):
       usenode = identified = True
 
-    nob = yawnie.get(version, "nobuild")
+    # Don't build anything but master...
+    nob = yawnie.get(version, "nobuild")# or (not version == 'master')
     if nob:
       identified = True
 
@@ -415,6 +431,8 @@ def buildit(yawnie, versions, tmp, dest):
 
       usegrunt = False
       if "Gruntfile.js" in tree:
+        usegrunt = identified = True
+      if "grunt.js" in tree:
         usegrunt = identified = True
 
       useant = False

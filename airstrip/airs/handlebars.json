@@ -1,5 +1,5 @@
 {
-    "git": "https://github.com/wycats/handlebars.js", 
+   "git": "https://github.com/wycats/handlebars.js", 
     "productions": {
         "handlebars.runtime.js": "dist/handlebars.runtime.js", 
         "handlebars.js": "dist/handlebars.js"

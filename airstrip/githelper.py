@@ -10,7 +10,7 @@ class GitHelper():
     clean = re.sub('[.]git$', '', remote.split('/').pop())
     self.local = FileSystem.join(path, clean)
     self.remote = remote
-    self.debug = False
+    self.debug = True
 
   def __wrap__(self, path, command):
     if FileSystem.realpath('.') == FileSystem.realpath(path):
@@ -44,7 +44,7 @@ class GitHelper():
       self.__rebase__()
 
   def checkout(self, ref):
-    self.__wrap__(self.local, 'reset --hard HEAD; git clean -f -d; git checkout %s' % ref)
+    self.__wrap__(self.local, 'reset --hard HEAD; git clean -f -d; git checkout %s; git reset --hard %s; git clean -f -d;' % (ref, ref))
 
   def getPath(self):
     return self.local

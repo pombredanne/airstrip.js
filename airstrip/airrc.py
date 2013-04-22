@@ -29,7 +29,7 @@ EMPTY_RC = json.loads("""{
 class AirRC():
   def __init__(self):
     if not FileSystem.exists(AIRSTRIP_RC_PATH):
-      FileSystem.writefile(AIRSTRIP_RC_PATH, json.dumps(EMPTY_RC, indent = 4))
+      FileSystem.writefile(AIRSTRIP_RC_PATH, json.dumps(EMPTY_RC, indent = 2))
 
     try:
       self.rc = json.loads(FileSystem.readfile(AIRSTRIP_RC_PATH))
@@ -77,4 +77,4 @@ and other projects boilerplates.""" % AIRSTRIP_RC_PATH)
   def set(self, key, value):
     if key:
       self.rc[key] = value
-    FileSystem.writefile(AIRSTRIP_RC_PATH, json.dumps(self.rc, indent = 4))
+    FileSystem.writefile(AIRSTRIP_RC_PATH, json.dumps(self.rc, indent = 2))

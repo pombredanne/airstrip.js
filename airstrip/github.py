@@ -17,12 +17,12 @@ class GitHubInit():
   # HTTP
   ########################################
   def __simpleGet__(self, url):
-    print " [http] simple get %s" % url
+    # print " [http] simple get %s" % url
     r = requests.get(url)
     return r.text or r.content
 
   def __cachedGet__(self, u):
-    print " [http] cached get %s" % u
+    # print " [http] cached get %s" % u
     id = puke.Cache.fetchHttp(u).split('/').pop()
     return puke.Cache.read(id)
 
@@ -31,7 +31,7 @@ class GitHubInit():
   ########################################
 
   def __getToken__(self):
-    print " [github-token] searching for existing auth token"
+    # print " [github-token] searching for existing auth token"
 
     d = requests.get("%s/authorizations" % GITHUB_ROOT, auth = self.auth)
     r = json.loads(d.text or d.content)
@@ -42,7 +42,7 @@ class GitHubInit():
     return False
 
   def __destroyTokens__(self):
-    print " [github-token] destroying auth tokens"
+    # print " [github-token] destroying auth tokens"
 
     d = requests.get("%s/authorizations" % GITHUB_ROOT, auth = self.auth)
     r = json.loads(d.text or d.content)
@@ -51,7 +51,7 @@ class GitHubInit():
         e = requests.delete("%s/authorizations/%s" % (GITHUB_ROOT, i["id"]), auth = self.auth)
 
   def __createToken__(self):
-    print " [github-token] creating new auth token"
+    # print " [github-token] creating new auth token"
 
     payload = {"scopes": ["public_repo"], "note": "airstrip"}
     headers = {'content-type': 'application/json'}
@@ -61,10 +61,11 @@ class GitHubInit():
 
 
 
-
-
   def apiGet(self, fragment):
-    u = "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
+    if '?' in fragment:
+      u = "%s/%s&access_token=%s" % (GITHUB_ROOT, fragment, self.token)
+    else:
+      u = "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
     r = self.__simpleGet__(u)
     try:
       return json.loads(r)
@@ -72,7 +73,7 @@ class GitHubInit():
       console.fail(" [github-connector] Failed json-interpreting url %s with payload %s" % (u, r))
 
   def apiCacheGet(self, fragment):
-    print " [github-connector] cache fetching %s" % fragment
+    # print " [github-connector] cache fetching %s" % fragment
     u = "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
     r = self.__cachedGet__(u)
     try:
@@ -86,10 +87,10 @@ class GitHubInit():
   #   return "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
 
   def __init__(self):
-    consoleCfg = logging.StreamHandler()
-    consoleCfg.setFormatter(logging.Formatter( ' %(message)s' , '%H:%M:%S'))
-    logging.getLogger().addHandler(consoleCfg)
-    logging.getLogger().setLevel(logging.DEBUG)
+    # consoleCfg = logging.StreamHandler()
+    # consoleCfg.setFormatter(logging.Formatter( ' %(message)s' , '%H:%M:%S'))
+    # logging.getLogger().addHandler(consoleCfg)
+    # logging.getLogger().setLevel(logging.DEBUG)
 
     self.uname = prompt("Github username")
     self.pwd = prompt("Github password")
@@ -102,6 +103,9 @@ class GitHubInit():
       token = self.__createToken__()
 
     self.token = token
+
+  def search(self, keyword):
+    return self.apiGet("legacy/repos/search/%s?sort=stars&order=desc" % (keyword))
 
   def retrieve(self, owner, repo, dest, name):
     print " [github-connector] working on %s/%s" % (owner, repo)

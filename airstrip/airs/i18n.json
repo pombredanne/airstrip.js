@@ -1,7 +1,6 @@
 {
     "nobuild": true,
     "productions": {
-      "i18n.js": "vendor/assets/javascripts/i18n.js",
       "i18n.js": "app/assets/javascripts/i18n.js"
     },
     "git": "https://github.com/fnando/i18n-js", 

@@ -7,7 +7,7 @@
       "service.js": "dist/service.js",
       "core.js": "dist/core.js",
       "debug.js": "dist/debug.js",
-      "core.js": "dist/ui.js",
+      "ui.js": "dist/ui.js",
       "burnscars": "dist/burnscars"
     },
     "git": "https://github.com/jsBoot/jsboot.js", 
