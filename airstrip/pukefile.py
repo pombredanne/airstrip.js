@@ -494,14 +494,18 @@ def buildit(yawnie, versions, tmp, dest):
     destination = FileSystem.join(dest, v)
     if productions:
       for item in productions:
-        local = FileSystem.realpath(FileSystem.join(p, productions[item]))
-        if not FileSystem.exists(local):
+        local = productions[item]
+        if not local.startswith('http://'):
+          local = FileSystem.realpath(FileSystem.join(p, productions[item]))
+        if not local.startswith('http://') and not FileSystem.exists(local):
           console.error("Missing production! %s (%s)" % (productions[item], local))
         else:
-          if FileSystem.isfile(local):
-            FileSystem.copyfile(local, FileSystem.join(destination, item))
-          else:
+          if local.startswith('http://'):
+            puke.combine(puke.FileList(local), FileSystem.join(destination, item))
+          elif not FileSystem.isfile(local):
             puke.deepcopy(puke.FileList(local), FileSystem.join(destination, item))
+          else:
+            FileSystem.copyfile(local, FileSystem.join(destination, item))
 
 
 
