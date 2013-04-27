@@ -36,7 +36,7 @@ class GitHubInit():
     d = requests.get("%s/authorizations" % GITHUB_ROOT, auth = self.auth)
     r = json.loads(d.text or d.content)
     for i in r:
-      if i["note"] == "airstrip":
+      if i["note"] == "airstrip2":
         print " [github-token] found existing auth token %s" % i["token"]
         return i["token"]
     return False
@@ -47,13 +47,13 @@ class GitHubInit():
     d = requests.get("%s/authorizations" % GITHUB_ROOT, auth = self.auth)
     r = json.loads(d.text or d.content)
     for i in r:
-      if i["note"] == "airstrip":
+      if i["note"] == "airstrip2":
         e = requests.delete("%s/authorizations/%s" % (GITHUB_ROOT, i["id"]), auth = self.auth)
 
   def __createToken__(self):
     # print " [github-token] creating new auth token"
 
-    payload = {"scopes": ["public_repo"], "note": "airstrip"}
+    payload = {"scopes": ["public_repo", "repo"], "note": "airstrip2"}
     headers = {'content-type': 'application/json'}
     d = requests.post("%s/authorizations" % GITHUB_ROOT, data=json.dumps(payload), headers=headers, auth = self.auth)
     r = json.loads(d.text or d.content)

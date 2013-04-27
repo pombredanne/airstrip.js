@@ -8,7 +8,8 @@
       "core.js": "dist/core.js",
       "debug.js": "dist/debug.js",
       "ui.js": "dist/ui.js",
-      "burnscars": "dist/burnscars"
+      "burnscars": "dist/burnscars",
+      "gate.html": "dist/gate.html"
     },
     "git": "https://github.com/jsBoot/jsboot.js", 
     "versions": {
