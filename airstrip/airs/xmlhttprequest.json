@@ -11,15 +11,15 @@
                 "name": "xmlhttprequest", 
                 "author": "ilinsky"
             }, 
-            "sha": "6848f4aa9a737b18930da22ee8074110d67e665e", 
+            "sha": "8e24263c506cc106272823827349c51b2afd67cc", 
             "tree": {
-                "README.markdown": "https://api.github.com/repos/ilinsky/xmlhttprequest/git/blobs/e11fc3b03e9d467e52c599c3548be5f5e151f7cb", 
-                "XMLHttpRequest.js": "https://api.github.com/repos/ilinsky/xmlhttprequest/git/blobs/9a6717d7b38837b1e15796ac52883f5fe4962660", 
+                "README.markdown": "https://api.github.com/repos/ilinsky/xmlhttprequest/git/blobs/1c10424d84a420c8d29673c7ec3d0fbb3e337e60", 
+                "XMLHttpRequest.js": "https://api.github.com/repos/ilinsky/xmlhttprequest/git/blobs/89b0dc259e2c39cc7c6c239db05a061fc3aaefa2", 
                 "LICENSE": "https://api.github.com/repos/ilinsky/xmlhttprequest/git/blobs/a57bbb0594bd362b1d31c54db2822f3de3ce74df"
             }, 
             "date": {
-                "commited": "2012-11-13T20:33:49Z", 
-                "authored": "2012-11-13T20:33:49Z"
+                "commited": "2013-06-18T19:17:39Z", 
+                "authored": "2013-06-18T19:17:39Z"
             }
         }
     }

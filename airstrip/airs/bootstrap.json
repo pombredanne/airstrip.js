@@ -28,8 +28,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/81ba72042fb908a631b4a77672951f0fada40e15"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-08-22T20:22:49Z", 
+                "authored": "2011-08-22T20:22:49Z"
             }
         }, 
         "v1.1.1": {
@@ -51,8 +51,8 @@
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/e7482673c78366c04fa7cda3d6125595952fbd4a"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-08-26T22:22:05Z", 
+                "authored": "2011-08-26T22:22:05Z"
             }
         }, 
         "v2.0.4": {
@@ -104,8 +104,76 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/f69925ea6cf72e659174b16cf90dfa1eaebb9b05"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-06-01T18:05:01Z", 
+                "authored": "2012-06-01T18:05:01Z"
+            }
+        }, 
+        "v2.3.2": {
+            "package.json": {
+                "name": "bootstrap", 
+                "repository": {
+                    "url": "https://github.com/twitter/bootstrap.git", 
+                    "type": "git"
+                }, 
+                "author": "Twitter Inc.", 
+                "licenses": [
+                    {
+                        "url": "http://www.apache.org/licenses/LICENSE-2.0", 
+                        "type": "Apache-2.0"
+                    }
+                ], 
+                "version": "2.3.2", 
+                "scripts": {
+                    "test": "make test"
+                }, 
+                "keywords": [
+                    "bootstrap", 
+                    "css"
+                ], 
+                "devDependencies": {
+                    "recess": "1.1.6", 
+                    "uglify-js": "1.3.4", 
+                    "jshint": "0.9.1", 
+                    "connect": "2.1.3", 
+                    "hogan.js": "2.0.0"
+                }, 
+                "homepage": "http://twitter.github.com/bootstrap/", 
+                "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
+            }, 
+            "component.json": {
+                "main": [
+                    "./docs/assets/js/bootstrap.js", 
+                    "./docs/assets/css/bootstrap.css"
+                ], 
+                "version": "2.3.2", 
+                "name": "bootstrap", 
+                "dependencies": {
+                    "jquery": "~1.8.0"
+                }
+            }, 
+            "tree": {
+                "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/463bfca781f6615e308cff94973699ebf5a625ad", 
+                "img": "https://api.github.com/repos/twitter/bootstrap/git/trees/96b2f1faf43827cbe2e5e4a090c2faa065481406", 
+                "LICENSE": "https://api.github.com/repos/twitter/bootstrap/git/blobs/2bb9ad240fa04c8cf706a4901c4807878e90c2dc", 
+                "less": "https://api.github.com/repos/twitter/bootstrap/git/trees/2f2f251950f8498f9059e063358675506d309b68", 
+                "docs": "https://api.github.com/repos/twitter/bootstrap/git/trees/3e5e455c07463201d930facbb044f85dc5fac02a", 
+                "CHANGELOG.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/8def3ce7fc3bb161bb7c99ffc28ee4b6e99dbe63", 
+                "Makefile": "https://api.github.com/repos/twitter/bootstrap/git/blobs/1ad0ba567b6b286676a649f34e3ed135e8e00a40", 
+                ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/3b10ffb3848326714e44aff2c3c6b1c1f1e4fff2", 
+                "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/e2a8360fbe7e3fe92420ea8acf597bac7d4c452c", 
+                "composer.json": "https://api.github.com/repos/twitter/bootstrap/git/blobs/abde63128e6f09103539a591d4a6c4d625e75b3a", 
+                "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/156c15502a253b1c77a1c00582d5c6b7646b60db"
+            }, 
+            "sha": "74a66551ff12f969df98fde3ca7ddc6515ee1c76", 
+            "date": {
+                "commited": "2013-05-17T17:27:09Z", 
+                "authored": "2013-05-17T17:27:09Z"
+            }, 
+            ".travis.yml": {
+                "node_js": [
+                    0.6
+                ], 
+                "language": "node_js"
             }
         }, 
         "v2.0.2": {
@@ -126,8 +194,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/47a4aa718cf306fd5b88c4480a46cb987f0c52ab"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-03-12T21:10:50Z", 
+                "authored": "2012-03-12T21:10:50Z"
             }
         }, 
         "v1.0.0": {
@@ -148,8 +216,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/216df9d36aa54b9282616473c05c429a643f3a38"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-08-18T18:45:49Z", 
+                "authored": "2011-08-18T18:45:49Z"
             }
         }, 
         "v2.0.0": {
@@ -170,8 +238,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/7dc9038a8c64b80a437e9c2168da594d1adb5d16"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-01T01:38:14Z", 
+                "authored": "2012-02-01T01:38:14Z"
             }
         }, 
         "v1.4.0": {
@@ -194,8 +262,8 @@
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/275a4daa18d89d2517e08a799ab67ddf0e2badce"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-11-04T00:42:30Z", 
+                "authored": "2011-11-04T00:42:30Z"
             }
         }, 
         "v2.3.1": {
@@ -256,8 +324,8 @@
             }, 
             "sha": "85ba3221753b49fdd26d960f3ee505e3beca1537", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-03-01T05:25:00Z", 
+                "authored": "2013-03-01T05:25:00Z"
             }, 
             ".travis.yml": {
                 "node_js": [
@@ -324,8 +392,8 @@
             }, 
             "sha": "af172e74e9e7215bd05087cfd89026afbf575e92", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-02-08T06:13:36Z", 
+                "authored": "2013-02-08T06:13:36Z"
             }, 
             ".travis.yml": {
                 "node_js": [
@@ -352,8 +420,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/0395568580569c09dc1931599a6cbda0fca4a7fc"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-17T06:50:24Z", 
+                "authored": "2012-02-17T06:50:24Z"
             }
         }, 
         "v1.3.0": {
@@ -376,8 +444,8 @@
                 "examples": "https://api.github.com/repos/twitter/bootstrap/git/trees/e6d2ef0f53f065e01594c4ec5e150dedfaac2afa"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-16T19:31:13Z", 
+                "authored": "2011-09-16T19:31:13Z"
             }
         }, 
         "master": {
@@ -394,7 +462,7 @@
                         "type": "Apache-2.0"
                     }
                 ], 
-                "version": "2.3.1", 
+                "version": "2.3.2", 
                 "scripts": {
                     "test": "make test"
                 }, 
@@ -403,7 +471,7 @@
                     "css"
                 ], 
                 "devDependencies": {
-                    "recess": "1.1.6", 
+                    "recess": "1.1.8", 
                     "uglify-js": "1.3.4", 
                     "jshint": "0.9.1", 
                     "connect": "2.1.3", 
@@ -417,7 +485,7 @@
                     "./docs/assets/js/bootstrap.js", 
                     "./docs/assets/css/bootstrap.css"
                 ], 
-                "version": "2.3.1", 
+                "version": "2.3.2", 
                 "name": "bootstrap", 
                 "dependencies": {
                     "jquery": "~1.8.0"
@@ -427,19 +495,19 @@
                 "CONTRIBUTING.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/463bfca781f6615e308cff94973699ebf5a625ad", 
                 "img": "https://api.github.com/repos/twitter/bootstrap/git/trees/96b2f1faf43827cbe2e5e4a090c2faa065481406", 
                 "LICENSE": "https://api.github.com/repos/twitter/bootstrap/git/blobs/2bb9ad240fa04c8cf706a4901c4807878e90c2dc", 
-                "less": "https://api.github.com/repos/twitter/bootstrap/git/trees/b9e06182762c9652d14b065ac67b24715e19d0a2", 
-                "docs": "https://api.github.com/repos/twitter/bootstrap/git/trees/85dd9ab9c37b2a0756a2c1371b913d3d7d26a43d", 
-                "CHANGELOG.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/154fb2c52885522300a92e3503197940e6f938fd", 
-                "Makefile": "https://api.github.com/repos/twitter/bootstrap/git/blobs/3150adae5c183068a512d3a32c4132086e6a4370", 
+                "less": "https://api.github.com/repos/twitter/bootstrap/git/trees/2f2f251950f8498f9059e063358675506d309b68", 
+                "docs": "https://api.github.com/repos/twitter/bootstrap/git/trees/3e5e455c07463201d930facbb044f85dc5fac02a", 
+                "CHANGELOG.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/8def3ce7fc3bb161bb7c99ffc28ee4b6e99dbe63", 
+                "Makefile": "https://api.github.com/repos/twitter/bootstrap/git/blobs/1ad0ba567b6b286676a649f34e3ed135e8e00a40", 
                 ".gitignore": "https://api.github.com/repos/twitter/bootstrap/git/blobs/3b10ffb3848326714e44aff2c3c6b1c1f1e4fff2", 
-                "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/34c3f5b74ff5dfd9428b476db2922700b37b6d95", 
+                "js": "https://api.github.com/repos/twitter/bootstrap/git/trees/e2a8360fbe7e3fe92420ea8acf597bac7d4c452c", 
                 "composer.json": "https://api.github.com/repos/twitter/bootstrap/git/blobs/abde63128e6f09103539a591d4a6c4d625e75b3a", 
-                "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/45b151e15fd4fd644aa9d829bb9c3fed7c807470"
+                "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/de5bdcee7f202198a3ca61fa4b86278fc4b8d93b"
             }, 
-            "sha": "37d0a30589e8bd74299b2d857c348d91396563ed", 
+            "sha": "d991ef2ab1b4d156c7e5d33d052d66f8eaafc460", 
             "date": {
-                "commited": "2013-03-15T05:21:06Z", 
-                "authored": "2013-03-15T05:21:06Z"
+                "commited": "2013-06-20T19:11:39Z", 
+                "authored": "2013-06-20T19:11:39Z"
             }, 
             ".travis.yml": {
                 "node_js": [
@@ -503,8 +571,8 @@
             }, 
             "sha": "08a4e19fdcf5105312b9056e73e30d49ecc85913", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-31T04:34:53Z", 
+                "authored": "2012-10-31T04:34:53Z"
             }, 
             ".travis.yml": {
                 "node_js": [
@@ -570,8 +638,8 @@
             }, 
             "sha": "249ff5a0122ff3ac288b539a199aa2b42b5d4c21", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-12-08T21:51:48Z", 
+                "authored": "2012-12-08T21:51:48Z"
             }, 
             ".travis.yml": {
                 "node_js": [
@@ -599,8 +667,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/eaa6ca98334a0083df79061d203d0849a653f114"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-03T07:28:17Z", 
+                "authored": "2011-09-03T07:28:17Z"
             }
         }, 
         "v2.2.0": {
@@ -658,8 +726,8 @@
             }, 
             "sha": "262a778771929ac8812fb000496febcb605c813d", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-30T05:02:46Z", 
+                "authored": "2012-10-30T05:02:46Z"
             }, 
             ".travis.yml": {
                 "node_js": [
@@ -718,8 +786,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/d9850fda0860ab3a0e628da29e04a06b858f80b0"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-09-05T03:45:15Z", 
+                "authored": "2012-09-05T03:45:15Z"
             }
         }, 
         "v2.1.0": {
@@ -772,8 +840,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/f6f1b54633a95fdce8dcd33a11240e6fc279329e"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-08-20T23:45:21Z", 
+                "authored": "2012-08-20T23:45:21Z"
             }
         }, 
         "v2.0.3": {
@@ -825,8 +893,8 @@
                 "README.md": "https://api.github.com/repos/twitter/bootstrap/git/blobs/54ea40577f64bfeb5a9f31639127111ad2a1b601"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-04-25T01:11:14Z", 
+                "authored": "2012-04-25T01:11:14Z"
             }
         }
     }

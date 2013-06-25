@@ -39,8 +39,8 @@
                 "homepage": "http://necolas.github.com/normalize.css/"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-01-21T01:38:38Z", 
+                "authored": "2013-01-21T01:38:38Z"
             }
         }, 
         "v1.1.1": {
@@ -69,8 +69,37 @@
                 "homepage": "http://necolas.github.com/normalize.css/"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-04-08T00:24:17Z", 
+                "authored": "2013-04-08T00:24:17Z"
+            }
+        }, 
+        "v1.1.2": {
+            "package.json": {
+                "version": "v1.1.2", 
+                "name": "normalize.css", 
+                "author": "necolas"
+            }, 
+            "sha": "1db0e672a975f57118d1bb856f4f425891ccff39", 
+            "tree": {
+                "CONTRIBUTING.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/4c526bb0826f073f1789e0010454fc94627c5f49", 
+                "CHANGELOG.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/2d38571166802ab2e23db0525f9ecc229a7fd55b", 
+                "normalize.css": "https://api.github.com/repos/necolas/normalize.css/git/blobs/6e8e42d8cee8d665b68c1247ae99c2958aaccb32", 
+                "bower.json": "https://api.github.com/repos/necolas/normalize.css/git/blobs/b8828007f438214c435964b1fc8228fc26e1d6da", 
+                "LICENSE.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/c6bcc9bf2d8baa07f640f671796a25a83bcb86ae", 
+                "test.html": "https://api.github.com/repos/necolas/normalize.css/git/blobs/d7103c49ba97b34cf345594d1db4cb1f937776a9", 
+                "README.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/87167294bf43e8b1665979103ea7ef93f46222d7"
+            }, 
+            "component.json": {
+                "styles": [
+                    "normalize.css"
+                ], 
+                "version": "1.1.2", 
+                "name": "normalize-css", 
+                "author": "Nicolas Gallagher"
+            }, 
+            "date": {
+                "commited": "2013-05-11T21:00:40Z", 
+                "authored": "2013-05-11T21:00:40Z"
             }
         }, 
         "v1.0.1": {
@@ -104,8 +133,8 @@
                 "homepage": "http://necolas.github.com/normalize.css"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-08-19T19:38:10Z", 
+                "authored": "2012-08-19T19:38:10Z"
             }
         }, 
         "v1.0.0": {
@@ -122,8 +151,8 @@
                 "README.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/19b2fc74c76d6dec78facb37551339ce5de0d54f"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-08-14T22:44:35Z", 
+                "authored": "2012-08-14T22:44:35Z"
             }
         }, 
         "v2.0.0": {
@@ -157,8 +186,8 @@
                 "homepage": "http://necolas.github.com/normalize.css"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-08-19T19:42:30Z", 
+                "authored": "2012-08-19T19:42:30Z"
             }
         }, 
         "v1.0.2": {
@@ -195,8 +224,8 @@
                 "homepage": "http://necolas.github.com/normalize.css/"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-11-17T18:33:33Z", 
+                "authored": "2012-11-17T18:33:33Z"
             }
         }, 
         "v2.0.1": {
@@ -230,8 +259,8 @@
                 "homepage": "http://necolas.github.com/normalize.css/"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-08-20T09:50:54Z", 
+                "authored": "2012-08-20T09:50:54Z"
             }
         }, 
         "master": {
@@ -240,28 +269,56 @@
                 "name": "normalize.css", 
                 "author": "necolas"
             }, 
-            "sha": "a611f096b53faa508cce66ad172c4a6625e626f9", 
+            "sha": "56af2b11703dd9e8819ae725ee67192a4b55a48c", 
             "tree": {
-                "CONTRIBUTING.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/82bab9a2b6259fa8f05efe1d0524119decc07541", 
-                "normalize.css": "https://api.github.com/repos/necolas/normalize.css/git/blobs/6d24a3853deac6b6d490a4d34c9e58fcee9ad5b3", 
-                "CHANGELOG.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/d0e9f937cbfcaf29d03e84788c859e7d1fba65fc", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/4c526bb0826f073f1789e0010454fc94627c5f49", 
+                "CHANGELOG.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/0ca7cdfcf7c5306d3f79fe2e716678b623ed3f08", 
+                "normalize.css": "https://api.github.com/repos/necolas/normalize.css/git/blobs/6adf56e7985db2c74a60ecd1b3896eabb7fa048a", 
+                "bower.json": "https://api.github.com/repos/necolas/normalize.css/git/blobs/c96b7cd34d4cf9d500a5d9aab71113e5aa4598a7", 
                 "LICENSE.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/c6bcc9bf2d8baa07f640f671796a25a83bcb86ae", 
                 "test.html": "https://api.github.com/repos/necolas/normalize.css/git/blobs/d7103c49ba97b34cf345594d1db4cb1f937776a9", 
-                "README.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/c7eaba1ca5b08ca119796845306c71b8a2b1fb4b"
+                "README.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/87b60ea559146df3229be1feb9a4818b5b53d559"
             }, 
             "component.json": {
                 "styles": [
                     "normalize.css"
                 ], 
+                "version": "2.1.2", 
                 "name": "normalize-css", 
-                "author": "Nicolas Gallagher", 
-                "version": "2.1.1", 
-                "main": "normalize.css", 
-                "homepage": "http://necolas.github.com/normalize.css/"
+                "author": "Nicolas Gallagher"
             }, 
             "date": {
-                "commited": "2013-04-08T02:41:16Z", 
-                "authored": "2013-04-08T02:41:16Z"
+                "commited": "2013-05-11T20:59:52Z", 
+                "authored": "2013-05-11T20:59:52Z"
+            }
+        }, 
+        "v2.1.2": {
+            "package.json": {
+                "version": "v2.1.2", 
+                "name": "normalize.css", 
+                "author": "necolas"
+            }, 
+            "sha": "783d337293754992a56066df68ade69732231fc0", 
+            "tree": {
+                "CONTRIBUTING.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/4c526bb0826f073f1789e0010454fc94627c5f49", 
+                "CHANGELOG.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/0ca7cdfcf7c5306d3f79fe2e716678b623ed3f08", 
+                "normalize.css": "https://api.github.com/repos/necolas/normalize.css/git/blobs/6adf56e7985db2c74a60ecd1b3896eabb7fa048a", 
+                "bower.json": "https://api.github.com/repos/necolas/normalize.css/git/blobs/c96b7cd34d4cf9d500a5d9aab71113e5aa4598a7", 
+                "LICENSE.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/c6bcc9bf2d8baa07f640f671796a25a83bcb86ae", 
+                "test.html": "https://api.github.com/repos/necolas/normalize.css/git/blobs/d7103c49ba97b34cf345594d1db4cb1f937776a9", 
+                "README.md": "https://api.github.com/repos/necolas/normalize.css/git/blobs/87b60ea559146df3229be1feb9a4818b5b53d559"
+            }, 
+            "component.json": {
+                "styles": [
+                    "normalize.css"
+                ], 
+                "version": "2.1.2", 
+                "name": "normalize-css", 
+                "author": "Nicolas Gallagher"
+            }, 
+            "date": {
+                "commited": "2013-05-11T20:59:59Z", 
+                "authored": "2013-05-11T20:59:59Z"
             }
         }, 
         "v2.1.1": {
@@ -290,8 +347,8 @@
                 "homepage": "http://necolas.github.com/normalize.css/"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-04-08T00:28:12Z", 
+                "authored": "2013-04-08T00:28:12Z"
             }
         }, 
         "v2.1.0": {
@@ -328,8 +385,8 @@
                 "homepage": "http://necolas.github.com/normalize.css/"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-01-21T01:35:22Z", 
+                "authored": "2013-01-21T01:35:22Z"
             }
         }
     }

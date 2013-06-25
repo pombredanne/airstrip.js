@@ -121,7 +121,7 @@
                 "homepage": "http://spitfire.jsboot.com", 
                 "description": "Javascript shim / loader framework. Making things behave since 1976."
             }, 
-            "sha": "342390377ec493151e9afa7ae08578bbea9837d1", 
+            "sha": "0f433d705ec2e7f3500ad855348cc8f342773ef4", 
             "tree": {
                 ".jshintrc": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/256d92ddc2d00f1bc8c7ce6f0ebb37a0e88bb32a", 
                 "src": "https://api.github.com/repos/jsBoot/spitfire.js/git/trees/abb371fb678d67b21b844fd0c62d45637d64e329", 
@@ -132,13 +132,14 @@
                 "LICENSE.md": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/4d7f0c1042e91bc78e2087c9e4f95249d762f9ed", 
                 "pukefile.py": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/203f84098701a786babd8c84b03183dbac0fb6d5", 
                 "dependencies": "https://api.github.com/repos/jsBoot/spitfire.js/git/trees/6b072e97aa90640d5cae6c0f976e456b1d63af9b", 
+                "icon.png": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/4bde7ba285d8c85f38ddb1e2e34a0b872283dee2", 
                 ".pukeignore": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/d042baf7a7fd021bcd4e87aadba1649a7a49bdef", 
                 "README.md": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/9ab7a669b4d94e1c46da05b8d47445dc5e2c7ab5", 
                 "package-dmp-darwin.json": "https://api.github.com/repos/jsBoot/spitfire.js/git/blobs/4bd04e3bd7e7e099a1ba610bf2349195e7e19d77"
             }, 
             "date": {
-                "commited": "2013-04-17T03:08:30Z", 
-                "authored": "2013-04-17T03:08:30Z"
+                "commited": "2013-04-17T16:26:06Z", 
+                "authored": "2013-04-17T16:26:06Z"
             }
         }, 
         "1.1.0": {

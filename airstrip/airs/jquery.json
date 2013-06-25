@@ -1,13 +1,13 @@
 {
-    "nobuild": true,
+    "nobuild": true, 
     "git": "https://github.com/jquery/jquery", 
     "productions": {
-        "../1.9.1/jquery.js": "http://code.jquery.com/jquery-1.9.1.js", 
-        "../1.9.1/jquery-min.js": "http://code.jquery.com/jquery-1.9.1-min.js", 
-        "../1.8.3/jquery.js": "http://code.jquery.com/jquery-1.8.3.js", 
         "../1.8.3/jquery-min.js": "http://code.jquery.com/jquery-1.8.3-min.js", 
         "../1.7.2/jquery.js": "http://code.jquery.com/jquery-1.7.2.js", 
-        "../1.7.2/jquery-min.js": "http://code.jquery.com/jquery-1.7.2-min.js",
+        "../1.7.2/jquery-min.js": "http://code.jquery.com/jquery-1.7.2-min.js", 
+        "../1.9.1/jquery-min.js": "http://code.jquery.com/jquery-1.9.1-min.js", 
+        "../1.9.1/jquery.js": "http://code.jquery.com/jquery-1.9.1.js", 
+        "../1.8.3/jquery.js": "http://code.jquery.com/jquery-1.8.3.js", 
         "../master/jquery.js": "http://code.jquery.com/jquery-git.js", 
         "../master/jquery-min.js": "http://code.jquery.com/jquery-git-min.js"
     }, 
@@ -574,6 +574,68 @@
                 "authored": "2009-01-12T02:05:50Z"
             }
         }, 
+        "1.10.0": {
+            "package.json": {
+                "description": "JavaScript library for DOM operations", 
+                "repository": {
+                    "url": "https://github.com/jquery/jquery.git", 
+                    "type": "git"
+                }, 
+                "author": {
+                    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt", 
+                    "name": "jQuery Foundation and other contributors"
+                }, 
+                "title": "jQuery", 
+                "bugs": {
+                    "url": "http://bugs.jquery.com"
+                }, 
+                "keywords": [], 
+                "version": "1.10.0", 
+                "dependencies": {}, 
+                "licenses": [
+                    {
+                        "url": "https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt", 
+                        "type": "MIT"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt": "0.4.1", 
+                    "grunt-contrib-jshint": "0.3.0", 
+                    "gzip-js": "0.3.1", 
+                    "grunt-compare-size": "~0.4.0", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "0.2.2", 
+                    "archiver": "~0.4.2", 
+                    "grunt-git-authors": "1.2.0", 
+                    "grunt-contrib-watch": "0.3.1", 
+                    "grunt-update-submodules": "0.2.0"
+                }, 
+                "homepage": "http://jquery.com", 
+                "name": "jquery"
+            }, 
+            "sha": "61bc65ed043509db804def7b8ec15027a2bf661d", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/cd0b4ce8b0d50b9e08039da97f12bd8b0c8c48e3", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6028db34d44301f47355a075e77fbd6700a6ceb7", 
+                ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/bd69f5f35bfd7a23f606fbfd9bd355381a706778", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/5e909f423a63960f52a0994b9ffbb10e604b4158", 
+                ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/f514768295e2f352f518f254a6b44a13021b78fc", 
+                ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/0928bb9e77775b473e40b48bfc4db77afb3dca00", 
+                "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
+                ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
+                "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4ed47a1bed1c9a585f334fe0801ea78458c53634", 
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/4349ac057a55d08a42354a92a775427a669e4f5c", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/6e0ae05fe0c121ffa3cf86994485934ace4a4225"
+            }, 
+            "date": {
+                "commited": "2013-05-24T18:39:24Z", 
+                "authored": "2013-05-24T18:39:24Z"
+            }
+        }, 
         "1.7.2": {
             "package.json": {
                 "version": "1.7.2", 
@@ -914,6 +976,68 @@
                 "authored": "2013-01-15T04:19:18Z"
             }
         }, 
+        "1.10.1": {
+            "package.json": {
+                "description": "JavaScript library for DOM operations", 
+                "repository": {
+                    "url": "https://github.com/jquery/jquery.git", 
+                    "type": "git"
+                }, 
+                "author": {
+                    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt", 
+                    "name": "jQuery Foundation and other contributors"
+                }, 
+                "title": "jQuery", 
+                "bugs": {
+                    "url": "http://bugs.jquery.com"
+                }, 
+                "keywords": [], 
+                "version": "1.10.1", 
+                "dependencies": {}, 
+                "licenses": [
+                    {
+                        "url": "https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt", 
+                        "type": "MIT"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt": "0.4.1", 
+                    "grunt-contrib-jshint": "0.3.0", 
+                    "gzip-js": "0.3.1", 
+                    "grunt-compare-size": "~0.4.0", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "0.2.2", 
+                    "archiver": "~0.4.2", 
+                    "grunt-git-authors": "1.2.0", 
+                    "grunt-contrib-watch": "0.3.1", 
+                    "grunt-update-submodules": "0.2.0"
+                }, 
+                "homepage": "http://jquery.com", 
+                "name": "jquery"
+            }, 
+            "sha": "3a67de7635fc2faa09c0943018500394d6acd550", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/f7632f7f674f94cadd1ba5bd27f9ee1c21c11ade", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6028db34d44301f47355a075e77fbd6700a6ceb7", 
+                ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/bd69f5f35bfd7a23f606fbfd9bd355381a706778", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/5e909f423a63960f52a0994b9ffbb10e604b4158", 
+                ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/f514768295e2f352f518f254a6b44a13021b78fc", 
+                ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/dc4dd63eaa580974e9edf929f65aed7eb1735f75", 
+                "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
+                ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
+                "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4ed47a1bed1c9a585f334fe0801ea78458c53634", 
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/4349ac057a55d08a42354a92a775427a669e4f5c", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/6e0ae05fe0c121ffa3cf86994485934ace4a4225"
+            }, 
+            "date": {
+                "commited": "2013-05-30T21:49:05Z", 
+                "authored": "2013-05-30T21:49:05Z"
+            }
+        }, 
         "1.6rc1": {
             "package.json": {
                 "version": "1.6rc1", 
@@ -1103,6 +1227,191 @@
             "date": {
                 "commited": "2010-01-13T20:23:05Z", 
                 "authored": "2010-01-13T20:23:05Z"
+            }
+        }, 
+        "2.0.2": {
+            "package.json": {
+                "description": "JavaScript library for DOM operations", 
+                "repository": {
+                    "url": "https://github.com/jquery/jquery.git", 
+                    "type": "git"
+                }, 
+                "author": {
+                    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt", 
+                    "name": "jQuery Foundation and other contributors"
+                }, 
+                "title": "jQuery", 
+                "bugs": {
+                    "url": "http://bugs.jquery.com"
+                }, 
+                "keywords": [], 
+                "version": "2.0.2", 
+                "dependencies": {}, 
+                "licenses": [
+                    {
+                        "url": "https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt", 
+                        "type": "MIT"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt": "0.4.1", 
+                    "grunt-contrib-jshint": "0.3.0", 
+                    "gzip-js": "0.3.1", 
+                    "grunt-compare-size": "~0.4.0", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "0.2.2", 
+                    "archiver": "~0.4.2", 
+                    "grunt-git-authors": "1.2.0", 
+                    "grunt-contrib-watch": "0.3.1", 
+                    "grunt-update-submodules": "0.2.0"
+                }, 
+                "homepage": "http://jquery.com", 
+                "name": "jquery"
+            }, 
+            "sha": "b21c88ff0c293db0711d378411901259052ca2b4", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/1abad1f32dea62bba63d067dd2abca387d67ffbf", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/e6ede8e109cc8dc34ea94ca67660dc8bfc2a3a44", 
+                ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/c91d320aface028c0a4000db5d18c6b4c13513e7", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/c6b84568900c5286f1eba8fd3cf57ad5169b6aae", 
+                ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/f514768295e2f352f518f254a6b44a13021b78fc", 
+                ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/146752caeb622d1bc1c6320941932a6f2bf58215", 
+                "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
+                ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
+                "speed": "https://api.github.com/repos/jquery/jquery/git/trees/d58596b2eb30e936b8b21abc5f16c4cdbbc0e904", 
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/7340e673683f24bcf0fdc9ac154878e70aba644d", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/c75058624e796091eef91fa48fffb6ea6712d48a"
+            }, 
+            "date": {
+                "commited": "2013-05-30T21:25:21Z", 
+                "authored": "2013-05-30T21:25:21Z"
+            }
+        }, 
+        "2.0.1": {
+            "package.json": {
+                "description": "JavaScript library for DOM operations", 
+                "repository": {
+                    "url": "https://github.com/jquery/jquery.git", 
+                    "type": "git"
+                }, 
+                "author": {
+                    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt", 
+                    "name": "jQuery Foundation and other contributors"
+                }, 
+                "title": "jQuery", 
+                "bugs": {
+                    "url": "http://bugs.jquery.com"
+                }, 
+                "keywords": [], 
+                "version": "2.0.1", 
+                "dependencies": {}, 
+                "licenses": [
+                    {
+                        "url": "https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt", 
+                        "type": "MIT"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt": "0.4.1", 
+                    "grunt-contrib-jshint": "0.3.0", 
+                    "gzip-js": "0.3.1", 
+                    "grunt-compare-size": "~0.4.0", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "0.2.2", 
+                    "archiver": "~0.4.2", 
+                    "grunt-git-authors": "1.2.0", 
+                    "grunt-contrib-watch": "0.3.1", 
+                    "grunt-update-submodules": "0.2.0"
+                }, 
+                "homepage": "http://jquery.com", 
+                "name": "jquery"
+            }, 
+            "sha": "6190370ab7406b526c29cda0a4c8301b6a259660", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/b66f0f39ce5e5bf4c4f6927d1378a7502a238b0b", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/e6ede8e109cc8dc34ea94ca67660dc8bfc2a3a44", 
+                ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/c91d320aface028c0a4000db5d18c6b4c13513e7", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/c6b84568900c5286f1eba8fd3cf57ad5169b6aae", 
+                ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/f514768295e2f352f518f254a6b44a13021b78fc", 
+                ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/9558935575dbccce8119134c63fd0fca60e493f9", 
+                "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
+                ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
+                "speed": "https://api.github.com/repos/jquery/jquery/git/trees/d58596b2eb30e936b8b21abc5f16c4cdbbc0e904", 
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/7340e673683f24bcf0fdc9ac154878e70aba644d", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/c75058624e796091eef91fa48fffb6ea6712d48a"
+            }, 
+            "date": {
+                "commited": "2013-05-24T16:44:44Z", 
+                "authored": "2013-05-24T16:44:44Z"
+            }
+        }, 
+        "2.0.0": {
+            "package.json": {
+                "description": "JavaScript library for DOM operations", 
+                "repository": {
+                    "url": "https://github.com/jquery/jquery.git", 
+                    "type": "git"
+                }, 
+                "author": {
+                    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt", 
+                    "name": "jQuery Foundation and other contributors"
+                }, 
+                "title": "jQuery", 
+                "bugs": {
+                    "url": "http://bugs.jquery.com"
+                }, 
+                "keywords": [], 
+                "version": "2.0.0", 
+                "dependencies": {}, 
+                "licenses": [
+                    {
+                        "url": "https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt", 
+                        "type": "MIT"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt": "0.4.1", 
+                    "grunt-contrib-jshint": "0.3.0", 
+                    "gzip-js": "0.3.1", 
+                    "grunt-compare-size": "~0.4.0", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "0.2.2", 
+                    "grunt-git-authors": "1.2.0", 
+                    "grunt-contrib-watch": "0.3.1", 
+                    "grunt-update-submodules": "0.2.0"
+                }, 
+                "homepage": "http://jquery.com", 
+                "name": "jquery"
+            }, 
+            "sha": "6aaa8a113fd067b493fd365dae829472f9da351d", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/8a82ff6c388e7a9ab02f5596333cf44660c99167", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/e6ede8e109cc8dc34ea94ca67660dc8bfc2a3a44", 
+                ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/9ce13edf2978aaf3d5cab4d08a4440b0ff2119b7", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/5d41d71f3046a9db4750f042a07aa2eecf4db33c", 
+                ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/eeafcc6fad31334844eabfe5c7c115ec1346f85d", 
+                ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/ddf80e10f2e8d7924fcf2891db3756a3ffa94f30", 
+                "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
+                ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
+                "speed": "https://api.github.com/repos/jquery/jquery/git/trees/d58596b2eb30e936b8b21abc5f16c4cdbbc0e904", 
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/89a57e6d10ed6d51702b2519fb303cf457d49911", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/94d96efb49b9c79a4cd3749f0c0539d1fa04b7b2"
+            }, 
+            "date": {
+                "commited": "2013-04-18T20:52:00Z", 
+                "authored": "2013-04-18T20:52:00Z"
             }
         }, 
         "1.2.2b": {
@@ -1444,7 +1753,7 @@
                     "url": "http://bugs.jquery.com"
                 }, 
                 "keywords": [], 
-                "version": "2.0.0-pre", 
+                "version": "2.0.3-pre", 
                 "dependencies": {}, 
                 "licenses": [
                     {
@@ -1457,8 +1766,9 @@
                     "grunt-contrib-jshint": "0.3.0", 
                     "gzip-js": "0.3.1", 
                     "grunt-compare-size": "~0.4.0", 
-                    "grunt-contrib-uglify": "0.1.2", 
-                    "testswarm": "0.2.2", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "~1.1.0", 
+                    "archiver": "~0.4.2", 
                     "grunt-git-authors": "1.2.0", 
                     "grunt-contrib-watch": "0.3.1", 
                     "grunt-update-submodules": "0.2.0"
@@ -1466,27 +1776,27 @@
                 "homepage": "http://jquery.com", 
                 "name": "jquery"
             }, 
-            "sha": "5179fa00b839ebc70ec38fb0cf6cb8f8c412f37e", 
+            "sha": "3a434434c420096cef478936ea21b33e9cfae30c", 
             "tree": {
                 ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
-                "src": "https://api.github.com/repos/jquery/jquery/git/trees/fa6adaec1ec95826a1eac17732408c28daf82bf6", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/93591d4f77ab93ac36e4c1aecb8e22e12d0a12a3", 
                 "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/e6ede8e109cc8dc34ea94ca67660dc8bfc2a3a44", 
                 ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
-                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/9ce13edf2978aaf3d5cab4d08a4440b0ff2119b7", 
-                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/1b13c277d9a250e418fe807dd140acb494b064e5", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/c91d320aface028c0a4000db5d18c6b4c13513e7", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/952515b46f05f5e985fe3324f7cd5fc965a08145", 
                 ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
-                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/eeafcc6fad31334844eabfe5c7c115ec1346f85d", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/576f2fb4ce58a2b111ffe7f58093e41f22a2baa5", 
                 ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
-                "test": "https://api.github.com/repos/jquery/jquery/git/trees/ddf80e10f2e8d7924fcf2891db3756a3ffa94f30", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/146752caeb622d1bc1c6320941932a6f2bf58215", 
                 "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
                 ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
                 "speed": "https://api.github.com/repos/jquery/jquery/git/trees/d58596b2eb30e936b8b21abc5f16c4cdbbc0e904", 
-                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/89a57e6d10ed6d51702b2519fb303cf457d49911", 
-                "build": "https://api.github.com/repos/jquery/jquery/git/trees/94d96efb49b9c79a4cd3749f0c0539d1fa04b7b2"
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/18740b9e4c96544f0f200e0062e3b4e49ba54064", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/c75058624e796091eef91fa48fffb6ea6712d48a"
             }, 
             "date": {
-                "commited": "2013-04-17T16:37:23Z", 
-                "authored": "2013-04-17T07:06:12Z"
+                "commited": "2013-06-19T23:17:42Z", 
+                "authored": "2013-06-19T21:36:32Z"
             }
         }, 
         "1.9.1": {
@@ -1766,6 +2076,67 @@
             "date": {
                 "commited": "2011-06-14T21:54:23Z", 
                 "authored": "2011-06-14T21:54:23Z"
+            }
+        }, 
+        "1.10.0-beta1": {
+            "package.json": {
+                "description": "JavaScript library for DOM operations", 
+                "repository": {
+                    "url": "https://github.com/jquery/jquery.git", 
+                    "type": "git"
+                }, 
+                "author": {
+                    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt", 
+                    "name": "jQuery Foundation and other contributors"
+                }, 
+                "title": "jQuery", 
+                "bugs": {
+                    "url": "http://bugs.jquery.com"
+                }, 
+                "keywords": [], 
+                "version": "1.10.0-beta1", 
+                "dependencies": {}, 
+                "licenses": [
+                    {
+                        "url": "https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt", 
+                        "type": "MIT"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt": "0.4.1", 
+                    "grunt-contrib-jshint": "0.3.0", 
+                    "gzip-js": "0.3.1", 
+                    "grunt-compare-size": "~0.4.0", 
+                    "grunt-contrib-uglify": "0.2.0", 
+                    "testswarm": "0.2.2", 
+                    "grunt-git-authors": "1.2.0", 
+                    "grunt-contrib-watch": "0.3.1", 
+                    "grunt-update-submodules": "0.2.0"
+                }, 
+                "homepage": "http://jquery.com", 
+                "name": "jquery"
+            }, 
+            "sha": "3a8fcde250da0db237396e9ab97fb099eb68c624", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jquery/jquery/git/blobs/13a9e01b91f713fef5a21833a9a236ac3f189ec4", 
+                "src": "https://api.github.com/repos/jquery/jquery/git/trees/58cf1d300c640ae0f182d9893aba5fb8267db751", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/jquery/jquery/git/blobs/6028db34d44301f47355a075e77fbd6700a6ceb7", 
+                ".gitmodules": "https://api.github.com/repos/jquery/jquery/git/blobs/19c60418e36e71c4b7abfa92ab79c43cbd20ca69", 
+                "AUTHORS.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/6ec40764aab02f941c8d73631207920b37922381", 
+                "Gruntfile.js": "https://api.github.com/repos/jquery/jquery/git/blobs/766c9e2fdb76f7414e45deed942af53b16174c9b", 
+                ".gitignore": "https://api.github.com/repos/jquery/jquery/git/blobs/1040aefd47d7653c0dc61d212fd28496a40861a9", 
+                ".mailmap": "https://api.github.com/repos/jquery/jquery/git/blobs/f514768295e2f352f518f254a6b44a13021b78fc", 
+                ".editorconfig": "https://api.github.com/repos/jquery/jquery/git/blobs/d06e31850afcd496c0dfdd315dba53b1a6f7eac0", 
+                "test": "https://api.github.com/repos/jquery/jquery/git/trees/1ec40885a34f411fc26d87bf1bfe36eb0869e664", 
+                "MIT-LICENSE.txt": "https://api.github.com/repos/jquery/jquery/git/blobs/957f26d3e3b5ae3922f2f220263c51ab220088d4", 
+                ".gitattributes": "https://api.github.com/repos/jquery/jquery/git/blobs/d6dc47053cb213c362d36a69dcc2d66e80a5d1cf", 
+                "speed": "https://api.github.com/repos/jquery/jquery/git/trees/4ed47a1bed1c9a585f334fe0801ea78458c53634", 
+                "README.md": "https://api.github.com/repos/jquery/jquery/git/blobs/4349ac057a55d08a42354a92a775427a669e4f5c", 
+                "build": "https://api.github.com/repos/jquery/jquery/git/trees/74c2389859bbbfe483f20b03e7bf46ec49b06e90"
+            }, 
+            "date": {
+                "commited": "2013-05-10T01:16:49Z", 
+                "authored": "2013-05-10T01:16:49Z"
             }
         }, 
         "1.4.4rc1": {

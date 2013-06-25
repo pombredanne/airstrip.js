@@ -1,10 +1,64 @@
 {
-   "git": "https://github.com/wycats/handlebars.js", 
+    "git": "https://github.com/wycats/handlebars.js", 
     "productions": {
         "handlebars.runtime.js": "dist/handlebars.runtime.js", 
         "handlebars.js": "dist/handlebars.js"
     }, 
     "versions": {
+        "v1.0.7": {
+            "package.json": {
+                "bin": {
+                    "handlebars": "bin/handlebars"
+                }, 
+                "engines": {
+                    "node": ">=0.4.7"
+                }, 
+                "name": "handlebars", 
+                "repository": {
+                    "url": "git://github.com/wycats/handlebars.js.git", 
+                    "type": "git"
+                }, 
+                "optionalDependencies": {}, 
+                "version": "1.0.7", 
+                "dependencies": {
+                    "uglify-js": "~1.2", 
+                    "optimist": "~0.3"
+                }, 
+                "scripts": {
+                    "test": "node_modules/.bin/mocha -u qunit spec/qunit_spec.js"
+                }, 
+                "keywords": [
+                    "handlebars mustache template html"
+                ], 
+                "devDependencies": {
+                    "mocha": "*"
+                }, 
+                "main": "lib/handlebars.js", 
+                "homepage": "http://www.handlebarsjs.com/", 
+                "description": "Extension of the Mustache logicless template language"
+            }, 
+            "sha": "d69b32e57fc4c8271b1ab786f3a345d013af8397", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f37931784aa615b09109b61aae6bfde070c9c3ca", 
+                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/04a20d3c597826cfd2c64b495b1c2d6351a2c6ad", 
+                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/b508d20be7475b7ddcc1394e6d97186361f6eab3", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/aeb35d4f950f9f93249653c5812e51ebe7f1b4b7", 
+                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/237cd03464327c2628413d18b5f44d05da5d0618", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/55c78d28dd12c12d9fe4179a0823f577b11b504f", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ed0b022d721389bb06c257522bd7ac9596565c89", 
+                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/67a89dab5447934dca4faedd94f308f75e11ffa7", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/46570588a3d8d083bd55bc93da23eb2aa4c61ab9", 
+                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/7d64fc9ae053b9435661147a801ec0962a181ff2", 
+                ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/5c49ba1b203d3e578d555857dda925d3bd9c4169", 
+                ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/86d283e97b73b19e4e4d00807d2624fc5d162c4f", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/5e32fc19649169135cf03b06c44bf295bd74021d"
+            }, 
+            "date": {
+                "commited": "2013-05-10T04:51:50Z", 
+                "authored": "2013-05-10T04:51:50Z"
+            }
+        }, 
         "v1.0.6": {
             "package.json": {
                 "bin": {
@@ -59,28 +113,67 @@
                 "authored": "2012-07-23T20:40:07Z"
             }
         }, 
-        "1.0.0.beta.1": {
+        "1.0.0": {
             "package.json": {
-                "version": "1.0.0.beta.1", 
-                "name": "handlebars.js", 
-                "author": "wycats"
+                "bin": {
+                    "handlebars": "bin/handlebars"
+                }, 
+                "engines": {
+                    "node": ">=0.4.7"
+                }, 
+                "name": "handlebars", 
+                "repository": {
+                    "url": "git://github.com/wycats/handlebars.js.git", 
+                    "type": "git"
+                }, 
+                "optionalDependencies": {}, 
+                "version": "1.0.12", 
+                "dependencies": {
+                    "uglify-js": "~2.3", 
+                    "optimist": "~0.3"
+                }, 
+                "scripts": {
+                    "test": "node_modules/.bin/mocha -u qunit spec/qunit_spec.js"
+                }, 
+                "keywords": [
+                    "handlebars mustache template html"
+                ], 
+                "devDependencies": {
+                    "dust": "~0.3", 
+                    "jison": "~0.3", 
+                    "benchmark": "~1.0", 
+                    "mustache": "~0.7.2", 
+                    "mocha": "*"
+                }, 
+                "main": "lib/handlebars.js", 
+                "homepage": "http://www.handlebarsjs.com/", 
+                "description": "Extension of the Mustache logicless template language"
             }, 
-            "sha": "81071dd22c5295d796ab702d910e167029e178c4", 
+            "sha": "b17760960809329a0dd66e2c32a6518b7b2ed036", 
             "tree": {
-                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/fd641397191930591d053dd6d9c982b0dbcfaf97", 
-                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/05fa146bf6f3daf170542957801c8ec3dd0347a4", 
-                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/d6c5941fa06571b1dd8461ac3c715a10c2b23750", 
-                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/237cd03464327c2628413d18b5f44d05da5d0618", 
-                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/9468c42621a1b3bddc151fd3223cb4ba633618f0", 
-                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6c04ff4b12368768009810da14d1a6dbe3bd030f", 
-                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/d622804e5a1bd7478daf2d40c16ae7dc397493d4", 
-                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/269aba251aaa10caeac20c81e457f5e45da31139", 
-                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6b9ac11e3435ead41048fe0e406b2231821f79a6", 
-                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/76bf716698f5aa4d60ff1bba6f4669be99e566ea"
+                ".jshintrc": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f37931784aa615b09109b61aae6bfde070c9c3ca", 
+                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/cbc99266ccf5ffd35716b0683dd97c7fdd91f3bd", 
+                "release-notes.md": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/8e676194489bafcfdda4fd0e3eda99c0152a3b8e", 
+                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/cf092ce2803b82eb6f9c892b442a12d7e3ef7231", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/24bcb1952dc2eac131934f45297cd78418573cc6", 
+                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f466a93fd398247f8941ee99af8f7c9cbe7b2a19", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/794686f1eeb884729918888d5cc595e6e85e5d2e", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f775815e2284f756ebf5c57d9aad1e499b2d9005", 
+                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ce8338f4ebc305e63c17f2b92d13628005f702b2", 
+                "bower.json": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4b86a80a4814dcde3e6987c6e1d8e3e54b959121", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6e326b1ba7ef8288511568c8f934aba8f5ad1693", 
+                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/9efb6054bc1bd77339dfe915e4215190ff3cd3bd", 
+                ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/2f42c9f4415bcc5ccba2ddb5873eb362fd22c2ec", 
+                ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
+                "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/48e52e3a908d1ca11aea1619f5d618ae74e84884", 
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/b848ca66e9ee26b1174701ad34b235d3576dbda5", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/10a6c01dbef01e961d876f97a6be720ea3521ffb", 
+                "handlebars.js.nuspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4515f2ebd6a5dcdd9b4cbdf5346502fd40dc6ef0", 
+                "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
             }, 
             "date": {
-                "commited": "2011-05-04T03:39:24Z", 
-                "authored": "2011-05-04T03:39:24Z"
+                "commited": "2013-05-31T18:17:56Z", 
+                "authored": "2013-05-31T18:17:56Z"
             }
         }, 
         "1.0.rc.1": {
@@ -251,8 +344,8 @@
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/72cb62374c50d20ddab15ec7767b66827451eae2"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-02-16T01:43:52Z", 
+                "authored": "2013-02-16T01:43:52Z"
             }
         }, 
         "v1.0.8": {
@@ -310,8 +403,8 @@
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/37ec1cbb5d3d45ab59be85b9952f720a285032f1"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-01-19T08:12:36Z", 
+                "authored": "2013-01-19T08:12:36Z"
             }
         }, 
         "v1.0.6beta": {
@@ -361,6 +454,69 @@
             "date": {
                 "commited": "2012-07-23T15:36:13Z", 
                 "authored": "2012-07-23T15:36:13Z"
+            }
+        }, 
+        "v1.0.11": {
+            "package.json": {
+                "bin": {
+                    "handlebars": "bin/handlebars"
+                }, 
+                "engines": {
+                    "node": ">=0.4.7"
+                }, 
+                "name": "handlebars", 
+                "repository": {
+                    "url": "git://github.com/wycats/handlebars.js.git", 
+                    "type": "git"
+                }, 
+                "optionalDependencies": {}, 
+                "version": "1.0.11", 
+                "dependencies": {
+                    "uglify-js": "~1.2", 
+                    "optimist": "~0.3"
+                }, 
+                "scripts": {
+                    "test": "node_modules/.bin/mocha -u qunit spec/qunit_spec.js"
+                }, 
+                "keywords": [
+                    "handlebars mustache template html"
+                ], 
+                "devDependencies": {
+                    "dust": "~0.3", 
+                    "jison": "~0.3", 
+                    "benchmark": "~1.0", 
+                    "mustache": "~0.7.2", 
+                    "mocha": "*"
+                }, 
+                "main": "lib/handlebars.js", 
+                "homepage": "http://www.handlebarsjs.com/", 
+                "description": "Extension of the Mustache logicless template language"
+            }, 
+            "sha": "8d9e7721dab7be8f0ed357529ad8d494e06eb03f", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f37931784aa615b09109b61aae6bfde070c9c3ca", 
+                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/266ab250f75591058ecdffe833556de0b8b779ea", 
+                "release-notes.md": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/fb409c68669508e36f122c83d68fc91c898d28af", 
+                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/cf092ce2803b82eb6f9c892b442a12d7e3ef7231", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/5280f2a7d4524915c41979c14da1dde59616a9c9", 
+                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f466a93fd398247f8941ee99af8f7c9cbe7b2a19", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ac935ddb23aaf98a7452e4861af0c4be6fd752c7", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/1cba6468903edfac8c3283998f5ec6772e57b384", 
+                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ce8338f4ebc305e63c17f2b92d13628005f702b2", 
+                "bower.json": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/a5eb00b98151630cec43a4973c986be0ddbe0328", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4b5a1184498fb266f1bffcd6ef8b3497134ac599", 
+                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/9efb6054bc1bd77339dfe915e4215190ff3cd3bd", 
+                ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/2f42c9f4415bcc5ccba2ddb5873eb362fd22c2ec", 
+                ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
+                "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/f2eabb39858d1ac0cc2233e68a4ed0b5828d056d", 
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/1edc985b41f92052a9c39e5150dfd8fb6c443f2e", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/2b15f7da17450dfc4a4b7dfc5d4212fa0a18e297", 
+                "handlebars.js.nuspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/9a16cc09d64aa3d4f630af9b68e203d7c61cc1fc", 
+                "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
+            }, 
+            "date": {
+                "commited": "2013-05-14T04:09:21Z", 
+                "authored": "2013-05-14T04:09:21Z"
             }
         }, 
         "v1.0.10": {
@@ -419,8 +575,71 @@
                 "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-02-27T13:52:34Z", 
+                "authored": "2013-02-27T13:52:34Z"
+            }
+        }, 
+        "1.0.0-rc.4": {
+            "package.json": {
+                "bin": {
+                    "handlebars": "bin/handlebars"
+                }, 
+                "engines": {
+                    "node": ">=0.4.7"
+                }, 
+                "name": "handlebars", 
+                "repository": {
+                    "url": "git://github.com/wycats/handlebars.js.git", 
+                    "type": "git"
+                }, 
+                "optionalDependencies": {}, 
+                "version": "1.0.11", 
+                "dependencies": {
+                    "uglify-js": "~1.2", 
+                    "optimist": "~0.3"
+                }, 
+                "scripts": {
+                    "test": "node_modules/.bin/mocha -u qunit spec/qunit_spec.js"
+                }, 
+                "keywords": [
+                    "handlebars mustache template html"
+                ], 
+                "devDependencies": {
+                    "dust": "~0.3", 
+                    "jison": "~0.3", 
+                    "benchmark": "~1.0", 
+                    "mustache": "~0.7.2", 
+                    "mocha": "*"
+                }, 
+                "main": "lib/handlebars.js", 
+                "homepage": "http://www.handlebarsjs.com/", 
+                "description": "Extension of the Mustache logicless template language"
+            }, 
+            "sha": "4cf0410b7cc3e06f09b98bbc42a3d2df8e561eba", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f37931784aa615b09109b61aae6bfde070c9c3ca", 
+                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/266ab250f75591058ecdffe833556de0b8b779ea", 
+                "release-notes.md": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/fb409c68669508e36f122c83d68fc91c898d28af", 
+                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/cf092ce2803b82eb6f9c892b442a12d7e3ef7231", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/5280f2a7d4524915c41979c14da1dde59616a9c9", 
+                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f466a93fd398247f8941ee99af8f7c9cbe7b2a19", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ac935ddb23aaf98a7452e4861af0c4be6fd752c7", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/1cba6468903edfac8c3283998f5ec6772e57b384", 
+                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ce8338f4ebc305e63c17f2b92d13628005f702b2", 
+                "bower.json": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/a5eb00b98151630cec43a4973c986be0ddbe0328", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4b5a1184498fb266f1bffcd6ef8b3497134ac599", 
+                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/9efb6054bc1bd77339dfe915e4215190ff3cd3bd", 
+                ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/2f42c9f4415bcc5ccba2ddb5873eb362fd22c2ec", 
+                ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
+                "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/f2eabb39858d1ac0cc2233e68a4ed0b5828d056d", 
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/1edc985b41f92052a9c39e5150dfd8fb6c443f2e", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/2b15f7da17450dfc4a4b7dfc5d4212fa0a18e297", 
+                "handlebars.js.nuspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/9a16cc09d64aa3d4f630af9b68e203d7c61cc1fc", 
+                "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
+            }, 
+            "date": {
+                "commited": "2013-05-14T04:09:21Z", 
+                "authored": "2013-05-14T04:09:21Z"
             }
         }, 
         "1.0.0-rc.3": {
@@ -482,7 +701,7 @@
                 "authored": "2013-02-15T05:58:20Z"
             }
         }, 
-        "master": {
+        "v1.0.12": {
             "package.json": {
                 "bin": {
                     "handlebars": "bin/handlebars"
@@ -496,9 +715,9 @@
                     "type": "git"
                 }, 
                 "optionalDependencies": {}, 
-                "version": "1.0.10", 
+                "version": "1.0.12", 
                 "dependencies": {
-                    "uglify-js": "~1.2", 
+                    "uglify-js": "~2.3", 
                     "optimist": "~0.3"
                 }, 
                 "scripts": {
@@ -518,28 +737,115 @@
                 "homepage": "http://www.handlebarsjs.com/", 
                 "description": "Extension of the Mustache logicless template language"
             }, 
-            "sha": "4c35f89c2a9a4bb3a645ee59262a9fb1d85d338c", 
+            "sha": "1585f917498f47263f3cd6dc4343ac377e93ad22", 
             "tree": {
                 ".jshintrc": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f37931784aa615b09109b61aae6bfde070c9c3ca", 
-                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/266ab250f75591058ecdffe833556de0b8b779ea", 
+                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/cbc99266ccf5ffd35716b0683dd97c7fdd91f3bd", 
+                "release-notes.md": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/8e676194489bafcfdda4fd0e3eda99c0152a3b8e", 
                 "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/cf092ce2803b82eb6f9c892b442a12d7e3ef7231", 
-                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/67025abe078a0e1944145c4f3cdafcc216a1f86c", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/24bcb1952dc2eac131934f45297cd78418573cc6", 
                 "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f466a93fd398247f8941ee99af8f7c9cbe7b2a19", 
-                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6fe5d849ec5a35ca502132766c81441c56a2bf1a", 
-                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/0b338e829327bf217c80dcdd22a7a1b94f2f19e9", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/794686f1eeb884729918888d5cc595e6e85e5d2e", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f775815e2284f756ebf5c57d9aad1e499b2d9005", 
                 "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/ce8338f4ebc305e63c17f2b92d13628005f702b2", 
-                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4b5a1184498fb266f1bffcd6ef8b3497134ac599", 
+                "bower.json": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4b86a80a4814dcde3e6987c6e1d8e3e54b959121", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6e326b1ba7ef8288511568c8f934aba8f5ad1693", 
                 "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/9efb6054bc1bd77339dfe915e4215190ff3cd3bd", 
                 ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/2f42c9f4415bcc5ccba2ddb5873eb362fd22c2ec", 
                 ".rspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/62c58f04929e86e496538e0716ed0a0a7818078b", 
-                "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/f38cb6420032ade7b02ce9d2480afbde41c2a6c8", 
-                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/649705476d8338675fba024d5b813848079e821e", 
-                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/2b15f7da17450dfc4a4b7dfc5d4212fa0a18e297", 
+                "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/48e52e3a908d1ca11aea1619f5d618ae74e84884", 
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/b848ca66e9ee26b1174701ad34b235d3576dbda5", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/10a6c01dbef01e961d876f97a6be720ea3521ffb", 
+                "handlebars.js.nuspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4515f2ebd6a5dcdd9b4cbdf5346502fd40dc6ef0", 
                 "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de"
             }, 
             "date": {
-                "commited": "2013-04-08T17:41:08Z", 
-                "authored": "2013-04-08T17:41:08Z"
+                "commited": "2013-05-31T18:16:53Z", 
+                "authored": "2013-05-31T18:16:53Z"
+            }
+        }, 
+        "master": {
+            "package.json": {
+                "bin": {
+                    "handlebars": "bin/handlebars"
+                }, 
+                "engines": {
+                    "node": ">=0.4.7"
+                }, 
+                "name": "handlebars", 
+                "repository": {
+                    "url": "git://github.com/wycats/handlebars.js.git", 
+                    "type": "git"
+                }, 
+                "optionalDependencies": {}, 
+                "version": "1.0.12", 
+                "dependencies": {
+                    "uglify-js": "~2.3", 
+                    "optimist": "~0.3"
+                }, 
+                "scripts": {
+                    "test": "node ./spec/env/runner"
+                }, 
+                "keywords": [
+                    "handlebars", 
+                    "mustache", 
+                    "template", 
+                    "html"
+                ], 
+                "devDependencies": {
+                    "benchmark": "~1.0", 
+                    "jison": "~0.3", 
+                    "should": "~1.2.2", 
+                    "dust": "~0.3", 
+                    "mocha": "*", 
+                    "mustache": "~0.7.2"
+                }, 
+                "main": "lib/handlebars.js", 
+                "homepage": "http://www.handlebarsjs.com/", 
+                "description": "Extension of the Mustache logicless template language"
+            }, 
+            "sha": "8e2416dabb2056c07357a55b9259322f0d794ada", 
+            ".travis.yml": {
+                "after_success": "bundle exec rake publish", 
+                "email": {
+                    "on_failure": "change", 
+                    "on_success": "never"
+                }, 
+                "env": {
+                    "global": [
+                        "S3_BUCKET_NAME=builds.handlebarsjs.com", 
+                        {
+                            "secure": "PJaukuvkBBsSDOqbIcNSSMgb96VVEaIt/eq9GPjXPeFbSd3hXgwhwVE62Lrq\ntJO8BaUfX+PzpiQjEl4D5/KBmvlFZ057Hqmy0zmPOT5mDZfJe8Ja5zyvTMb+\nKkCWN/tjAp8kawHojE04pn6jIpPdwXFnAYwPhaHbATFrmdt9fdg="
+                        }, 
+                        {
+                            "secure": "mBcGL2tnmiRujJdV/4fxrVd8E8wn6AW9IQKVcMv8tvOc7i5dOzZ39rpBKLuT\nMRXDtMV1LyLiuKYb1pHj1IyeadEahcLYFfGygF4LG7Yzp4NWHtRzQ7Q8LXaJ\nV7dXDboYCFkn2a8/Rtx1YSVh/sCONf5UoRC+MUIqrj4UiHN9r3s="
+                        }
+                    ]
+                }
+            }, 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/d6bd57bbaf87f6e782bf0147e5517f492ecb7c80", 
+                "bin": "https://api.github.com/repos/wycats/handlebars.js/git/trees/4a84821ace4e5908e34db92dc79ee1ea5179d336", 
+                "release-notes.md": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/d2800f925d25259651f15e26fac40419c62e86f1", 
+                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/96c9dd25389648b47d976ffc72258f29e4a69eb0", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/72e028860710c448d8121dad96d00c109fb99213", 
+                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/f466a93fd398247f8941ee99af8f7c9cbe7b2a19", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/30187d743c1d14df3612d9add64a1c532ba61dce", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/0946d90353697d17f44c401ed2a90178dadea386", 
+                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/1a8fc130089080829e7879934c2c3a6bcbcd8c7c", 
+                "bower.json": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4b86a80a4814dcde3e6987c6e1d8e3e54b959121", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/db9d40a00b5c558deaa342a628aa5f0ab8d2594b", 
+                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/9efb6054bc1bd77339dfe915e4215190ff3cd3bd", 
+                ".npmignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/2f42c9f4415bcc5ccba2ddb5873eb362fd22c2ec", 
+                "handlebars-source.gemspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/514e2b1e4342a5422425438b71e780a0d558e1de", 
+                "dist": "https://api.github.com/repos/wycats/handlebars.js/git/trees/d9bfb0446e2fcc9217e8c32a67eeba939648fc44", 
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/b848ca66e9ee26b1174701ad34b235d3576dbda5", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/b91867b128fab382c0aad80c153d9c4c96cdc83e", 
+                "handlebars.js.nuspec": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/4515f2ebd6a5dcdd9b4cbdf5346502fd40dc6ef0"
+            }, 
+            "date": {
+                "commited": "2013-06-09T00:45:24Z", 
+                "authored": "2013-06-09T00:45:24Z"
             }
         }, 
         "0.9.0.pre.4": {
@@ -561,8 +867,8 @@
                 "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/1fd7cdef49c9b945900884b4998b7de8478de192"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-02-15T21:44:08Z", 
+                "authored": "2011-02-15T21:44:08Z"
             }
         }, 
         "v1.0.6-2": {
@@ -663,6 +969,30 @@
             "date": {
                 "commited": "2012-02-09T17:06:11Z", 
                 "authored": "2012-02-09T17:06:11Z"
+            }
+        }, 
+        "1.0.0.beta.1": {
+            "package.json": {
+                "version": "1.0.0.beta.1", 
+                "name": "handlebars.js", 
+                "author": "wycats"
+            }, 
+            "sha": "81071dd22c5295d796ab702d910e167029e178c4", 
+            "tree": {
+                "src": "https://api.github.com/repos/wycats/handlebars.js/git/trees/fd641397191930591d053dd6d9c982b0dbcfaf97", 
+                "Gemfile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/05fa146bf6f3daf170542957801c8ec3dd0347a4", 
+                "lib": "https://api.github.com/repos/wycats/handlebars.js/git/trees/d6c5941fa06571b1dd8461ac3c715a10c2b23750", 
+                "LICENSE": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/237cd03464327c2628413d18b5f44d05da5d0618", 
+                "README.markdown": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/9468c42621a1b3bddc151fd3223cb4ba633618f0", 
+                "Gemfile.lock": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6c04ff4b12368768009810da14d1a6dbe3bd030f", 
+                ".gitignore": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/d622804e5a1bd7478daf2d40c16ae7dc397493d4", 
+                "bench": "https://api.github.com/repos/wycats/handlebars.js/git/trees/269aba251aaa10caeac20c81e457f5e45da31139", 
+                "Rakefile": "https://api.github.com/repos/wycats/handlebars.js/git/blobs/6b9ac11e3435ead41048fe0e406b2231821f79a6", 
+                "spec": "https://api.github.com/repos/wycats/handlebars.js/git/trees/76bf716698f5aa4d60ff1bba6f4669be99e566ea"
+            }, 
+            "date": {
+                "commited": "2011-05-04T03:39:24Z", 
+                "authored": "2011-05-04T03:39:24Z"
             }
         }
     }

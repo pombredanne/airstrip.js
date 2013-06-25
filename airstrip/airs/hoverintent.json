@@ -1,10 +1,9 @@
 {
-  "nobuild": true,
-  "productions": {
-    "hoverintent.js": "jquery.hoverIntent.js"
-  },
-
+    "nobuild": true, 
     "git": "https://github.com/hernan/hoverIntent", 
+    "productions": {
+        "hoverintent.js": "http://cherne.net/brian/resources/jquery.hoverIntent.js"
+    }, 
     "versions": {
         "master": {
             "package.json": {

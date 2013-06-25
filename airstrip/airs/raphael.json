@@ -1,11 +1,10 @@
 {
-  "nobuild": true,
-  "productions": {
-    "raphael.js": "raphael.js",
-    "raphael-min.js": "raphael-min.js"
-  },
-
+    "nobuild": true, 
     "git": "https://github.com/DmitryBaranovskiy/raphael", 
+    "productions": {
+        "raphael.js": "raphael.js", 
+        "raphael-min.js": "raphael-min.js"
+    }, 
     "versions": {
         "v1.4.1": {
             "package.json": {
@@ -270,32 +269,34 @@
                     "test": "echo \"Error: no test specified\" && exit 1"
                 }, 
                 "devDependencies": {
-                    "uglify-js": "~2.2.3"
+                    "grunt": "~0.4.1", 
+                    "grunt-contrib-uglify": "~0.2.0"
                 }, 
                 "main": "raphael.js", 
                 "readmeFilename": "README.markdown", 
                 "description": "JavaScript Vector Library"
             }, 
-            "sha": "e0b94fdc04e895df5cece33ddfa2d0b646363b2e", 
+            "sha": "bdbc517a5995c8151a55e1eef68446d8fbfd291c", 
             "tree": {
-                "raphael-min.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/518ba2e3e1f08074dfa4dc29c71d4b9d42604afd", 
-                "README.markdown": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/1f2aba69e8d2d13c4e4722e01aa8a207d757a16a", 
-                "raphael.vml.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/a4c45659456784f94f8fc662249bf5f7394687b4", 
-                "make": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/e883efe61f956f7d0b7fb746d347ea0ec55d90c2", 
-                "raphael.svg.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/7212f33cf327e00d34e76c991a12ac6347bbbe53", 
-                "copy.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/1837442f5996c221ad514597b1a066049c8cfe58", 
+                "raphael-min.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/37dd87309edac7308d03bb6d720f9c37a4e4ee30", 
+                "reference.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/51757bf34d997c480bed2abeb5c8e1a6346b6e8b", 
+                "README.markdown": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/42162f04d408e26ca10c58a043e6eca6666e48d0", 
+                "raphael.vml.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/0132f3c36c99e814965c92f12ef8c089f30e7f9b", 
+                "Gruntfile.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/5b9705373d9734144f91daac2e2709d9e37d0aa4", 
+                "raphael.svg.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/f7ccf3f50bdf77ae30dd22857ad528ba743c5947", 
+                "copy.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/bda029571a74607b2bd2df0d507ead1e111a54f0", 
                 ".gitmodules": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/f28c2a7f42c0776c403d15bc7643bb5f0cd95580", 
                 "history.md": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/1ffdd952db346612a9310f87a13ed3000e7faef8", 
                 ".gitignore": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/75f05b3e3aec5aeefff0b4279a2cd9e5e9b947d6", 
-                "reference.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/51757bf34d997c480bed2abeb5c8e1a6346b6e8b", 
-                "raphael.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/7805b6408165adb9df97e90cb6ddba011b66eca5", 
+                "raphaelTest.html": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/90f0bd04d3e07c5a634115031000497d6e232d4a", 
+                "raphael.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/77410a3e77aaf9e87d4d0cc2ede8ec8032bfc4dc", 
                 "reference.html": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/40327a2e71575d5981b797a091164e9ad2ce1a72", 
                 "license.txt": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/479afcb45967a06f62f6d93567417e2539b9b4a8", 
-                "raphael.core.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/f6eb7b44e08f1a72b93ccaa81c5a705254c22d65"
+                "raphael.core.js": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/926802187cf8c8d21d85288a3f691bb9d482ddfb"
             }, 
             "date": {
-                "commited": "2013-03-25T22:53:59Z", 
-                "authored": "2013-03-25T22:53:59Z"
+                "commited": "2013-06-23T03:21:14Z", 
+                "authored": "2013-06-23T03:21:14Z"
             }
         }, 
         "v2.0.0": {
@@ -321,8 +322,8 @@
                 "dr.css": "https://api.github.com/repos/DmitryBaranovskiy/raphael/git/blobs/a4adc4ce52f8925cabc97e4b7f7cde1460382474"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-10-19T06:09:01Z", 
+                "authored": "2011-10-19T06:09:01Z"
             }
         }, 
         "v2.0.2": {

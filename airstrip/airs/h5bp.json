@@ -27,8 +27,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/928a2105d213ee8fdc9997891c7673fd7e561e37"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-08-13T18:36:07Z", 
+                "authored": "2010-08-13T18:36:07Z"
             }
         }, 
         "v0.9.5": {
@@ -58,8 +58,8 @@
                 "web.config": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/9ad087ff1e81e35e21af3440743a17b7b32a7cab"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-10-26T05:25:16Z", 
+                "authored": "2010-10-26T05:25:16Z"
             }
         }, 
         "v4.2.0": {
@@ -95,8 +95,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-04-08T02:42:11Z", 
+                "authored": "2013-04-08T02:42:11Z"
             }
         }, 
         "v2.0stripped": {
@@ -127,8 +127,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/18d2d71dae835233f4b5b64a6223d92ef49fc76f"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-08-10T08:11:54Z", 
+                "authored": "2011-08-10T08:11:54Z"
             }
         }, 
         "v4.0.0": {
@@ -163,8 +163,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-08-28T22:41:26Z", 
+                "authored": "2012-08-28T22:41:26Z"
             }
         }, 
         "v4.0.1": {
@@ -200,8 +200,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-20T23:01:41Z", 
+                "authored": "2012-10-20T23:01:41Z"
             }
         }, 
         "v1.0rc": {
@@ -232,8 +232,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-07T07:57:54Z", 
+                "authored": "2011-03-07T07:57:54Z"
             }
         }, 
         "v4.0.3": {
@@ -269,8 +269,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-01-13T00:16:47Z", 
+                "authored": "2013-01-13T00:16:47Z"
             }
         }, 
         "v3.0.2": {
@@ -301,8 +301,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-19T19:04:31Z", 
+                "authored": "2012-02-19T19:04:31Z"
             }
         }, 
         "v3.0.1": {
@@ -333,8 +333,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-08T21:10:08Z", 
+                "authored": "2012-02-08T21:10:08Z"
             }
         }, 
         "v0.9.1stripped": {
@@ -359,8 +359,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/928a2105d213ee8fdc9997891c7673fd7e561e37"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-08-14T05:01:09Z", 
+                "authored": "2010-08-14T05:01:09Z"
             }
         }, 
         "v3.0stripped": {
@@ -391,8 +391,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/67df211d8b3a2800312584c3c0cd392be91ca9d9"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-06T14:45:07Z", 
+                "authored": "2012-02-06T14:45:07Z"
             }
         }, 
         "v2.0": {
@@ -423,8 +423,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/18d2d71dae835233f4b5b64a6223d92ef49fc76f"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-08-10T07:44:42Z", 
+                "authored": "2011-08-10T07:44:42Z"
             }
         }, 
         "v3.0.1stripped": {
@@ -455,8 +455,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-08T21:15:11Z", 
+                "authored": "2012-02-08T21:15:11Z"
             }
         }, 
         "v1.0": {
@@ -487,8 +487,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-21T18:02:14Z", 
+                "authored": "2011-03-21T18:02:14Z"
             }
         }, 
         "master": {
@@ -497,7 +497,7 @@
                 "name": "html5-boilerplate", 
                 "author": "h5bp"
             }, 
-            "sha": "7a22a33d4041c479d0962499e853501073811887", 
+            "sha": "8f743702f6846a3fff86da56ea69c1f4e07d161b", 
             "tree": {
                 "humans.txt": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/d9e1bb98109151b9715bd3bf2a32192327458ea2", 
                 "apple-touch-icon-144x144-precomposed.png": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/257c77acf687be13f6aa9f39102a73538192e62d", 
@@ -507,25 +507,25 @@
                 "apple-touch-icon-precomposed.png": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/99b60545abff1da42ff12de48b7d07a8c9e60bea", 
                 ".gitignore": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/16b2d7d0ae903d9ce1d465fdbbbf4cea599a4eeb", 
                 "apple-touch-icon-114x114-precomposed.png": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0fdf60e8fe6ab43513c6bf2f0037d9fb4c9b0b1a", 
-                "css": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/acde5fd07ffa250f5da0d1d54330450de1e59cf7", 
+                "css": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/5d6925e70ce198a407f63eb236686cb13b99ffee", 
                 "CONTRIBUTING.md": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/6facbb646cd250f6fdbfe37697ca7efaaef5959a", 
-                "CHANGELOG.md": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/c6ea125384216cc21ad81d8bd3491cf8021413f5", 
+                "CHANGELOG.md": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/9d8451286efbffcd0f03712a9b14be96c74e4907", 
                 "apple-touch-icon.png": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/99b60545abff1da42ff12de48b7d07a8c9e60bea", 
                 "LICENSE.md": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/294e91d808263f2f5f935aed22e3cbce9faf8771", 
-                "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/25246f62723d34a152c1e4a9ab9591fc8149d811", 
+                "js": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/864561b9f0cd83ed3565dab8e9d6e700fabddd27", 
                 "README.md": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/55830a7700a9f734f41e238ce63b74d5d08a2865", 
-                "index.html": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2b317335388207c06e1fd000b279ef1b8c39d91c", 
+                "index.html": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/8d6f72fceb42440e2bdd8e8840470a11bd5df4aa", 
                 "404.html": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/fdace4ab146cc40450c73419b8ff7286051d65e1", 
                 "robots.txt": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/ee2cc216a6e2c9046926881d39f1ce92663d231d", 
                 ".htaccess": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/64b43ad14c6fd7942bca7738974a3eefbbd7cdef", 
                 "apple-touch-icon-57x57-precomposed.png": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/99b60545abff1da42ff12de48b7d07a8c9e60bea", 
-                "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/45f45c6555a21e96b01ee55ed4a98266e111e089", 
+                "doc": "https://api.github.com/repos/h5bp/html5-boilerplate/git/trees/172c8c075c0e6df3f89ff48f07a652074dc85daf", 
                 ".gitattributes": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/2125666142eb661091cc5f32af2ed2f3fc65571d", 
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": "2013-04-12T14:40:55Z", 
-                "authored": "2013-04-12T10:55:48Z"
+                "commited": "2013-06-14T09:03:52Z", 
+                "authored": "2013-06-14T08:57:11Z"
             }
         }, 
         "v0.9": {
@@ -549,8 +549,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/928a2105d213ee8fdc9997891c7673fd7e561e37"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-08-10T17:01:26Z", 
+                "authored": "2010-08-10T17:01:26Z"
             }
         }, 
         "v3.0.2stripped": {
@@ -581,8 +581,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-19T19:14:51Z", 
+                "authored": "2012-02-19T19:14:51Z"
             }
         }, 
         "v1.0rcstripped": {
@@ -613,8 +613,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-07T08:11:47Z", 
+                "authored": "2011-03-07T08:11:47Z"
             }
         }, 
         "v4.0.2": {
@@ -650,8 +650,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-12-09T23:12:39Z", 
+                "authored": "2012-12-09T23:12:39Z"
             }
         }, 
         "v3.0": {
@@ -682,8 +682,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/04aa72191dd094d5bce9b299b29b401ece2f75b3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-06T14:35:43Z", 
+                "authored": "2012-02-06T14:35:43Z"
             }
         }, 
         "v0.9.5stripped": {
@@ -713,8 +713,8 @@
                 "web.config": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/9ad087ff1e81e35e21af3440743a17b7b32a7cab"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-10-26T06:03:09Z", 
+                "authored": "2010-10-26T06:03:09Z"
             }
         }, 
         "v1.0stripped": {
@@ -745,8 +745,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/0d429292c0c07f77fbcb408b2078a84f8f2484d2"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-21T16:42:43Z", 
+                "authored": "2011-03-21T16:42:43Z"
             }
         }, 
         "v4.1.0": {
@@ -782,8 +782,8 @@
                 "crossdomain.xml": "https://api.github.com/repos/h5bp/html5-boilerplate/git/blobs/29a035d7fc37681912d05d3a3da5ae8967d228b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-01-21T02:58:15Z", 
+                "authored": "2013-01-21T02:58:15Z"
             }
         }
     }

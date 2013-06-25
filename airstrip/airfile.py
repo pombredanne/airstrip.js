@@ -73,9 +73,6 @@ class AirFile():
       for j in self.project[i]:
         print "    - version: %s" % j
 
-
-
-
   def isRequired(self, name):
     return name in self.project
 

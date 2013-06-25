@@ -2,9 +2,9 @@
     "git": "https://github.com/lojjic/PIE", 
     "productions": {
         "pie-min.js": "build/PIE.js", 
-        "pie-min.htc": "build/PIE.htc", 
+        "pie.js": "build/PIE_uncompressed.js", 
         "pie.htc": "build/PIE_uncompressed.htc", 
-        "pie.js": "build/PIE_uncompressed.js"
+        "pie-min.htc": "build/PIE.htc"
     }, 
     "versions": {
         "1.0.0": {
@@ -55,8 +55,8 @@
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-04T18:05:04Z", 
+                "authored": "2011-09-04T18:05:04Z"
             }
         }, 
         "1.0beta4": {
@@ -81,8 +81,8 @@
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-04-03T23:15:18Z", 
+                "authored": "2011-04-03T23:15:18Z"
             }
         }, 
         "1.0beta3": {
@@ -107,8 +107,8 @@
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-12-06T04:56:26Z", 
+                "authored": "2010-12-06T04:56:26Z"
             }
         }, 
         "1.0beta2": {
@@ -133,8 +133,8 @@
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-07-28T14:04:10Z", 
+                "authored": "2010-07-28T14:04:10Z"
             }
         }, 
         "1.0beta1": {
@@ -193,13 +193,13 @@
                 "name": "PIE", 
                 "author": "lojjic"
             }, 
-            "sha": "577696d91ded37c8753d8421d633a0f757d54590", 
+            "sha": "1b5f1c481e3e57629f7f25ea1d6d354db1a0c806", 
             "tree": {
                 "tests": "https://api.github.com/repos/lojjic/PIE/git/trees/76161b62c5206127f4a77f93cab25e3398363cf6", 
                 "LICENSE-APACHE2.txt": "https://api.github.com/repos/lojjic/PIE/git/blobs/8487a361fe9b93f6ea730db96a5510b6c2c549aa", 
                 "build.xml": "https://api.github.com/repos/lojjic/PIE/git/blobs/5074a8ff3ecf07d6fe7f8ed886698c6e7023373c", 
                 "LICENSE": "https://api.github.com/repos/lojjic/PIE/git/blobs/9bd2f4f8141a38989063a9e0b630cb162222d21e", 
-                "sources": "https://api.github.com/repos/lojjic/PIE/git/trees/f3689c903fb57420f9ebf95fb989e21d94d9cd64", 
+                "sources": "https://api.github.com/repos/lojjic/PIE/git/trees/6930cbcbb1fcc980384defaf0a48149cd5ae75f0", 
                 "documentation": "https://api.github.com/repos/lojjic/PIE/git/trees/adef5120bf6454f3e768dd06f8a96822f0d2f753", 
                 "site": "https://api.github.com/repos/lojjic/PIE/git/trees/ccdb02d01ae737ed62bb2df5c7d0940872e6e6ac", 
                 ".gitignore": "https://api.github.com/repos/lojjic/PIE/git/blobs/08fe6ed0a782efd5679ae386a94057250f9cdf72", 
@@ -209,8 +209,8 @@
                 "tools": "https://api.github.com/repos/lojjic/PIE/git/trees/28b292af9e13a5609a42569bd4fb91625df3de08"
             }, 
             "date": {
-                "commited": "2013-02-19T01:53:25Z", 
-                "authored": "2013-02-19T01:53:25Z"
+                "commited": "2013-06-13T15:21:07Z", 
+                "authored": "2013-06-13T15:21:07Z"
             }
         }
     }

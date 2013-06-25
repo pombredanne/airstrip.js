@@ -2,11 +2,11 @@
 
 from puke import *
 import json
-import airlicenses as al
+import licenses
 
 AIRSTRIP_RC_PATH = '~/.airstriprc'
 
-API = '2'
+API = '3'
 
 # Template for empty RC
 EMPTY_RC = json.loads("""{
@@ -21,7 +21,8 @@ EMPTY_RC = json.loads("""{
   "you": {
     "name": "",
     "url": "",
-    "mail": ""
+    "mail": "",
+    "login": ""
   },
   "license": "MIT"
 }""")
@@ -44,6 +45,12 @@ class AirRC():
     for i in EMPTY_RC:
       if not i in defaults:
         defaults[i] = EMPTY_RC[i]
+      elif not type(EMPTY_RC[i]) == str:
+        for j in EMPTY_RC[i]:
+          if not j in defaults[i]:
+            defaults[i][j] = EMPTY_RC[i][j]
+
+
 
     console.warn("""You don't seem to have documented your default informations, 
 or airstrip has an upgraded version that requires new infos.""")
@@ -60,8 +67,9 @@ and other projects boilerplates.""" % AIRSTRIP_RC_PATH)
     self.rc['you']['name'] = prompt('Your name (currently: %s)' % defaults['you']['name'], defaults['you']['name'])
     self.rc['you']['mail'] = prompt('Your mail (currently: %s)' % defaults['you']['mail'], defaults['you']['mail'])
     self.rc['you']['url'] = prompt('Your website / twitter (currently: %s)' % defaults['you']['url'], defaults['you']['url'])
+    self.rc['you']['login'] = prompt('Your github name (currently: %s)' % defaults['you']['login'], defaults['you']['login'])
 
-    keys = al.AirLicenses().list()
+    keys = licenses.Licenses().list()
     self.rc['license'] = prompt('Default license for new projects (among %s)? (currently: %s)' % (keys, defaults['license']), defaults['license'])
 
     self.rc['git'] = prompt('Default git owner to use for new projects? (currently: %s)' % defaults['git'], defaults['git'])

@@ -463,6 +463,10 @@
                 "license": "MIT", 
                 "author": "Jeremy Ashkenas <jeremy@documentcloud.org>", 
                 "url": "http://backbonejs.org", 
+                "repository": {
+                    "url": "https://github.com/documentcloud/backbone.git", 
+                    "type": "git"
+                }, 
                 "dependencies": {
                     "underscore": ">=1.4.3"
                 }, 
@@ -487,7 +491,7 @@
                 "main": "backbone.js", 
                 "description": "Give your JS App some Backbone with Models, Views, Collections, and Events."
             }, 
-            "sha": "f61bd29d3065f70345215532704280dd0b7c2ffe", 
+            "sha": "c523222dba8448b2ad32d04402af9fed8a6d0e10", 
             ".travis.yml": {
                 "notifications": {
                     "email": false
@@ -498,9 +502,9 @@
                 "language": "node_js"
             }, 
             "tree": {
-                "CONTRIBUTING.md": "https://api.github.com/repos/documentcloud/backbone/git/blobs/5f4ff1a46b9d8ea65e1ac0a6f062cab09e4a5230", 
-                "index.html": "https://api.github.com/repos/documentcloud/backbone/git/blobs/12dc111ec128bf9ed1a85d4d6f9e5e1120e0d6ea", 
-                "backbone.js": "https://api.github.com/repos/documentcloud/backbone/git/blobs/1375da30914daf0bb2904bab8b2396649fb566a4", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/documentcloud/backbone/git/blobs/3875a108d24b0338a240b4317da3a3bfe33aad17", 
+                "index.html": "https://api.github.com/repos/documentcloud/backbone/git/blobs/69e160e0f164d1505ad343e031373a8cd2021202", 
+                "backbone.js": "https://api.github.com/repos/documentcloud/backbone/git/blobs/e09fa283206d00d5825966fd63a565ed820ea5d8", 
                 "LICENSE": "https://api.github.com/repos/documentcloud/backbone/git/blobs/dda0a5809df0caa98fd8ced623c43d6da656b282", 
                 "Rakefile": "https://api.github.com/repos/documentcloud/backbone/git/blobs/96cc0e2c8326684bebc063e0b944a534b1cfe50b", 
                 "backbone-min.map": "https://api.github.com/repos/documentcloud/backbone/git/blobs/59b527c0f24beb3545b18f9595dd3f63bd59c961", 
@@ -508,15 +512,15 @@
                 ".gitignore": "https://api.github.com/repos/documentcloud/backbone/git/blobs/232978d0cc8f455c122112b05e960287e1808a05", 
                 ".npmignore": "https://api.github.com/repos/documentcloud/backbone/git/blobs/6bcb69f5099cae4f681d30b9385d278541fd5b1d", 
                 "CNAME": "https://api.github.com/repos/documentcloud/backbone/git/blobs/dfadb7985a4fdb4f223f43c58cbc0cbc87d7adf6", 
-                "examples": "https://api.github.com/repos/documentcloud/backbone/git/trees/85f6f89f241504c4449c3ba311888566afe415c4", 
+                "examples": "https://api.github.com/repos/documentcloud/backbone/git/trees/b051f6162f4208ef4a5648642ee118d104a4ae4f", 
                 "docs": "https://api.github.com/repos/documentcloud/backbone/git/trees/ee8d9ed9350266835fa40e698313e840956e26dc", 
-                "test": "https://api.github.com/repos/documentcloud/backbone/git/trees/e882dcbf82749a3745ed0fcaf5f838572eb19d97", 
+                "test": "https://api.github.com/repos/documentcloud/backbone/git/trees/914928901e29c33e3f1abafe1b49013b2d24871a", 
                 "README.md": "https://api.github.com/repos/documentcloud/backbone/git/blobs/75aa0780ca597ae36130fed1e89c2ab8b692d2dd", 
                 "index.js": "https://api.github.com/repos/documentcloud/backbone/git/blobs/618cfc1eb3dac9043113e851052b3244e0196a77"
             }, 
             "date": {
-                "commited": "2013-04-12T15:54:53Z", 
-                "authored": "2013-04-12T15:54:53Z"
+                "commited": "2013-06-24T14:11:25Z", 
+                "authored": "2013-06-24T14:11:25Z"
             }
         }, 
         "0.2.0": {

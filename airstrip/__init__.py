@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'airstrip'
-__version__ = '2.0.1'
+__version__ = '2.1.0'
 __build__ = 0x001400
 __author__ = 'WebItUp'
 __license__ = 'MIT'
@@ -27,16 +27,23 @@ def run():
 
     parser = OptionParser()
     parser.add_option("-v", "--version", action="store_true", dest="version", help="get version")
+    if sys.platform.lower() == "darwin":
+      parser.add_option("-s", "--speak",action="store_true",  dest="speak", help="puke speaks on fail/success")
     # parser.add_option("-h", "--help", action="store_true", dest="help", help="get help")
 
     (options, args) = parser.parse_args()
     consoleCfg = logging.StreamHandler()
     consoleCfg.setFormatter(logging.Formatter( ' %(message)s' , '%H:%M:%S'))
     logging.getLogger().addHandler(consoleCfg)
-    logging.getLogger().setLevel(logging.DEBUG)
+    logging.getLogger().setLevel(logging.INFO)
     #
     # Execute tasks
     #
+
+    if options.speak:
+      puke.Console.SPEAK_ENABLED = True
+      puke.Console.SPEAK_MESSAGE_ON_FAIL = "Bitch, please!"
+      puke.Console.SPEAK_MESSAGE_ON_SUCCESS = "Holy macaroni you made it sonny!"
 
 
     if options.version:
@@ -120,5 +127,9 @@ def main():
     except KeyboardInterrupt:
         print("Build interrupted!\n")
         sys.exit(2)
+
+
+    if puke.Console.SPEAK_ENABLED and puke.Console.SPEAK_MESSAGE_ON_SUCCESS:
+        puke.console.say(puke.Console.SPEAK_MESSAGE_ON_SUCCESS)
         
     sys.exit(0)

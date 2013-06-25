@@ -7,3 +7,6 @@
 - use '.' in directory pointer for sublime project file
 - name sublime file as "projectName.sublime"
 - extract sublime files from gitignore and commit shit
+
+
+- XXX replace python keyring with http://www.themacaque.com/?p=1082

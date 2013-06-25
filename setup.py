@@ -15,7 +15,8 @@ os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 requires = [
     'puke',
-    'verlib'
+    'verlib',
+    'keyring'
 ]
 
 setup(

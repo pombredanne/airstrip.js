@@ -2,8 +2,9 @@
   "folders":
   [
     {
-      "path": "{{miniboot.path}}",
-      "folder_exclude_patterns": [".sass-cache", ".svn", ".git", ".hg", "CVS", ".pukecache", ".airstrip-tmp", ".tmp", ".build"]
+      "path": ".",
+      "folder_exclude_patterns": [".sass-cache", ".svn", ".git", ".hg", "CVS", ".pukecache", ".airstrip-tmp", ".tmp", ".build"],
+      "file_exclude_patterns": ["*.sublime-workspace"]
     }
   ],
 

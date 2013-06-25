@@ -1,9 +1,9 @@
 {
-  "nobuild": true,
-  "productions": {
-    "moment.js": "moment.js"
-  },
+    "nobuild": true, 
     "git": "https://github.com/timrwood/moment", 
+    "productions": {
+        "moment.js": "moment.js"
+    }, 
     "versions": {
         "1.1.1": {
             "package.json": {
@@ -46,8 +46,8 @@
                 "sitesrc": "https://api.github.com/repos/timrwood/moment/git/trees/2b54f0d5348f307960d870a1bd1bfd6a3315114c"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-11-12T17:11:23Z", 
+                "authored": "2011-11-12T17:11:23Z"
             }
         }, 
         "1.1.0": {
@@ -93,8 +93,8 @@
                 "test.js": "https://api.github.com/repos/timrwood/moment/git/blobs/986bcf2de82eb93f4bb138d80f62c8b8a82ff893"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-10-27T23:15:59Z", 
+                "authored": "2011-10-27T23:15:59Z"
             }
         }, 
         "0.3.1": {
@@ -110,8 +110,8 @@
                 "lib": "https://api.github.com/repos/timrwood/moment/git/trees/254b98773405ad8d651791944e3ed653212a4d74"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-25T16:04:30Z", 
+                "authored": "2011-03-25T16:04:30Z"
             }
         }, 
         "1.0.1": {
@@ -157,8 +157,8 @@
                 "test.js": "https://api.github.com/repos/timrwood/moment/git/blobs/986bcf2de82eb93f4bb138d80f62c8b8a82ff893"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-10-18T16:51:51Z", 
+                "authored": "2011-10-18T16:51:51Z"
             }
         }, 
         "2.0.0": {
@@ -234,8 +234,8 @@
                 "readme.md": "https://api.github.com/repos/timrwood/moment/git/blobs/d2ec95a4b0d5986bb5aecc6e2b6a525d0eb55568"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-02-08T19:16:04Z", 
+                "authored": "2013-02-08T19:16:04Z"
             }
         }, 
         "1.1.2": {
@@ -279,8 +279,8 @@
                 "sitesrc": "https://api.github.com/repos/timrwood/moment/git/trees/eaa5fbc234b128bd603118283592b3467ab02f3f"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-11-18T01:47:08Z", 
+                "authored": "2011-11-18T01:47:08Z"
             }
         }, 
         "0.3.2": {
@@ -313,8 +313,8 @@
                 "lib": "https://api.github.com/repos/timrwood/moment/git/trees/e49ff9165283e2c41a772acdbef286cbadd7c38f"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-25T15:43:45Z", 
+                "authored": "2011-03-25T15:43:45Z"
             }
         }, 
         "0.6.0": {
@@ -359,8 +359,8 @@
                 "test.js": "https://api.github.com/repos/timrwood/moment/git/blobs/f67d0c1f865e219206633ca4de3695b87e98afef"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-21T16:52:23Z", 
+                "authored": "2011-09-21T16:52:23Z"
             }
         }, 
         "1.6.2": {
@@ -422,8 +422,8 @@
                 "test": "https://api.github.com/repos/timrwood/moment/git/trees/35f2a352919f34203efd830fed63c367c3fbee25"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-05-04T17:14:04Z", 
+                "authored": "2012-05-04T17:14:04Z"
             }
         }, 
         "1.6.0": {
@@ -475,8 +475,8 @@
                 "test": "https://api.github.com/repos/timrwood/moment/git/trees/45b9daa96e91a7470b7dd88d62179b73394c2f5e"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-04-26T16:36:29Z", 
+                "authored": "2012-04-26T16:36:29Z"
             }
         }, 
         "1.6.1": {
@@ -531,8 +531,8 @@
                 "test": "https://api.github.com/repos/timrwood/moment/git/trees/0b899cc2d977b0ba973dbe096cb889dca464f520"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-04-26T22:35:38Z", 
+                "authored": "2012-04-26T22:35:38Z"
             }
         }, 
         "master": {
@@ -649,8 +649,8 @@
                 "underscore.date.js": "https://api.github.com/repos/timrwood/moment/git/blobs/51b7c0156d2b52a26e60c4cb06c41fa62ca69fbd"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-05-09T15:43:56Z", 
+                "authored": "2011-05-09T15:43:56Z"
             }
         }, 
         "0.4.0": {
@@ -690,8 +690,8 @@
                 "underscore.date.js": "https://api.github.com/repos/timrwood/moment/git/blobs/3e10e26caaf91abb01b3ce120173b94cb93c08c3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-05-09T15:43:19Z", 
+                "authored": "2011-05-09T15:43:19Z"
             }
         }, 
         "0.5.0": {
@@ -888,8 +888,8 @@
                 "readme.md": "https://api.github.com/repos/timrwood/moment/git/blobs/a03792113e38697cb96710bb3c8fb98062c92291"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-07-25T19:09:21Z", 
+                "authored": "2012-07-25T19:09:21Z"
             }
         }, 
         "1.4.0": {
@@ -943,8 +943,8 @@
                 "sitesrc": "https://api.github.com/repos/timrwood/moment/git/trees/1ccc5feaf60307e19d7f46743e1815d0df135fb5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-03T19:15:36Z", 
+                "authored": "2012-02-03T19:15:36Z"
             }
         }, 
         "1.5.1": {
@@ -992,8 +992,8 @@
                 "test": "https://api.github.com/repos/timrwood/moment/git/trees/e155fd332cc1d8d55bfc9069d5c341a08bdb1991"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-04-06T02:01:19Z", 
+                "authored": "2012-04-06T02:01:19Z"
             }
         }, 
         "1.5.0": {
@@ -1041,8 +1041,8 @@
                 "test": "https://api.github.com/repos/timrwood/moment/git/trees/fd3ea7c6cb3624df8ecd9fe3bd107a2d1f25cbe3"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-03-19T19:45:06Z", 
+                "authored": "2012-03-19T19:45:06Z"
             }
         }, 
         "1.3.0": {
@@ -1087,8 +1087,8 @@
                 "sitesrc": "https://api.github.com/repos/timrwood/moment/git/trees/e0451d23374fc4069171edfdcb2f678c8c630613"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-01-05T17:49:50Z", 
+                "authored": "2012-01-05T17:49:50Z"
             }
         }, 
         "1.2.0": {
@@ -1206,8 +1206,8 @@
                 "readme.md": "https://api.github.com/repos/timrwood/moment/git/blobs/4c3b61074fc84051f07cb2fcf765ca3307349002"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-02T17:17:45Z", 
+                "authored": "2012-10-02T17:17:45Z"
             }
         }, 
         "1.7.1": {
@@ -1280,8 +1280,8 @@
                 "readme.md": "https://api.github.com/repos/timrwood/moment/git/blobs/4c3b61074fc84051f07cb2fcf765ca3307349002"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-01T17:39:48Z", 
+                "authored": "2012-10-01T17:39:48Z"
             }
         }, 
         "0.6.1": {

@@ -1,38 +1,39 @@
 {
-    "nobuild": true,
-    "productions": {
-      "there.is.only.jsboot.css": "dist/there.is.only.jsboot.css",
-      "there.is.only.jsboot.js": "dist/there.is.only.jsboot.js",
-      "mingus.js": "dist/mingus.js",
-      "service.js": "dist/service.js",
-      "core.js": "dist/core.js",
-      "debug.js": "dist/debug.js",
-      "ui.js": "dist/ui.js",
-      "burnscars": "dist/burnscars",
-      "gate.html": "dist/gate.html"
-    },
+    "nobuild": true, 
     "git": "https://github.com/jsBoot/jsboot.js", 
+    "productions": {
+        "there.is.only.jsboot.css": "dist/there.is.only.jsboot.css", 
+        "there.is.only.jsboot.js": "dist/there.is.only.jsboot.js", 
+        "gate.html": "dist/gate.html", 
+        "core.js": "dist/core.js", 
+        "mingus.js": "dist/mingus.js", 
+        "burnscars": "dist/burnscars", 
+        "debug.js": "dist/debug.js", 
+        "ui.js": "dist/ui.js", 
+        "service.js": "dist/service.js"
+    }, 
     "versions": {
-        "master": {
+        "0.3.0": {
             "package.json": {
-                "name": "jsBoot.js", 
+                "name": "jsboot.js", 
                 "contributors": [
                     {
-                        "web": "http://www.webitup.fr", 
+                        "url": "http://www.webitup.fr", 
                         "name": "Mangled Deutz", 
-                        "email": "dev@webitup.fr"
-                    }, 
-                    {
-                        "web": "http://www.webitup.fr", 
-                        "name": "Raildecom", 
                         "email": "dev@webitup.fr"
                     }
                 ], 
+                "author": "WebItUp", 
+                "config": {
+                    "self": "//static.sn.ackitup.net/lib/webitup"
+                }, 
                 "directories": {
-                    "test": "build/dist/jsboot.js/1.0/tests", 
+                    "tmp": ".tmp", 
                     "src": "src", 
-                    "lib": "build/dist/jsboot.js/1.0/", 
-                    "doc": "build/doc"
+                    "tests": "src/tests", 
+                    "dist": "dist", 
+                    "doc": "doc", 
+                    "build": ".build"
                 }, 
                 "repositories": [
                     {
@@ -44,42 +45,120 @@
                 "licenses": [
                     {
                         "url": "http://www.gnu.org/licenses/agpl-3.0.html", 
-                        "type": "AferoGPL"
+                        "type": "AGPL"
                     }
                 ], 
                 "maintainers": [
                     {
-                        "web": "http://www.webitup.fr", 
+                        "url": "http://www.webitup.fr", 
                         "name": "Mangled Deutz", 
                         "email": "dev@webitup.fr"
                     }
                 ], 
-                "version": "0.2.0", 
-                "dependencies": {
-                    "Spitfire.js": "1.0.x", 
-                    "Airstrip.js": "1.0.x"
-                }, 
+                "version": "0.3.0", 
+                "dependencies": {}, 
                 "keywords": [
-                    "jsBoot"
+                    "framework", 
+                    "library", 
+                    "RAD"
                 ], 
-                "homepage": "http://airstrip.jsboot.com", 
-                "description": "jsBoot!"
+                "homepage": "http://core.jsboot.com", 
+                "description": "There is only jsBoot"
             }, 
-            "sha": "e134b8892bbeddf073e8191e73e533375b8b04f8", 
+            "sha": "f4f481c0bca4a53f1ffa8a5acc689c235cd7f300", 
             "tree": {
-                ".jshintrc": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/2268a639bb1a10a4479f2362151fdd699b494125", 
-                "src": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/014077c6972e1df96bdc00a3f3e4a7fbcfa1234c", 
+                ".jshintrc": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/6124dc73a89fef663dade14017712eaeabb48f1b", 
+                "src": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/10ea3d0bb6bae1056157e5c130efc70e99d931ac", 
                 "tests": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/42510ce4f01b47e69612c78b37efb173713540d9", 
-                "LICENSE": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/480dc6d8590d05c1f444b137abe4b2b5f64c7beb", 
-                "helpers.py": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/6d67cd04d5665b89f00a590762d504794e5a08f3", 
-                ".gitignore": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/0f9d7a1e7d0825d3de89251d9b7e71fd28495a3b", 
-                "pukefile.py": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/e4e9a3ab11fb31a1e79fb72ee85c17cda95cb4a9", 
-                "README.md": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/61522c01fb31d35a2f1144c611886485c0f52253", 
-                "config.yaml": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/94a0926eefeda017bc3a43996b12a99ab62dd78a"
+                "dist": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/9d4b852f0acd69228024a9985fe39543b60189c9", 
+                "airfile.json": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/ec0724833bf4dae03ac7e399c04f9758d1339c7a", 
+                "helpers.py": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/c9197ffc868235c0db1ec379a62f322053a47fe9", 
+                ".gitignore": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/c3ca83560b9f6862d7299ea60ff5462c572a2b03", 
+                "LICENSE.md": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/b030a50fc63d3f48f483cbe8b077c91aaffe2119", 
+                "pukefile.py": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/f6bec6b5166181e0e40b7adc503f3e63b1ddf295", 
+                "dependencies": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/1a012025b30fa275c0ce51d6cc86cb3a032a0911", 
+                "icon.png": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/4bde7ba285d8c85f38ddb1e2e34a0b872283dee2", 
+                ".pukeignore": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/d042baf7a7fd021bcd4e87aadba1649a7a49bdef", 
+                "README.md": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/faedac9c1e34914a38d2508c9f291c776908dcac", 
+                "package-dmp-darwin.json": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/19a8794216d51f8c014a2a3e86c06006155ddb25"
             }, 
             "date": {
-                "commited": "2013-01-21T21:47:32Z", 
-                "authored": "2013-01-21T21:47:32Z"
+                "commited": "2013-04-22T17:48:51Z", 
+                "authored": "2013-04-22T17:48:51Z"
+            }
+        }, 
+        "master": {
+            "package.json": {
+                "name": "jsboot.js", 
+                "contributors": [
+                    {
+                        "url": "http://www.webitup.fr", 
+                        "name": "Mangled Deutz", 
+                        "email": "dev@webitup.fr"
+                    }
+                ], 
+                "author": "WebItUp", 
+                "config": {
+                    "self": "//static.sn.ackitup.net/lib/webitup"
+                }, 
+                "directories": {
+                    "tmp": ".tmp", 
+                    "src": "src", 
+                    "tests": "src/tests", 
+                    "dist": "dist", 
+                    "doc": "doc", 
+                    "build": ".build"
+                }, 
+                "repositories": [
+                    {
+                        "url": "https://github.com/jsBoot/jsboot.js.git", 
+                        "type": "git"
+                    }
+                ], 
+                "bugs": "https://github.com/jsBoot/jsboot.js/issues", 
+                "licenses": [
+                    {
+                        "url": "http://www.gnu.org/licenses/agpl-3.0.html", 
+                        "type": "AGPL"
+                    }
+                ], 
+                "maintainers": [
+                    {
+                        "url": "http://www.webitup.fr", 
+                        "name": "Mangled Deutz", 
+                        "email": "dev@webitup.fr"
+                    }
+                ], 
+                "version": "0.3.0", 
+                "dependencies": {}, 
+                "keywords": [
+                    "framework", 
+                    "library", 
+                    "RAD"
+                ], 
+                "homepage": "http://core.jsboot.com", 
+                "description": "There is only jsBoot"
+            }, 
+            "sha": "f4f481c0bca4a53f1ffa8a5acc689c235cd7f300", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/6124dc73a89fef663dade14017712eaeabb48f1b", 
+                "src": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/10ea3d0bb6bae1056157e5c130efc70e99d931ac", 
+                "tests": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/42510ce4f01b47e69612c78b37efb173713540d9", 
+                "dist": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/9d4b852f0acd69228024a9985fe39543b60189c9", 
+                "airfile.json": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/ec0724833bf4dae03ac7e399c04f9758d1339c7a", 
+                "helpers.py": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/c9197ffc868235c0db1ec379a62f322053a47fe9", 
+                ".gitignore": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/c3ca83560b9f6862d7299ea60ff5462c572a2b03", 
+                "LICENSE.md": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/b030a50fc63d3f48f483cbe8b077c91aaffe2119", 
+                "pukefile.py": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/f6bec6b5166181e0e40b7adc503f3e63b1ddf295", 
+                "dependencies": "https://api.github.com/repos/jsBoot/jsboot.js/git/trees/1a012025b30fa275c0ce51d6cc86cb3a032a0911", 
+                "icon.png": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/4bde7ba285d8c85f38ddb1e2e34a0b872283dee2", 
+                ".pukeignore": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/d042baf7a7fd021bcd4e87aadba1649a7a49bdef", 
+                "README.md": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/faedac9c1e34914a38d2508c9f291c776908dcac", 
+                "package-dmp-darwin.json": "https://api.github.com/repos/jsBoot/jsboot.js/git/blobs/19a8794216d51f8c014a2a3e86c06006155ddb25"
+            }, 
+            "date": {
+                "commited": "2013-04-22T17:48:51Z", 
+                "authored": "2013-04-22T17:48:51Z"
             }
         }
     }

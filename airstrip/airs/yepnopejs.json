@@ -24,8 +24,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/8040aef474f2c3fb43c7c2645b7aef98a130ab41"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-08T06:43:29Z", 
+                "authored": "2011-03-08T06:43:29Z"
             }
         }, 
         "v1.0.0": {
@@ -47,8 +47,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/757c186ed137e45d9de90f4eb869219b555330d4"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-04T04:31:50Z", 
+                "authored": "2011-03-04T04:31:50Z"
             }
         }, 
         "v1.0.2": {
@@ -70,8 +70,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/da61add631cd37096c08fb616e482c7196bc5476"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-06-23T16:28:21Z", 
+                "authored": "2011-06-23T16:28:21Z"
             }
         }, 
         "v1.5.4": {
@@ -93,8 +93,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/fab1790107eb597477b9bdef5ea7c81b55ed22dc"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-04-12T03:24:24Z", 
+                "authored": "2012-04-12T03:24:24Z"
             }
         }, 
         "v1.5.0": {
@@ -116,8 +116,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/aafc5ed8a5c444f6cf4c69c5e00dfff8cc04dec7"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-06T07:39:39Z", 
+                "authored": "2012-02-06T07:39:39Z"
             }
         }, 
         "v1.5.1": {
@@ -139,8 +139,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/5e40be5e2e4a4915f2360e8e1ef0048099278f87"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-07T19:19:55Z", 
+                "authored": "2012-02-07T19:19:55Z"
             }
         }, 
         "v1.5.2": {
@@ -162,8 +162,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/50d1267ee317ae5878c7cec5b58864b77e485d8e"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-07T22:07:41Z", 
+                "authored": "2012-02-07T22:07:41Z"
             }
         }, 
         "v1.5.3": {
@@ -185,8 +185,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/89cb9c43ddfe21a90ed2b290ad3127615b5a916d"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-02-15T22:04:01Z", 
+                "authored": "2012-02-15T22:04:01Z"
             }
         }, 
         "master": {
@@ -234,8 +234,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/1abab8fb1c3a54b23b3ac953bb0c572e18b54744"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-11-04T03:16:12Z", 
+                "authored": "2010-11-04T03:16:12Z"
             }
         }, 
         "v1.5.0b": {
@@ -257,8 +257,8 @@
                 "yepnope.js": "https://api.github.com/repos/SlexAxton/yepnope.js/git/blobs/aa3afff0ffbb9374077e42bc6e90898d4ecd1539"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-01-30T05:23:51Z", 
+                "authored": "2012-01-30T05:23:51Z"
             }
         }
     }

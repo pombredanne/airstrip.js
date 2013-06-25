@@ -1,0 +1,33 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				".svn",
+				".git",
+				".hg",
+				"CVS",
+				".pukecache",
+				".airstrip-tmp",
+				".tmp",
+				".build",
+				"build",
+				"*.egg-info",
+				"dist"
+			],
+      "path": "."
+		}
+	],
+	"settings":
+	{
+		"rulers":
+		[
+			80,
+			100,
+			120
+		],
+		"tab_size": 2,
+		"translate_tabs_to_spaces": true
+	}
+}

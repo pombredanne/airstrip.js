@@ -1,90 +1,69 @@
 from puke import *
-import puke.Cache
 import json
 import yaml
 import os
 import base64
-import requests
 import sys, logging, os, traceback
-
+import airrc
+import keyring
+import http
+from osxkeyring import *
 
 GITHUB_ROOT = "https://api.github.com"
 GITGIT_ROOT = "https://github.com"
 GITRAW_ROOT = "https://raw.github.com"
 
-class GitHubInit():
-  ########################################
-  # HTTP
-  ########################################
-  def __simpleGet__(self, url):
-    # print " [http] simple get %s" % url
-    r = requests.get(url)
-    return r.text or r.content
 
-  def __cachedGet__(self, u):
-    # print " [http] cached get %s" % u
-    id = puke.Cache.fetchHttp(u).split('/').pop()
-    return puke.Cache.read(id)
-
-  ########################################
-  # Github tokens
-  ########################################
-
-  def __getToken__(self):
+class Token():
+  @staticmethod
+  def get(auth):
     # print " [github-token] searching for existing auth token"
 
-    d = requests.get("%s/authorizations" % GITHUB_ROOT, auth = self.auth)
-    r = json.loads(d.text or d.content)
+    r = http.get("%s/authorizations" % GITHUB_ROOT, cache = False, auth = auth)
     for i in r:
       if i["note"] == "airstrip2":
-        print " [github-token] found existing auth token %s" % i["token"]
         return i["token"]
     return False
 
-  def __destroyTokens__(self):
-    # print " [github-token] destroying auth tokens"
-
-    d = requests.get("%s/authorizations" % GITHUB_ROOT, auth = self.auth)
-    r = json.loads(d.text or d.content)
+  @staticmethod
+  def remove(auth):
+    r = http.get("%s/authorizations" % GITHUB_ROOT, cache = False, auth = auth)
     for i in r:
       if i["note"] == "airstrip2":
-        e = requests.delete("%s/authorizations/%s" % (GITHUB_ROOT, i["id"]), auth = self.auth)
+        http.delete("%s/authorizations/%s" % (GITHUB_ROOT, i["id"]), auth = auth)
 
-  def __createToken__(self):
-    # print " [github-token] creating new auth token"
-
+  @staticmethod
+  def create(auth):
     payload = {"scopes": ["public_repo", "repo"], "note": "airstrip2"}
     headers = {'content-type': 'application/json'}
-    d = requests.post("%s/authorizations" % GITHUB_ROOT, data=json.dumps(payload), headers=headers, auth = self.auth)
-    r = json.loads(d.text or d.content)
+    r = http.post("%s/authorizations" % GITHUB_ROOT, data = payload, headers = headers, auth = auth)
     return r["token"]
 
 
+class Requestor():
 
-  def apiGet(self, fragment):
+  def __init__(self, uname, pwd):
+    auth = http.auth(uname, pwd)
+    token = Token.get(auth)
+    if not token:
+      token = Token.create(auth)
+    self.token = token
+
+  def query(self, fragment, nocache = False):
     if '?' in fragment:
       u = "%s/%s&access_token=%s" % (GITHUB_ROOT, fragment, self.token)
     else:
       u = "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
-    r = self.__simpleGet__(u)
-    try:
-      return json.loads(r)
-    except Exception as e:
-      console.fail(" [github-connector] Failed json-interpreting url %s with payload %s" % (u, r))
+    return http.get(u, cache = not nocache)
 
-  def apiCacheGet(self, fragment):
-    # print " [github-connector] cache fetching %s" % fragment
-    u = "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
-    r = self.__cachedGet__(u)
-    try:
-      return json.loads(r)
-    except Exception as e:
-      console.fail(" [github-connector] Failed json-interpreting cached url %s with payload %s" % (u, r))
+  def get(self, url, nocache = False):
+    return http.get(url, cache = not nocache)
 
 
 
-  # def buildUrl(self, fragment):
-  #   return "%s/%s?access_token=%s" % (GITHUB_ROOT, fragment, self.token)
+
+
+class GitHubInit():
 
   def __init__(self):
     # consoleCfg = logging.StreamHandler()
@@ -92,26 +71,32 @@ class GitHubInit():
     # logging.getLogger().addHandler(consoleCfg)
     # logging.getLogger().setLevel(logging.DEBUG)
 
-    self.uname = prompt("Github username")
-    self.pwd = prompt("Github password")
+    rc = airrc.AirRC()
 
-    self.auth = requests.auth.HTTPBasicAuth(self.uname, self.pwd)
+    if not rc.get('you')['login']:
+      console.error('You must provide your github login to be able to use most of the API')
 
-    token = self.__getToken__()
-    # self.destroyTokens()
-    if not token:
-      token = self.__createToken__()
+    uname = rc.get('you')['login'];
 
-    self.token = token
+    if System.OS == 'Darwin':
+      keyring.set_keyring(OSXPatchedKeyring())
+
+    pwd = keyring.get_password('github.com', uname)
+    if not pwd:
+      console.fail('Unauthorized to access passwords, or no password found for that user in the internet keyring')
+
+    # API requestor
+    self.requestor = Requestor(uname, pwd)
+
 
   def search(self, keyword):
-    return self.apiGet("legacy/repos/search/%s?sort=stars&order=desc" % (keyword))
+    return self.requestor.query("legacy/repos/search/%s?sort=stars&order=desc" % (keyword), nocache = True)
 
   def retrieve(self, owner, repo, dest, name):
     print " [github-connector] working on %s/%s" % (owner, repo)
 
     # Get refs for a starter
-    refs = self.apiGet("repos/%s/%s/git/refs" % (owner, repo))
+    refs = self.requestor.query("repos/%s/%s/git/refs" % (owner, repo), nocache = True)
 
     print " [github-connector] found %s refs" % len(refs)
 
@@ -135,23 +120,31 @@ class GitHubInit():
       print " [github-connector] analyzing tag %s (sha %s)" % (tag, sha)
 
       if tag == "master":
-        tree = self.apiGet("repos/%s/%s/git/trees/%s" % (owner, repo, sha))
+        tree = self.requestor.query("repos/%s/%s/git/trees/%s" % (owner, repo, sha), nocache = True)
       else:
-        tree = self.apiCacheGet("repos/%s/%s/git/trees/%s" % (owner, repo, sha))
+        tree = self.requestor.query("repos/%s/%s/git/trees/%s" % (owner, repo, sha))
 
-      date = self.apiCacheGet("repos/%s/%s/git/commits/%s" % (owner, repo, sha))
+      date = self.requestor.query("repos/%s/%s/git/commits/%s" % (owner, repo, sha))
+      if unicode(date['message']) == unicode("Not Found"):
+        date = self.requestor.query("repos/%s/%s/git/tags/%s" % (owner, repo, sha))
+
       try:
         tags[tag]["date"] = {
           "authored": date["author"]["date"],
           "commited": date["committer"]["date"]
         }
       except:
-        tags[tag]["date"] = {
-          "authored": False,
-          "commited": False
-        }
-        print sha
-        console.error('Failed fetching a commit!!!')
+        try:
+          tags[tag]["date"] = {
+            "authored": date["tagger"]["date"],
+            "commited": date["tagger"]["date"]
+          }
+        except:
+          tags[tag]["date"] = {
+            "authored": None,
+            "commited": None
+          }
+          console.error('Failed fetching a commit!!!')
 
       for item in tree["tree"]:
         if item["path"].lower() in ['package.json', 'component.json', '.travis.yml']:
@@ -160,9 +153,9 @@ class GitHubInit():
           item["url"] = "%s/%s/%s/%s/%s" % (GITRAW_ROOT, owner, repo, tag, item["path"].lower())
 
           if tag == "master":
-            d = self.__simpleGet__(item["url"])
+            d = self.requestor.get(item["url"], nocache = True)
           else:
-            d = self.__cachedGet__(item["url"])
+            d = self.requestor.get(item["url"])
           try:
             tags[tag][item["path"].lower()] = json.loads(d)
           except:

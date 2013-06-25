@@ -565,7 +565,10 @@
                     "url": "http://github.com/kriskowal/es5-shim.git", 
                     "type": "git"
                 }, 
-                "version": "2.0.8", 
+                "version": "2.1.0", 
+                "scripts": {
+                    "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js"
+                }, 
                 "licenses": [
                     {
                         "url": "http://github.com/kriskowal/es5-shim/raw/master/LICENSE", 
@@ -576,23 +579,244 @@
                 "homepage": "http://github.com/kriskowal/es5-shim/", 
                 "description": "ES5 as implementable on previous engines"
             }, 
-            "sha": "e5e3fe995f77ddf3350431c464423ddcab49d9f0", 
+            "sha": "f68d79a39ceca0f73014a54e2e0e897329ef014f", 
             "tree": {
-                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/115a3d13122564fa8ff4d9670b3258f7c1137946", 
-                "minify": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/ea82b549f5fbc5f12fd21b174492daf82e2f70ba", 
+                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/b395aa2fcf1f71586c70618c81c63569debbd272", 
                 "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69", 
                 "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f6f4f046e552359b3257fc0169fe80df25ec4cec", 
-                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/00a11bffbb91bb0975cd541008ecf357880e4c0b", 
+                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/c6490b2fd130ea73c273fcc37b75502d5e9aa15f", 
+                "es5-sham.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/880dd39d343b296dad4a79dcf29c94e1d6bfeb1d", 
                 ".gitignore": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fd4f2b066b339e4fd5c0efd44938231a398e9a81", 
-                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/46026477a8beb16d961f9f60afbc1fa8d92d34c2", 
-                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/ea01ac477902045c0cfb6762e85d3237436784dd", 
-                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
-                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/026ad6608724610a4e875701957720ea8fa2d7c8", 
-                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
+                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d8d89056d8b657bd86be8d802ae1a5765f3e5628", 
+                "es5-shim.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/3f56fe6e289a4e284827f9bff03d8c442e07df4d", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f1a3354526791f0c2bb959c2cf16ef6947d5056a", 
+                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/63ed6d339a6331a05d6cb50d989bbf59e5a69d2c", 
+                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9a1945def610a82ad1008f8a690436c52446147a", 
+                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/5d265c55a9b0db116c55efc2b461761ec3a6a29d"
             }, 
             "date": {
-                "commited": "2013-03-22T17:25:24Z", 
-                "authored": "2013-03-22T17:25:24Z"
+                "commited": "2013-06-22T07:35:45Z", 
+                "authored": "2013-06-22T07:35:45Z"
+            }
+        }, 
+        "v2.0.11": {
+            "package.json": {
+                "engines": {
+                    "node": ">=0.2.0"
+                }, 
+                "name": "es5-shim", 
+                "contributors": [
+                    "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)", 
+                    "Sami Samhuri <sami.samhuri@gmail.com> (http://samhuri.net/)", 
+                    "Florian Sch\u00e4fer <florian.schaefer@gmail.com> (http://github.com/fschaefer)", 
+                    "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)", 
+                    "Kit Cambridge <kitcambridge@gmail.com> (http://kitcambridge.github.com)"
+                ], 
+                "bugs": {
+                    "url": "http://github.com/kriskowal/es5-shim/issues", 
+                    "mail": "kris@cixar.com"
+                }, 
+                "repository": {
+                    "url": "http://github.com/kriskowal/es5-shim.git", 
+                    "type": "git"
+                }, 
+                "version": "2.0.11", 
+                "scripts": {
+                    "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://github.com/kriskowal/es5-shim/raw/master/LICENSE", 
+                        "type": "MIT"
+                    }
+                ], 
+                "main": "es5-shim.js", 
+                "homepage": "http://github.com/kriskowal/es5-shim/", 
+                "description": "ES5 as implementable on previous engines"
+            }, 
+            "sha": "ec9b54dc0713e7978cf08b50712789fa4a3df427", 
+            "tree": {
+                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/b1f7e021ef996ea99d3b959dce1fdf79fd7c618a", 
+                "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69", 
+                "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f6f4f046e552359b3257fc0169fe80df25ec4cec", 
+                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/26b12b66601512b0f88d75ed739e7a9dc981909a", 
+                "es5-sham.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/880dd39d343b296dad4a79dcf29c94e1d6bfeb1d", 
+                ".gitignore": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fd4f2b066b339e4fd5c0efd44938231a398e9a81", 
+                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d8d89056d8b657bd86be8d802ae1a5765f3e5628", 
+                "es5-shim.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d5611e49335afe9b4f2ef2865a6f765ea486dab2", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
+                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/63ed6d339a6331a05d6cb50d989bbf59e5a69d2c", 
+                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9a1945def610a82ad1008f8a690436c52446147a", 
+                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/138bdf08584bdc54d065d45017920143fc25fcf9"
+            }, 
+            "date": {
+                "commited": "2013-05-10T20:28:46Z", 
+                "authored": "2013-05-10T20:28:46Z"
+            }
+        }, 
+        "v2.0.12": {
+            "package.json": {
+                "engines": {
+                    "node": ">=0.2.0"
+                }, 
+                "name": "es5-shim", 
+                "contributors": [
+                    "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)", 
+                    "Sami Samhuri <sami.samhuri@gmail.com> (http://samhuri.net/)", 
+                    "Florian Sch\u00e4fer <florian.schaefer@gmail.com> (http://github.com/fschaefer)", 
+                    "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)", 
+                    "Kit Cambridge <kitcambridge@gmail.com> (http://kitcambridge.github.com)"
+                ], 
+                "bugs": {
+                    "url": "http://github.com/kriskowal/es5-shim/issues", 
+                    "mail": "kris@cixar.com"
+                }, 
+                "repository": {
+                    "url": "http://github.com/kriskowal/es5-shim.git", 
+                    "type": "git"
+                }, 
+                "version": "2.0.12", 
+                "scripts": {
+                    "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://github.com/kriskowal/es5-shim/raw/master/LICENSE", 
+                        "type": "MIT"
+                    }
+                ], 
+                "main": "es5-shim.js", 
+                "homepage": "http://github.com/kriskowal/es5-shim/", 
+                "description": "ES5 as implementable on previous engines"
+            }, 
+            "sha": "892efc8ed2184d8bf1432d175ba36ec863fb0edc", 
+            "tree": {
+                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/1fa0c6e0a30c69a9df6f642b17e236b4924961ca", 
+                "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69", 
+                "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f6f4f046e552359b3257fc0169fe80df25ec4cec", 
+                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/209aaab2d4a8bd7c5ba52036556f5cdf8dc0471a", 
+                "es5-sham.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/880dd39d343b296dad4a79dcf29c94e1d6bfeb1d", 
+                ".gitignore": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fd4f2b066b339e4fd5c0efd44938231a398e9a81", 
+                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d8d89056d8b657bd86be8d802ae1a5765f3e5628", 
+                "es5-shim.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d5611e49335afe9b4f2ef2865a6f765ea486dab2", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
+                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/63ed6d339a6331a05d6cb50d989bbf59e5a69d2c", 
+                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9a1945def610a82ad1008f8a690436c52446147a", 
+                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/138bdf08584bdc54d065d45017920143fc25fcf9"
+            }, 
+            "date": {
+                "commited": "2013-06-06T20:47:14Z", 
+                "authored": "2013-06-06T20:47:14Z"
+            }
+        }, 
+        "v2.0.10": {
+            "package.json": {
+                "engines": {
+                    "node": ">=0.2.0"
+                }, 
+                "name": "es5-shim", 
+                "contributors": [
+                    "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)", 
+                    "Sami Samhuri <sami.samhuri@gmail.com> (http://samhuri.net/)", 
+                    "Florian Sch\u00e4fer <florian.schaefer@gmail.com> (http://github.com/fschaefer)", 
+                    "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)", 
+                    "Kit Cambridge <kitcambridge@gmail.com> (http://kitcambridge.github.com)"
+                ], 
+                "bugs": {
+                    "url": "http://github.com/kriskowal/es5-shim/issues", 
+                    "mail": "kris@cixar.com"
+                }, 
+                "repository": {
+                    "url": "http://github.com/kriskowal/es5-shim.git", 
+                    "type": "git"
+                }, 
+                "version": "2.0.10", 
+                "scripts": {
+                    "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://github.com/kriskowal/es5-shim/raw/master/LICENSE", 
+                        "type": "MIT"
+                    }
+                ], 
+                "main": "es5-shim.js", 
+                "homepage": "http://github.com/kriskowal/es5-shim/", 
+                "description": "ES5 as implementable on previous engines"
+            }, 
+            "sha": "5bcfc29379076a954ff609551e0cbfc5f054a493", 
+            "tree": {
+                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/77025e5d8eabb7a0192d3f1e5eb10293b7cd730e", 
+                "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69", 
+                "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f6f4f046e552359b3257fc0169fe80df25ec4cec", 
+                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/eaf7c8c08caa358e7d884a0ecc512622caec19f4", 
+                "es5-sham.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/5b748d58e701d3af2f9eb82788096dbbca3533c5", 
+                ".gitignore": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fd4f2b066b339e4fd5c0efd44938231a398e9a81", 
+                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/8113a041d740c1ad0ecda1b4b2a71f2febd2fc69", 
+                "es5-shim.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/21fdba58c89815468c7c567ae7255d3c97548d6f", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
+                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/76f09b0f6a8c236a36bc9b5250a205a53c103785", 
+                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9a1945def610a82ad1008f8a690436c52446147a", 
+                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/c6d6914977bc3b4a7d8efe79b49add6933c55158"
+            }, 
+            "date": {
+                "commited": "2013-05-10T20:10:50Z", 
+                "authored": "2013-05-10T20:10:50Z"
+            }
+        }, 
+        "v2.1.0": {
+            "package.json": {
+                "engines": {
+                    "node": ">=0.2.0"
+                }, 
+                "name": "es5-shim", 
+                "contributors": [
+                    "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)", 
+                    "Sami Samhuri <sami.samhuri@gmail.com> (http://samhuri.net/)", 
+                    "Florian Sch\u00e4fer <florian.schaefer@gmail.com> (http://github.com/fschaefer)", 
+                    "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)", 
+                    "Kit Cambridge <kitcambridge@gmail.com> (http://kitcambridge.github.com)"
+                ], 
+                "bugs": {
+                    "url": "http://github.com/kriskowal/es5-shim/issues", 
+                    "mail": "kris@cixar.com"
+                }, 
+                "repository": {
+                    "url": "http://github.com/kriskowal/es5-shim.git", 
+                    "type": "git"
+                }, 
+                "version": "2.1.0", 
+                "scripts": {
+                    "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://github.com/kriskowal/es5-shim/raw/master/LICENSE", 
+                        "type": "MIT"
+                    }
+                ], 
+                "main": "es5-shim.js", 
+                "homepage": "http://github.com/kriskowal/es5-shim/", 
+                "description": "ES5 as implementable on previous engines"
+            }, 
+            "sha": "07da727ff7db2a3a25d6bc25d13e374b3bbc99c2", 
+            "tree": {
+                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/b395aa2fcf1f71586c70618c81c63569debbd272", 
+                "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69", 
+                "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f6f4f046e552359b3257fc0169fe80df25ec4cec", 
+                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/7572ef3e1afe5f4843e21b689068f19426dfbff8", 
+                "es5-sham.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/880dd39d343b296dad4a79dcf29c94e1d6bfeb1d", 
+                ".gitignore": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fd4f2b066b339e4fd5c0efd44938231a398e9a81", 
+                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/d8d89056d8b657bd86be8d802ae1a5765f3e5628", 
+                "es5-shim.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/3f56fe6e289a4e284827f9bff03d8c442e07df4d", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f1a3354526791f0c2bb959c2cf16ef6947d5056a", 
+                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/63ed6d339a6331a05d6cb50d989bbf59e5a69d2c", 
+                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9a1945def610a82ad1008f8a690436c52446147a", 
+                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/5d265c55a9b0db116c55efc2b461761ec3a6a29d"
+            }, 
+            "date": {
+                "commited": "2013-06-06T21:10:35Z", 
+                "authored": "2013-06-06T21:10:35Z"
             }
         }, 
         "v2.0.6": {
@@ -642,8 +866,8 @@
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-03-22T17:17:28Z", 
+                "authored": "2013-03-22T17:17:28Z"
             }
         }, 
         "v1.1.0": {
@@ -738,8 +962,8 @@
             }, 
             "component.json": "package.json", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-11-25T01:10:22Z", 
+                "authored": "2012-11-25T01:10:22Z"
             }
         }, 
         "v2.0.5": {
@@ -790,8 +1014,8 @@
             }, 
             "component.json": "package.json", 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-11-27T17:51:19Z", 
+                "authored": "2012-11-27T17:51:19Z"
             }
         }, 
         "v2.0.2": {
@@ -841,8 +1065,8 @@
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-10T04:26:47Z", 
+                "authored": "2012-10-10T04:26:47Z"
             }
         }, 
         "v2.0.0": {
@@ -891,8 +1115,8 @@
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-08T04:17:03Z", 
+                "authored": "2012-10-08T04:17:03Z"
             }
         }, 
         "v2.0.1": {
@@ -941,8 +1165,8 @@
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-08T05:13:24Z", 
+                "authored": "2012-10-08T05:13:24Z"
             }
         }, 
         "v2.0.8": {
@@ -992,8 +1216,63 @@
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-03-22T17:25:24Z", 
+                "authored": "2013-03-22T17:25:24Z"
+            }
+        }, 
+        "v2.0.9": {
+            "package.json": {
+                "engines": {
+                    "node": ">=0.2.0"
+                }, 
+                "name": "es5-shim", 
+                "contributors": [
+                    "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)", 
+                    "Sami Samhuri <sami.samhuri@gmail.com> (http://samhuri.net/)", 
+                    "Florian Sch\u00e4fer <florian.schaefer@gmail.com> (http://github.com/fschaefer)", 
+                    "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)", 
+                    "Kit Cambridge <kitcambridge@gmail.com> (http://kitcambridge.github.com)"
+                ], 
+                "bugs": {
+                    "url": "http://github.com/kriskowal/es5-shim/issues", 
+                    "mail": "kris@cixar.com"
+                }, 
+                "repository": {
+                    "url": "http://github.com/kriskowal/es5-shim.git", 
+                    "type": "git"
+                }, 
+                "version": "2.0.9", 
+                "scripts": {
+                    "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://github.com/kriskowal/es5-shim/raw/master/LICENSE", 
+                        "type": "MIT"
+                    }
+                ], 
+                "main": "es5-shim.js", 
+                "homepage": "http://github.com/kriskowal/es5-shim/", 
+                "description": "ES5 as implementable on previous engines"
+            }, 
+            "sha": "203130cb630cd21bd8b7a24fd26a2316e2e15dd4", 
+            "tree": {
+                "tests": "https://api.github.com/repos/kriskowal/es5-shim/git/trees/56ec99e839fcdd7e7311c533308011e2ca7aa216", 
+                "LICENSE": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fee08255cb9718d9359bccea905be7482637ee69", 
+                "CHANGES": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/f6f4f046e552359b3257fc0169fe80df25ec4cec", 
+                "es5-shim.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/eaf7c8c08caa358e7d884a0ecc512622caec19f4", 
+                "es5-sham.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/8bfab3d842a79750617cb05e8c06160971a7bfa4", 
+                ".gitignore": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/fd4f2b066b339e4fd5c0efd44938231a398e9a81", 
+                "es5-sham.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/46026477a8beb16d961f9f60afbc1fa8d92d34c2", 
+                "es5-shim.map": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/21fdba58c89815468c7c567ae7255d3c97548d6f", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/56959a696a44eb37b5709f677eceab8dabdb49a3", 
+                "es5-sham.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/60e483eb66c90585d65c35900271d85e1614be0e", 
+                "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/9a1945def610a82ad1008f8a690436c52446147a", 
+                "es5-shim.min.js": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/c6d6914977bc3b4a7d8efe79b49add6933c55158"
+            }, 
+            "date": {
+                "commited": "2013-05-08T01:02:45Z", 
+                "authored": "2013-05-08T01:02:45Z"
             }
         }, 
         "v1.0.0": {
@@ -1086,8 +1365,8 @@
                 "README.md": "https://api.github.com/repos/kriskowal/es5-shim/git/blobs/2972222814c571ab9f0045e3b17b1a032c6aa8c5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-03-22T17:19:42Z", 
+                "authored": "2013-03-22T17:19:42Z"
             }
         }, 
         "v0.2.10": {

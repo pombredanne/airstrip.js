@@ -1,10 +1,10 @@
 {
-  "nobuild": true,
-  "productions": {
-    "mousetrap.js": "mousetrap.js",
-    "mousetrap-min.js": "mousetrap-min.js"
-  },
+    "nobuild": true, 
     "git": "https://github.com/ccampbell/mousetrap", 
+    "productions": {
+        "mousetrap-min.js": "mousetrap-min.js", 
+        "mousetrap.js": "mousetrap.js"
+    }, 
     "versions": {
         "1.1.1": {
             "package.json": {
@@ -22,6 +22,25 @@
             "date": {
                 "commited": "2012-07-11T02:35:43Z", 
                 "authored": "2012-07-11T02:35:43Z"
+            }
+        }, 
+        "1.4.0": {
+            "package.json": {
+                "version": "1.4.0", 
+                "name": "mousetrap", 
+                "author": "ccampbell"
+            }, 
+            "sha": "775c0a85e4747adc5bd3329338e33f1d86e801e7", 
+            "tree": {
+                "mousetrap.min.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/6cc2a7818e585ec829e1cfd8bf13b38caa3866a7", 
+                "tests": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/1918709189a44c2b4784c1fff873dc8bb01cce4b", 
+                "mousetrap.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/e5bf337b7613d397fb8e58ce11a7dcd18a2c6659", 
+                "README.md": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/76ca42812dd9081ab816876116b2145fc534b3d3", 
+                "plugins": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/0e1423cc8724d29b46d8115980dd5d6cd3ec406c"
+            }, 
+            "date": {
+                "commited": "2013-05-14T05:18:53Z", 
+                "authored": "2013-05-14T05:18:53Z"
             }
         }, 
         "1.1.3": {
@@ -131,6 +150,52 @@
                 "authored": "2013-02-07T04:20:20Z"
             }
         }, 
+        "1.4.2": {
+            "package.json": {
+                "license": "Apache 2.0", 
+                "gitHead": "c202a0bd4967d5a3064f9cb376db51dec9345336", 
+                "name": "Mousetrap", 
+                "repository": {
+                    "url": "git://github.com/ccampbell/mousetrap.git", 
+                    "type": "git"
+                }, 
+                "author": "Craig Campbell", 
+                "directories": {
+                    "test": "tests"
+                }, 
+                "version": "1.4.0", 
+                "scripts": {
+                    "test": "grunt mocha"
+                }, 
+                "keywords": [
+                    "keyboard", 
+                    "shortcuts", 
+                    "events"
+                ], 
+                "devDependencies": {
+                    "grunt": "~0.4.1", 
+                    "grunt-mocha": "~0.3.1", 
+                    "grunt-complexity": "~0.1.2"
+                }, 
+                "main": "mousetrap.js", 
+                "readmeFilename": "README.md", 
+                "description": "Simple library for handling keyboard shortcuts"
+            }, 
+            "sha": "d8274500cb62f36d2805f5853003a131985076b2", 
+            "tree": {
+                "tests": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/cb99498cd3dd8fd1379f2cd02e1ced9bce0d9e37", 
+                "mousetrap.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/454a5bf9d479e97a3fb69b8ef331928d22461723", 
+                "Gruntfile.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/859ec6b24cdf425dff380a17a3426a225eafbb69", 
+                ".gitignore": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/3c3629e647f5ddf82548912e337bea9826b434af", 
+                "plugins": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/93e4ce3f674b0831d723f1de70e1d009d9a0c423", 
+                "mousetrap.min.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/3b3ea5e22268e759594465b74826cde14ee0879a", 
+                "README.md": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/90b3e92bece29e2c6bfc8055f35ff67c78d43678"
+            }, 
+            "date": {
+                "commited": "2013-06-21T00:52:10Z", 
+                "authored": "2013-06-21T00:52:10Z"
+            }
+        }, 
         "1.3.2": {
             "package.json": {
                 "version": "1.3.2", 
@@ -151,20 +216,94 @@
         }, 
         "master": {
             "package.json": {
-                "version": "master", 
-                "name": "mousetrap", 
-                "author": "ccampbell"
+                "license": "Apache 2.0", 
+                "gitHead": "c202a0bd4967d5a3064f9cb376db51dec9345336", 
+                "name": "Mousetrap", 
+                "repository": {
+                    "url": "git://github.com/ccampbell/mousetrap.git", 
+                    "type": "git"
+                }, 
+                "author": "Craig Campbell", 
+                "directories": {
+                    "test": "tests"
+                }, 
+                "version": "1.4.0", 
+                "scripts": {
+                    "test": "grunt mocha"
+                }, 
+                "keywords": [
+                    "keyboard", 
+                    "shortcuts", 
+                    "events"
+                ], 
+                "devDependencies": {
+                    "grunt": "~0.4.1", 
+                    "grunt-mocha": "~0.3.1", 
+                    "grunt-complexity": "~0.1.2"
+                }, 
+                "main": "mousetrap.js", 
+                "readmeFilename": "README.md", 
+                "description": "Simple library for handling keyboard shortcuts"
             }, 
-            "sha": "e2d3d642f088d7bab5fcfc4c57c795cd413c627c", 
+            "sha": "d8274500cb62f36d2805f5853003a131985076b2", 
             "tree": {
-                "mousetrap.min.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/e3d6d6e290c567c83d4f23b8dce7e26e3c81241c", 
-                "tests": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/1918709189a44c2b4784c1fff873dc8bb01cce4b", 
-                "mousetrap.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/fe47f9f2cae5056c6ad3877d15e3983fccb38352", 
-                "README.md": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/9e52249edc87653d4f6934ae25619a5058e0624a"
+                "tests": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/cb99498cd3dd8fd1379f2cd02e1ced9bce0d9e37", 
+                "mousetrap.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/454a5bf9d479e97a3fb69b8ef331928d22461723", 
+                "Gruntfile.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/859ec6b24cdf425dff380a17a3426a225eafbb69", 
+                ".gitignore": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/3c3629e647f5ddf82548912e337bea9826b434af", 
+                "plugins": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/93e4ce3f674b0831d723f1de70e1d009d9a0c423", 
+                "mousetrap.min.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/3b3ea5e22268e759594465b74826cde14ee0879a", 
+                "README.md": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/90b3e92bece29e2c6bfc8055f35ff67c78d43678"
             }, 
             "date": {
-                "commited": "2013-04-10T01:31:53Z", 
-                "authored": "2013-04-10T01:31:53Z"
+                "commited": "2013-06-21T00:52:10Z", 
+                "authored": "2013-06-21T00:52:10Z"
+            }
+        }, 
+        "1.4.1": {
+            "package.json": {
+                "license": "Apache 2.0", 
+                "gitHead": "c202a0bd4967d5a3064f9cb376db51dec9345336", 
+                "name": "Mousetrap", 
+                "repository": {
+                    "url": "git://github.com/ccampbell/mousetrap.git", 
+                    "type": "git"
+                }, 
+                "author": "Craig Campbell", 
+                "directories": {
+                    "test": "tests"
+                }, 
+                "version": "1.4.0", 
+                "scripts": {
+                    "test": "grunt mocha"
+                }, 
+                "keywords": [
+                    "keyboard", 
+                    "shortcuts", 
+                    "events"
+                ], 
+                "devDependencies": {
+                    "grunt": "~0.4.1", 
+                    "grunt-mocha": "~0.3.1", 
+                    "grunt-complexity": "~0.1.2"
+                }, 
+                "main": "mousetrap.js", 
+                "readmeFilename": "README.md", 
+                "description": "Simple library for handling keyboard shortcuts"
+            }, 
+            "sha": "cf372bbe412a2c02bacfe9133a9f0dd6751f043c", 
+            "tree": {
+                "tests": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/7fd81717bbecafd6ab2e7c3ae287bd09536f1878", 
+                "mousetrap.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/16c7ca4e5dadc7d96b0b630a7191d210eb6bc410", 
+                "Gruntfile.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/859ec6b24cdf425dff380a17a3426a225eafbb69", 
+                ".gitignore": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/3c3629e647f5ddf82548912e337bea9826b434af", 
+                "plugins": "https://api.github.com/repos/ccampbell/mousetrap/git/trees/93e4ce3f674b0831d723f1de70e1d009d9a0c423", 
+                "mousetrap.min.js": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/2af3531fdcb2c046e7cdf3cce2bfed6fdbb3cda8", 
+                "README.md": "https://api.github.com/repos/ccampbell/mousetrap/git/blobs/90b3e92bece29e2c6bfc8055f35ff67c78d43678"
+            }, 
+            "date": {
+                "commited": "2013-05-29T03:53:43Z", 
+                "authored": "2013-05-29T03:53:43Z"
             }
         }, 
         "1.2.1": {

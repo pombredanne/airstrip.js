@@ -2,6 +2,7 @@
 
 from puke import *
 import re
+import error
 
 class GitHelper():
   def __init__(self, remote, path):
@@ -10,22 +11,22 @@ class GitHelper():
     clean = re.sub('[.]git$', '', remote.split('/').pop())
     self.local = FileSystem.join(path, clean)
     self.remote = remote
-    self.debug = True
+    self.debug = False
 
   def __wrap__(self, path, command):
     if FileSystem.realpath('.') == FileSystem.realpath(path):
-      console.fail('SOMETHING TERRIBLE WAS ABOUT TO HAPPEN %s' % path)
+      raise error.License(error.TERRIBLE, "Trying to manipulate current path .git (%s)!" % path)
     std = Std()
     sh('cd "%s";' % path, std = std)
     if std.err:
-      console.fail('SOMETHING VERY BAD HAPPENED')
-    sh('cd "%s"; git %s' % (path, command), std = std, output = self.debug)
-    if std.err and self.debug:
+      raise error.License(error.TERRIBLE, "Can't change pwd! (%s)!" % path)
+    sh('cd "%s"; git %s' % (path, command), std = std)
+    if std.err:
+      raise error.License(error.GIT_ERROR, "Something bad happened! %s!" % std.err)
       console.error(std.err)
 
-
   def __clean__(self):
-    self.__wrap__(self.local, 'reset --hard HEAD; git clean -f -d; git checkout master') # checkout .; git checkout master
+    self.__wrap__(self.local, 'reset --hard HEAD; git clean -f -d; git checkout master')
 
   def __rebase__(self):
     self.__wrap__(self.local, 'pull --rebase')

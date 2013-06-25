@@ -87,6 +87,16 @@ class Air():
       return False
     return True
 
+  def remove(self, globally = False):
+    if globally:
+      p = FileSystem.join(AIRSTRIP_YAWN_PATH, '%s.json' % self.name)
+    else:
+      p = FileSystem.join(PROJECT_YAWN_PATH, '%s.json' % self.name)
+
+    if not FileSystem.exists(p):
+      console.fail('Trying to remove something that does not exist')
+
+    FileSystem.remove(p)
 
 
   def edit(self, globally = False):
@@ -115,7 +125,7 @@ class Air():
 
   def get(self, version, key = False):
     if key == "safename":
-      return self.name
+      return str(self.name)
     keys = ['name', 'homepage', 'git', 'description', 'author', 'keywords', 'strict', 'licenses', 'category', 'tools', 'depends', 'package', 'resources', 'build', 'productions']
 
     #, 'versions']
@@ -135,23 +145,24 @@ class Air():
           ref["package.json"][i] = ref["component.json"][i]
       parent = self.local
     else:
+      print self.yawn["versions"]
       console.error('The requested version (%s) does not exist' % version)
       raise Exception("FAIL")
 
     if not key:
-      return ref
+      return str(ref)
     if key in ref:
-      return ref[key]
+      return str(ref[key])
     if "package.json" in ref and key in ref["package.json"]:
-      return ref["package.json"][key]
+      return str(ref["package.json"][key])
 
     if not key in parent:
       if "branch" in ref:
         return self.get(ref["branch"], key)
       else:
-        console.warn('No such key (%s)' % key)
-        return False
-    return parent[key]
+        # console.warn('No such key (%s)' % key)
+        return None
+    return str(parent[key])
 
   def versions(self):
     r = re.compile(r'([^\d]*)')

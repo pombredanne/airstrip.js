@@ -214,6 +214,324 @@
                 "authored": "2011-09-22T09:03:42Z"
             }
         }, 
+        "v3.10.3": {
+            "package.json": {
+                "name": "yui", 
+                "engines": {
+                    "node": ">=0.4.0"
+                }, 
+                "author": "Dav Glass <davglass@gmail.com>", 
+                "directories": {
+                    "lib": "."
+                }, 
+                "bugs": {
+                    "url": "https://github.com/yui/yui3/issues"
+                }, 
+                "repository": {
+                    "url": "http://github.com/yui/yui3.git", 
+                    "type": "git"
+                }, 
+                "version": "3.10.3", 
+                "dependencies": {
+                    "request": "~2.14.0"
+                }, 
+                "scripts": {
+                    "postinstall": "grunt build", 
+                    "test": "grunt test"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://yuilibrary.com/license/", 
+                        "type": "BSD"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt-yui-contrib": "~0.0.4", 
+                    "yogi": "~0.1.0", 
+                    "grunt-lib-contrib": "~0.5.3", 
+                    "parserlib": "~0.2.2", 
+                    "grunt-contrib-compress": "0.4.10", 
+                    "grunt-cli": "~0.1.7", 
+                    "grunt": "~0.4.1"
+                }, 
+                "main": "./index.js", 
+                "description": "YUI 3 Source"
+            }, 
+            "sha": "2fb5187a6a0eff29b75e777b5764e4375a12d64f", 
+            ".travis.yml": {
+                "git": {
+                    "depth": 30
+                }, 
+                "branches": {
+                    "except": [
+                        "live-docs"
+                    ]
+                }, 
+                "node_js": [
+                    "0.8", 
+                    "0.10"
+                ], 
+                "language": "node_js", 
+                "script": [
+                    "grunt travis"
+                ]
+            }, 
+            "tree": {
+                "src": "https://api.github.com/repos/yui/yui3/git/trees/d306b6c8b4b41782a0cb34e446b1bf25d6680427", 
+                ".yeti.json": "https://api.github.com/repos/yui/yui3/git/blobs/650f81f25868a365fbc9342f26f24552af80baf2", 
+                "BUILD.md": "https://api.github.com/repos/yui/yui3/git/blobs/828a0e8e1cafd60f652e62d43a6cee75348b8325", 
+                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/f0665fbbf7375921bf250cb6255d0efa1f9ce49a", 
+                ".gitignore": "https://api.github.com/repos/yui/yui3/git/blobs/8588ba13e0450bcc7d38e552f346bf3fe469e745", 
+                "LICENSE.md": "https://api.github.com/repos/yui/yui3/git/blobs/f5e2587c69006d55ddd3abcc0b5673c53454e5ff", 
+                ".npmignore": "https://api.github.com/repos/yui/yui3/git/blobs/f031490e772264456ae99a40b11c699d9c740235", 
+                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/0aaae1eec9136e8c01fb3de53d0e7fe908a9bbba", 
+                "build": "https://api.github.com/repos/yui/yui3/git/trees/7028379aeb01c508ce0d5e35360d2477c0dbf61c", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/yui/yui3/git/blobs/2a4346487b15b5d46db64a537c8ae1db425f0a83", 
+                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+            }, 
+            "date": {
+                "commited": "2013-06-06T01:10:15Z", 
+                "authored": "2013-06-06T01:10:15Z"
+            }
+        }, 
+        "v3.10.2": {
+            "package.json": {
+                "name": "yui", 
+                "engines": {
+                    "node": ">=0.4.0"
+                }, 
+                "author": "Dav Glass <davglass@gmail.com>", 
+                "directories": {
+                    "lib": "."
+                }, 
+                "bugs": {
+                    "url": "https://github.com/yui/yui3/issues"
+                }, 
+                "repository": {
+                    "url": "http://github.com/yui/yui3.git", 
+                    "type": "git"
+                }, 
+                "version": "3.10.2", 
+                "dependencies": {
+                    "request": "~2.14.0"
+                }, 
+                "scripts": {
+                    "postinstall": "grunt build", 
+                    "test": "grunt test"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://yuilibrary.com/license/", 
+                        "type": "BSD"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt-yui-contrib": "~0.0.4", 
+                    "yogi": "~0.1.0", 
+                    "grunt-lib-contrib": "~0.5.3", 
+                    "parserlib": "~0.2.2", 
+                    "grunt-contrib-compress": "0.4.10", 
+                    "grunt-cli": "~0.1.7", 
+                    "grunt": "~0.4.1"
+                }, 
+                "main": "./index.js", 
+                "description": "YUI 3 Source"
+            }, 
+            "sha": "f282c7716d295c1eab686dbf34476c1241727032", 
+            ".travis.yml": {
+                "git": {
+                    "depth": 30
+                }, 
+                "branches": {
+                    "except": [
+                        "live-docs"
+                    ]
+                }, 
+                "node_js": [
+                    "0.8", 
+                    "0.10"
+                ], 
+                "language": "node_js", 
+                "script": [
+                    "grunt travis"
+                ]
+            }, 
+            "tree": {
+                "src": "https://api.github.com/repos/yui/yui3/git/trees/cab5c5e3b8b0a516fccfe4cbe9e89d45a9da93c5", 
+                ".yeti.json": "https://api.github.com/repos/yui/yui3/git/blobs/650f81f25868a365fbc9342f26f24552af80baf2", 
+                "BUILD.md": "https://api.github.com/repos/yui/yui3/git/blobs/828a0e8e1cafd60f652e62d43a6cee75348b8325", 
+                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/f0665fbbf7375921bf250cb6255d0efa1f9ce49a", 
+                ".gitignore": "https://api.github.com/repos/yui/yui3/git/blobs/8588ba13e0450bcc7d38e552f346bf3fe469e745", 
+                "LICENSE.md": "https://api.github.com/repos/yui/yui3/git/blobs/f5e2587c69006d55ddd3abcc0b5673c53454e5ff", 
+                ".npmignore": "https://api.github.com/repos/yui/yui3/git/blobs/f031490e772264456ae99a40b11c699d9c740235", 
+                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/0aaae1eec9136e8c01fb3de53d0e7fe908a9bbba", 
+                "build": "https://api.github.com/repos/yui/yui3/git/trees/d90f060788436b8f99e270839f01a80905d74411", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/yui/yui3/git/blobs/2a4346487b15b5d46db64a537c8ae1db425f0a83", 
+                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+            }, 
+            "date": {
+                "commited": "2013-06-04T17:42:01Z", 
+                "authored": "2013-06-04T17:42:01Z"
+            }
+        }, 
+        "v3.10.1": {
+            "package.json": {
+                "name": "yui", 
+                "engines": {
+                    "node": ">=0.4.0"
+                }, 
+                "author": "Dav Glass <davglass@gmail.com>", 
+                "directories": {
+                    "lib": "."
+                }, 
+                "bugs": {
+                    "url": "https://github.com/yui/yui3/issues"
+                }, 
+                "repository": {
+                    "url": "http://github.com/yui/yui3.git", 
+                    "type": "git"
+                }, 
+                "version": "3.10.1", 
+                "dependencies": {
+                    "request": "~2.14.0"
+                }, 
+                "scripts": {
+                    "postinstall": "grunt build", 
+                    "test": "grunt test"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://yuilibrary.com/license/", 
+                        "type": "BSD"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt-yui-contrib": "~0.0.4", 
+                    "yogi": "~0.1.0", 
+                    "grunt-lib-contrib": "~0.5.3", 
+                    "parserlib": "~0.2.2", 
+                    "grunt-contrib-compress": "0.4.10", 
+                    "grunt-cli": "~0.1.7", 
+                    "grunt": "~0.4.1"
+                }, 
+                "main": "./index.js", 
+                "description": "YUI 3 Source"
+            }, 
+            "sha": "8bc088ee41dff8d617a38c92edd3e64eab14d3c8", 
+            ".travis.yml": {
+                "git": {
+                    "depth": 30
+                }, 
+                "branches": {
+                    "except": [
+                        "live-docs"
+                    ]
+                }, 
+                "node_js": [
+                    "0.8", 
+                    "0.10"
+                ], 
+                "language": "node_js", 
+                "script": [
+                    "grunt travis"
+                ]
+            }, 
+            "tree": {
+                "src": "https://api.github.com/repos/yui/yui3/git/trees/7573d27e89140b24bfea2069db7e451b15b8a644", 
+                ".yeti.json": "https://api.github.com/repos/yui/yui3/git/blobs/650f81f25868a365fbc9342f26f24552af80baf2", 
+                "BUILD.md": "https://api.github.com/repos/yui/yui3/git/blobs/828a0e8e1cafd60f652e62d43a6cee75348b8325", 
+                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/f0665fbbf7375921bf250cb6255d0efa1f9ce49a", 
+                ".gitignore": "https://api.github.com/repos/yui/yui3/git/blobs/8588ba13e0450bcc7d38e552f346bf3fe469e745", 
+                "LICENSE.md": "https://api.github.com/repos/yui/yui3/git/blobs/f5e2587c69006d55ddd3abcc0b5673c53454e5ff", 
+                ".npmignore": "https://api.github.com/repos/yui/yui3/git/blobs/f031490e772264456ae99a40b11c699d9c740235", 
+                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/34bd13db8611af0b001e2d9b717d02cc8aa93e82", 
+                "build": "https://api.github.com/repos/yui/yui3/git/trees/d0556e5cbab40d018311acd38aaaf8fe9402d0f6", 
+                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+            }, 
+            "date": {
+                "commited": "2013-05-10T22:37:28Z", 
+                "authored": "2013-05-10T22:37:28Z"
+            }
+        }, 
+        "v3.10.0": {
+            "package.json": {
+                "name": "yui", 
+                "engines": {
+                    "node": ">=0.4.0"
+                }, 
+                "author": "Dav Glass <davglass@gmail.com>", 
+                "directories": {
+                    "lib": "."
+                }, 
+                "bugs": {
+                    "url": "https://github.com/yui/yui3/issues"
+                }, 
+                "repository": {
+                    "url": "http://github.com/yui/yui3.git", 
+                    "type": "git"
+                }, 
+                "version": "3.10.0", 
+                "dependencies": {
+                    "request": "~2.14.0"
+                }, 
+                "scripts": {
+                    "postinstall": "grunt build", 
+                    "test": "grunt test"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://yuilibrary.com/license/", 
+                        "type": "BSD"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt-yui-contrib": "~0.0.4", 
+                    "yogi": "~0.1.0", 
+                    "grunt-lib-contrib": "~0.5.3", 
+                    "parserlib": "~0.2.2", 
+                    "grunt-contrib-compress": "0.4.10", 
+                    "grunt-cli": "~0.1.7", 
+                    "grunt": "~0.4.1"
+                }, 
+                "main": "./index.js", 
+                "description": "YUI 3 Source"
+            }, 
+            "sha": "a03ce0ebc9aadda2ac98b65e7823f53b9a80113d", 
+            ".travis.yml": {
+                "git": {
+                    "depth": 30
+                }, 
+                "branches": {
+                    "except": [
+                        "live-docs"
+                    ]
+                }, 
+                "node_js": [
+                    "0.8", 
+                    "0.10"
+                ], 
+                "language": "node_js", 
+                "script": [
+                    "grunt travis"
+                ]
+            }, 
+            "tree": {
+                "src": "https://api.github.com/repos/yui/yui3/git/trees/d2f7e3c8057b8b65027a6704c385eb52d9645376", 
+                ".yeti.json": "https://api.github.com/repos/yui/yui3/git/blobs/650f81f25868a365fbc9342f26f24552af80baf2", 
+                "BUILD.md": "https://api.github.com/repos/yui/yui3/git/blobs/828a0e8e1cafd60f652e62d43a6cee75348b8325", 
+                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/f0665fbbf7375921bf250cb6255d0efa1f9ce49a", 
+                ".gitignore": "https://api.github.com/repos/yui/yui3/git/blobs/8588ba13e0450bcc7d38e552f346bf3fe469e745", 
+                "LICENSE.md": "https://api.github.com/repos/yui/yui3/git/blobs/f5e2587c69006d55ddd3abcc0b5673c53454e5ff", 
+                ".npmignore": "https://api.github.com/repos/yui/yui3/git/blobs/f031490e772264456ae99a40b11c699d9c740235", 
+                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/34bd13db8611af0b001e2d9b717d02cc8aa93e82", 
+                "build": "https://api.github.com/repos/yui/yui3/git/trees/5983474baa27734f4beee0b795221a3c32067bda", 
+                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+            }, 
+            "date": {
+                "commited": "2013-04-23T19:32:58Z", 
+                "authored": "2013-04-23T19:32:58Z"
+            }
+        }, 
         "v3.1.2": {
             "package.json": {
                 "version": "v3.1.2", 
@@ -479,7 +797,7 @@
                     "url": "http://github.com/yui/yui3.git", 
                     "type": "git"
                 }, 
-                "version": "3.6.0pre", 
+                "version": "3.11.0pre", 
                 "dependencies": {
                     "request": "~2.14.0"
                 }, 
@@ -498,14 +816,14 @@
                     "yogi": "~0.1.0", 
                     "grunt-lib-contrib": "~0.5.3", 
                     "parserlib": "~0.2.2", 
-                    "grunt-contrib-compress": "0.4.6", 
+                    "grunt-contrib-compress": "0.4.10", 
                     "grunt-cli": "~0.1.7", 
                     "grunt": "~0.4.1"
                 }, 
                 "main": "./index.js", 
                 "description": "YUI 3 Source"
             }, 
-            "sha": "bce27210f610a7b065008ac0957e4b7c58cd5a3c", 
+            "sha": "e132eddc8712d3704228c4c734906fce1959d87f", 
             ".travis.yml": {
                 "git": {
                     "depth": 30
@@ -525,20 +843,21 @@
                 ]
             }, 
             "tree": {
-                "src": "https://api.github.com/repos/yui/yui3/git/trees/4d8935c1d3fec1f475379ee51f475610ad26687c", 
+                "src": "https://api.github.com/repos/yui/yui3/git/trees/cab29cb404365579190914a61425c44a1f3401e0", 
                 ".yeti.json": "https://api.github.com/repos/yui/yui3/git/blobs/650f81f25868a365fbc9342f26f24552af80baf2", 
                 "BUILD.md": "https://api.github.com/repos/yui/yui3/git/blobs/828a0e8e1cafd60f652e62d43a6cee75348b8325", 
-                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/760a95de042e82864f3cde4a3e32ee2b24b7e1a8", 
+                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/f0665fbbf7375921bf250cb6255d0efa1f9ce49a", 
                 ".gitignore": "https://api.github.com/repos/yui/yui3/git/blobs/8588ba13e0450bcc7d38e552f346bf3fe469e745", 
                 "LICENSE.md": "https://api.github.com/repos/yui/yui3/git/blobs/f5e2587c69006d55ddd3abcc0b5673c53454e5ff", 
                 ".npmignore": "https://api.github.com/repos/yui/yui3/git/blobs/f031490e772264456ae99a40b11c699d9c740235", 
-                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/34bd13db8611af0b001e2d9b717d02cc8aa93e82", 
-                "build": "https://api.github.com/repos/yui/yui3/git/trees/3352d11d809e1830d998e65c2fdf4e4d0962bef9", 
-                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/3474b9e20f26d84c3f51684de2c322755240cdb4"
+                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/0aaae1eec9136e8c01fb3de53d0e7fe908a9bbba", 
+                "build": "https://api.github.com/repos/yui/yui3/git/trees/b6d9d739bad733a70c47827b50101bcfff713b9b", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/yui/yui3/git/blobs/2a4346487b15b5d46db64a537c8ae1db425f0a83", 
+                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/6ecd0b656d63540939c9eab99ca1b57cbf00c690"
             }, 
             "date": {
-                "commited": "2013-04-16T16:44:15Z", 
-                "authored": "2013-04-16T16:44:15Z"
+                "commited": "2013-06-20T02:14:12Z", 
+                "authored": "2013-06-20T02:14:12Z"
             }
         }, 
         "v3.4.0pr1": {
@@ -1249,6 +1568,86 @@
             "date": {
                 "commited": "2012-09-11T20:14:48Z", 
                 "authored": "2012-09-11T20:14:48Z"
+            }
+        }, 
+        "v3.11.0pr1": {
+            "package.json": {
+                "name": "yui", 
+                "engines": {
+                    "node": ">=0.4.0"
+                }, 
+                "author": "Dav Glass <davglass@gmail.com>", 
+                "directories": {
+                    "lib": "."
+                }, 
+                "bugs": {
+                    "url": "https://github.com/yui/yui3/issues"
+                }, 
+                "repository": {
+                    "url": "http://github.com/yui/yui3.git", 
+                    "type": "git"
+                }, 
+                "version": "3.11.0pr1", 
+                "dependencies": {
+                    "request": "~2.14.0"
+                }, 
+                "scripts": {
+                    "postinstall": "grunt build", 
+                    "test": "grunt test"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://yuilibrary.com/license/", 
+                        "type": "BSD"
+                    }
+                ], 
+                "devDependencies": {
+                    "grunt-yui-contrib": "~0.0.4", 
+                    "yogi": "~0.1.0", 
+                    "grunt-lib-contrib": "~0.5.3", 
+                    "parserlib": "~0.2.2", 
+                    "grunt-contrib-compress": "0.4.10", 
+                    "grunt-cli": "~0.1.7", 
+                    "grunt": "~0.4.1"
+                }, 
+                "main": "./index.js", 
+                "description": "YUI 3 Source"
+            }, 
+            "sha": "775117ba446d367f9a79b5ef9c6f5eb0fc8f249c", 
+            ".travis.yml": {
+                "git": {
+                    "depth": 30
+                }, 
+                "branches": {
+                    "except": [
+                        "live-docs"
+                    ]
+                }, 
+                "node_js": [
+                    "0.8", 
+                    "0.10"
+                ], 
+                "language": "node_js", 
+                "script": [
+                    "grunt travis"
+                ]
+            }, 
+            "tree": {
+                "src": "https://api.github.com/repos/yui/yui3/git/trees/459e329cba782646f42721cca4033cfb2c3c156d", 
+                ".yeti.json": "https://api.github.com/repos/yui/yui3/git/blobs/650f81f25868a365fbc9342f26f24552af80baf2", 
+                "BUILD.md": "https://api.github.com/repos/yui/yui3/git/blobs/828a0e8e1cafd60f652e62d43a6cee75348b8325", 
+                "Gruntfile.js": "https://api.github.com/repos/yui/yui3/git/blobs/f0665fbbf7375921bf250cb6255d0efa1f9ce49a", 
+                ".gitignore": "https://api.github.com/repos/yui/yui3/git/blobs/8588ba13e0450bcc7d38e552f346bf3fe469e745", 
+                "LICENSE.md": "https://api.github.com/repos/yui/yui3/git/blobs/f5e2587c69006d55ddd3abcc0b5673c53454e5ff", 
+                ".npmignore": "https://api.github.com/repos/yui/yui3/git/blobs/f031490e772264456ae99a40b11c699d9c740235", 
+                "HISTORY.md": "https://api.github.com/repos/yui/yui3/git/blobs/0aaae1eec9136e8c01fb3de53d0e7fe908a9bbba", 
+                "build": "https://api.github.com/repos/yui/yui3/git/trees/6193eb08f9fc3c902ab83b5beeb5354350d5d3aa", 
+                "CONTRIBUTORS.md": "https://api.github.com/repos/yui/yui3/git/blobs/2a4346487b15b5d46db64a537c8ae1db425f0a83", 
+                "README.md": "https://api.github.com/repos/yui/yui3/git/blobs/6ecd0b656d63540939c9eab99ca1b57cbf00c690"
+            }, 
+            "date": {
+                "commited": "2013-06-19T15:33:46Z", 
+                "authored": "2013-06-19T15:33:46Z"
             }
         }, 
         "v3.9.0": {

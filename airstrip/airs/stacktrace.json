@@ -31,12 +31,13 @@
                 "homepage": "http://stacktracejs.com", 
                 "description": "Framework-agnostic, micro-library for getting stack traces in all environments"
             }, 
-            "sha": "4e4ad6ae5e0408738c43f82781b99b5f84619da4", 
+            "sha": "15732678ee08b261e452f15c79b97bd2543a7a9a", 
             "tree": {
                 "gradlew.bat": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/8a0b282aa6885fb573c106b3551f7275c5f17e8e", 
                 "CONTRIBUTING.md": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/4282f4c09854fa880b6c430c22c594142799f6b3", 
                 "stacktrace.js": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/8990e3760ddfbed84949a4796099757f411109ee", 
                 "gradlew": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/e61422d06d5dbac0e59040e982d203be603e37b4", 
+                "bower.json": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/7b6bfa086337fd239aa77fb001516f5f38b45904", 
                 ".gitignore": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/92373664a82b8bc4929d702eac3a0293b55f98ea", 
                 "gradle": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/trees/988790a7f17003ce55f341d5e6d7d75011fe2c0c", 
                 ".npmignore": "https://api.github.com/repos/eriwen/javascript-stacktrace/git/blobs/77b355789074d22fe5b702f7cf412fa0c4909b05", 
@@ -49,13 +50,13 @@
             }, 
             "component.json": {
                 "main": "./stacktrace.js", 
-                "version": "0.5", 
+                "version": "0.5.0", 
                 "name": "stacktrace.js", 
                 "dependencies": {}
             }, 
             "date": {
-                "commited": "2012-10-09T16:11:44Z", 
-                "authored": "2012-10-09T16:11:44Z"
+                "commited": "2013-06-23T15:43:02Z", 
+                "authored": "2013-06-23T15:43:02Z"
             }
         }, 
         "v0.5.0": {
@@ -108,8 +109,8 @@
                 "dependencies": {}
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-01-20T01:31:42Z", 
+                "authored": "2013-01-20T01:31:42Z"
             }
         }
     }

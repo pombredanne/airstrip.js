@@ -1,9 +1,9 @@
 {
-    "nobuild": true,
-    "productions": {
-      "i18n.js": "app/assets/javascripts/i18n.js"
-    },
+    "nobuild": true, 
     "git": "https://github.com/fnando/i18n-js", 
+    "productions": {
+        "i18n.js": "app/assets/javascripts/i18n.js"
+    }, 
     "versions": {
         "v3.0.0.rc5": {
             "package.json": {
@@ -29,8 +29,8 @@
                 "README.md": "https://api.github.com/repos/fnando/i18n-js/git/blobs/5cb035d48a930971a016725e9e8bccbd7829cbb1"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-03-08T14:46:28Z", 
+                "authored": "2013-03-08T14:46:28Z"
             }
         }, 
         "v1.1.0": {
@@ -54,8 +54,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/686506e2deecf52d2fc8e8354bf5382de5004eda"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-01T20:40:58Z", 
+                "authored": "2011-09-01T20:40:58Z"
             }
         }, 
         "v1.0.1": {
@@ -77,8 +77,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/d1d5bb452839f6898428320a70b91e799efb39f1"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-03-11T20:24:56Z", 
+                "authored": "2011-03-11T20:24:56Z"
             }
         }, 
         "v1.0.0": {
@@ -100,8 +100,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/0939cf8d857afec917c676452e8ada48b5132b35"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-02-07T18:53:33Z", 
+                "authored": "2011-02-07T18:53:33Z"
             }
         }, 
         "v1.0.2": {
@@ -123,8 +123,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/b7b2ceba23a08a1f507a3a1acd1bdc3aa12f8b88"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-04-13T11:35:36Z", 
+                "authored": "2011-04-13T11:35:36Z"
             }
         }, 
         "master": {
@@ -196,8 +196,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/fec14a8d9f74fc73ff69af669b36a2ab1e1fb9b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-11-18T11:56:19Z", 
+                "authored": "2011-11-18T11:56:19Z"
             }
         }, 
         "v2.1.1": {
@@ -221,8 +221,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/fec14a8d9f74fc73ff69af669b36a2ab1e1fb9b5"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-11-17T10:43:37Z", 
+                "authored": "2011-11-17T10:43:37Z"
             }
         }, 
         "v2.1.0": {
@@ -246,8 +246,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/b4303e2d402562c3013807cc556919d681bed133"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-10-14T15:21:25Z", 
+                "authored": "2011-10-14T15:21:25Z"
             }
         }, 
         "v0.1.5": {
@@ -340,8 +340,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/e94e132e45fea1ceec55bcef385269fa7763bdca"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-24T23:31:42Z", 
+                "authored": "2011-09-24T23:31:42Z"
             }
         }, 
         "v2.0.1": {
@@ -365,8 +365,8 @@
                 "spec": "https://api.github.com/repos/fnando/i18n-js/git/trees/cb4cfc631eee79bf1bf31abf634ed1e935546a2a"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-09-29T16:28:05Z", 
+                "authored": "2011-09-29T16:28:05Z"
             }
         }, 
         "v0.1.0": {
@@ -462,8 +462,8 @@
                 "README.md": "https://api.github.com/repos/fnando/i18n-js/git/blobs/5cb035d48a930971a016725e9e8bccbd7829cbb1"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2013-03-07T12:52:19Z", 
+                "authored": "2013-03-07T12:52:19Z"
             }
         }, 
         "pre-cleanup": {
@@ -483,8 +483,8 @@
                 "test": "https://api.github.com/repos/fnando/i18n-js/git/trees/30a26aa590b4a4fc37d88989f5122a13037b9d0a"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-04-06T22:21:40Z", 
+                "authored": "2010-04-06T22:21:40Z"
             }
         }, 
         "v3.0.0.rc2": {
@@ -505,8 +505,8 @@
                 "README.md": "https://api.github.com/repos/fnando/i18n-js/git/blobs/58b7b7daff9530942f44568f409eba082f0cb680"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-05-10T15:24:37Z", 
+                "authored": "2012-05-10T15:24:37Z"
             }
         }, 
         "v3.0.0.rc3": {
@@ -528,8 +528,8 @@
                 "README.md": "https://api.github.com/repos/fnando/i18n-js/git/blobs/6959e15e05d10f754f5d80635510f8821bd92858"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-17T05:48:41Z", 
+                "authored": "2012-10-17T05:48:41Z"
             }
         }, 
         "v3.0.0.rc1": {
@@ -550,8 +550,8 @@
                 "README.md": "https://api.github.com/repos/fnando/i18n-js/git/blobs/a1f9b107dfd3ae36d6ab2e305a78615121e8be49"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-05-10T12:31:12Z", 
+                "authored": "2012-05-10T12:31:12Z"
             }
         }
     }

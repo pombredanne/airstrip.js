@@ -67,6 +67,93 @@
                 "authored": "2012-03-23T05:19:10Z"
             }
         }, 
+        "v3.2.5a": {
+            "package.json": {
+                "name": "json3", 
+                "contributors": [
+                    {
+                        "web": "http://fb.me/ok", 
+                        "name": "\u00d8yvind Sean Kinsey", 
+                        "email": "oyvind@kinsey.no"
+                    }, 
+                    {
+                        "web": "http://tech.roxee.tv/", 
+                        "name": "Mangled Deutz", 
+                        "email": "olivier@webitup.fr"
+                    }, 
+                    {
+                        "web": "https://github.com/rma4ok", 
+                        "name": "Kiryl Yermakou", 
+                        "email": "rma4ok@gmail.com"
+                    }, 
+                    {
+                        "web": "http://oxy.fi/", 
+                        "name": "Oskar Sch\u00f6ldstr\u00f6m", 
+                        "email": "public@oxy.fi"
+                    }
+                ], 
+                "author": {
+                    "web": "http://kitcambridge.be/", 
+                    "name": "Kit Cambridge", 
+                    "email": "github@kitcambridge.be"
+                }, 
+                "bugs": {
+                    "url": "https://github.com/bestiejs/json3/issues"
+                }, 
+                "repository": {
+                    "url": "git://github.com/bestiejs/json3.git", 
+                    "type": "git"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://kit.mit-license.org/", 
+                        "type": "MIT"
+                    }
+                ], 
+                "maintainers": [
+                    {
+                        "web": "http://kitcambridge.be/", 
+                        "name": "Kit Cambridge", 
+                        "email": "github@kitcambridge.be"
+                    }
+                ], 
+                "version": "3.2.5", 
+                "scripts": {
+                    "test": "node test/test_*.js"
+                }, 
+                "keywords": [
+                    "json", 
+                    "spec", 
+                    "ecma", 
+                    "es5", 
+                    "lexer", 
+                    "parser", 
+                    "stringify"
+                ], 
+                "main": "./lib/json3", 
+                "homepage": "http://bestiejs.github.io/json3", 
+                "description": "A modern JSON implementation compatible with nearly all JavaScript platforms."
+            }, 
+            "sha": "a6ca1a018dad0a4a9004c4a01a0c0fffc27dd7d1", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/bestiejs/json3/git/blobs/76fac5965974b13aab13d4bcad1aba77c7bf7019", 
+                "index.html": "https://api.github.com/repos/bestiejs/json3/git/blobs/b70d61e58ed4360c513316f3a1ffd2097c2f40ad", 
+                "vendor": "https://api.github.com/repos/bestiejs/json3/git/trees/f9d38e185effefc1ff1f5d2415353d8ae69a4234", 
+                "lib": "https://api.github.com/repos/bestiejs/json3/git/trees/eecd8005bc6179efef167b5ad4aaaa0d08ca01bf", 
+                "LICENSE": "https://api.github.com/repos/bestiejs/json3/git/blobs/6d42c549ff14b37fff3d4238ccb5528299dac376", 
+                "build.js": "https://api.github.com/repos/bestiejs/json3/git/blobs/c3300e3f64e9e943cf00ebeec399bcde9d677b27", 
+                "benchmark": "https://api.github.com/repos/bestiejs/json3/git/trees/8ad69db2bbb9d3545806d97f7fa95b7583e07cae", 
+                ".gitmodules": "https://api.github.com/repos/bestiejs/json3/git/blobs/dc5a1740ece8d0a50449d176605e0a9aa05f247d", 
+                ".npmignore": "https://api.github.com/repos/bestiejs/json3/git/blobs/4e11fec7c903e46d8f371c109f3a93e927c06acc", 
+                "test": "https://api.github.com/repos/bestiejs/json3/git/trees/fad53b6bdd6a03db14f5dd48d5342af4bf718365", 
+                "page": "https://api.github.com/repos/bestiejs/json3/git/trees/aa165e6a54e6accb990ef6eaade5b1fb03ace7bc", 
+                "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/adf02204958f1dac82fc006cd9a0711a1233e509"
+            }, 
+            "date": {
+                "commited": "2013-06-15T01:23:53Z", 
+                "authored": "2013-06-15T01:23:53Z"
+            }
+        }, 
         "v3.2.3": {
             "package.json": {
                 "name": "json3", 
@@ -269,6 +356,93 @@
             "date": {
                 "commited": "2012-03-16T04:13:01Z", 
                 "authored": "2012-03-16T04:13:01Z"
+            }
+        }, 
+        "v3.2.5": {
+            "package.json": {
+                "name": "json3", 
+                "contributors": [
+                    {
+                        "web": "http://fb.me/ok", 
+                        "name": "\u00d8yvind Sean Kinsey", 
+                        "email": "oyvind@kinsey.no"
+                    }, 
+                    {
+                        "web": "http://tech.roxee.tv/", 
+                        "name": "Mangled Deutz", 
+                        "email": "olivier@webitup.fr"
+                    }, 
+                    {
+                        "web": "https://github.com/rma4ok", 
+                        "name": "Kiryl Yermakou", 
+                        "email": "rma4ok@gmail.com"
+                    }, 
+                    {
+                        "web": "http://oxy.fi/", 
+                        "name": "Oskar Sch\u00f6ldstr\u00f6m", 
+                        "email": "public@oxy.fi"
+                    }
+                ], 
+                "author": {
+                    "web": "http://kitcambridge.be/", 
+                    "name": "Kit Cambridge", 
+                    "email": "github@kitcambridge.be"
+                }, 
+                "bugs": {
+                    "url": "https://github.com/bestiejs/json3/issues"
+                }, 
+                "repository": {
+                    "url": "git://github.com/bestiejs/json3.git", 
+                    "type": "git"
+                }, 
+                "licenses": [
+                    {
+                        "url": "http://kit.mit-license.org/", 
+                        "type": "MIT"
+                    }
+                ], 
+                "maintainers": [
+                    {
+                        "web": "http://kitcambridge.be/", 
+                        "name": "Kit Cambridge", 
+                        "email": "github@kitcambridge.be"
+                    }
+                ], 
+                "version": "3.2.5", 
+                "scripts": {
+                    "test": "node test/test_*.js"
+                }, 
+                "keywords": [
+                    "json", 
+                    "spec", 
+                    "ecma", 
+                    "es5", 
+                    "lexer", 
+                    "parser", 
+                    "stringify"
+                ], 
+                "main": "./lib/json3", 
+                "homepage": "http://bestiejs.github.io/json3", 
+                "description": "A modern JSON implementation compatible with nearly all JavaScript platforms."
+            }, 
+            "sha": "2675fe379eadbf9549da340da2c9cde35a0d2ebc", 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/bestiejs/json3/git/blobs/76fac5965974b13aab13d4bcad1aba77c7bf7019", 
+                "index.html": "https://api.github.com/repos/bestiejs/json3/git/blobs/b70d61e58ed4360c513316f3a1ffd2097c2f40ad", 
+                "vendor": "https://api.github.com/repos/bestiejs/json3/git/trees/f9d38e185effefc1ff1f5d2415353d8ae69a4234", 
+                "lib": "https://api.github.com/repos/bestiejs/json3/git/trees/f2a259825e7030e6ee0a51ed8ac02822ec4600b9", 
+                "LICENSE": "https://api.github.com/repos/bestiejs/json3/git/blobs/6d42c549ff14b37fff3d4238ccb5528299dac376", 
+                "build.js": "https://api.github.com/repos/bestiejs/json3/git/blobs/c3300e3f64e9e943cf00ebeec399bcde9d677b27", 
+                "benchmark": "https://api.github.com/repos/bestiejs/json3/git/trees/8ad69db2bbb9d3545806d97f7fa95b7583e07cae", 
+                ".gitmodules": "https://api.github.com/repos/bestiejs/json3/git/blobs/dc5a1740ece8d0a50449d176605e0a9aa05f247d", 
+                ".npmignore": "https://api.github.com/repos/bestiejs/json3/git/blobs/4e11fec7c903e46d8f371c109f3a93e927c06acc", 
+                "test": "https://api.github.com/repos/bestiejs/json3/git/trees/fad53b6bdd6a03db14f5dd48d5342af4bf718365", 
+                "page": "https://api.github.com/repos/bestiejs/json3/git/trees/aa165e6a54e6accb990ef6eaade5b1fb03ace7bc", 
+                "README.md": "https://api.github.com/repos/bestiejs/json3/git/blobs/adf02204958f1dac82fc006cd9a0711a1233e509"
+            }, 
+            "date": {
+                "commited": "2013-06-14T01:19:32Z", 
+                "authored": "2013-06-13T16:58:43Z"
             }
         }, 
         "v3.2.4": {

@@ -23,8 +23,8 @@
                 "README.TXT": "https://api.github.com/repos/getify/LABjs/git/blobs/fa2b5b9380eae2478d971d2d26f1d95dc1bc56ff"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-07-13T05:00:55Z", 
+                "authored": "2011-07-13T05:00:55Z"
             }
         }, 
         "master": {

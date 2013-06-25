@@ -22,8 +22,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/694c9d0828257d0fcbd3496b695d53155dfc4686"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-05-17T06:37:15Z", 
+                "authored": "2011-05-17T06:37:15Z"
             }
         }, 
         "v0.97a": {
@@ -42,8 +42,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/9d478e96eead6de0c94a14a20efbb5f2321bc01a"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-10-23T19:56:10Z", 
+                "authored": "2012-10-23T19:56:10Z"
             }
         }, 
         "v0.98": {
@@ -63,8 +63,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/0d089e801ae9bea1f6f0fae6fcc085f761abd055"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-11-09T06:50:32Z", 
+                "authored": "2012-11-09T06:50:32Z"
             }
         }, 
         "v0.99": {
@@ -85,8 +85,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/b1478541c6ada0e4ff2ab7bb86f35e369adf2a75"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2012-11-15T00:32:02Z", 
+                "authored": "2012-11-15T00:32:02Z"
             }
         }, 
         "v0.8": {
@@ -105,8 +105,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/d3451db971d456e134ad980e793680753990d716"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-01-11T13:00:43Z", 
+                "authored": "2011-01-11T13:00:43Z"
             }
         }, 
         "v0.9": {
@@ -125,8 +125,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/694c9d0828257d0fcbd3496b695d53155dfc4686"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2011-02-11T12:11:25Z", 
+                "authored": "2011-02-11T12:11:25Z"
             }
         }, 
         "master": {
@@ -135,20 +135,32 @@
                 "name": "headjs", 
                 "author": "headjs"
             }, 
-            "sha": "ad438de55d8d419920543ef6863fa108710a0181", 
+            "sha": "42a0052309f7b2faaab1a1fcf0535365e8eb3ad7", 
+            ".travis.yml": {
+                "before_script": [
+                    "npm install -g grunt-cli", 
+                    "npm install grunt grunt-contrib-qunit"
+                ], 
+                "node_js": [
+                    "0.11"
+                ], 
+                "language": "node_js", 
+                "script": "grunt test -v -d"
+            }, 
             "tree": {
-                "src": "https://api.github.com/repos/headjs/headjs/git/trees/a50a80cf8decc4dcfb2ae3e4b0377dac2a69192e", 
+                "src": "https://api.github.com/repos/headjs/headjs/git/trees/7880a1aca5f7fb7699b947c9b6b9b83a64dfa963", 
                 "index.html": "https://api.github.com/repos/headjs/headjs/git/blobs/9696792ad71e31f659ae0d2260342630dbf7f47d", 
-                "dist": "https://api.github.com/repos/headjs/headjs/git/trees/72cdc8316be2b92a63a41df06ee30f58f457f270", 
-                "changelog.txt": "https://api.github.com/repos/headjs/headjs/git/blobs/c63741cab289bde54a3ecf48a648f5015543093a", 
-                ".gitignore": "https://api.github.com/repos/headjs/headjs/git/blobs/74bde815af008a454228d226a7124b09cef283b4", 
-                "media": "https://api.github.com/repos/headjs/headjs/git/trees/0a9da2749115e3bbb8b7b3b3698b20bc0b5d4187", 
-                "test": "https://api.github.com/repos/headjs/headjs/git/trees/9b90fb7b6b171a40d499435f921078e69e7f7592", 
-                "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/962b39eff12aaeea4c749fe20a782a0644889fd4"
+                "dist": "https://api.github.com/repos/headjs/headjs/git/trees/39028c29ae0820a04f474ded45318e58696668bc", 
+                "changelog.txt": "https://api.github.com/repos/headjs/headjs/git/blobs/d726753a6dc5f127f8abad520772143fd35e5aa6", 
+                "Gruntfile.js": "https://api.github.com/repos/headjs/headjs/git/blobs/25260faf5db2f69dba14a20cefbbe3aa8a70c139", 
+                ".gitignore": "https://api.github.com/repos/headjs/headjs/git/blobs/c9f24d3b0bc82b7c2ea733c45f98704f74a3b210", 
+                "media": "https://api.github.com/repos/headjs/headjs/git/trees/2b759d51e1fda4c13fb6dba8c75838a995107d02", 
+                "test": "https://api.github.com/repos/headjs/headjs/git/trees/bbf2faa2a173f8a77b4715ced063ddd81b172cf7", 
+                "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/20074460f83a8533a711e371314a8a97a3316231"
             }, 
             "date": {
-                "commited": "2013-02-28T22:33:13Z", 
-                "authored": "2013-02-28T22:33:13Z"
+                "commited": "2013-05-21T19:48:42Z", 
+                "authored": "2013-05-21T19:48:42Z"
             }
         }, 
         "v0.5": {
@@ -167,8 +179,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/37a2dc40622e4d868db106c7cdba5776a5e0b872"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-12-17T12:59:38Z", 
+                "authored": "2010-12-17T12:59:38Z"
             }
         }, 
         "v0.2": {
@@ -188,8 +200,8 @@
                 "README.md": "https://api.github.com/repos/headjs/headjs/git/blobs/07af6f419575d9b056a8e54e9406f0fb4e741d7a"
             }, 
             "date": {
-                "commited": false, 
-                "authored": false
+                "commited": "2010-12-04T09:45:57Z", 
+                "authored": "2010-12-04T09:45:57Z"
             }
         }
     }

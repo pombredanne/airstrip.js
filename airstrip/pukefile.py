@@ -2,7 +2,7 @@
 # -*- coding: utf8 -*-
 from puke.Task import task
 global console, FileSystem
-from puke import console, FileSystem, sh, deepcopy
+from puke import console, FileSystem, sh, deepcopy, executeTask, prompt
 global dateutil, datetime
 import dateutil.parser
 import datetime
@@ -35,24 +35,103 @@ import github as ge
 global se
 import seeder as se
 
-global lic
-import airlicenses as lic
 
+puke.Console.SPEAK_MESSAGE_ON_SUCCESS = ""
 
 @task("Manage available airstrip licenses for projects")
 def license(command = False, key = False):
-  airlic = lic.AirLicenses()
-  if not command or command == 'list':
-    print airlic.list()
-  elif command == 'edit':
-    airlic.edit(key)
-  else:
-    d = airlic.get(command)
-    print "License name: %s" % command.upper()
-    print "License url: %s" % d["url"]
-    print "License text: %s" % d["content"]
+  import licenses
+
+  commands = ["list", "edit", "remove"]
+  licencename = None
+
+  if not command:
+    command = "list"
+
+  if not command in commands:
+    key = command
+    command = None
+
+  lic = licenses.Licenses()
+
+  if command == "list":
+    console.header("Defined licenses:")
+    l = lic.list()
+    for i in l:
+      console.log(i)
+    return
+
+  try:
+    if command == "edit":
+      console.header("Editing license: %s" % key)
+      lic.edit(key)
+      console.log("Done")
+      return
+
+    if command == "remove":
+      console.header("Removing license: %s" % key)
+      answer = puke.prompt("Are you sure? [y/N]")
+      if answer == "y":
+        lic.remove(key)
+        console.log("Done")
+      else:
+        console.warn("Aborting")
+      return
+
+    d = lic.get(key)
+    console.header("%s license details" % d["name"])
+    console.log("Url: %s" % d["url"])
+    console.log("Content:")
+    console.log("*************************************************")
+    console.log(d["content"])
+    console.log("*************************************************")
+
+  except:
+    console.fail("No license by that name! (%s)" % key)
 
 
+
+
+
+
+
+
+@task("Search for a given library")
+# XXX this is dumb for now
+def search(key):
+
+  cachesearch = {}
+  result = []
+  p = os.path.dirname(os.path.realpath(__file__))
+  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+  for i in l.get():
+    d = puke.FileSystem.readfile(i)
+    if key in d:
+      name = i.split('/').pop().split('.')
+      name.pop()
+      name = '.'.join(name)
+      result.append(name)
+
+  result2 = []
+  g = ge.GitHubInit()
+  d = g.search(key)
+  if "repositories" in d:
+    p = d["repositories"][0:20]
+    for i in p:
+      short = "%s/%s" % (i["owner"], i["name"])
+      desc = ""
+      if i["description"]:
+        desc = " %s" % i["description"].replace('\n', ' ')
+      result2.append("%s%s" % (short.ljust(50), desc))
+
+
+  puke.console.warn('Avalaible on github:')
+  for i in result2:
+    print i
+
+  puke.console.warn('Already installed airs:')
+  for i in result:
+    print i
 
 @task("Show current configuration details (airstrip use), or set a configuration flag (airstrip use key value)")
 def use(key = False, value = False):
@@ -79,7 +158,8 @@ def require(key = False, version = False):
       version = "master"
     # Get a yawn
     if not yawn.Air.exists(key):
-      console.fail('No library by that name (%s)!' % key) 
+      puke.executeTask('init', owner, name, name)
+      # console.fail('No library by that name (%s)!' % key) 
     aero = yawn.Air(key)
 
     if not version == 'all':
@@ -112,17 +192,29 @@ def show(name = False):
     p = os.path.dirname(os.path.realpath(__file__))
     l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
     for i in l.get():
-      print i.split('/').pop().split('.').pop(0)
+      name = i.split('/').pop().split('.')
+      name.pop()
+      name = '.'.join(name)
 
     l = puke.FileList('airs', filter = "*.json")
     for i in l.get():
-      print i.split('/').pop().split('.').pop(0)
+      name = i.split('/').pop().split('.')
+      name.pop()
+      name = '.'.join(name)
 
     return
   # XXXX dirty hack
   # name = name.split('/').pop().replace('.json', '')
+  oname = None
+  owner = None
   if not yawn.Air.exists(name):
-    console.fail('No library by that name (%s)!' % name) 
+    owner = name.split('/').pop(0)
+    name = name.split('/').pop()
+    oname = name
+    puke.executeTask('init', owner, name, 'temporary')
+    name = 'temporary'
+    # console.fail('No library by that name (%s)!' % name) 
+
   a = yawn.Air(name)
 
   nomasterhack = "master"
@@ -132,10 +224,14 @@ def show(name = False):
     nomasterhack = a.versions().pop()
 
 
+  pname = a.get(nomasterhack, 'name')
+  pdesc = a.get(nomasterhack, 'description')
+  if owner:
+    pname = "%s (%s/%s)" % (pname, owner, oname)
+  if pdesc:
+    pname = "%s - %s" (pname, pdesc)
   console.info('*********************')
-  console.info(a.get(nomasterhack, 'name'))
-  console.info('*********************')
-  console.info(a.get(nomasterhack, 'description'))
+  console.info(pname)
   console.info('*********************')
   # console.info(' - Category: %s' % a.get('master', 'category'))
   console.info(' - Keywords: %s' % a.get(nomasterhack, 'keywords'))
@@ -158,6 +254,36 @@ def show(name = False):
       date = 'Unkown date'
     console.info(' * %s %s | %s' % ( str(i), " " * (maxLength - len(i)), date))
 
+  if name == 'temporary':
+    a.remove()
+
+@task("Refresh all airs")
+def update():
+  g = ge.GitHubInit()
+
+  p = os.path.dirname(os.path.realpath(__file__))
+  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
+  for i in l.get():
+    name = i.split('/').pop().split('.')
+    name.pop()
+    name = '.'.join(name)
+    v = json.loads(puke.FileSystem.readfile(i))['git'].split('/')
+    repo = v.pop()
+    owner = v.pop()
+    # print owner, repo, name
+    g.retrieve(owner, repo, "airs", name)
+
+  l = puke.FileList('airs', filter = "*.json")
+  for i in l.get():
+    name = i.split('/').pop().split('.')
+    name.pop()
+    name = '.'.join(name)
+    v = json.loads(puke.FileSystem.readfile(i))['git'].split('/')
+    repo = v.pop()
+    owner = v.pop()
+    g.retrieve(owner, repo, "airs", name)
+
+
 @task("Initialize new project")
 def seed(app = False, mobile = False):
   s = se.Seeder()
@@ -179,41 +305,6 @@ def seed(app = False, mobile = False):
 #     print i.split('/').pop().split('.').pop(0)
 
 
-@task("Search for a given library")
-# XXX this is dumb for now
-def search(key):
-
-  cachesearch = {}
-  result = []
-  p = os.path.dirname(os.path.realpath(__file__))
-  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
-  for i in l.get():
-    d = puke.FileSystem.readfile(i)
-    if key in d:
-      result.append(i.split('/').pop().split('.').pop(0))
-
-  result2 = []
-  g = ge.GitHubInit()
-  d = g.search(key)
-  if "repositories" in d:
-    p = d["repositories"][0:20]
-    for i in p:
-      short = "%s/%s" % (i["owner"], i["name"])
-      desc = ""
-      if i["description"]:
-        desc = " %s" % i["description"].replace('\n', ' ')
-      result2.append("%s%s" % (short.ljust(50), desc))
-
-
-  puke.console.warn('Avalaible on github:')
-  for i in result2:
-    print i
-
-  puke.console.warn('Already installed airs:')
-  for i in result:
-    print i
-
-
 
 @task("Init an air from github")
 def init(owner, repo, name = False):
@@ -229,29 +320,6 @@ def init(owner, repo, name = False):
   # # g.retrieve("jquery", "jquery", "airstrip/airs", "jquery")
   # g.retrieve("necolas", "normalize.css", "airstrip/airs", "normalize")
   # # g.retrieve("madrobby", "zepto", "airstrip/airs", "zepto")
-
-@task("Refresh all airs")
-def reinit():
-  g = ge.GitHubInit()
-
-  p = os.path.dirname(os.path.realpath(__file__))
-  l = puke.FileList(puke.FileSystem.join(p, 'airs'), filter = "*.json")
-  for i in l.get():
-    name = i.split('/').pop().split('.').pop(0)
-    v = json.loads(puke.FileSystem.readfile(i))['git'].split('/')
-    repo = v.pop()
-    owner = v.pop()
-    # print owner, repo, name
-    g.retrieve(owner, repo, "airs", name)
-
-  l = puke.FileList('airs', filter = "*.json")
-  for i in l.get():
-    name = i.split('/').pop().split('.').pop(0)
-    v = json.loads(puke.FileSystem.readfile(i))['git'].split('/')
-    repo = v.pop()
-    owner = v.pop()
-    g.retrieve(owner, repo, "airs", name)
-
 
 @task("Build the list of required libraries, or a specifically required library")
 def build(name = False):

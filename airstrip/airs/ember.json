@@ -258,6 +258,287 @@
                 "authored": "2012-03-31T03:11:15Z"
             }
         }, 
+        "v0.9.8": {
+            "package.json": {
+                "version": "v0.9.8", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "9f423ebc13b7a77c7ae753272f01262031f89134", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start", 
+                    "rake clean"
+                ], 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "bundler_args": "--without development", 
+                "script": "rake test[all]"
+            }, 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/963410ca1aec059dffd06da6f916b2d16ed52ef7", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/de84068b79fd82931a4e5d557f89303af13f1196", 
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c3c6e63892aa019959dbf81e2cdfb40348e54523", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8e1cc500d2cceeec81ebb835a8bdbae03e798ba7", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b38f5f92bd496a10c1fac21c59ccffbf7633f01d", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/311ea1e3095ed499fd0ce2a6333a7ade73791e01", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/78a03ff7afd8afa3c830abe220b7f808741fb39d", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e7ca857bce49b40e423eb365012ec574db15b664", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/32d64a703016a3139fb11c98b64e5f99220c39ee", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/09724f5f47eff5cb5a9371d8ae0bf1ef64db480f", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e3e180701e2ae694f8818779c4e28321a6b11b32", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d421060079f039346625e3e54355daff12cc93f5", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/ffa8b9df8d10ac7096bd6e8f41705092084bdb02", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/ff200ec2f18522c84f4bb1f2132f5571a07d7c2a", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/078e1f457788ba87cd6a483c84049da101229807", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/5ad75ae839dabeabb1b2808059424d0ca1dec053", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ff47a4ecec98ab2498bba141cc70258043eafe0c"
+            }, 
+            "date": {
+                "commited": "2012-05-21T17:14:20Z", 
+                "authored": "2012-05-21T17:14:20Z"
+            }
+        }, 
+        "v1.0.0-rc.4": {
+            "package.json": {
+                "version": "v1.0.0-rc.4", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "1acec81ac506c2de85c95a6c02a9b7dfefc594be", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start"
+                ], 
+                "branches": {
+                    "except": [
+                        "latest-builds", 
+                        "release-builds"
+                    ]
+                }, 
+                "script": "rake test\\[standard]", 
+                "after_success": "bundle exec rake publish_build", 
+                "bundler_args": "--without development", 
+                "notifications": {
+                    "campfire": {
+                        "on_failure": "always", 
+                        "rooms": [
+                            {
+                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
+                            }
+                        ], 
+                        "on_success": "change"
+                    }
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "env": {
+                    "global": [
+                        "S3_BUCKET_NAME=builds.emberjs.com", 
+                        {
+                            "secure": "KXJmcGLpnxnPmmei/qPNVcdQxLX1xyYIaVocinQ0YAjtBvCtAwg63EWMFnGp\nVIzUNikE+Cej3g+nwEdDJiL1c9NFPL+zCnriR2iMVjPak+IQaG3YcMm0T+hY\n/WLEPAquZBKw1gU6lBEUuDumTlkXQQdHz3cJYoidAXz3uV1EXIU="
+                        }, 
+                        {
+                            "secure": "qCW0BVNFuQjAI53pvvE6oeGxtEdZ+RlvcCpYjU4vxEjedidEEcHKtIVh7d7J\nPZ8DNTxX0zsp2jjY8NwTR5MC8NBH+J5VjuTSGv82t5sm0i0jzaBmOOSLbKqH\nI/BFT0MbnR6JVCZiPV7TCWPgY1gvgZ6TEEIKGqauDMUBdL8ZK6I="
+                        }
+                    ]
+                }
+            }, 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/dfea5f9d25ff5f47fe89114801851cb4c9604407", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/46c1b59c858ef24cf9671180a017933016337744", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/1111c8476aafc0c9c9e683b38f5e9c85339601ae", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85c982d688e4fa823e71394d328a60771551dbb9", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/fec02e21c6e274637316d9fdf6fd3bb026ae684e", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
+                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/39951f074f451d4aeb3e130d54e83223b6324d6d", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fc5aa6834ce7161de1c1e1ccbb0d7cc4c930d1c5", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/537b838044d9e303aff0a7b0cc1984c59b9bd554", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ebdf68b873d963b6419da770826de280d11a4032", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f75f0df6c64594c58b817bc217f62aa0d438f6d2", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/febcc70c78447cc1c717cb86b49500765f162a18", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/be169b1824c28bd3e7ae582616ecfce82d8a6f1e", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ffa9e23ae5dfa11d052542430d1847e7f08436f2", 
+                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
+                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0103747c34f384e085077f36e30e4752d171af36", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b092d2e967c5fbfb0dc992b808b1e6e615e86560", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
+            }, 
+            "date": {
+                "commited": "2013-05-28T01:18:28Z", 
+                "authored": "2013-05-28T01:18:28Z"
+            }
+        }, 
+        "v1.0.0-rc.5": {
+            "package.json": {
+                "version": "v1.0.0-rc.5", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "9f2b6ac96ea0cd80d98ea8a347d5a363ac28bb07", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start"
+                ], 
+                "branches": {
+                    "except": [
+                        "latest-builds", 
+                        "release-builds"
+                    ]
+                }, 
+                "script": "rake test\\[standard]", 
+                "after_success": "bundle exec rake publish_build", 
+                "bundler_args": "--without development", 
+                "notifications": {
+                    "campfire": {
+                        "on_failure": "always", 
+                        "rooms": [
+                            {
+                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
+                            }
+                        ], 
+                        "on_success": "change"
+                    }
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "env": {
+                    "global": [
+                        "S3_BUCKET_NAME=builds.emberjs.com", 
+                        {
+                            "secure": "KXJmcGLpnxnPmmei/qPNVcdQxLX1xyYIaVocinQ0YAjtBvCtAwg63EWMFnGp\nVIzUNikE+Cej3g+nwEdDJiL1c9NFPL+zCnriR2iMVjPak+IQaG3YcMm0T+hY\n/WLEPAquZBKw1gU6lBEUuDumTlkXQQdHz3cJYoidAXz3uV1EXIU="
+                        }, 
+                        {
+                            "secure": "qCW0BVNFuQjAI53pvvE6oeGxtEdZ+RlvcCpYjU4vxEjedidEEcHKtIVh7d7J\nPZ8DNTxX0zsp2jjY8NwTR5MC8NBH+J5VjuTSGv82t5sm0i0jzaBmOOSLbKqH\nI/BFT0MbnR6JVCZiPV7TCWPgY1gvgZ6TEEIKGqauDMUBdL8ZK6I="
+                        }
+                    ]
+                }
+            }, 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/dfea5f9d25ff5f47fe89114801851cb4c9604407", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/82c93510d92b2cb98a115a7edd19d63520ec7700", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/1111c8476aafc0c9c9e683b38f5e9c85339601ae", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85c982d688e4fa823e71394d328a60771551dbb9", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/e6944ecb798f83b6ee82782998ee91a17dfa7b1f", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
+                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/39951f074f451d4aeb3e130d54e83223b6324d6d", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fc5aa6834ce7161de1c1e1ccbb0d7cc4c930d1c5", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0a323216519bbfdfb79af94bb8cec8174a65f934", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/5cdbb6a3bd2818b198ca06731adaad839656432e", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/3d90e79775546b8fd4a77743dfec2ecabbcd57c9", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/372369ac649574918a89a0dd3f02b55118ac5957", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/5aca955b31d865afe4a712f0f8fc4ed621ed64b6", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ffa9e23ae5dfa11d052542430d1847e7f08436f2", 
+                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
+                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/88e26c7213653f88954fbe0e95fe7340afca6a37", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8d3e6e3106c3a1c35a78b1724b3286c46ad7b727", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
+            }, 
+            "date": {
+                "commited": "2013-06-01T17:54:46Z", 
+                "authored": "2013-06-01T17:54:46Z"
+            }
+        }, 
+        "v1.0.0-rc.6": {
+            "package.json": {
+                "version": "v1.0.0-rc.6", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "893bbc4ecc3ad38b4a83370edeb966eae3d824f4", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start"
+                ], 
+                "branches": {
+                    "except": [
+                        "latest-builds", 
+                        "release-builds"
+                    ]
+                }, 
+                "script": "rake test\\[standard]", 
+                "after_success": "bundle exec rake publish_build", 
+                "bundler_args": "--without development", 
+                "notifications": {
+                    "campfire": {
+                        "on_failure": "always", 
+                        "rooms": [
+                            {
+                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
+                            }
+                        ], 
+                        "on_success": "change"
+                    }
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "env": {
+                    "global": [
+                        "S3_BUCKET_NAME=builds.emberjs.com", 
+                        {
+                            "secure": "KXJmcGLpnxnPmmei/qPNVcdQxLX1xyYIaVocinQ0YAjtBvCtAwg63EWMFnGp\nVIzUNikE+Cej3g+nwEdDJiL1c9NFPL+zCnriR2iMVjPak+IQaG3YcMm0T+hY\n/WLEPAquZBKw1gU6lBEUuDumTlkXQQdHz3cJYoidAXz3uV1EXIU="
+                        }, 
+                        {
+                            "secure": "qCW0BVNFuQjAI53pvvE6oeGxtEdZ+RlvcCpYjU4vxEjedidEEcHKtIVh7d7J\nPZ8DNTxX0zsp2jjY8NwTR5MC8NBH+J5VjuTSGv82t5sm0i0jzaBmOOSLbKqH\nI/BFT0MbnR6JVCZiPV7TCWPgY1gvgZ6TEEIKGqauDMUBdL8ZK6I="
+                        }
+                    ]
+                }
+            }, 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/dfea5f9d25ff5f47fe89114801851cb4c9604407", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d0bee78caa5763f60db081142f2ccb096ec2f962", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/297c1a5a397d23f0d3d91da22197e5e190d94c56", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85c982d688e4fa823e71394d328a60771551dbb9", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/6e1f07ca85672c45d88a61e5f2ee38bac5effb78", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/3ed3b553bb5cd1f7d50140086b7bc5719c52e900", 
+                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b23c1796569490f868856782d0852b194dae2258", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fb51be86259efa9a5170381d5c9cb0de5cdc1b02", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fc5aa6834ce7161de1c1e1ccbb0d7cc4c930d1c5", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/9c78683fa765da23bd7cee98dc95af3249162a17", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e2164b7419643cbe347d825873ae2d36b4107005", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/042a007fa0a4c0a624e7318a6d64669992978060", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/78003a63be5a88337f0e9719ef7c88fbbe4580d7", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/ea3cb506f1fc05e7bf69b26344b43984250a898b", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ffa9e23ae5dfa11d052542430d1847e7f08436f2", 
+                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
+                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/88e26c7213653f88954fbe0e95fe7340afca6a37", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/011cdc762f259c84c5e08206170f579da7167cd6", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
+            }, 
+            "date": {
+                "commited": "2013-06-23T19:14:46Z", 
+                "authored": "2013-06-23T19:14:46Z"
+            }
+        }, 
         "v1.0.0-rc.1": {
             "package.json": {
                 "version": "v1.0.0-rc.1", 
@@ -316,99 +597,150 @@
                 "authored": "2013-02-15T20:09:59Z"
             }
         }, 
-        "v0.9.8": {
+        "v1.0.0-rc.2": {
             "package.json": {
-                "version": "v0.9.8", 
+                "version": "v1.0.0-rc.2", 
                 "name": "ember.js", 
                 "author": "emberjs"
             }, 
-            "sha": "9f423ebc13b7a77c7ae753272f01262031f89134", 
-            ".travis.yml": {
-                "before_script": [
-                    "export DISPLAY=:99.0", 
-                    "sh -e /etc/init.d/xvfb start", 
-                    "rake clean"
-                ], 
-                "rvm": [
-                    "1.9.3"
-                ], 
-                "bundler_args": "--without development", 
-                "script": "rake test[all]"
-            }, 
-            "tree": {
-                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/963410ca1aec059dffd06da6f916b2d16ed52ef7", 
-                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/de84068b79fd82931a4e5d557f89303af13f1196", 
-                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c3c6e63892aa019959dbf81e2cdfb40348e54523", 
-                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8e1cc500d2cceeec81ebb835a8bdbae03e798ba7", 
-                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b38f5f92bd496a10c1fac21c59ccffbf7633f01d", 
-                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/311ea1e3095ed499fd0ce2a6333a7ade73791e01", 
-                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/78a03ff7afd8afa3c830abe220b7f808741fb39d", 
-                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e7ca857bce49b40e423eb365012ec574db15b664", 
-                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/32d64a703016a3139fb11c98b64e5f99220c39ee", 
-                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/09724f5f47eff5cb5a9371d8ae0bf1ef64db480f", 
-                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e3e180701e2ae694f8818779c4e28321a6b11b32", 
-                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d421060079f039346625e3e54355daff12cc93f5", 
-                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/ffa8b9df8d10ac7096bd6e8f41705092084bdb02", 
-                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/ff200ec2f18522c84f4bb1f2132f5571a07d7c2a", 
-                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
-                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/078e1f457788ba87cd6a483c84049da101229807", 
-                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/5ad75ae839dabeabb1b2808059424d0ca1dec053", 
-                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ff47a4ecec98ab2498bba141cc70258043eafe0c"
-            }, 
-            "date": {
-                "commited": "2012-05-21T17:14:20Z", 
-                "authored": "2012-05-21T17:14:20Z"
-            }
-        }, 
-        "v1.0.0-pre.3": {
-            "package.json": {
-                "version": "v1.0.0-pre.3", 
-                "name": "ember.js", 
-                "author": "emberjs"
-            }, 
-            "sha": "af88cb061153586fe1c8c9f1bfff037a199df81e", 
+            "sha": "656fa6e0527f71c29a802b2d3561e1573bcaf56b", 
             ".travis.yml": {
                 "before_script": [
                     "export DISPLAY=:99.0", 
                     "sh -e /etc/init.d/xvfb start"
                 ], 
                 "notifications": {
-                    "webhooks": "http://emberjs-master-builds.herokuapp.com/upload/ember.js"
+                    "campfire": {
+                        "on_failure": "always", 
+                        "rooms": [
+                            {
+                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
+                            }
+                        ], 
+                        "on_success": "change"
+                    }
+                }, 
+                "branches": {
+                    "except": [
+                        "latest-builds", 
+                        "release-builds"
+                    ]
                 }, 
                 "rvm": [
                     "1.9.3"
                 ], 
-                "bundler_args": "--without development", 
-                "script": "rake test\\[standard]"
+                "script": "rake test\\[standard]", 
+                "bundler_args": "--without development"
             }, 
             "tree": {
-                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2655ec5d977010ed41e683fbfd50fb8bdd5b378a", 
-                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f71ba4b11937be8bf4e2a45813b49cac5b3d263e", 
-                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8f58745c180f21c5e61c6b0a48e3820b45471316", 
-                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/b5a3a489fac985b21e7a2b72eabddd9a938200bb", 
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fa957ae6d200ad22fec65266f4dc161548d07a35", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0f7b1a08ce72d40e5dc6131fbf93cf1822e5c6c7", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/94e847235bc8c0a3089b51c409d98b6fb455ca4c", 
                 ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/41b15060d4466a37efb7ebb12440ad103b1ff296", 
-                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/23e27076145b1ccbfa59d45e0cf3a3b01c43b899", 
-                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f99874582bdf366d653583eb6002e7cc25e66680", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/d4e4577521aebbb15b63d322637e16224efb20e7", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
                 ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
-                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/fe36a1fffcabee77e806cfa2f473da3b280294db", 
-                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/cd20956fcdf8d6cd82831639fabb7f1d542e928d", 
-                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/143d70f917fa13aaf79c40c96f0893c4095f2499", 
-                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/6fd0dcf7c400a74ac7e341654f26677ef1ac437f", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2bc30f44d624e86fe0a407743409404d08243656", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/599c6e29ab80e88b5231e644880d07867746b4f9", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/1ed200e273be244ae174baf977d6eea163bec36b", 
                 "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
-                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/aa941c98805f0fefc30df8d1cfee4764b9a9217b", 
-                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f45335c128619d696357e1d3e4bc8869f2867174", 
-                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/bdf66ccdfb477eb98dce25ba0ca415c2e3331e4e", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8c0a5e0259ca3d9e53f0ae89929476b59704f0f7", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/4ffd4e5cd03cebfd85108965569d1b6a724e88dd", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/889f64e86d1b22069e9c2c5fa1cae567c45a8ca5", 
                 "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
-                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/26557615098146b98328f738d870bb12cfca4411", 
-                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ab7611d6b33e6cf6cd2e286e872093db05d951cd", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/3eaf9df4f2f66d012b8913c5572cce9aac101f1f", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/cd790b7f328a6f1fdfefbfecea122d3c03623d2f", 
                 "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
                 "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
-                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/06cb57c40d5bb337bdc10078adca649dbb36f999", 
-                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/e002855dbcd068462d4a0d378b29adc5570d854c"
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/605f5bcae56e4eec171032d4a89bf291b2379252", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fedbd0b1a214fbb89c8cf7773a601f75f368165f", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
             }, 
             "date": {
-                "commited": "2013-01-17T18:54:03Z", 
-                "authored": "2013-01-17T18:54:03Z"
+                "commited": "2013-03-29T20:40:38Z", 
+                "authored": "2013-03-29T20:40:38Z"
+            }
+        }, 
+        "v1.0.0-rc.3": {
+            "package.json": {
+                "version": "v1.0.0-rc.3", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "96e97b5f6a67190ed72a3ff623294f6a7afd01f5", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start"
+                ], 
+                "branches": {
+                    "except": [
+                        "latest-builds", 
+                        "release-builds"
+                    ]
+                }, 
+                "script": "rake test\\[standard]", 
+                "after_success": "bundle exec rake publish_build", 
+                "bundler_args": "--without development", 
+                "notifications": {
+                    "campfire": {
+                        "on_failure": "always", 
+                        "rooms": [
+                            {
+                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
+                            }
+                        ], 
+                        "on_success": "change"
+                    }
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "env": {
+                    "global": [
+                        "S3_BUCKET_NAME=builds.emberjs.com", 
+                        {
+                            "secure": "KXJmcGLpnxnPmmei/qPNVcdQxLX1xyYIaVocinQ0YAjtBvCtAwg63EWMFnGp\nVIzUNikE+Cej3g+nwEdDJiL1c9NFPL+zCnriR2iMVjPak+IQaG3YcMm0T+hY\n/WLEPAquZBKw1gU6lBEUuDumTlkXQQdHz3cJYoidAXz3uV1EXIU="
+                        }, 
+                        {
+                            "secure": "qCW0BVNFuQjAI53pvvE6oeGxtEdZ+RlvcCpYjU4vxEjedidEEcHKtIVh7d7J\nPZ8DNTxX0zsp2jjY8NwTR5MC8NBH+J5VjuTSGv82t5sm0i0jzaBmOOSLbKqH\nI/BFT0MbnR6JVCZiPV7TCWPgY1gvgZ6TEEIKGqauDMUBdL8ZK6I="
+                        }
+                    ]
+                }
+            }, 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fa957ae6d200ad22fec65266f4dc161548d07a35", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/6d783e67bb54c746596e25ef69eded4a9cf357d0", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/94e847235bc8c0a3089b51c409d98b6fb455ca4c", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/41b15060d4466a37efb7ebb12440ad103b1ff296", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/d4e4577521aebbb15b63d322637e16224efb20e7", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
+                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2bc30f44d624e86fe0a407743409404d08243656", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0db82cd17deae3d5abaaf297f3e5ca653473aa63", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/30bb99f9fdc85d08fb344d8204234f16349d0aa9", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ad1514f38285d2cfb1a740cd870694e76bd98667", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b4bb504d760a33f9f6e3324286d0707de10c9e30", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/889f64e86d1b22069e9c2c5fa1cae567c45a8ca5", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/bd37d54675a0ae8f28572797b592511d470cf8ec", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/cd790b7f328a6f1fdfefbfecea122d3c03623d2f", 
+                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
+                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0103747c34f384e085077f36e30e4752d171af36", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/3c029ddf2a4a98bd2031535a2e11aa82d8ae4d4c", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
+            }, 
+            "date": {
+                "commited": "2013-04-21T06:07:10Z", 
+                "authored": "2013-04-21T06:07:10Z"
             }
         }, 
         "v0.9.8.1": {
@@ -504,7 +836,7 @@
                 "name": "ember.js", 
                 "author": "emberjs"
             }, 
-            "sha": "7b96dc3a15b12b40e1c5c8e72cb3dc762a654e0d", 
+            "sha": "42f0c68a6f88c5bfd4c6420bcb8706a009f5f277", 
             ".travis.yml": {
                 "before_script": [
                     "export DISPLAY=:99.0", 
@@ -546,35 +878,114 @@
                 }
             }, 
             "tree": {
-                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fa957ae6d200ad22fec65266f4dc161548d07a35", 
-                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0f7b1a08ce72d40e5dc6131fbf93cf1822e5c6c7", 
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/dfea5f9d25ff5f47fe89114801851cb4c9604407", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d0bee78caa5763f60db081142f2ccb096ec2f962", 
                 "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
-                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/94e847235bc8c0a3089b51c409d98b6fb455ca4c", 
-                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/41b15060d4466a37efb7ebb12440ad103b1ff296", 
-                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/d4e4577521aebbb15b63d322637e16224efb20e7", 
-                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/297c1a5a397d23f0d3d91da22197e5e190d94c56", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85c982d688e4fa823e71394d328a60771551dbb9", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/6e1f07ca85672c45d88a61e5f2ee38bac5effb78", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/3ed3b553bb5cd1f7d50140086b7bc5719c52e900", 
                 ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
                 "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
-                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2bc30f44d624e86fe0a407743409404d08243656", 
-                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
-                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0db82cd17deae3d5abaaf297f3e5ca653473aa63", 
-                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/a3760e728f46aa02383732a5eb236fbfedafaf29", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b23c1796569490f868856782d0852b194dae2258", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fb51be86259efa9a5170381d5c9cb0de5cdc1b02", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fc5aa6834ce7161de1c1e1ccbb0d7cc4c930d1c5", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/9c78683fa765da23bd7cee98dc95af3249162a17", 
                 "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
-                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ad1514f38285d2cfb1a740cd870694e76bd98667", 
-                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b4bb504d760a33f9f6e3324286d0707de10c9e30", 
-                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/889f64e86d1b22069e9c2c5fa1cae567c45a8ca5", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/a6ec86b2a85fff7ae1be3d05e7533016cc494e89", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/042a007fa0a4c0a624e7318a6d64669992978060", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/78003a63be5a88337f0e9719ef7c88fbbe4580d7", 
                 "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
-                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/c0e9196a8dbe7fe3aa30a27a3e08427cb2a62804", 
-                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/cd790b7f328a6f1fdfefbfecea122d3c03623d2f", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/ea3cb506f1fc05e7bf69b26344b43984250a898b", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ffa9e23ae5dfa11d052542430d1847e7f08436f2", 
                 "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
                 "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
-                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e004acf63738030dbe41afe2d7bac3008f6bc294", 
-                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fedbd0b1a214fbb89c8cf7773a601f75f368165f", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/88e26c7213653f88954fbe0e95fe7340afca6a37", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/011cdc762f259c84c5e08206170f579da7167cd6", 
                 "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
             }, 
             "date": {
-                "commited": "2013-04-16T21:57:02Z", 
-                "authored": "2013-04-16T21:56:09Z"
+                "commited": "2013-06-23T19:43:35Z", 
+                "authored": "2013-06-23T19:43:35Z"
+            }
+        }, 
+        "v1.0.0-rc4": {
+            "package.json": {
+                "version": "v1.0.0-rc4", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "ae2e55fff4411b82e05e5939e3bab04ab40d320b", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start"
+                ], 
+                "branches": {
+                    "except": [
+                        "latest-builds", 
+                        "release-builds"
+                    ]
+                }, 
+                "script": "rake test\\[standard]", 
+                "after_success": "bundle exec rake publish_build", 
+                "bundler_args": "--without development", 
+                "notifications": {
+                    "campfire": {
+                        "on_failure": "always", 
+                        "rooms": [
+                            {
+                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
+                            }
+                        ], 
+                        "on_success": "change"
+                    }
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "env": {
+                    "global": [
+                        "S3_BUCKET_NAME=builds.emberjs.com", 
+                        {
+                            "secure": "KXJmcGLpnxnPmmei/qPNVcdQxLX1xyYIaVocinQ0YAjtBvCtAwg63EWMFnGp\nVIzUNikE+Cej3g+nwEdDJiL1c9NFPL+zCnriR2iMVjPak+IQaG3YcMm0T+hY\n/WLEPAquZBKw1gU6lBEUuDumTlkXQQdHz3cJYoidAXz3uV1EXIU="
+                        }, 
+                        {
+                            "secure": "qCW0BVNFuQjAI53pvvE6oeGxtEdZ+RlvcCpYjU4vxEjedidEEcHKtIVh7d7J\nPZ8DNTxX0zsp2jjY8NwTR5MC8NBH+J5VjuTSGv82t5sm0i0jzaBmOOSLbKqH\nI/BFT0MbnR6JVCZiPV7TCWPgY1gvgZ6TEEIKGqauDMUBdL8ZK6I="
+                        }
+                    ]
+                }
+            }, 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/dfea5f9d25ff5f47fe89114801851cb4c9604407", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e99110833d4cb135242e3590d5058efed381deb6", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/1111c8476aafc0c9c9e683b38f5e9c85339601ae", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85c982d688e4fa823e71394d328a60771551dbb9", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/fec02e21c6e274637316d9fdf6fd3bb026ae684e", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
+                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
+                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/39951f074f451d4aeb3e130d54e83223b6324d6d", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/34682dbef3b5f40853809a23a67af2bb098ae04f", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/1c650238653a41975a90054fe8b6c24745c3b3c3", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ebdf68b873d963b6419da770826de280d11a4032", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0e9a8236db2a4d45a2536db9a5eac40de559f353", 
+                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/febcc70c78447cc1c717cb86b49500765f162a18", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/c83ed3499df263158068a89211855f5281f479ff", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ffa9e23ae5dfa11d052542430d1847e7f08436f2", 
+                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
+                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0103747c34f384e085077f36e30e4752d171af36", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/29a1ade816c69964c737dd0c4d251aee704f8d4a", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
+            }, 
+            "date": {
+                "commited": "2013-05-27T23:34:11Z", 
+                "authored": "2013-05-27T23:34:11Z"
             }
         }, 
         "v0.9": {
@@ -605,71 +1016,149 @@
                 "authored": "2011-12-12T18:27:34Z"
             }
         }, 
-        "v1.0.0-rc.2": {
+        "v2.0.beta.3": {
             "package.json": {
-                "version": "v1.0.0-rc.2", 
-                "name": "ember.js", 
-                "author": "emberjs"
-            }, 
-            "sha": "656fa6e0527f71c29a802b2d3561e1573bcaf56b", 
-            ".travis.yml": {
-                "before_script": [
-                    "export DISPLAY=:99.0", 
-                    "sh -e /etc/init.d/xvfb start"
-                ], 
-                "notifications": {
-                    "campfire": {
-                        "on_failure": "always", 
-                        "rooms": [
-                            {
-                                "secure": "ia5CUz3FeqK+s238B9ApRz1vt/qpM/WtI5HlYS7GH5WPBbC5vsSUIwV9IqM8\nHKvTwLQKHUP5e+6I7E40/ofbQycsNSeglJ0mRRzdLe2SeN68uPsjuy5AKnpn\nKpIzGa9OC5tZfN/RqJskLuP8QRvqNCLPyesY1E5GM7lTKYa92PM="
-                            }
+                "bpm:build": {
+                    "jquery.js": {
+                        "include": [
+                            "jquery"
                         ], 
-                        "on_success": "change"
+                        "minifier": "uglify-js"
+                    }, 
+                    "sproutcore.js": {
+                        "include": [
+                            "spade", 
+                            "sproutcore-metal", 
+                            "sproutcore-runtime", 
+                            "handlebars", 
+                            "sproutcore-views", 
+                            "sproutcore-handlebars"
+                        ], 
+                        "minifier": "uglify-js"
+                    }, 
+                    "bpm_libs.js": {
+                        "minifier": "uglify-js"
                     }
                 }, 
-                "branches": {
-                    "except": [
-                        "latest-builds", 
-                        "release-builds"
-                    ]
+                "dependencies": {
+                    "sproutcore": "2.0.beta.3", 
+                    "sproutcore-touch": "2.0.beta.3"
                 }, 
-                "rvm": [
-                    "1.9.3"
-                ], 
-                "script": "rake test\\[standard]", 
-                "bundler_args": "--without development"
+                "bpm": "1.0.0", 
+                "name": "sproutcore", 
+                "dependencies:development": {
+                    "spade-qunit": "~> 1.0.0"
+                }
             }, 
+            "sha": "2f043247cfae6243561054e42ba040dffe8f27dd", 
             "tree": {
-                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fa957ae6d200ad22fec65266f4dc161548d07a35", 
-                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0f7b1a08ce72d40e5dc6131fbf93cf1822e5c6c7", 
-                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/10d8d6b853175296c4acead4a441dff52bcbf830", 
-                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/94e847235bc8c0a3089b51c409d98b6fb455ca4c", 
-                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/41b15060d4466a37efb7ebb12440ad103b1ff296", 
-                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/d4e4577521aebbb15b63d322637e16224efb20e7", 
-                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/d9e684afe7015260fd02e02f8403d8ccf2d0f721", 
-                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
-                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/d90631cc21e84520d4b318ab25ff774a6dd7709b", 
-                "ember-dev.yml": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2bc30f44d624e86fe0a407743409404d08243656", 
-                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/faaf8bd26a98d714f78492a361b975e28f605b30", 
-                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/599c6e29ab80e88b5231e644880d07867746b4f9", 
-                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/1ed200e273be244ae174baf977d6eea163bec36b", 
-                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
-                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8c0a5e0259ca3d9e53f0ae89929476b59704f0f7", 
-                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/4ffd4e5cd03cebfd85108965569d1b6a724e88dd", 
-                "ember-source.gemspec": "https://api.github.com/repos/emberjs/ember.js/git/blobs/889f64e86d1b22069e9c2c5fa1cae567c45a8ca5", 
-                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
-                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/3eaf9df4f2f66d012b8913c5572cce9aac101f1f", 
-                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/cd790b7f328a6f1fdfefbfecea122d3c03623d2f", 
-                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
-                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
-                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/605f5bcae56e4eec171032d4a89bf291b2379252", 
-                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fedbd0b1a214fbb89c8cf7773a601f75f368165f", 
-                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/dbe1c8885403a7b21759bbdf8d06745c640bee05"
+                "vendor": "https://api.github.com/repos/emberjs/ember.js/git/trees/14d44f1688f4b0931670b677113e98fe36a04df0", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/c7a0336966799c99b3a4241a1241c5cc951ae6ef", 
+                "list_file_sizes.rb": "https://api.github.com/repos/emberjs/ember.js/git/blobs/9bbe74b2eddd9a7529a2a364f877f4b7a8047d2f", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/4e6dba1689f2506d52a33202db652db15183a53b", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2f729bb2e76b5e5c930642231c95ce256dbb20c2", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2306f4676dc328fee77ae923636a466fa101b1a4", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/b13b6bf38172211eef2867a302f60e1c1f3c6b1f", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/700fc6ea4dfbbfe95cd84471532f0b51b1055db2", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/81fbe710443d37e5aab8f9ff877282b17a8f7b64"
             }, 
             "date": {
-                "commited": "2013-03-29T20:40:38Z", 
-                "authored": "2013-03-29T20:40:38Z"
+                "commited": "2011-08-11T17:46:04Z", 
+                "authored": "2011-08-11T17:46:04Z"
+            }
+        }, 
+        "v2.0.beta.2": {
+            "package.json": {
+                "bpm:build": {
+                    "jquery.js": {
+                        "include": [
+                            "jquery"
+                        ], 
+                        "minifier": "uglify-js"
+                    }, 
+                    "sproutcore.js": {
+                        "include": [
+                            "spade", 
+                            "sproutcore-metal", 
+                            "sproutcore-runtime", 
+                            "handlebars", 
+                            "sproutcore-views", 
+                            "sproutcore-handlebars"
+                        ], 
+                        "minifier": "uglify-js"
+                    }, 
+                    "bpm_libs.js": {
+                        "minifier": "uglify-js"
+                    }, 
+                    "sproutcore-datastore.js": {
+                        "include": [
+                            "sproutcore-datastore", 
+                            "sproutcore-indexset", 
+                            "sproutcore-datetime"
+                        ], 
+                        "minifier": "uglify-js"
+                    }
+                }, 
+                "dependencies": {
+                    "sproutcore": "2.0.beta.2.1.pre", 
+                    "sproutcore-touch": "2.0.beta.2.1.pre"
+                }, 
+                "bpm": "0.1.4", 
+                "name": "sproutcore", 
+                "dependencies:development": {
+                    "spade-qunit": "~> 1.0.0"
+                }
+            }, 
+            "sha": "88d3e498fcac74b878df5fc9ed6a83d90e02dfde", 
+            "tree": {
+                "vendor": "https://api.github.com/repos/emberjs/ember.js/git/trees/14d44f1688f4b0931670b677113e98fe36a04df0", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/c7a0336966799c99b3a4241a1241c5cc951ae6ef", 
+                "list_file_sizes.rb": "https://api.github.com/repos/emberjs/ember.js/git/blobs/9bbe74b2eddd9a7529a2a364f877f4b7a8047d2f", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/4e6dba1689f2506d52a33202db652db15183a53b", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/9e118b8895066b955427fa2f03e0f03e755cd363", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/345103c3d3cf15acb9be275568ae0b716d7d5020", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/b13b6bf38172211eef2867a302f60e1c1f3c6b1f", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/d74a123383f8c8999f78e045a4cce1d30a8c419e", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/98fcbabb9be649d63ce0ef484a960c9af27e38bf"
+            }, 
+            "date": {
+                "commited": "2011-07-21T01:08:47Z", 
+                "authored": "2011-07-21T01:08:47Z"
+            }
+        }, 
+        "v2.0.beta.1": {
+            "package.json": {
+                "name": "amber", 
+                "author": "Charles Jolley", 
+                "directories": {
+                    "docs": "docs", 
+                    "generators": "generators"
+                }, 
+                "summary": "SproutCore 2.0 Bootstrap", 
+                "version": "2.0", 
+                "dependencies": {
+                    "sproutcore": "2.0", 
+                    "qunit": "1.0"
+                }, 
+                "homepage": "http://github.com/sproutcore/sproutcore20", 
+                "description": "SproutCore 2.0 Bootstrap"
+            }, 
+            "sha": "a1564cd5a554f14f451c83671e3084be0cf54e16", 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fab5e36eda69acb20e06ae948c939352023e1ec1", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/c7a0336966799c99b3a4241a1241c5cc951ae6ef", 
+                "list_file_sizes.rb": "https://api.github.com/repos/emberjs/ember.js/git/blobs/9bbe74b2eddd9a7529a2a364f877f4b7a8047d2f", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2cf35e9927cc88c87b0ebcb4dbac0404c014c59f", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/997b26878b5d57092258b3f6d20e05c588f7ca10", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/fd569ab2e31695875228e946942355f55739d512", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/b13b6bf38172211eef2867a302f60e1c1f3c6b1f", 
+                "tests.html": "https://api.github.com/repos/emberjs/ember.js/git/blobs/1983021df6e8702ef6ed8a914fa907630b03ea40", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/97237944716700196679d01c8e840275a95a69d2", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f02f96b6e04e7d843456c16adf3268ab2dd32203"
+            }, 
+            "date": {
+                "commited": "2011-06-18T04:23:50Z", 
+                "authored": "2011-06-18T04:18:13Z"
             }
         }, 
         "v1.0.0-pre.4": {
@@ -727,6 +1216,106 @@
             "date": {
                 "commited": "2013-01-18T07:06:53Z", 
                 "authored": "2013-01-18T07:06:53Z"
+            }
+        }, 
+        "v1.0.0-pre.3": {
+            "package.json": {
+                "version": "v1.0.0-pre.3", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "af88cb061153586fe1c8c9f1bfff037a199df81e", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start"
+                ], 
+                "notifications": {
+                    "webhooks": "http://emberjs-master-builds.herokuapp.com/upload/ember.js"
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "bundler_args": "--without development", 
+                "script": "rake test\\[standard]"
+            }, 
+            "tree": {
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/2655ec5d977010ed41e683fbfd50fb8bdd5b378a", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f71ba4b11937be8bf4e2a45813b49cac5b3d263e", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8f58745c180f21c5e61c6b0a48e3820b45471316", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/b5a3a489fac985b21e7a2b72eabddd9a938200bb", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/41b15060d4466a37efb7ebb12440ad103b1ff296", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/23e27076145b1ccbfa59d45e0cf3a3b01c43b899", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f99874582bdf366d653583eb6002e7cc25e66680", 
+                ".gitmodules": "https://api.github.com/repos/emberjs/ember.js/git/blobs/c1b8008e852eb0d704e7f2cd8cd93d03f37b5f7c", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/fe36a1fffcabee77e806cfa2f473da3b280294db", 
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/cd20956fcdf8d6cd82831639fabb7f1d542e928d", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/143d70f917fa13aaf79c40c96f0893c4095f2499", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/6fd0dcf7c400a74ac7e341654f26677ef1ac437f", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/8547f0518471e184441ede3b9f0b8f2c2fab78f3", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/aa941c98805f0fefc30df8d1cfee4764b9a9217b", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f45335c128619d696357e1d3e4bc8869f2867174", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/bdf66ccdfb477eb98dce25ba0ca415c2e3331e4e", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/26557615098146b98328f738d870bb12cfca4411", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/ab7611d6b33e6cf6cd2e286e872093db05d951cd", 
+                "cookbooks": "https://api.github.com/repos/emberjs/ember.js/git/trees/b6dd36ebb39187ff342f9b3bb8aee8041008f40c", 
+                "Vagrantfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/87cc3808767ac72ff89f2ea92132b80d2bf5ca63", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/06cb57c40d5bb337bdc10078adca649dbb36f999", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/e002855dbcd068462d4a0d378b29adc5570d854c"
+            }, 
+            "date": {
+                "commited": "2013-01-17T18:54:03Z", 
+                "authored": "2013-01-17T18:54:03Z"
+            }
+        }, 
+        "v1.0.0-pre.2": {
+            "package.json": {
+                "version": "v1.0.0-pre.2", 
+                "name": "ember.js", 
+                "author": "emberjs"
+            }, 
+            "sha": "b8515672a02b43a9b5800f840e9a209aef5d6297", 
+            ".travis.yml": {
+                "before_script": [
+                    "export DISPLAY=:99.0", 
+                    "sh -e /etc/init.d/xvfb start", 
+                    "rake clean"
+                ], 
+                "notifications": {
+                    "webhooks": "http://emberjs-master-builds.herokuapp.com/upload/ember.js"
+                }, 
+                "rvm": [
+                    "1.9.3"
+                ], 
+                "bundler_args": "--without development", 
+                "script": "rake test[all]"
+            }, 
+            "tree": {
+                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e42f5a56b1a20a3edc50c27f889fb77860ef8bfd", 
+                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f91f639920198c2d7259e9ef5f486aae9ed0056c", 
+                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/13e81ffd727962d121847f4094e7e04388415a4d", 
+                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b480767e5355062db55a9afcc9c0835695075c57", 
+                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8f58745c180f21c5e61c6b0a48e3820b45471316", 
+                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f75dcabb1509e0808f497cb5be39e3ac08aaab0d", 
+                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/ab007fc2103713da053d491250a0a190ee7d5e3b", 
+                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0fc28dac86b2e74ace2cd39d48da8376943009ec", 
+                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/6f4637d9ee29964ee372f9ea57c41fd27fba8faa", 
+                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/f111a64e4fa141ac12bba81c807534c5ed1015d9", 
+                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85f6a23c01f41b353d426b9696b2f31a4aba6d30", 
+                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b69cdced58577f5fc40766dee15818f8f3e528f5", 
+                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/4a9ef09b7d9a4dfea325a536ce250e9bca55d0b2", 
+                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/fe36a1fffcabee77e806cfa2f473da3b280294db", 
+                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/e002855dbcd068462d4a0d378b29adc5570d854c", 
+                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/23e27076145b1ccbfa59d45e0cf3a3b01c43b899", 
+                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
+                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/404995b65d05356627e759228ed68ddafb61415d", 
+                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/5ad75ae839dabeabb1b2808059424d0ca1dec053", 
+                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/565f407c43bd6f1dfd5b6838fc4b90ad43c4b394"
+            }, 
+            "date": {
+                "commited": "2012-10-25T19:56:33Z", 
+                "authored": "2012-10-25T19:56:33Z"
             }
         }, 
         "v1.0.pre": {
@@ -919,55 +1508,6 @@
             "date": {
                 "commited": "2011-06-18T04:23:50Z", 
                 "authored": "2011-06-18T04:18:13Z"
-            }
-        }, 
-        "v1.0.0-pre.2": {
-            "package.json": {
-                "version": "v1.0.0-pre.2", 
-                "name": "ember.js", 
-                "author": "emberjs"
-            }, 
-            "sha": "b8515672a02b43a9b5800f840e9a209aef5d6297", 
-            ".travis.yml": {
-                "before_script": [
-                    "export DISPLAY=:99.0", 
-                    "sh -e /etc/init.d/xvfb start", 
-                    "rake clean"
-                ], 
-                "notifications": {
-                    "webhooks": "http://emberjs-master-builds.herokuapp.com/upload/ember.js"
-                }, 
-                "rvm": [
-                    "1.9.3"
-                ], 
-                "bundler_args": "--without development", 
-                "script": "rake test[all]"
-            }, 
-            "tree": {
-                ".jshintrc": "https://api.github.com/repos/emberjs/ember.js/git/blobs/e42f5a56b1a20a3edc50c27f889fb77860ef8bfd", 
-                "CONTRIBUTING.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f91f639920198c2d7259e9ef5f486aae9ed0056c", 
-                "Gemfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/13e81ffd727962d121847f4094e7e04388415a4d", 
-                "ember.json": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b480767e5355062db55a9afcc9c0835695075c57", 
-                "LICENSE": "https://api.github.com/repos/emberjs/ember.js/git/blobs/8f58745c180f21c5e61c6b0a48e3820b45471316", 
-                "CHANGELOG": "https://api.github.com/repos/emberjs/ember.js/git/blobs/f75dcabb1509e0808f497cb5be39e3ac08aaab0d", 
-                "docs": "https://api.github.com/repos/emberjs/ember.js/git/trees/ab007fc2103713da053d491250a0a190ee7d5e3b", 
-                "Gemfile.lock": "https://api.github.com/repos/emberjs/ember.js/git/blobs/0fc28dac86b2e74ace2cd39d48da8376943009ec", 
-                "Assetfile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/6f4637d9ee29964ee372f9ea57c41fd27fba8faa", 
-                "tests": "https://api.github.com/repos/emberjs/ember.js/git/trees/f111a64e4fa141ac12bba81c807534c5ed1015d9", 
-                ".gitignore": "https://api.github.com/repos/emberjs/ember.js/git/blobs/85f6a23c01f41b353d426b9696b2f31a4aba6d30", 
-                "Rakefile": "https://api.github.com/repos/emberjs/ember.js/git/blobs/b69cdced58577f5fc40766dee15818f8f3e528f5", 
-                "VERSION": "https://api.github.com/repos/emberjs/ember.js/git/blobs/4a9ef09b7d9a4dfea325a536ce250e9bca55d0b2", 
-                "generators": "https://api.github.com/repos/emberjs/ember.js/git/trees/fe36a1fffcabee77e806cfa2f473da3b280294db", 
-                "benchmarks": "https://api.github.com/repos/emberjs/ember.js/git/trees/e002855dbcd068462d4a0d378b29adc5570d854c", 
-                "lib": "https://api.github.com/repos/emberjs/ember.js/git/trees/23e27076145b1ccbfa59d45e0cf3a3b01c43b899", 
-                "scripts": "https://api.github.com/repos/emberjs/ember.js/git/trees/d0c9ce210764dcfe35467c229f7cb10a38d30920", 
-                "packages": "https://api.github.com/repos/emberjs/ember.js/git/trees/404995b65d05356627e759228ed68ddafb61415d", 
-                "config.ru": "https://api.github.com/repos/emberjs/ember.js/git/blobs/5ad75ae839dabeabb1b2808059424d0ca1dec053", 
-                "README.md": "https://api.github.com/repos/emberjs/ember.js/git/blobs/565f407c43bd6f1dfd5b6838fc4b90ad43c4b394"
-            }, 
-            "date": {
-                "commited": "2012-10-25T19:56:33Z", 
-                "authored": "2012-10-25T19:56:33Z"
             }
         }
     }

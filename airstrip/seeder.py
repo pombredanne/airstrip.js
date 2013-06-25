@@ -7,7 +7,7 @@ import datetime
 import re
 
 import airrc
-import airlicenses
+import licenses
 
 # import airrc
 
@@ -68,7 +68,7 @@ Would you like that (default, "y"), or would you prefer to review them one by on
     ln = self.rc.get('ln')
     git = self.rc.get('git')
 
-    airl = airlicenses.AirLicenses()
+    airl = licenses.Licenses()
     if yes.lower() == 'y':
       if not gitdata:
         gitdata = {'repo': git, 'owner': defaultname}
