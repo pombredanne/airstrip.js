@@ -15,8 +15,7 @@ os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 requires = [
     'puke',
-    'verlib',
-    'keyring'
+    'verlib'
 ]
 
 setup(
@@ -28,13 +27,15 @@ setup(
     author_email='tech@webitup.fr',
     url='http://airstrip.jsboot.com/',
     packages=find_packages(),
-    scripts=[
-        'airstrip/bin/airstrip'
-    ],
     package_dir={'airstrip': 'airstrip'},
     package_data = {
         # If any package contains *.txt files, include them:
         '': ['*.json']
+    },
+    entry_points={
+        'console_scripts': [
+            'airstrip=airstrip.cli:main',
+        ]
     },
     include_package_data = True,
 
