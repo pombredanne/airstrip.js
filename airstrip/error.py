@@ -13,11 +13,31 @@ UNSPECIFIED = "UNSPECIFIED"
 UNIMPLEMENTED = "UNIMPLEMENTED"
 WRONG_ARGUMENT = "WRONG_ARGUMENT"
 MISSING = "MISSING"
+BROKEN = "BROKEN"
 
 
+class Http(Generic):
+  """Exception raised for errors in the http submodule.
+
+  Attributes:
+      type -- error type
+      msg  -- explanation of the error
+  """
+  def __init__(self, etype, message):
+    super(Generic, self).__init__(etype, message)
 
 class License(Generic):
   """Exception raised for errors in license handling.
+
+  Attributes:
+      type -- error type
+      msg  -- explanation of the error
+  """
+  def __init__(self, etype, message):
+    super(Generic, self).__init__(etype, message)
+
+class AirRC(Generic):
+  """Exception raised for errors in the rc submodule.
 
   Attributes:
       type -- error type

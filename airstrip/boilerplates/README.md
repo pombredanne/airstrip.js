@@ -36,6 +36,11 @@ How to contribute
 
 Loren ipsum.
 
+History
+-------------
+
+Loren ipsum.
+
 License
 -------------
 

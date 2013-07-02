@@ -9,7 +9,7 @@ import binascii
 
 
 class OSXPatchedKeyring(KeyringBackend):
-    """Mac OS X extended Keychain"""
+    """Mac OS X patched Keychain to access internet passwords"""
 
     # regex for extracting password from security call
     password_regex = re.compile("""password:\s*(?:0x(?P<hex>[0-9A-F]+)\s*)?"""
@@ -59,9 +59,9 @@ class OSXPatchedKeyring(KeyringBackend):
                     'find-internet-password',
                     '-g',
                     '-a',
-                    'dmp42',
+                    username,
                     '-s',
-                    'github.com'
+                    service
                 ],
                 stderr = subprocess.PIPE,
                 stdout = subprocess.PIPE,

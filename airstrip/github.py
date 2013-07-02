@@ -17,8 +17,6 @@ GITRAW_ROOT = "https://raw.github.com"
 class Token():
   @staticmethod
   def get(auth):
-    # print " [github-token] searching for existing auth token"
-
     r = http.get("%s/authorizations" % GITHUB_ROOT, cache = False, auth = auth)
     for i in r:
       if i["note"] == "airstrip2":

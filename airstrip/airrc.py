@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 
-from puke import *
+from puke import FileSystem as fs, console as console, prompt as prompt
 import json
 import licenses
 
@@ -27,15 +27,17 @@ EMPTY_RC = json.loads("""{
   "license": "MIT"
 }""")
 
+
 class AirRC():
+
   def __init__(self):
-    if not FileSystem.exists(AIRSTRIP_RC_PATH):
-      FileSystem.writefile(AIRSTRIP_RC_PATH, json.dumps(EMPTY_RC, indent = 2))
+    if not fs.exists(AIRSTRIP_RC_PATH):
+      fs.writefile(AIRSTRIP_RC_PATH, json.dumps(EMPTY_RC, indent = 2))
 
     try:
-      self.rc = json.loads(FileSystem.readfile(AIRSTRIP_RC_PATH))
+      self.rc = json.loads(fs.readfile(AIRSTRIP_RC_PATH))
     except:
-      console.fail('Your airstrip rc file (%s) is horked! Please rm or fix it' % AIRSTRIP_RC_PATH)
+      raise error.AirRC(error.BROKEN, "Your airstrip rc file (%s) is horked! Please rm or fix it" % AIRSTRIP_RC_PATH)
 
     if not self.rc['version'] == API:
       self.__ask__()
@@ -54,9 +56,7 @@ class AirRC():
 
     console.warn("""You don't seem to have documented your default informations, 
 or airstrip has an upgraded version that requires new infos.""")
-    console.info("""These infos are stored only in the file %s, which you can edit manually, 
-are entirely optional, and used only by the airstrip "seed" command to populate package.json 
-and other projects boilerplates.""" % AIRSTRIP_RC_PATH)
+    console.info("""These infos are stored only in the file %s, which you can edit manually.""" % AIRSTRIP_RC_PATH)
 
     console.info('First, provide informations about your company (if any - used generally for the author fields and copyright owner informations.)')
     self.rc['company']['name'] = prompt('Your company name (currently: %s)' % defaults['company']['name'], defaults['company']['name'])
@@ -85,4 +85,4 @@ and other projects boilerplates.""" % AIRSTRIP_RC_PATH)
   def set(self, key, value):
     if key:
       self.rc[key] = value
-    FileSystem.writefile(AIRSTRIP_RC_PATH, json.dumps(self.rc, indent = 2))
+    fs.writefile(AIRSTRIP_RC_PATH, json.dumps(self.rc, indent = 2))

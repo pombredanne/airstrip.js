@@ -150,11 +150,11 @@ class Air():
       raise Exception("FAIL")
 
     if not key:
-      return str(ref)
+      return (ref)
     if key in ref:
-      return str(ref[key])
+      return (ref[key])
     if "package.json" in ref and key in ref["package.json"]:
-      return str(ref["package.json"][key])
+      return (ref["package.json"][key])
 
     if not key in parent:
       if "branch" in ref:
@@ -162,7 +162,7 @@ class Air():
       else:
         # console.warn('No such key (%s)' % key)
         return None
-    return str(parent[key])
+    return (parent[key])
 
   def versions(self):
     r = re.compile(r'([^\d]*)')

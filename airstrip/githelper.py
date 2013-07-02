@@ -1,29 +1,41 @@
 # -*- coding: utf8 -*-
 
-from puke import *
+from puke import FileSystem as fs, System as sys, Std, sh
 import re
 import error
 
 class GitHelper():
   def __init__(self, remote, path):
     # Require git on the system to have it
-    System.check_package('git')
+    sys.check_package('git')
     clean = re.sub('[.]git$', '', remote.split('/').pop())
-    self.local = FileSystem.join(path, clean)
+
+    self.local = fs.join(path, clean)
     self.remote = remote
     self.debug = False
 
+    base = fs.dirname(self.local)
+    if not fs.exists(base):
+      fs.makedir(base)
+    if not fs.exists(self.local):
+      self.__clone__()
+    else:
+      self.__clean__()
+      self.__rebase__()
+
+
   def __wrap__(self, path, command):
-    if FileSystem.realpath('.') == FileSystem.realpath(path):
+    if fs.realpath('.') == fs.realpath(path):
       raise error.License(error.TERRIBLE, "Trying to manipulate current path .git (%s)!" % path)
     std = Std()
     sh('cd "%s";' % path, std = std)
-    if std.err:
-      raise error.License(error.TERRIBLE, "Can't change pwd! (%s)!" % path)
+    # XXX dead broken right now
+    # if std.err:
+    #   raise error.License(error.TERRIBLE, "Can't change pwd! (%s)!" % path)
     sh('cd "%s"; git %s' % (path, command), std = std)
-    if std.err:
-      raise error.License(error.GIT_ERROR, "Something bad happened! %s!" % std.err)
-      console.error(std.err)
+    # if std.err:
+    #   raise error.License(error.GIT_ERROR, "Something bad happened! %s!" % std.err)
+    #   console.error(std.err)
 
   def __clean__(self):
     self.__wrap__(self.local, 'reset --hard HEAD; git clean -f -d; git checkout master')
@@ -32,21 +44,11 @@ class GitHelper():
     self.__wrap__(self.local, 'pull --rebase')
 
   def __clone__(self):
-    self.__wrap__(FileSystem.dirname(self.local), 'clone %s' % self.remote)
-
-  def ensure(self):
-    base = FileSystem.dirname(self.local)
-    if not FileSystem.exists(base):
-      FileSystem.makedir(base)
-    if not FileSystem.exists(self.local):
-      self.__clone__()
-    else:
-      self.__clean__()
-      self.__rebase__()
+    self.__wrap__(fs.dirname(self.local), 'clone %s' % self.remote)
 
   def checkout(self, ref):
     self.__wrap__(self.local, 'reset --hard HEAD; git clean -f -d; git checkout %s; git reset --hard %s; git clean -f -d;' % (ref, ref))
 
-  def getPath(self):
+  def path(self):
     return self.local
 
