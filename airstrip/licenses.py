@@ -33,7 +33,7 @@ class Licenses():
   @staticmethod
   def exists(name):
     p = fs.join(AIRSTRIP_LICENSES, name)
-    if fs.exists(p):
+    if fs.exists(p) and fs.isfile(p, True):
       return p
     return False
 
